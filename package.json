@@ -13,7 +13,9 @@
     "db:migrate": "tsx db/migrate.ts",
     "db:seed": "tsx db/seed.ts",
     "db:clean-seed": "tsx db/clean-seed.ts",
-    "sync": "tsx worker/sync.ts"
+    "sync": "tsx worker/sync.ts",
+    "sync:catalog": "tsx worker/sync-catalog.ts",
+    "audit:pandascore": "tsx worker/pandascore/audit.ts"
   },
   "dependencies": {
     "dotenv": "^16.4.5",

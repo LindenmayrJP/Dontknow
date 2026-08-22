@@ -1,0 +1,224 @@
+[
+  {
+    "id": 139094,
+    "name": "Ushiras",
+    "location": "BR",
+    "slug": "ushiras",
+    "players": [],
+    "modified_at": "2026-08-11T06:14:05Z",
+    "acronym": "USHI",
+    "image_url": null,
+    "dark_mode_image_url": null,
+    "current_videogame": {
+      "id": 26,
+      "name": "Valorant",
+      "slug": "valorant"
+    }
+  },
+  {
+    "id": 139092,
+    "name": "7VEN STARS",
+    "location": "BR",
+    "slug": "7ven-stars",
+    "players": [
+      {
+        "active": true,
+        "id": 48506,
+        "name": "erin",
+        "role": null,
+        "slug": "erin",
+        "modified_at": "2026-08-10T15:34:36Z",
+        "age": null,
+        "birthday": null,
+        "first_name": null,
+        "last_name": null,
+        "nationality": "BR",
+        "image_url": null
+      },
+      {
+        "active": true,
+        "id": 53717,
+        "name": "nicky",
+        "role": null,
+        "slug": "nicky",
+        "modified_at": "2026-08-10T15:34:46Z",
+        "age": null,
+        "birthday": null,
+        "first_name": null,
+        "last_name": null,
+        "nationality": "AR",
+        "image_url": null
+      },
+      {
+        "active": true,
+        "id": 55386,
+        "name": "Freya",
+        "role": null,
+        "slug": "freya",
+        "modified_at": "2026-08-10T15:34:47Z",
+        "age": null,
+        "birthday": null,
+        "first_name": "Leticia",
+        "last_name": "Almeida",
+        "nationality": "BR",
+        "image_url": null
+      },
+      {
+        "active": true,
+        "id": 61755,
+        "name": "Prix",
+        "role": null,
+        "slug": "sccp-prix",
+        "modified_at": "2026-08-10T15:34:48Z",
+        "age": null,
+        "birthday": null,
+        "first_name": null,
+        "last_name": null,
+        "nationality": "BR",
+        "image_url": null
+      },
+      {
+        "active": true,
+        "id": 67372,
+        "name": "sarahcat",
+        "role": null,
+        "slug": "sarahcat",
+        "modified_at": "2026-08-10T12:45:43Z",
+        "age": null,
+        "birthday": null,
+        "first_name": null,
+        "last_name": null,
+        "nationality": "BR",
+        "image_url": null
+      }
+    ],
+    "modified_at": "2026-08-10T12:45:43Z",
+    "acronym": "7VEN",
+    "image_url": "https://cdn-api.pandascore.co/images/team/image/139092/799px_7_ven_allmode.png",
+    "dark_mode_image_url": null,
+    "current_videogame": {
+      "id": 26,
+      "name": "Valorant",
+      "slug": "valorant"
+    }
+  },
+  {
+    "id": 139091,
+    "name": "Fluxo W7M",
+    "location": "BR",
+    "slug": "fluxo-w7m-valorant",
+    "players": [
+      {
+        "active": true,
+        "id": 32494,
+        "name": "tuyz",
+        "role": null,
+        "slug": "tuyz",
+        "modified_at": "2026-08-10T08:49:35Z",
+        "age": 23,
+        "birthday": "2003-08-03",
+        "first_name": "Arthur",
+        "last_name": "Vieira",
+        "nationality": "BR",
+        "image_url": "https://cdn-api.pandascore.co/images/player/image/32494/ezgif_1_7aa60e9c11.png"
+      },
+      {
+        "active": true,
+        "id": 32774,
+        "name": "mazin",
+        "role": null,
+        "slug": "mazin",
+        "modified_at": "2026-08-10T08:49:35Z",
+        "age": 27,
+        "birthday": "1999-07-27",
+        "first_name": "Matheus",
+        "last_name": "Araújo",
+        "nationality": "BR",
+        "image_url": null
+      },
+      {
+        "active": true,
+        "id": 40983,
+        "name": "jzz",
+        "role": null,
+        "slug": "jzz",
+        "modified_at": "2026-08-10T08:49:35Z",
+        "age": 22,
+        "birthday": "2004-05-17",
+        "first_name": "João",
+        "last_name": "Pedro",
+        "nationality": "BR",
+        "image_url": "https://cdn-api.pandascore.co/images/player/image/40983/750px_mibr_jzz.png"
+      },
+      {
+        "active": true,
+        "id": 43922,
+        "name": "Zanatsu",
+        "role": null,
+        "slug": "zanatsu",
+        "modified_at": "2026-08-10T08:49:36Z",
+        "age": 24,
+        "birthday": "2002-08-11",
+        "first_name": "Carlos",
+        "last_name": "Eduardo",
+        "nationality": "BR",
+        "image_url": "https://cdn-api.pandascore.co/images/player/image/43922/62d07264cf42d.png"
+      },
+      {
+        "active": true,
+        "id": 52884,
+        "name": "Palla",
+        "role": null,
+        "slug": "palla",
+        "modified_at": "2026-08-10T08:49:35Z",
+        "age": 20,
+        "birthday": "2005-09-12",
+        "first_name": "Davis",
+        "last_name": "Alcides",
+        "nationality": "BR",
+        "image_url": null
+      }
+    ],
+    "modified_at": "2026-08-10T08:49:36Z",
+    "acronym": "W7M",
+    "image_url": "https://cdn-api.pandascore.co/images/team/image/139091/600px_fluxo_w7_m_dec_2025_allmode.png",
+    "dark_mode_image_url": null,
+    "current_videogame": {
+      "id": 26,
+      "name": "Valorant",
+      "slug": "valorant"
+    }
+  },
+  {
+    "id": 139086,
+    "name": "NPC Team",
+    "location": "CL",
+    "slug": "npc-team",
+    "players": [],
+    "modified_at": "2026-08-08T14:23:14Z",
+    "acronym": null,
+    "image_url": null,
+    "dark_mode_image_url": null,
+    "current_videogame": {
+      "id": 26,
+      "name": "Valorant",
+      "slug": "valorant"
+    }
+  },
+  {
+    "id": 139085,
+    "name": "GATO PENSANTE?",
+    "location": "BR",
+    "slug": "gato-pensante",
+    "players": [],
+    "modified_at": "2026-08-08T10:07:12Z",
+    "acronym": "GP",
+    "image_url": null,
+    "dark_mode_image_url": null,
+    "current_videogame": {
+      "id": 26,
+      "name": "Valorant",
+      "slug": "valorant"
+    }
+  }
+]

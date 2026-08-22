@@ -1,0 +1,147 @@
+[
+  {
+    "active": true,
+    "id": 67471,
+    "name": "LittleBigSpy",
+    "role": null,
+    "slug": "littlebigspy",
+    "modified_at": "2026-08-18T14:08:02Z",
+    "age": 27,
+    "birthday": "1999-04-06",
+    "first_name": "Julia",
+    "last_name": "Himpe",
+    "nationality": "FR",
+    "image_url": null,
+    "current_videogame": {
+      "id": 26,
+      "name": "Valorant",
+      "slug": "valorant"
+    },
+    "current_team": {
+      "id": 136864,
+      "name": "ZennIT Orange GC",
+      "location": "FR",
+      "slug": "zennit-orange-gc",
+      "modified_at": "2026-08-18T14:08:02Z",
+      "acronym": "ZNT.O",
+      "image_url": "https://cdn-api.pandascore.co/images/team/image/136864/285px_zenn_it_orange_gc_allmode.png",
+      "dark_mode_image_url": "https://cdn-api.pandascore.co/dark_images/team/dark_image/136864/285px_zenn_it_orange_gc_allmode.png"
+    }
+  },
+  {
+    "active": true,
+    "id": 67470,
+    "name": "YuukiAsuna",
+    "role": null,
+    "slug": "yuukiasuna",
+    "modified_at": "2026-08-18T14:06:07Z",
+    "age": null,
+    "birthday": null,
+    "first_name": null,
+    "last_name": null,
+    "nationality": "FR",
+    "image_url": null,
+    "current_videogame": {
+      "id": 26,
+      "name": "Valorant",
+      "slug": "valorant"
+    },
+    "current_team": {
+      "id": 136864,
+      "name": "ZennIT Orange GC",
+      "location": "FR",
+      "slug": "zennit-orange-gc",
+      "modified_at": "2026-08-18T14:08:02Z",
+      "acronym": "ZNT.O",
+      "image_url": "https://cdn-api.pandascore.co/images/team/image/136864/285px_zenn_it_orange_gc_allmode.png",
+      "dark_mode_image_url": "https://cdn-api.pandascore.co/dark_images/team/dark_image/136864/285px_zenn_it_orange_gc_allmode.png"
+    }
+  },
+  {
+    "active": true,
+    "id": 67419,
+    "name": "chbzn",
+    "role": null,
+    "slug": "chbzn",
+    "modified_at": "2026-08-19T22:08:24Z",
+    "age": null,
+    "birthday": null,
+    "first_name": null,
+    "last_name": null,
+    "nationality": null,
+    "image_url": null,
+    "current_videogame": {
+      "id": 26,
+      "name": "Valorant",
+      "slug": "valorant"
+    },
+    "current_team": {
+      "id": 138619,
+      "name": "BESTIA",
+      "location": "",
+      "slug": "bestia-valorant",
+      "modified_at": "2026-08-19T22:08:24Z",
+      "acronym": "BST",
+      "image_url": "https://cdn-api.pandascore.co/images/team/image/138619/186px_bestia_lightmode.png",
+      "dark_mode_image_url": "https://cdn-api.pandascore.co/dark_images/team/dark_image/138619/124px_bestia_darkmode.png"
+    }
+  },
+  {
+    "active": true,
+    "id": 67413,
+    "name": "MVR Naia",
+    "role": null,
+    "slug": "mvr-naia",
+    "modified_at": "2026-08-13T06:04:10Z",
+    "age": null,
+    "birthday": null,
+    "first_name": null,
+    "last_name": null,
+    "nationality": null,
+    "image_url": null,
+    "current_videogame": {
+      "id": 26,
+      "name": "Valorant",
+      "slug": "valorant"
+    },
+    "current_team": {
+      "id": 136616,
+      "name": "MYVRA GC",
+      "location": "CO",
+      "slug": "myvra-gc",
+      "modified_at": "2026-08-13T06:04:10Z",
+      "acronym": "MYV.GC",
+      "image_url": "https://cdn-api.pandascore.co/images/team/image/136616/183px_myvra_allmode.png",
+      "dark_mode_image_url": null
+    }
+  },
+  {
+    "active": true,
+    "id": 67396,
+    "name": "elyria",
+    "role": null,
+    "slug": "ora-elyria",
+    "modified_at": "2026-08-12T11:35:55Z",
+    "age": null,
+    "birthday": null,
+    "first_name": null,
+    "last_name": null,
+    "nationality": "IE",
+    "image_url": null,
+    "current_videogame": {
+      "id": 26,
+      "name": "Valorant",
+      "slug": "valorant"
+    },
+    "current_team": {
+      "id": 138960,
+      "name": "ORA Temper",
+      "location": "",
+      "slug": "ora-temper",
+      "modified_at": "2026-08-22T08:21:33Z",
+      "acronym": "ORA.T",
+      "image_url": "https://cdn-api.pandascore.co/images/team/image/138960/563px_ora_esports_allmode.png",
+      "dark_mode_image_url": "https://cdn-api.pandascore.co/dark_images/team/dark_image/138960/563px_ora_esports_allmode.png"
+    }
+  }
+]

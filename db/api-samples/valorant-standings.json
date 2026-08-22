@@ -1,0 +1,478 @@
+[
+  {
+    "rank": 1,
+    "team": {
+      "id": 128796,
+      "name": "Team Vitality",
+      "location": "FR",
+      "slug": "team-vitality-valorant",
+      "modified_at": "2026-08-05T18:18:45Z",
+      "acronym": "VIT",
+      "image_url": "https://cdn-api.pandascore.co/images/team/image/128796/600px_team_vitality_2023_darkmode.png",
+      "dark_mode_image_url": "https://cdn-api.pandascore.co/dark_images/team/dark_image/128796/600px_team_vitality_2023_darkmode.png"
+    },
+    "last_match": {
+      "id": 1608254,
+      "name": "Lower bracket round 1 match 2: VIT vs FF",
+      "status": "finished",
+      "live": {
+        "supported": false,
+        "url": null,
+        "opens_at": null
+      },
+      "slug": "fire-flux-esports-2026-08-22",
+      "begin_at": "2026-08-22T16:36:28Z",
+      "detailed_stats": true,
+      "end_at": "2026-08-22T19:28:20Z",
+      "forfeit": false,
+      "winner_id": null,
+      "winner_type": "Team",
+      "draw": false,
+      "tournament_id": 21570,
+      "modified_at": "2026-08-22T20:02:22Z",
+      "match_type": "best_of",
+      "number_of_games": 3,
+      "scheduled_at": "2026-08-22T16:30:00Z",
+      "original_scheduled_at": "2026-08-22T18:00:00Z",
+      "game_advantage": null,
+      "low_latency_feed": false,
+      "streams_list": [
+        {
+          "main": true,
+          "language": "en",
+          "embed_url": "https://player.twitch.tv/?channel=valorant_emea",
+          "official": true,
+          "raw_url": "https://www.twitch.tv/valorant_emea"
+        },
+        {
+          "main": false,
+          "language": "fr",
+          "embed_url": "https://player.twitch.tv/?channel=valorant_fr",
+          "official": false,
+          "raw_url": "https://www.twitch.tv/valorant_fr"
+        },
+        {
+          "main": false,
+          "language": "es",
+          "embed_url": "https://player.twitch.tv/?channel=valorant_es",
+          "official": false,
+          "raw_url": "https://www.twitch.tv/valorant_es"
+        }
+      ],
+      "rescheduled": true
+    }
+  },
+  {
+    "rank": 2,
+    "team": {
+      "id": 134406,
+      "name": "Eintracht Frankfurt",
+      "location": "DE",
+      "slug": "eintracht-frankfurt-valorant",
+      "modified_at": "2026-08-16T22:36:58Z",
+      "acronym": "SGE",
+      "image_url": "https://cdn-api.pandascore.co/images/team/image/134406/600px_eintracht_frankfurt_allmode.png",
+      "dark_mode_image_url": null
+    },
+    "last_match": {
+      "id": 1608253,
+      "name": "Lower bracket round 1 match 1: TL vs SGE",
+      "status": "finished",
+      "live": {
+        "supported": false,
+        "url": null,
+        "opens_at": null
+      },
+      "slug": "eintracht-frankfurt-2026-08-22",
+      "begin_at": "2026-08-22T14:06:33Z",
+      "detailed_stats": true,
+      "end_at": "2026-08-22T16:08:51Z",
+      "forfeit": false,
+      "winner_id": null,
+      "winner_type": "Team",
+      "draw": false,
+      "tournament_id": 21570,
+      "modified_at": "2026-08-22T16:25:03Z",
+      "match_type": "best_of",
+      "number_of_games": 3,
+      "scheduled_at": "2026-08-22T14:00:00Z",
+      "original_scheduled_at": "2026-08-22T15:00:00Z",
+      "game_advantage": null,
+      "low_latency_feed": false,
+      "streams_list": [
+        {
+          "main": true,
+          "language": "en",
+          "embed_url": "https://player.twitch.tv/?channel=valorant_emea",
+          "official": true,
+          "raw_url": "https://www.twitch.tv/valorant_emea"
+        },
+        {
+          "main": false,
+          "language": "fr",
+          "embed_url": "https://player.twitch.tv/?channel=valorant_fr",
+          "official": false,
+          "raw_url": "https://www.twitch.tv/valorant_fr"
+        },
+        {
+          "main": false,
+          "language": "es",
+          "embed_url": "https://player.twitch.tv/?channel=valorant_es",
+          "official": false,
+          "raw_url": "https://www.twitch.tv/valorant_es"
+        }
+      ],
+      "rescheduled": true
+    }
+  },
+  {
+    "rank": 3,
+    "team": {
+      "id": 128577,
+      "name": "BBL Esports",
+      "location": "TR",
+      "slug": "bbl-esports",
+      "modified_at": "2026-08-05T18:18:43Z",
+      "acronym": "BBL",
+      "image_url": "https://cdn-api.pandascore.co/images/team/image/128577/600px_bbl_esports_2022_full_lightmode.png",
+      "dark_mode_image_url": "https://cdn-api.pandascore.co/dark_images/team/dark_image/128577/190px_bbl_esports_2022_darkmode.png"
+    },
+    "last_match": {
+      "id": 1608211,
+      "name": "Upper bracket semifinal 1: BBL vs FUT",
+      "status": "finished",
+      "live": {
+        "supported": false,
+        "url": null,
+        "opens_at": null
+      },
+      "slug": "bbl-esports-2026-08-21",
+      "begin_at": "2026-08-21T18:20:46Z",
+      "detailed_stats": true,
+      "end_at": "2026-08-21T20:48:20Z",
+      "forfeit": false,
+      "winner_id": null,
+      "winner_type": "Team",
+      "draw": false,
+      "tournament_id": 21570,
+      "modified_at": "2026-08-21T21:59:26Z",
+      "match_type": "best_of",
+      "number_of_games": 3,
+      "scheduled_at": "2026-08-21T18:30:00Z",
+      "original_scheduled_at": "2026-08-21T15:00:00Z",
+      "game_advantage": null,
+      "low_latency_feed": false,
+      "streams_list": [
+        {
+          "main": false,
+          "language": "en",
+          "embed_url": "https://www.youtube.com/embed/Uhf7b4fmheE",
+          "official": false,
+          "raw_url": "https://www.youtube.com/watch?v=Uhf7b4fmheE"
+        },
+        {
+          "main": true,
+          "language": "en",
+          "embed_url": "https://player.twitch.tv/?channel=valorant_emea",
+          "official": true,
+          "raw_url": "https://www.twitch.tv/valorant_emea"
+        },
+        {
+          "main": false,
+          "language": "fr",
+          "embed_url": "https://player.twitch.tv/?channel=valorant_fr",
+          "official": false,
+          "raw_url": "https://www.twitch.tv/valorant_fr"
+        },
+        {
+          "main": false,
+          "language": "es",
+          "embed_url": "https://player.twitch.tv/?channel=valorant_es",
+          "official": false,
+          "raw_url": "https://www.twitch.tv/valorant_es"
+        }
+      ],
+      "rescheduled": true
+    }
+  },
+  {
+    "rank": 3,
+    "team": {
+      "id": 128578,
+      "name": "FUT Esports",
+      "location": "TR",
+      "slug": "futbolist",
+      "modified_at": "2026-08-16T22:36:55Z",
+      "acronym": "FUT",
+      "image_url": "https://cdn-api.pandascore.co/images/team/image/128578/600px_futbolist_new_logo_2021_infobox.png",
+      "dark_mode_image_url": "https://cdn-api.pandascore.co/dark_images/team/dark_image/128578/600px_futbolist_2021_darkmode.png"
+    },
+    "last_match": {
+      "id": 1608211,
+      "name": "Upper bracket semifinal 1: BBL vs FUT",
+      "status": "finished",
+      "live": {
+        "supported": false,
+        "url": null,
+        "opens_at": null
+      },
+      "slug": "bbl-esports-2026-08-21",
+      "begin_at": "2026-08-21T18:20:46Z",
+      "detailed_stats": true,
+      "end_at": "2026-08-21T20:48:20Z",
+      "forfeit": false,
+      "winner_id": null,
+      "winner_type": "Team",
+      "draw": false,
+      "tournament_id": 21570,
+      "modified_at": "2026-08-21T21:59:26Z",
+      "match_type": "best_of",
+      "number_of_games": 3,
+      "scheduled_at": "2026-08-21T18:30:00Z",
+      "original_scheduled_at": "2026-08-21T15:00:00Z",
+      "game_advantage": null,
+      "low_latency_feed": false,
+      "streams_list": [
+        {
+          "main": false,
+          "language": "en",
+          "embed_url": "https://www.youtube.com/embed/Uhf7b4fmheE",
+          "official": false,
+          "raw_url": "https://www.youtube.com/watch?v=Uhf7b4fmheE"
+        },
+        {
+          "main": true,
+          "language": "en",
+          "embed_url": "https://player.twitch.tv/?channel=valorant_emea",
+          "official": true,
+          "raw_url": "https://www.twitch.tv/valorant_emea"
+        },
+        {
+          "main": false,
+          "language": "fr",
+          "embed_url": "https://player.twitch.tv/?channel=valorant_fr",
+          "official": false,
+          "raw_url": "https://www.twitch.tv/valorant_fr"
+        },
+        {
+          "main": false,
+          "language": "es",
+          "embed_url": "https://player.twitch.tv/?channel=valorant_es",
+          "official": false,
+          "raw_url": "https://www.twitch.tv/valorant_es"
+        }
+      ],
+      "rescheduled": true
+    }
+  },
+  {
+    "rank": 5,
+    "team": {
+      "id": 130973,
+      "name": "Enterprise Esports",
+      "location": "CZ",
+      "slug": "enterprise-esports-valorant",
+      "modified_at": "2026-08-16T22:36:57Z",
+      "acronym": "EP",
+      "image_url": "https://cdn-api.pandascore.co/images/team/image/130973/600px_enterprise_esports_allmode.png",
+      "dark_mode_image_url": null
+    },
+    "last_match": {
+      "id": 1608212,
+      "name": "Upper bracket semifinal 2: EP vs KC",
+      "status": "finished",
+      "live": {
+        "supported": false,
+        "url": null,
+        "opens_at": null
+      },
+      "slug": "karmine-corp-2026-08-21",
+      "begin_at": "2026-08-21T15:07:20Z",
+      "detailed_stats": true,
+      "end_at": "2026-08-21T17:52:53Z",
+      "forfeit": false,
+      "winner_id": null,
+      "winner_type": "Team",
+      "draw": false,
+      "tournament_id": 21570,
+      "modified_at": "2026-08-21T18:08:02Z",
+      "match_type": "best_of",
+      "number_of_games": 3,
+      "scheduled_at": "2026-08-21T15:00:00Z",
+      "original_scheduled_at": "2026-08-21T18:00:00Z",
+      "game_advantage": null,
+      "low_latency_feed": false,
+      "streams_list": [
+        {
+          "main": false,
+          "language": "en",
+          "embed_url": "https://www.youtube.com/embed/Uhf7b4fmheE",
+          "official": false,
+          "raw_url": "https://www.youtube.com/watch?v=Uhf7b4fmheE"
+        },
+        {
+          "main": true,
+          "language": "en",
+          "embed_url": "https://player.twitch.tv/?channel=valorant_emea",
+          "official": true,
+          "raw_url": "https://www.twitch.tv/valorant_emea"
+        },
+        {
+          "main": false,
+          "language": "fr",
+          "embed_url": "https://player.twitch.tv/?channel=valorant_fr",
+          "official": false,
+          "raw_url": "https://www.twitch.tv/valorant_fr"
+        },
+        {
+          "main": false,
+          "language": "es",
+          "embed_url": "https://player.twitch.tv/?channel=valorant_es",
+          "official": false,
+          "raw_url": "https://www.twitch.tv/valorant_es"
+        }
+      ],
+      "rescheduled": true
+    }
+  },
+  {
+    "rank": 5,
+    "team": {
+      "id": 130922,
+      "name": "Karmine Corp",
+      "location": "FR",
+      "slug": "karmine-corp-valorant",
+      "modified_at": "2026-08-05T18:18:47Z",
+      "acronym": "KC",
+      "image_url": "https://cdn-api.pandascore.co/images/team/image/130922/600px_karmine_corp_lightmode_full.png",
+      "dark_mode_image_url": "https://cdn-api.pandascore.co/dark_images/team/dark_image/130922/632px_karmine_corp_allmode.png"
+    },
+    "last_match": {
+      "id": 1608212,
+      "name": "Upper bracket semifinal 2: EP vs KC",
+      "status": "finished",
+      "live": {
+        "supported": false,
+        "url": null,
+        "opens_at": null
+      },
+      "slug": "karmine-corp-2026-08-21",
+      "begin_at": "2026-08-21T15:07:20Z",
+      "detailed_stats": true,
+      "end_at": "2026-08-21T17:52:53Z",
+      "forfeit": false,
+      "winner_id": null,
+      "winner_type": "Team",
+      "draw": false,
+      "tournament_id": 21570,
+      "modified_at": "2026-08-21T18:08:02Z",
+      "match_type": "best_of",
+      "number_of_games": 3,
+      "scheduled_at": "2026-08-21T15:00:00Z",
+      "original_scheduled_at": "2026-08-21T18:00:00Z",
+      "game_advantage": null,
+      "low_latency_feed": false,
+      "streams_list": [
+        {
+          "main": false,
+          "language": "en",
+          "embed_url": "https://www.youtube.com/embed/Uhf7b4fmheE",
+          "official": false,
+          "raw_url": "https://www.youtube.com/watch?v=Uhf7b4fmheE"
+        },
+        {
+          "main": true,
+          "language": "en",
+          "embed_url": "https://player.twitch.tv/?channel=valorant_emea",
+          "official": true,
+          "raw_url": "https://www.twitch.tv/valorant_emea"
+        },
+        {
+          "main": false,
+          "language": "fr",
+          "embed_url": "https://player.twitch.tv/?channel=valorant_fr",
+          "official": false,
+          "raw_url": "https://www.twitch.tv/valorant_fr"
+        },
+        {
+          "main": false,
+          "language": "es",
+          "embed_url": "https://player.twitch.tv/?channel=valorant_es",
+          "official": false,
+          "raw_url": "https://www.twitch.tv/valorant_es"
+        }
+      ],
+      "rescheduled": true
+    }
+  },
+  {
+    "rank": 7,
+    "team": {
+      "id": 128541,
+      "name": "Team Liquid",
+      "location": "NL",
+      "slug": "team-liquid-valorant",
+      "modified_at": "2026-08-05T18:18:41Z",
+      "acronym": "TL",
+      "image_url": "https://cdn-api.pandascore.co/images/team/image/128541/463px_team_liquid_2024_full_lightmode.png",
+      "dark_mode_image_url": "https://cdn-api.pandascore.co/dark_images/team/dark_image/128541/463px_team_liquid_2024_full_darkmode.png"
+    },
+    "last_match": {
+      "id": 1608209,
+      "name": "Upper bracket quarterfinal 1: TL vs FUT",
+      "status": "finished",
+      "live": {
+        "supported": false,
+        "url": null,
+        "opens_at": null
+      },
+      "slug": "2026-08-20-b20646e3-1cc2-40fa-9a8e-923db53457c6",
+      "begin_at": "2026-08-20T18:08:19Z",
+      "detailed_stats": true,
+      "end_at": "2026-08-20T19:59:20Z",
+      "forfeit": false,
+      "winner_id": null,
+      "winner_type": "Team",
+      "draw": false,
+      "tournament_id": 21570,
+      "modified_at": "2026-08-20T20:14:59Z",
+      "match_type": "best_of",
+      "number_of_games": 3,
+      "scheduled_at": "2026-08-20T18:00:00Z",
+      "original_scheduled_at": "2026-08-20T15:00:00Z",
+      "game_advantage": null,
+      "low_latency_feed": false,
+      "streams_list": [
+        {
+          "main": false,
+          "language": "en",
+          "embed_url": "https://www.youtube.com/embed/2C7mKxPzWgY",
+          "official": false,
+          "raw_url": "https://www.youtube.com/watch?v=2C7mKxPzWgY"
+        },
+        {
+          "main": true,
+          "language": "en",
+          "embed_url": "https://player.twitch.tv/?channel=valorant_emea",
+          "official": true,
+          "raw_url": "https://www.twitch.tv/valorant_emea"
+        },
+        {
+          "main": false,
+          "language": "fr",
+          "embed_url": "https://player.twitch.tv/?channel=valorant_fr",
+          "official": false,
+          "raw_url": "https://www.twitch.tv/valorant_fr"
+        },
+        {
+          "main": false,
+          "language": "es",
+          "embed_url": "https://player.twitch.tv/?channel=valorant_es",
+          "official": false,
+          "raw_url": "https://www.twitch.tv/valorant_es"
+        }
+      ],
+      "rescheduled": true
+    }
+  }
+]

@@ -21,7 +21,7 @@ const GAMES: Game[] = ["lol", "valorant"];
  * vezes — o Postgres recusa "ON CONFLICT DO UPDATE command cannot affect
  * row a second time". Daí o `dedupe` antes de cada gravação.
  */
-function dedupe<T>(rows: T[], key: (row: T) => string | number): T[] {
+export function dedupe<T>(rows: T[], key: (row: T) => string | number): T[] {
   const map = new Map<string | number, T>();
   for (const row of rows) map.set(key(row), row);
   return [...map.values()];
@@ -34,7 +34,7 @@ function mapStatus(status: string): "scheduled" | "live" | "finished" {
   return "scheduled";
 }
 
-function tally(counters: Counters, table: string, rows: { inserted: boolean }[]) {
+export function tally(counters: Counters, table: string, rows: { inserted: boolean }[]) {
   for (const row of rows) counters.record(table, row.inserted);
 }
 
@@ -74,7 +74,7 @@ async function upsertOrganizations(
  * Times, duas queries: a primeira adota as linhas do seed (as que ainda não
  * têm pandascore_id), a segunda faz o upsert em lote por pandascore_id.
  */
-async function upsertTeams(
+export async function upsertTeams(
   db: PoolClient,
   counters: Counters,
   teams: PsTeam[],
@@ -267,18 +267,21 @@ async function upsertTournaments(
     inserted: boolean;
   }>(
     `INSERT INTO tournaments
-       (name, game, start_date, end_date, slug, league_name, serie_name, pandascore_id)
-     SELECT v.name, $1, v.begin_at, v.end_at, v.slug, v.league, v.serie, v.ps_id
+       (name, game, start_date, end_date, slug, league_name, serie_name,
+        has_bracket, pandascore_id)
+     SELECT v.name, $1, v.begin_at, v.end_at, v.slug, v.league, v.serie,
+            v.has_bracket, v.ps_id
        FROM unnest($2::text[], $3::timestamptz[], $4::timestamptz[], $5::text[],
-                   $6::text[], $7::text[], $8::int[])
-            AS v(name, begin_at, end_at, slug, league, serie, ps_id)
+                   $6::text[], $7::text[], $8::boolean[], $9::int[])
+            AS v(name, begin_at, end_at, slug, league, serie, has_bracket, ps_id)
      ON CONFLICT (pandascore_id) DO UPDATE
        SET name = EXCLUDED.name,
            start_date = EXCLUDED.start_date,
            end_date = EXCLUDED.end_date,
            slug = EXCLUDED.slug,
            league_name = EXCLUDED.league_name,
-           serie_name = EXCLUDED.serie_name
+           serie_name = EXCLUDED.serie_name,
+           has_bracket = COALESCE(EXCLUDED.has_bracket, tournaments.has_bracket)
      RETURNING id, pandascore_id, (xmax = 0) AS inserted`,
     [
       game,
@@ -292,6 +295,7 @@ async function upsertTournaments(
       rows.map((r) => r.t.slug),
       rows.map((r) => r.league),
       rows.map((r) => r.serie),
+      rows.map((r) => r.t.has_bracket ?? null),
       rows.map((r) => r.t.id),
     ]
   );
@@ -300,23 +304,38 @@ async function upsertTournaments(
   return new Map(out.map((r) => [r.pandascore_id, r.id]));
 }
 
-async function upsertMatches(
+/**
+ * Devolve o mapa `pandascore_id → matches.id` das partidas gravadas.
+ *
+ * `tournamentIdPadrao` (id interno) é para quem chama com partidas que
+ * não trazem o objeto `tournament` aninhado — é o caso de
+ * `/tournaments/{id}/brackets`, que devolve só `tournament_id`.
+ */
+export async function upsertMatches(
   db: PoolClient,
   counters: Counters,
   matches: PsMatch[],
-  game: Game
-) {
+  game: Game,
+  tournamentIdPadrao?: number
+): Promise<Map<number, number>> {
   // Partida sem os dois lados definidos (TBD do chaveamento) ainda não cabe
   // no schema — entra numa sync futura, quando o PandaScore preencher.
   const usable = matches.filter(
     (m) =>
       (m.opponents ?? []).map((o) => o.opponent).filter((o) => o?.id).length === 2 &&
-      m.tournament
+      (m.tournament || tournamentIdPadrao !== undefined)
   );
   counters.skip("matches", matches.length - usable.length);
-  if (usable.length === 0) return;
+  if (usable.length === 0) return new Map();
 
-  const tournaments = await upsertTournaments(db, counters, usable, game);
+  // Só as que trazem o objeto completo alimentam o upsert de torneios —
+  // as do bracket não têm datas e apagariam as já gravadas.
+  const tournaments = await upsertTournaments(
+    db,
+    counters,
+    usable.filter((m) => m.tournament),
+    game
+  );
 
   // Os adversários vêm sem roster; o upsert de time não mexe em vínculos.
   const teams = await upsertTeams(
@@ -334,11 +353,16 @@ async function upsertMatches(
       const teamB = teams.get(b.id);
       if (!teamA || !teamB || teamA === teamB) return null;
 
+      const tournamentId = m.tournament
+        ? tournaments.get(m.tournament.id)
+        : tournamentIdPadrao;
+      if (!tournamentId) return null;
+
       const scoreOf = (id: number) =>
         m.results?.find((r) => r.team_id === id)?.score ?? null;
 
       return {
-        tournamentId: tournaments.get(m.tournament!.id)!,
+        tournamentId,
         teamA,
         teamB,
         scheduledAt: m.scheduled_at,
@@ -354,9 +378,13 @@ async function upsertMatches(
     .filter((r): r is NonNullable<typeof r> => r !== null);
 
   counters.skip("matches", usable.length - rows.length);
-  if (rows.length === 0) return;
+  if (rows.length === 0) return new Map();
 
-  const { rows: out } = await db.query<{ inserted: boolean }>(
+  const { rows: out } = await db.query<{
+    id: number;
+    pandascore_id: number;
+    inserted: boolean;
+  }>(
     `INSERT INTO matches
        (tournament_id, team_a_id, team_b_id, scheduled_at, team_a_score,
         team_b_score, status, name, number_of_games, winner_team_id, pandascore_id)
@@ -378,7 +406,7 @@ async function upsertMatches(
            number_of_games = EXCLUDED.number_of_games,
            winner_team_id = EXCLUDED.winner_team_id,
            updated_at = now()
-     RETURNING (xmax = 0) AS inserted`,
+     RETURNING id, pandascore_id, (xmax = 0) AS inserted`,
     [
       rows.map((r) => r.tournamentId),
       rows.map((r) => r.teamA),
@@ -395,6 +423,7 @@ async function upsertMatches(
   );
 
   tally(counters, "matches", out);
+  return new Map(out.map((r) => [r.pandascore_id, r.id]));
 }
 
 export async function syncPandaScore(counters: Counters) {

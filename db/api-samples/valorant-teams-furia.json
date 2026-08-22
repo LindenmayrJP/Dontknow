@@ -1,0 +1,119 @@
+[
+  {
+    "id": 136455,
+    "name": "FURIA Academy",
+    "location": "BR",
+    "slug": "furia-academy-valorant",
+    "players": [],
+    "modified_at": "2026-07-22T13:22:52Z",
+    "acronym": "FUR.A",
+    "image_url": "https://cdn-api.pandascore.co/images/team/image/136455/furia_academy_allmode.png",
+    "dark_mode_image_url": null,
+    "current_videogame": {
+      "id": 26,
+      "name": "Valorant",
+      "slug": "valorant"
+    }
+  },
+  {
+    "id": 128477,
+    "name": "FURIA Esports",
+    "location": "BR",
+    "slug": "furia-esports-valorant",
+    "players": [
+      {
+        "active": true,
+        "id": 29267,
+        "name": "Koalanoob",
+        "role": null,
+        "slug": "koalanoob",
+        "modified_at": "2026-08-10T08:36:52Z",
+        "age": 23,
+        "birthday": "2003-01-15",
+        "first_name": "GianFranco",
+        "last_name": "Potestio",
+        "nationality": "CA",
+        "image_url": null
+      },
+      {
+        "active": true,
+        "id": 32442,
+        "name": "eeiu",
+        "role": null,
+        "slug": "eeiu",
+        "modified_at": "2026-08-10T08:36:52Z",
+        "age": 25,
+        "birthday": "2001-05-14",
+        "first_name": "Daniel",
+        "last_name": "Vucenovic",
+        "nationality": "CA",
+        "image_url": null
+      },
+      {
+        "active": true,
+        "id": 35923,
+        "name": "C0M",
+        "role": null,
+        "slug": "c0m-corbin-lee",
+        "modified_at": "2026-08-10T08:36:52Z",
+        "age": 26,
+        "birthday": "2000-05-10",
+        "first_name": "Corbin",
+        "last_name": "Lee",
+        "nationality": "US",
+        "image_url": null
+      },
+      {
+        "active": true,
+        "id": 41975,
+        "name": "artzin",
+        "role": null,
+        "slug": "artzin",
+        "modified_at": "2026-08-10T08:36:51Z",
+        "age": 22,
+        "birthday": "2003-11-29",
+        "first_name": "Arthur",
+        "last_name": "Araujo",
+        "nationality": "BR",
+        "image_url": "https://cdn-api.pandascore.co/images/player/image/41975/ezgif_3_97c812d3aa.png"
+      },
+      {
+        "active": true,
+        "id": 42549,
+        "name": "Shyy",
+        "role": null,
+        "slug": "lev-shy1",
+        "modified_at": "2026-08-10T08:36:52Z",
+        "age": 21,
+        "birthday": "2004-09-22",
+        "first_name": "Fabian",
+        "last_name": "Usnayo",
+        "nationality": "CL",
+        "image_url": null
+      },
+      {
+        "active": true,
+        "id": 57458,
+        "name": "basic",
+        "role": null,
+        "slug": "gre-basic",
+        "modified_at": "2026-08-10T08:36:52Z",
+        "age": null,
+        "birthday": null,
+        "first_name": "Luis",
+        "last_name": "Henrique",
+        "nationality": "BR",
+        "image_url": null
+      }
+    ],
+    "modified_at": "2026-08-10T08:36:52Z",
+    "acronym": "FUR",
+    "image_url": "https://cdn-api.pandascore.co/images/team/image/128477/616px_furia_esports_allmode.png",
+    "dark_mode_image_url": null,
+    "current_videogame": {
+      "id": 26,
+      "name": "Valorant",
+      "slug": "valorant"
+    }
+  }
+]

@@ -1,0 +1,1766 @@
+[
+  {
+    "id": 1608254,
+    "name": "Lower bracket round 1 match 2: VIT vs FF",
+    "status": "finished",
+    "results": [
+      {
+        "score": 1,
+        "team_id": 128796
+      },
+      {
+        "score": 2,
+        "team_id": 129194
+      }
+    ],
+    "live": {
+      "supported": false,
+      "url": null,
+      "opens_at": null
+    },
+    "begin_at": "2026-08-22T16:36:28Z",
+    "detailed_stats": true,
+    "end_at": "2026-08-22T19:28:20Z",
+    "forfeit": false,
+    "winner_id": 129194,
+    "winner_type": "Team",
+    "draw": false,
+    "slug": "fire-flux-esports-2026-08-22",
+    "games": [
+      {
+        "complete": true,
+        "id": 51499,
+        "position": 1,
+        "status": "finished",
+        "length": 3200,
+        "finished": true,
+        "begin_at": "2026-08-22T16:36:29Z",
+        "detailed_stats": true,
+        "end_at": "2026-08-22T17:29:50Z",
+        "forfeit": false,
+        "match_id": 1608254,
+        "winner_type": "Team",
+        "winner": {
+          "id": 128796,
+          "type": "Team"
+        }
+      },
+      {
+        "complete": true,
+        "id": 51500,
+        "position": 2,
+        "status": "finished",
+        "length": 3065,
+        "finished": true,
+        "begin_at": "2026-08-22T17:43:25Z",
+        "detailed_stats": true,
+        "end_at": "2026-08-22T18:34:30Z",
+        "forfeit": false,
+        "match_id": 1608254,
+        "winner_type": "Team",
+        "winner": {
+          "id": 129194,
+          "type": "Team"
+        }
+      },
+      {
+        "complete": true,
+        "id": 51501,
+        "position": 3,
+        "status": "finished",
+        "length": 2421,
+        "finished": true,
+        "begin_at": "2026-08-22T18:47:59Z",
+        "detailed_stats": true,
+        "end_at": "2026-08-22T19:28:21Z",
+        "forfeit": false,
+        "match_id": 1608254,
+        "winner_type": "Team",
+        "winner": {
+          "id": 129194,
+          "type": "Team"
+        }
+      }
+    ],
+    "tournament_id": 21570,
+    "modified_at": "2026-08-22T20:02:22Z",
+    "match_type": "best_of",
+    "number_of_games": 3,
+    "scheduled_at": "2026-08-22T16:30:00Z",
+    "opponents": [
+      {
+        "type": "Team",
+        "opponent": {
+          "id": 128796,
+          "name": "Team Vitality",
+          "location": "FR",
+          "slug": "team-vitality-valorant",
+          "modified_at": "2026-08-05T18:18:45Z",
+          "acronym": "VIT",
+          "image_url": "https://cdn-api.pandascore.co/images/team/image/128796/600px_team_vitality_2023_darkmode.png",
+          "dark_mode_image_url": "https://cdn-api.pandascore.co/dark_images/team/dark_image/128796/600px_team_vitality_2023_darkmode.png"
+        }
+      },
+      {
+        "type": "Team",
+        "opponent": {
+          "id": 129194,
+          "name": "Fire Flux Esports",
+          "location": "TR",
+          "slug": "fire-flux-esports",
+          "modified_at": "2026-08-16T22:36:59Z",
+          "acronym": "FF",
+          "image_url": "https://cdn-api.pandascore.co/images/team/image/129194/60b41997755c0.png",
+          "dark_mode_image_url": null
+        }
+      }
+    ],
+    "previous_matches": [
+      {
+        "type": "loser",
+        "match_id": 1608210
+      }
+    ],
+    "original_scheduled_at": "2026-08-22T18:00:00Z",
+    "game_advantage": null,
+    "streams_list": [
+      {
+        "main": true,
+        "language": "en",
+        "embed_url": "https://player.twitch.tv/?channel=valorant_emea",
+        "official": true,
+        "raw_url": "https://www.twitch.tv/valorant_emea"
+      },
+      {
+        "main": false,
+        "language": "fr",
+        "embed_url": "https://player.twitch.tv/?channel=valorant_fr",
+        "official": false,
+        "raw_url": "https://www.twitch.tv/valorant_fr"
+      },
+      {
+        "main": false,
+        "language": "es",
+        "embed_url": "https://player.twitch.tv/?channel=valorant_es",
+        "official": false,
+        "raw_url": "https://www.twitch.tv/valorant_es"
+      }
+    ]
+  },
+  {
+    "id": 1608253,
+    "name": "Lower bracket round 1 match 1: TL vs SGE",
+    "status": "finished",
+    "results": [
+      {
+        "score": 2,
+        "team_id": 128541
+      },
+      {
+        "score": 1,
+        "team_id": 134406
+      }
+    ],
+    "live": {
+      "supported": false,
+      "url": null,
+      "opens_at": null
+    },
+    "begin_at": "2026-08-22T14:06:33Z",
+    "detailed_stats": true,
+    "end_at": "2026-08-22T16:08:51Z",
+    "forfeit": false,
+    "winner_id": 128541,
+    "winner_type": "Team",
+    "draw": false,
+    "slug": "eintracht-frankfurt-2026-08-22",
+    "games": [
+      {
+        "complete": true,
+        "id": 51496,
+        "position": 1,
+        "status": "finished",
+        "length": 2442,
+        "finished": true,
+        "begin_at": "2026-08-22T14:06:35Z",
+        "detailed_stats": true,
+        "end_at": "2026-08-22T14:47:17Z",
+        "forfeit": false,
+        "match_id": 1608253,
+        "winner_type": "Team",
+        "winner": {
+          "id": 134406,
+          "type": "Team"
+        }
+      },
+      {
+        "complete": true,
+        "id": 51497,
+        "position": 2,
+        "status": "finished",
+        "length": 1652,
+        "finished": true,
+        "begin_at": "2026-08-22T14:59:29Z",
+        "detailed_stats": true,
+        "end_at": "2026-08-22T15:27:01Z",
+        "forfeit": false,
+        "match_id": 1608253,
+        "winner_type": "Team",
+        "winner": {
+          "id": 128541,
+          "type": "Team"
+        }
+      },
+      {
+        "complete": true,
+        "id": 51498,
+        "position": 3,
+        "status": "finished",
+        "length": 1720,
+        "finished": true,
+        "begin_at": "2026-08-22T15:40:11Z",
+        "detailed_stats": true,
+        "end_at": "2026-08-22T16:08:52Z",
+        "forfeit": false,
+        "match_id": 1608253,
+        "winner_type": "Team",
+        "winner": {
+          "id": 128541,
+          "type": "Team"
+        }
+      }
+    ],
+    "tournament_id": 21570,
+    "modified_at": "2026-08-22T16:25:03Z",
+    "match_type": "best_of",
+    "number_of_games": 3,
+    "scheduled_at": "2026-08-22T14:00:00Z",
+    "opponents": [
+      {
+        "type": "Team",
+        "opponent": {
+          "id": 128541,
+          "name": "Team Liquid",
+          "location": "NL",
+          "slug": "team-liquid-valorant",
+          "modified_at": "2026-08-05T18:18:41Z",
+          "acronym": "TL",
+          "image_url": "https://cdn-api.pandascore.co/images/team/image/128541/463px_team_liquid_2024_full_lightmode.png",
+          "dark_mode_image_url": "https://cdn-api.pandascore.co/dark_images/team/dark_image/128541/463px_team_liquid_2024_full_darkmode.png"
+        }
+      },
+      {
+        "type": "Team",
+        "opponent": {
+          "id": 134406,
+          "name": "Eintracht Frankfurt",
+          "location": "DE",
+          "slug": "eintracht-frankfurt-valorant",
+          "modified_at": "2026-08-16T22:36:58Z",
+          "acronym": "SGE",
+          "image_url": "https://cdn-api.pandascore.co/images/team/image/134406/600px_eintracht_frankfurt_allmode.png",
+          "dark_mode_image_url": null
+        }
+      }
+    ],
+    "previous_matches": [
+      {
+        "type": "loser",
+        "match_id": 1608209
+      }
+    ],
+    "original_scheduled_at": "2026-08-22T15:00:00Z",
+    "game_advantage": null,
+    "streams_list": [
+      {
+        "main": true,
+        "language": "en",
+        "embed_url": "https://player.twitch.tv/?channel=valorant_emea",
+        "official": true,
+        "raw_url": "https://www.twitch.tv/valorant_emea"
+      },
+      {
+        "main": false,
+        "language": "fr",
+        "embed_url": "https://player.twitch.tv/?channel=valorant_fr",
+        "official": false,
+        "raw_url": "https://www.twitch.tv/valorant_fr"
+      },
+      {
+        "main": false,
+        "language": "es",
+        "embed_url": "https://player.twitch.tv/?channel=valorant_es",
+        "official": false,
+        "raw_url": "https://www.twitch.tv/valorant_es"
+      }
+    ]
+  },
+  {
+    "id": 1608239,
+    "name": "Lower bracket quarterfinal 2: BBL vs FF",
+    "status": "not_started",
+    "results": [
+      {
+        "score": 0,
+        "team_id": 129194
+      },
+      {
+        "score": 0,
+        "team_id": 128577
+      }
+    ],
+    "live": {
+      "supported": false,
+      "url": null,
+      "opens_at": null
+    },
+    "begin_at": "2026-08-23T17:00:00Z",
+    "detailed_stats": true,
+    "end_at": null,
+    "forfeit": false,
+    "winner_id": null,
+    "winner_type": "Team",
+    "draw": false,
+    "slug": "bbl-esports-2026-08-23",
+    "games": [
+      {
+        "complete": false,
+        "id": 51493,
+        "position": 1,
+        "status": "not_started",
+        "length": null,
+        "finished": false,
+        "begin_at": null,
+        "detailed_stats": true,
+        "end_at": null,
+        "forfeit": false,
+        "match_id": 1608239,
+        "winner_type": "Team",
+        "winner": {
+          "id": null,
+          "type": "Team"
+        }
+      },
+      {
+        "complete": false,
+        "id": 51494,
+        "position": 2,
+        "status": "not_started",
+        "length": null,
+        "finished": false,
+        "begin_at": null,
+        "detailed_stats": true,
+        "end_at": null,
+        "forfeit": false,
+        "match_id": 1608239,
+        "winner_type": "Team",
+        "winner": {
+          "id": null,
+          "type": "Team"
+        }
+      },
+      {
+        "complete": false,
+        "id": 51495,
+        "position": 3,
+        "status": "not_started",
+        "length": null,
+        "finished": false,
+        "begin_at": null,
+        "detailed_stats": true,
+        "end_at": null,
+        "forfeit": false,
+        "match_id": 1608239,
+        "winner_type": "Team",
+        "winner": {
+          "id": null,
+          "type": "Team"
+        }
+      }
+    ],
+    "tournament_id": 21570,
+    "modified_at": "2026-08-22T19:28:21Z",
+    "match_type": "best_of",
+    "number_of_games": 3,
+    "scheduled_at": "2026-08-23T17:00:00Z",
+    "opponents": [
+      {
+        "type": "Team",
+        "opponent": {
+          "id": 128577,
+          "name": "BBL Esports",
+          "location": "TR",
+          "slug": "bbl-esports",
+          "modified_at": "2026-08-05T18:18:43Z",
+          "acronym": "BBL",
+          "image_url": "https://cdn-api.pandascore.co/images/team/image/128577/600px_bbl_esports_2022_full_lightmode.png",
+          "dark_mode_image_url": "https://cdn-api.pandascore.co/dark_images/team/dark_image/128577/190px_bbl_esports_2022_darkmode.png"
+        }
+      },
+      {
+        "type": "Team",
+        "opponent": {
+          "id": 129194,
+          "name": "Fire Flux Esports",
+          "location": "TR",
+          "slug": "fire-flux-esports",
+          "modified_at": "2026-08-16T22:36:59Z",
+          "acronym": "FF",
+          "image_url": "https://cdn-api.pandascore.co/images/team/image/129194/60b41997755c0.png",
+          "dark_mode_image_url": null
+        }
+      }
+    ],
+    "previous_matches": [
+      {
+        "type": "winner",
+        "match_id": 1608254
+      },
+      {
+        "type": "loser",
+        "match_id": 1608211
+      }
+    ],
+    "original_scheduled_at": "2026-08-23T18:00:00Z",
+    "game_advantage": null,
+    "streams_list": [
+      {
+        "main": true,
+        "language": "en",
+        "embed_url": "https://player.twitch.tv/?channel=valorant_emea",
+        "official": true,
+        "raw_url": "https://www.twitch.tv/valorant_emea"
+      },
+      {
+        "main": false,
+        "language": "fr",
+        "embed_url": "https://player.twitch.tv/?channel=valorant_fr",
+        "official": false,
+        "raw_url": "https://www.twitch.tv/valorant_fr"
+      },
+      {
+        "main": false,
+        "language": "es",
+        "embed_url": "https://player.twitch.tv/?channel=valorant_es",
+        "official": false,
+        "raw_url": "https://www.twitch.tv/valorant_es"
+      }
+    ]
+  },
+  {
+    "id": 1608238,
+    "name": "Lower bracket quarterfinal 1: EP vs TL",
+    "status": "not_started",
+    "results": [
+      {
+        "score": 0,
+        "team_id": 128541
+      },
+      {
+        "score": 0,
+        "team_id": 130973
+      }
+    ],
+    "live": {
+      "supported": false,
+      "url": null,
+      "opens_at": null
+    },
+    "begin_at": "2026-08-23T14:00:00Z",
+    "detailed_stats": true,
+    "end_at": null,
+    "forfeit": false,
+    "winner_id": null,
+    "winner_type": "Team",
+    "draw": false,
+    "slug": "enterprise-esports-2026-08-23",
+    "games": [
+      {
+        "complete": false,
+        "id": 51490,
+        "position": 1,
+        "status": "not_started",
+        "length": null,
+        "finished": false,
+        "begin_at": null,
+        "detailed_stats": true,
+        "end_at": null,
+        "forfeit": false,
+        "match_id": 1608238,
+        "winner_type": "Team",
+        "winner": {
+          "id": null,
+          "type": "Team"
+        }
+      },
+      {
+        "complete": false,
+        "id": 51491,
+        "position": 2,
+        "status": "not_started",
+        "length": null,
+        "finished": false,
+        "begin_at": null,
+        "detailed_stats": true,
+        "end_at": null,
+        "forfeit": false,
+        "match_id": 1608238,
+        "winner_type": "Team",
+        "winner": {
+          "id": null,
+          "type": "Team"
+        }
+      },
+      {
+        "complete": false,
+        "id": 51492,
+        "position": 3,
+        "status": "not_started",
+        "length": null,
+        "finished": false,
+        "begin_at": null,
+        "detailed_stats": true,
+        "end_at": null,
+        "forfeit": false,
+        "match_id": 1608238,
+        "winner_type": "Team",
+        "winner": {
+          "id": null,
+          "type": "Team"
+        }
+      }
+    ],
+    "tournament_id": 21570,
+    "modified_at": "2026-08-22T16:08:52Z",
+    "match_type": "best_of",
+    "number_of_games": 3,
+    "scheduled_at": "2026-08-23T14:00:00Z",
+    "opponents": [
+      {
+        "type": "Team",
+        "opponent": {
+          "id": 130973,
+          "name": "Enterprise Esports",
+          "location": "CZ",
+          "slug": "enterprise-esports-valorant",
+          "modified_at": "2026-08-16T22:36:57Z",
+          "acronym": "EP",
+          "image_url": "https://cdn-api.pandascore.co/images/team/image/130973/600px_enterprise_esports_allmode.png",
+          "dark_mode_image_url": null
+        }
+      },
+      {
+        "type": "Team",
+        "opponent": {
+          "id": 128541,
+          "name": "Team Liquid",
+          "location": "NL",
+          "slug": "team-liquid-valorant",
+          "modified_at": "2026-08-05T18:18:41Z",
+          "acronym": "TL",
+          "image_url": "https://cdn-api.pandascore.co/images/team/image/128541/463px_team_liquid_2024_full_lightmode.png",
+          "dark_mode_image_url": "https://cdn-api.pandascore.co/dark_images/team/dark_image/128541/463px_team_liquid_2024_full_darkmode.png"
+        }
+      }
+    ],
+    "previous_matches": [
+      {
+        "type": "winner",
+        "match_id": 1608253
+      },
+      {
+        "type": "loser",
+        "match_id": 1608212
+      }
+    ],
+    "original_scheduled_at": "2026-08-23T15:00:00Z",
+    "game_advantage": null,
+    "streams_list": [
+      {
+        "main": true,
+        "language": "en",
+        "embed_url": "https://player.twitch.tv/?channel=valorant_emea",
+        "official": true,
+        "raw_url": "https://www.twitch.tv/valorant_emea"
+      },
+      {
+        "main": false,
+        "language": "fr",
+        "embed_url": "https://player.twitch.tv/?channel=valorant_fr",
+        "official": false,
+        "raw_url": "https://www.twitch.tv/valorant_fr"
+      },
+      {
+        "main": false,
+        "language": "es",
+        "embed_url": "https://player.twitch.tv/?channel=valorant_es",
+        "official": false,
+        "raw_url": "https://www.twitch.tv/valorant_es"
+      }
+    ]
+  },
+  {
+    "id": 1608230,
+    "name": "Lower bracket semifinal: TBD vs TBD",
+    "status": "not_started",
+    "results": [],
+    "live": {
+      "supported": false,
+      "url": null,
+      "opens_at": null
+    },
+    "begin_at": "2026-08-28T17:00:00Z",
+    "detailed_stats": true,
+    "end_at": null,
+    "forfeit": false,
+    "winner_id": null,
+    "winner_type": "Team",
+    "draw": false,
+    "slug": "2026-08-28-e3895750-598d-415f-adbb-1a338a33cffb",
+    "games": [
+      {
+        "complete": false,
+        "id": 51487,
+        "position": 1,
+        "status": "not_started",
+        "length": null,
+        "finished": false,
+        "begin_at": null,
+        "detailed_stats": true,
+        "end_at": null,
+        "forfeit": false,
+        "match_id": 1608230,
+        "winner_type": "Team",
+        "winner": {
+          "id": null,
+          "type": "Team"
+        }
+      },
+      {
+        "complete": false,
+        "id": 51488,
+        "position": 2,
+        "status": "not_started",
+        "length": null,
+        "finished": false,
+        "begin_at": null,
+        "detailed_stats": true,
+        "end_at": null,
+        "forfeit": false,
+        "match_id": 1608230,
+        "winner_type": "Team",
+        "winner": {
+          "id": null,
+          "type": "Team"
+        }
+      },
+      {
+        "complete": false,
+        "id": 51489,
+        "position": 3,
+        "status": "not_started",
+        "length": null,
+        "finished": false,
+        "begin_at": null,
+        "detailed_stats": true,
+        "end_at": null,
+        "forfeit": false,
+        "match_id": 1608230,
+        "winner_type": "Team",
+        "winner": {
+          "id": null,
+          "type": "Team"
+        }
+      }
+    ],
+    "tournament_id": 21570,
+    "modified_at": "2026-08-19T06:28:30Z",
+    "match_type": "best_of",
+    "number_of_games": 3,
+    "scheduled_at": "2026-08-28T17:00:00Z",
+    "opponents": [],
+    "previous_matches": [
+      {
+        "type": "winner",
+        "match_id": 1608239
+      },
+      {
+        "type": "winner",
+        "match_id": 1608238
+      }
+    ],
+    "original_scheduled_at": "2026-08-28T18:00:00Z",
+    "game_advantage": null,
+    "streams_list": [
+      {
+        "main": false,
+        "language": "es",
+        "embed_url": "https://player.twitch.tv/?channel=valorant_es",
+        "official": false,
+        "raw_url": "https://www.twitch.tv/valorant_es"
+      },
+      {
+        "main": false,
+        "language": "fr",
+        "embed_url": "https://player.twitch.tv/?channel=valorant_fr",
+        "official": false,
+        "raw_url": "https://www.twitch.tv/valorant_fr"
+      },
+      {
+        "main": true,
+        "language": "en",
+        "embed_url": "https://player.twitch.tv/?channel=valorant_emea",
+        "official": true,
+        "raw_url": "https://www.twitch.tv/valorant_emea"
+      }
+    ]
+  },
+  {
+    "id": 1608229,
+    "name": "Lower bracket final: TBD vs TBD",
+    "status": "not_started",
+    "results": [],
+    "live": {
+      "supported": false,
+      "url": null,
+      "opens_at": null
+    },
+    "begin_at": "2026-08-29T15:00:00Z",
+    "detailed_stats": true,
+    "end_at": null,
+    "forfeit": false,
+    "winner_id": null,
+    "winner_type": "Team",
+    "draw": false,
+    "slug": "2026-08-29-1fd3d0c2-b3c0-4ae0-863a-0ec75d993f27",
+    "games": [
+      {
+        "complete": false,
+        "id": 51482,
+        "position": 1,
+        "status": "not_started",
+        "length": null,
+        "finished": false,
+        "begin_at": null,
+        "detailed_stats": true,
+        "end_at": null,
+        "forfeit": false,
+        "match_id": 1608229,
+        "winner_type": "Team",
+        "winner": {
+          "id": null,
+          "type": "Team"
+        }
+      },
+      {
+        "complete": false,
+        "id": 51483,
+        "position": 2,
+        "status": "not_started",
+        "length": null,
+        "finished": false,
+        "begin_at": null,
+        "detailed_stats": true,
+        "end_at": null,
+        "forfeit": false,
+        "match_id": 1608229,
+        "winner_type": "Team",
+        "winner": {
+          "id": null,
+          "type": "Team"
+        }
+      },
+      {
+        "complete": false,
+        "id": 51484,
+        "position": 3,
+        "status": "not_started",
+        "length": null,
+        "finished": false,
+        "begin_at": null,
+        "detailed_stats": true,
+        "end_at": null,
+        "forfeit": false,
+        "match_id": 1608229,
+        "winner_type": "Team",
+        "winner": {
+          "id": null,
+          "type": "Team"
+        }
+      },
+      {
+        "complete": false,
+        "id": 51485,
+        "position": 4,
+        "status": "not_started",
+        "length": null,
+        "finished": false,
+        "begin_at": null,
+        "detailed_stats": true,
+        "end_at": null,
+        "forfeit": false,
+        "match_id": 1608229,
+        "winner_type": "Team",
+        "winner": {
+          "id": null,
+          "type": "Team"
+        }
+      },
+      {
+        "complete": false,
+        "id": 51486,
+        "position": 5,
+        "status": "not_started",
+        "length": null,
+        "finished": false,
+        "begin_at": null,
+        "detailed_stats": true,
+        "end_at": null,
+        "forfeit": false,
+        "match_id": 1608229,
+        "winner_type": "Team",
+        "winner": {
+          "id": null,
+          "type": "Team"
+        }
+      }
+    ],
+    "tournament_id": 21570,
+    "modified_at": "2026-08-19T06:28:50Z",
+    "match_type": "best_of",
+    "number_of_games": 5,
+    "scheduled_at": "2026-08-29T15:00:00Z",
+    "opponents": [],
+    "previous_matches": [
+      {
+        "type": "winner",
+        "match_id": 1608230
+      },
+      {
+        "type": "loser",
+        "match_id": 1608213
+      }
+    ],
+    "original_scheduled_at": "2026-08-29T16:00:00Z",
+    "game_advantage": null,
+    "streams_list": [
+      {
+        "main": false,
+        "language": "es",
+        "embed_url": "https://player.twitch.tv/?channel=valorant_es",
+        "official": false,
+        "raw_url": "https://www.twitch.tv/valorant_es"
+      },
+      {
+        "main": false,
+        "language": "fr",
+        "embed_url": "https://player.twitch.tv/?channel=valorant_fr",
+        "official": false,
+        "raw_url": "https://www.twitch.tv/valorant_fr"
+      },
+      {
+        "main": true,
+        "language": "en",
+        "embed_url": "https://player.twitch.tv/?channel=valorant_emea",
+        "official": true,
+        "raw_url": "https://www.twitch.tv/valorant_emea"
+      }
+    ]
+  },
+  {
+    "id": 1608215,
+    "name": "Grand final: TBD vs TBD",
+    "status": "not_started",
+    "results": [],
+    "live": {
+      "supported": false,
+      "url": null,
+      "opens_at": null
+    },
+    "begin_at": "2026-08-30T15:00:00Z",
+    "detailed_stats": true,
+    "end_at": null,
+    "forfeit": false,
+    "winner_id": null,
+    "winner_type": "Team",
+    "draw": false,
+    "slug": "2026-08-30-09d640cc-db6c-4520-aad3-1a712cc3672c",
+    "games": [
+      {
+        "complete": false,
+        "id": 51477,
+        "position": 1,
+        "status": "not_started",
+        "length": null,
+        "finished": false,
+        "begin_at": null,
+        "detailed_stats": true,
+        "end_at": null,
+        "forfeit": false,
+        "match_id": 1608215,
+        "winner_type": "Team",
+        "winner": {
+          "id": null,
+          "type": "Team"
+        }
+      },
+      {
+        "complete": false,
+        "id": 51478,
+        "position": 2,
+        "status": "not_started",
+        "length": null,
+        "finished": false,
+        "begin_at": null,
+        "detailed_stats": true,
+        "end_at": null,
+        "forfeit": false,
+        "match_id": 1608215,
+        "winner_type": "Team",
+        "winner": {
+          "id": null,
+          "type": "Team"
+        }
+      },
+      {
+        "complete": false,
+        "id": 51479,
+        "position": 3,
+        "status": "not_started",
+        "length": null,
+        "finished": false,
+        "begin_at": null,
+        "detailed_stats": true,
+        "end_at": null,
+        "forfeit": false,
+        "match_id": 1608215,
+        "winner_type": "Team",
+        "winner": {
+          "id": null,
+          "type": "Team"
+        }
+      },
+      {
+        "complete": false,
+        "id": 51480,
+        "position": 4,
+        "status": "not_started",
+        "length": null,
+        "finished": false,
+        "begin_at": null,
+        "detailed_stats": true,
+        "end_at": null,
+        "forfeit": false,
+        "match_id": 1608215,
+        "winner_type": "Team",
+        "winner": {
+          "id": null,
+          "type": "Team"
+        }
+      },
+      {
+        "complete": false,
+        "id": 51481,
+        "position": 5,
+        "status": "not_started",
+        "length": null,
+        "finished": false,
+        "begin_at": null,
+        "detailed_stats": true,
+        "end_at": null,
+        "forfeit": false,
+        "match_id": 1608215,
+        "winner_type": "Team",
+        "winner": {
+          "id": null,
+          "type": "Team"
+        }
+      }
+    ],
+    "tournament_id": 21570,
+    "modified_at": "2026-08-19T06:28:55Z",
+    "match_type": "best_of",
+    "number_of_games": 5,
+    "scheduled_at": "2026-08-30T15:00:00Z",
+    "opponents": [],
+    "previous_matches": [
+      {
+        "type": "winner",
+        "match_id": 1608229
+      },
+      {
+        "type": "winner",
+        "match_id": 1608213
+      }
+    ],
+    "original_scheduled_at": "2026-08-30T16:00:00Z",
+    "game_advantage": null,
+    "streams_list": [
+      {
+        "main": false,
+        "language": "es",
+        "embed_url": "https://player.twitch.tv/?channel=valorant_es",
+        "official": false,
+        "raw_url": "https://www.twitch.tv/valorant_es"
+      },
+      {
+        "main": false,
+        "language": "fr",
+        "embed_url": "https://player.twitch.tv/?channel=valorant_fr",
+        "official": false,
+        "raw_url": "https://www.twitch.tv/valorant_fr"
+      },
+      {
+        "main": true,
+        "language": "en",
+        "embed_url": "https://player.twitch.tv/?channel=valorant_emea",
+        "official": true,
+        "raw_url": "https://www.twitch.tv/valorant_emea"
+      }
+    ]
+  },
+  {
+    "id": 1608213,
+    "name": "Upper bracket final : FUT vs KC",
+    "status": "not_started",
+    "results": [
+      {
+        "score": 0,
+        "team_id": 128578
+      },
+      {
+        "score": 0,
+        "team_id": 130922
+      }
+    ],
+    "live": {
+      "supported": false,
+      "url": null,
+      "opens_at": null
+    },
+    "begin_at": "2026-08-28T14:00:00Z",
+    "detailed_stats": true,
+    "end_at": null,
+    "forfeit": false,
+    "winner_id": null,
+    "winner_type": "Team",
+    "draw": false,
+    "slug": "karmine-corp-2026-08-28",
+    "games": [
+      {
+        "complete": false,
+        "id": 51469,
+        "position": 1,
+        "status": "not_started",
+        "length": null,
+        "finished": false,
+        "begin_at": null,
+        "detailed_stats": true,
+        "end_at": null,
+        "forfeit": false,
+        "match_id": 1608213,
+        "winner_type": "Team",
+        "winner": {
+          "id": null,
+          "type": "Team"
+        }
+      },
+      {
+        "complete": false,
+        "id": 51470,
+        "position": 2,
+        "status": "not_started",
+        "length": null,
+        "finished": false,
+        "begin_at": null,
+        "detailed_stats": true,
+        "end_at": null,
+        "forfeit": false,
+        "match_id": 1608213,
+        "winner_type": "Team",
+        "winner": {
+          "id": null,
+          "type": "Team"
+        }
+      },
+      {
+        "complete": false,
+        "id": 51471,
+        "position": 3,
+        "status": "not_started",
+        "length": null,
+        "finished": false,
+        "begin_at": null,
+        "detailed_stats": true,
+        "end_at": null,
+        "forfeit": false,
+        "match_id": 1608213,
+        "winner_type": "Team",
+        "winner": {
+          "id": null,
+          "type": "Team"
+        }
+      }
+    ],
+    "tournament_id": 21570,
+    "modified_at": "2026-08-22T03:32:13Z",
+    "match_type": "best_of",
+    "number_of_games": 3,
+    "scheduled_at": "2026-08-28T14:00:00Z",
+    "opponents": [
+      {
+        "type": "Team",
+        "opponent": {
+          "id": 128578,
+          "name": "FUT Esports",
+          "location": "TR",
+          "slug": "futbolist",
+          "modified_at": "2026-08-16T22:36:55Z",
+          "acronym": "FUT",
+          "image_url": "https://cdn-api.pandascore.co/images/team/image/128578/600px_futbolist_new_logo_2021_infobox.png",
+          "dark_mode_image_url": "https://cdn-api.pandascore.co/dark_images/team/dark_image/128578/600px_futbolist_2021_darkmode.png"
+        }
+      },
+      {
+        "type": "Team",
+        "opponent": {
+          "id": 130922,
+          "name": "Karmine Corp",
+          "location": "FR",
+          "slug": "karmine-corp-valorant",
+          "modified_at": "2026-08-05T18:18:47Z",
+          "acronym": "KC",
+          "image_url": "https://cdn-api.pandascore.co/images/team/image/130922/600px_karmine_corp_lightmode_full.png",
+          "dark_mode_image_url": "https://cdn-api.pandascore.co/dark_images/team/dark_image/130922/632px_karmine_corp_allmode.png"
+        }
+      }
+    ],
+    "previous_matches": [
+      {
+        "type": "winner",
+        "match_id": 1608212
+      },
+      {
+        "type": "winner",
+        "match_id": 1608211
+      }
+    ],
+    "original_scheduled_at": "2026-08-28T15:00:00Z",
+    "game_advantage": null,
+    "streams_list": [
+      {
+        "main": true,
+        "language": "en",
+        "embed_url": "https://player.twitch.tv/?channel=valorant_emea",
+        "official": true,
+        "raw_url": "https://www.twitch.tv/valorant_emea"
+      },
+      {
+        "main": false,
+        "language": "fr",
+        "embed_url": "https://player.twitch.tv/?channel=valorant_fr",
+        "official": false,
+        "raw_url": "https://www.twitch.tv/valorant_fr"
+      },
+      {
+        "main": false,
+        "language": "es",
+        "embed_url": "https://player.twitch.tv/?channel=valorant_es",
+        "official": false,
+        "raw_url": "https://www.twitch.tv/valorant_es"
+      }
+    ]
+  },
+  {
+    "id": 1608212,
+    "name": "Upper bracket semifinal 2: EP vs KC",
+    "status": "finished",
+    "results": [
+      {
+        "score": 1,
+        "team_id": 130973
+      },
+      {
+        "score": 2,
+        "team_id": 130922
+      }
+    ],
+    "live": {
+      "supported": false,
+      "url": null,
+      "opens_at": null
+    },
+    "begin_at": "2026-08-21T15:07:20Z",
+    "detailed_stats": true,
+    "end_at": "2026-08-21T17:52:53Z",
+    "forfeit": false,
+    "winner_id": 130922,
+    "winner_type": "Team",
+    "draw": false,
+    "slug": "karmine-corp-2026-08-21",
+    "games": [
+      {
+        "complete": true,
+        "id": 51466,
+        "position": 1,
+        "status": "finished",
+        "length": 3139,
+        "finished": true,
+        "begin_at": "2026-08-21T15:07:22Z",
+        "detailed_stats": true,
+        "end_at": "2026-08-21T15:59:41Z",
+        "forfeit": false,
+        "match_id": 1608212,
+        "winner_type": "Team",
+        "winner": {
+          "id": 130922,
+          "type": "Team"
+        }
+      },
+      {
+        "complete": true,
+        "id": 51467,
+        "position": 2,
+        "status": "finished",
+        "length": 2824,
+        "finished": true,
+        "begin_at": "2026-08-21T16:12:20Z",
+        "detailed_stats": true,
+        "end_at": "2026-08-21T16:59:24Z",
+        "forfeit": false,
+        "match_id": 1608212,
+        "winner_type": "Team",
+        "winner": {
+          "id": 130973,
+          "type": "Team"
+        }
+      },
+      {
+        "complete": true,
+        "id": 51468,
+        "position": 3,
+        "status": "finished",
+        "length": 2460,
+        "finished": true,
+        "begin_at": "2026-08-21T17:11:53Z",
+        "detailed_stats": true,
+        "end_at": "2026-08-21T17:52:54Z",
+        "forfeit": false,
+        "match_id": 1608212,
+        "winner_type": "Team",
+        "winner": {
+          "id": 130922,
+          "type": "Team"
+        }
+      }
+    ],
+    "tournament_id": 21570,
+    "modified_at": "2026-08-21T18:08:02Z",
+    "match_type": "best_of",
+    "number_of_games": 3,
+    "scheduled_at": "2026-08-21T15:00:00Z",
+    "opponents": [
+      {
+        "type": "Team",
+        "opponent": {
+          "id": 130973,
+          "name": "Enterprise Esports",
+          "location": "CZ",
+          "slug": "enterprise-esports-valorant",
+          "modified_at": "2026-08-16T22:36:57Z",
+          "acronym": "EP",
+          "image_url": "https://cdn-api.pandascore.co/images/team/image/130973/600px_enterprise_esports_allmode.png",
+          "dark_mode_image_url": null
+        }
+      },
+      {
+        "type": "Team",
+        "opponent": {
+          "id": 130922,
+          "name": "Karmine Corp",
+          "location": "FR",
+          "slug": "karmine-corp-valorant",
+          "modified_at": "2026-08-05T18:18:47Z",
+          "acronym": "KC",
+          "image_url": "https://cdn-api.pandascore.co/images/team/image/130922/600px_karmine_corp_lightmode_full.png",
+          "dark_mode_image_url": "https://cdn-api.pandascore.co/dark_images/team/dark_image/130922/632px_karmine_corp_allmode.png"
+        }
+      }
+    ],
+    "previous_matches": [
+      {
+        "type": "winner",
+        "match_id": 1608210
+      }
+    ],
+    "original_scheduled_at": "2026-08-21T18:00:00Z",
+    "game_advantage": null,
+    "streams_list": [
+      {
+        "main": false,
+        "language": "en",
+        "embed_url": "https://www.youtube.com/embed/Uhf7b4fmheE",
+        "official": false,
+        "raw_url": "https://www.youtube.com/watch?v=Uhf7b4fmheE"
+      },
+      {
+        "main": true,
+        "language": "en",
+        "embed_url": "https://player.twitch.tv/?channel=valorant_emea",
+        "official": true,
+        "raw_url": "https://www.twitch.tv/valorant_emea"
+      },
+      {
+        "main": false,
+        "language": "fr",
+        "embed_url": "https://player.twitch.tv/?channel=valorant_fr",
+        "official": false,
+        "raw_url": "https://www.twitch.tv/valorant_fr"
+      },
+      {
+        "main": false,
+        "language": "es",
+        "embed_url": "https://player.twitch.tv/?channel=valorant_es",
+        "official": false,
+        "raw_url": "https://www.twitch.tv/valorant_es"
+      }
+    ]
+  },
+  {
+    "id": 1608211,
+    "name": "Upper bracket semifinal 1: BBL vs FUT",
+    "status": "finished",
+    "results": [
+      {
+        "score": 1,
+        "team_id": 128577
+      },
+      {
+        "score": 2,
+        "team_id": 128578
+      }
+    ],
+    "live": {
+      "supported": false,
+      "url": null,
+      "opens_at": null
+    },
+    "begin_at": "2026-08-21T18:20:46Z",
+    "detailed_stats": true,
+    "end_at": "2026-08-21T20:48:20Z",
+    "forfeit": false,
+    "winner_id": 128578,
+    "winner_type": "Team",
+    "draw": false,
+    "slug": "bbl-esports-2026-08-21",
+    "games": [
+      {
+        "complete": true,
+        "id": 51463,
+        "position": 1,
+        "status": "finished",
+        "length": 2910,
+        "finished": true,
+        "begin_at": "2026-08-21T18:20:48Z",
+        "detailed_stats": true,
+        "end_at": "2026-08-21T19:09:19Z",
+        "forfeit": false,
+        "match_id": 1608211,
+        "winner_type": "Team",
+        "winner": {
+          "id": 128577,
+          "type": "Team"
+        }
+      },
+      {
+        "complete": true,
+        "id": 51464,
+        "position": 2,
+        "status": "finished",
+        "length": 2216,
+        "finished": true,
+        "begin_at": "2026-08-21T19:21:56Z",
+        "detailed_stats": true,
+        "end_at": "2026-08-21T19:58:52Z",
+        "forfeit": false,
+        "match_id": 1608211,
+        "winner_type": "Team",
+        "winner": {
+          "id": 128578,
+          "type": "Team"
+        }
+      },
+      {
+        "complete": true,
+        "id": 51465,
+        "position": 3,
+        "status": "finished",
+        "length": 2137,
+        "finished": true,
+        "begin_at": "2026-08-21T20:12:43Z",
+        "detailed_stats": true,
+        "end_at": "2026-08-21T20:48:21Z",
+        "forfeit": false,
+        "match_id": 1608211,
+        "winner_type": "Team",
+        "winner": {
+          "id": 128578,
+          "type": "Team"
+        }
+      }
+    ],
+    "tournament_id": 21570,
+    "modified_at": "2026-08-21T21:59:26Z",
+    "match_type": "best_of",
+    "number_of_games": 3,
+    "scheduled_at": "2026-08-21T18:30:00Z",
+    "opponents": [
+      {
+        "type": "Team",
+        "opponent": {
+          "id": 128577,
+          "name": "BBL Esports",
+          "location": "TR",
+          "slug": "bbl-esports",
+          "modified_at": "2026-08-05T18:18:43Z",
+          "acronym": "BBL",
+          "image_url": "https://cdn-api.pandascore.co/images/team/image/128577/600px_bbl_esports_2022_full_lightmode.png",
+          "dark_mode_image_url": "https://cdn-api.pandascore.co/dark_images/team/dark_image/128577/190px_bbl_esports_2022_darkmode.png"
+        }
+      },
+      {
+        "type": "Team",
+        "opponent": {
+          "id": 128578,
+          "name": "FUT Esports",
+          "location": "TR",
+          "slug": "futbolist",
+          "modified_at": "2026-08-16T22:36:55Z",
+          "acronym": "FUT",
+          "image_url": "https://cdn-api.pandascore.co/images/team/image/128578/600px_futbolist_new_logo_2021_infobox.png",
+          "dark_mode_image_url": "https://cdn-api.pandascore.co/dark_images/team/dark_image/128578/600px_futbolist_2021_darkmode.png"
+        }
+      }
+    ],
+    "previous_matches": [
+      {
+        "type": "winner",
+        "match_id": 1608209
+      }
+    ],
+    "original_scheduled_at": "2026-08-21T15:00:00Z",
+    "game_advantage": null,
+    "streams_list": [
+      {
+        "main": false,
+        "language": "en",
+        "embed_url": "https://www.youtube.com/embed/Uhf7b4fmheE",
+        "official": false,
+        "raw_url": "https://www.youtube.com/watch?v=Uhf7b4fmheE"
+      },
+      {
+        "main": true,
+        "language": "en",
+        "embed_url": "https://player.twitch.tv/?channel=valorant_emea",
+        "official": true,
+        "raw_url": "https://www.twitch.tv/valorant_emea"
+      },
+      {
+        "main": false,
+        "language": "fr",
+        "embed_url": "https://player.twitch.tv/?channel=valorant_fr",
+        "official": false,
+        "raw_url": "https://www.twitch.tv/valorant_fr"
+      },
+      {
+        "main": false,
+        "language": "es",
+        "embed_url": "https://player.twitch.tv/?channel=valorant_es",
+        "official": false,
+        "raw_url": "https://www.twitch.tv/valorant_es"
+      }
+    ]
+  },
+  {
+    "id": 1608210,
+    "name": "Upper bracket quarterfinal 2: VIT vs EP",
+    "status": "finished",
+    "results": [
+      {
+        "score": 2,
+        "team_id": 130973
+      },
+      {
+        "score": 1,
+        "team_id": 128796
+      }
+    ],
+    "live": {
+      "supported": false,
+      "url": null,
+      "opens_at": null
+    },
+    "begin_at": "2026-08-20T15:07:39Z",
+    "detailed_stats": true,
+    "end_at": "2026-08-20T17:40:28Z",
+    "forfeit": false,
+    "winner_id": 130973,
+    "winner_type": "Team",
+    "draw": false,
+    "slug": "2026-08-20-d192bc8d-068c-4dc3-bf99-59f191f469e0",
+    "games": [
+      {
+        "complete": true,
+        "id": 51460,
+        "position": 1,
+        "status": "finished",
+        "length": 2381,
+        "finished": true,
+        "begin_at": "2026-08-20T15:07:42Z",
+        "detailed_stats": true,
+        "end_at": "2026-08-20T15:47:23Z",
+        "forfeit": false,
+        "match_id": 1608210,
+        "winner_type": "Team",
+        "winner": {
+          "id": 128796,
+          "type": "Team"
+        }
+      },
+      {
+        "complete": true,
+        "id": 51461,
+        "position": 2,
+        "status": "finished",
+        "length": 3118,
+        "finished": true,
+        "begin_at": "2026-08-20T16:00:35Z",
+        "detailed_stats": true,
+        "end_at": "2026-08-20T16:52:33Z",
+        "forfeit": false,
+        "match_id": 1608210,
+        "winner_type": "Team",
+        "winner": {
+          "id": 130973,
+          "type": "Team"
+        }
+      },
+      {
+        "complete": true,
+        "id": 51462,
+        "position": 3,
+        "status": "finished",
+        "length": 2081,
+        "finished": true,
+        "begin_at": "2026-08-20T17:05:47Z",
+        "detailed_stats": true,
+        "end_at": "2026-08-20T17:40:28Z",
+        "forfeit": false,
+        "match_id": 1608210,
+        "winner_type": "Team",
+        "winner": {
+          "id": 130973,
+          "type": "Team"
+        }
+      }
+    ],
+    "tournament_id": 21570,
+    "modified_at": "2026-08-20T18:00:47Z",
+    "match_type": "best_of",
+    "number_of_games": 3,
+    "scheduled_at": "2026-08-20T15:00:00Z",
+    "opponents": [
+      {
+        "type": "Team",
+        "opponent": {
+          "id": 128796,
+          "name": "Team Vitality",
+          "location": "FR",
+          "slug": "team-vitality-valorant",
+          "modified_at": "2026-08-05T18:18:45Z",
+          "acronym": "VIT",
+          "image_url": "https://cdn-api.pandascore.co/images/team/image/128796/600px_team_vitality_2023_darkmode.png",
+          "dark_mode_image_url": "https://cdn-api.pandascore.co/dark_images/team/dark_image/128796/600px_team_vitality_2023_darkmode.png"
+        }
+      },
+      {
+        "type": "Team",
+        "opponent": {
+          "id": 130973,
+          "name": "Enterprise Esports",
+          "location": "CZ",
+          "slug": "enterprise-esports-valorant",
+          "modified_at": "2026-08-16T22:36:57Z",
+          "acronym": "EP",
+          "image_url": "https://cdn-api.pandascore.co/images/team/image/130973/600px_enterprise_esports_allmode.png",
+          "dark_mode_image_url": null
+        }
+      }
+    ],
+    "previous_matches": [],
+    "original_scheduled_at": "2026-08-20T18:00:00Z",
+    "game_advantage": null,
+    "streams_list": [
+      {
+        "main": false,
+        "language": "en",
+        "embed_url": "https://www.youtube.com/embed/2C7mKxPzWgY",
+        "official": false,
+        "raw_url": "https://www.youtube.com/watch?v=2C7mKxPzWgY"
+      },
+      {
+        "main": true,
+        "language": "en",
+        "embed_url": "https://player.twitch.tv/?channel=valorant_emea",
+        "official": true,
+        "raw_url": "https://www.twitch.tv/valorant_emea"
+      },
+      {
+        "main": false,
+        "language": "fr",
+        "embed_url": "https://player.twitch.tv/?channel=valorant_fr",
+        "official": false,
+        "raw_url": "https://www.twitch.tv/valorant_fr"
+      },
+      {
+        "main": false,
+        "language": "es",
+        "embed_url": "https://player.twitch.tv/?channel=valorant_es",
+        "official": false,
+        "raw_url": "https://www.twitch.tv/valorant_es"
+      }
+    ]
+  },
+  {
+    "id": 1608209,
+    "name": "Upper bracket quarterfinal 1: TL vs FUT",
+    "status": "finished",
+    "results": [
+      {
+        "score": 2,
+        "team_id": 128578
+      },
+      {
+        "score": 0,
+        "team_id": 128541
+      }
+    ],
+    "live": {
+      "supported": false,
+      "url": null,
+      "opens_at": null
+    },
+    "begin_at": "2026-08-20T18:08:19Z",
+    "detailed_stats": true,
+    "end_at": "2026-08-20T19:59:20Z",
+    "forfeit": false,
+    "winner_id": 128578,
+    "winner_type": "Team",
+    "draw": false,
+    "slug": "2026-08-20-b20646e3-1cc2-40fa-9a8e-923db53457c6",
+    "games": [
+      {
+        "complete": true,
+        "id": 51457,
+        "position": 1,
+        "status": "finished",
+        "length": 2818,
+        "finished": true,
+        "begin_at": "2026-08-20T18:08:46Z",
+        "detailed_stats": true,
+        "end_at": "2026-08-20T18:55:44Z",
+        "forfeit": false,
+        "match_id": 1608209,
+        "winner_type": "Team",
+        "winner": {
+          "id": 128578,
+          "type": "Team"
+        }
+      },
+      {
+        "complete": true,
+        "id": 51458,
+        "position": 2,
+        "status": "finished",
+        "length": 3086,
+        "finished": true,
+        "begin_at": "2026-08-20T19:07:54Z",
+        "detailed_stats": true,
+        "end_at": "2026-08-20T19:59:21Z",
+        "forfeit": false,
+        "match_id": 1608209,
+        "winner_type": "Team",
+        "winner": {
+          "id": 128578,
+          "type": "Team"
+        }
+      }
+    ],
+    "tournament_id": 21570,
+    "modified_at": "2026-08-20T20:14:59Z",
+    "match_type": "best_of",
+    "number_of_games": 3,
+    "scheduled_at": "2026-08-20T18:00:00Z",
+    "opponents": [
+      {
+        "type": "Team",
+        "opponent": {
+          "id": 128541,
+          "name": "Team Liquid",
+          "location": "NL",
+          "slug": "team-liquid-valorant",
+          "modified_at": "2026-08-05T18:18:41Z",
+          "acronym": "TL",
+          "image_url": "https://cdn-api.pandascore.co/images/team/image/128541/463px_team_liquid_2024_full_lightmode.png",
+          "dark_mode_image_url": "https://cdn-api.pandascore.co/dark_images/team/dark_image/128541/463px_team_liquid_2024_full_darkmode.png"
+        }
+      },
+      {
+        "type": "Team",
+        "opponent": {
+          "id": 128578,
+          "name": "FUT Esports",
+          "location": "TR",
+          "slug": "futbolist",
+          "modified_at": "2026-08-16T22:36:55Z",
+          "acronym": "FUT",
+          "image_url": "https://cdn-api.pandascore.co/images/team/image/128578/600px_futbolist_new_logo_2021_infobox.png",
+          "dark_mode_image_url": "https://cdn-api.pandascore.co/dark_images/team/dark_image/128578/600px_futbolist_2021_darkmode.png"
+        }
+      }
+    ],
+    "previous_matches": [],
+    "original_scheduled_at": "2026-08-20T15:00:00Z",
+    "game_advantage": null,
+    "streams_list": [
+      {
+        "main": false,
+        "language": "en",
+        "embed_url": "https://www.youtube.com/embed/2C7mKxPzWgY",
+        "official": false,
+        "raw_url": "https://www.youtube.com/watch?v=2C7mKxPzWgY"
+      },
+      {
+        "main": true,
+        "language": "en",
+        "embed_url": "https://player.twitch.tv/?channel=valorant_emea",
+        "official": true,
+        "raw_url": "https://www.twitch.tv/valorant_emea"
+      },
+      {
+        "main": false,
+        "language": "fr",
+        "embed_url": "https://player.twitch.tv/?channel=valorant_fr",
+        "official": false,
+        "raw_url": "https://www.twitch.tv/valorant_fr"
+      },
+      {
+        "main": false,
+        "language": "es",
+        "embed_url": "https://player.twitch.tv/?channel=valorant_es",
+        "official": false,
+        "raw_url": "https://www.twitch.tv/valorant_es"
+      }
+    ]
+  }
+]

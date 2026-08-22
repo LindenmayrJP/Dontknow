@@ -1,0 +1,534 @@
+[
+  {
+    "opponents": [
+      {
+        "type": "Team",
+        "opponent": {
+          "id": 139085,
+          "name": "GATO PENSANTE?",
+          "location": "BR",
+          "slug": "gato-pensante",
+          "modified_at": "2026-08-08T10:07:12Z",
+          "acronym": "GP",
+          "image_url": null,
+          "dark_mode_image_url": null
+        }
+      },
+      {
+        "type": "Team",
+        "opponent": {
+          "id": 139092,
+          "name": "7VEN STARS",
+          "location": "BR",
+          "slug": "7ven-stars",
+          "modified_at": "2026-08-10T12:45:43Z",
+          "acronym": "7VEN",
+          "image_url": "https://cdn-api.pandascore.co/images/team/image/139092/799px_7_ven_allmode.png",
+          "dark_mode_image_url": null
+        }
+      }
+    ],
+    "begin_at": "2026-08-17T20:07:26Z",
+    "modified_at": "2026-08-17T22:18:38Z",
+    "winner": {
+      "id": 139092,
+      "name": "7VEN STARS",
+      "location": "BR",
+      "slug": "7ven-stars",
+      "modified_at": "2026-08-10T12:45:43Z",
+      "acronym": "7VEN",
+      "image_url": "https://cdn-api.pandascore.co/images/team/image/139092/799px_7_ven_allmode.png",
+      "dark_mode_image_url": null
+    },
+    "match_type": "best_of",
+    "original_scheduled_at": "2026-08-17T20:00:00Z",
+    "forfeit": false,
+    "draw": false,
+    "videogame_version": {
+      "name": "13.00",
+      "current": false
+    },
+    "serie_id": 10856,
+    "serie": {
+      "id": 10856,
+      "name": "Game Changers Brazil Final Stage",
+      "year": 2026,
+      "slug": "valorant-vct-2021-north-america-stage-1-challengers-1-game-changers-brazil-final-stage-2026",
+      "begin_at": "2026-08-10T20:00:00Z",
+      "end_at": "2026-09-12T01:00:00Z",
+      "winner_id": null,
+      "winner_type": "Team",
+      "modified_at": "2026-08-08T09:46:13Z",
+      "league_id": 4531,
+      "season": null,
+      "full_name": "Game Changers Brazil Final Stage 2026"
+    },
+    "videogame": {
+      "id": 26,
+      "name": "Valorant",
+      "slug": "valorant"
+    },
+    "status": "finished",
+    "tournament_id": 21650,
+    "game_advantage": null,
+    "rescheduled": false,
+    "streams_list": [
+      {
+        "main": false,
+        "language": "pt",
+        "embed_url": "https://www.youtube.com/embed/F5n2_UHzhdU",
+        "official": false,
+        "raw_url": "https://www.youtube.com/watch?v=F5n2_UHzhdU"
+      },
+      {
+        "main": true,
+        "language": "pt",
+        "embed_url": "https://player.twitch.tv/?channel=valorant_br",
+        "official": true,
+        "raw_url": "https://www.twitch.tv/valorant_br"
+      }
+    ],
+    "league_id": 4531,
+    "league": {
+      "id": 4531,
+      "name": "VCT",
+      "url": null,
+      "slug": "valorant-vct-2021-north-america-stage-1-challengers-1",
+      "modified_at": "2023-02-13T19:07:55Z",
+      "image_url": "https://cdn-api.pandascore.co/images/league/image/4531/800px-vct_2023_logo_lightmode-png"
+    },
+    "scheduled_at": "2026-08-17T20:00:00Z",
+    "videogame_title": null,
+    "results": [
+      {
+        "team_id": 139085,
+        "score": 0
+      },
+      {
+        "team_id": 139092,
+        "score": 2
+      }
+    ],
+    "winner_id": 139092,
+    "id": 1625727,
+    "name": "Lower bracket round 1 match 1: GP vs 7VEN",
+    "number_of_games": 3,
+    "live": {
+      "supported": false,
+      "url": null,
+      "opens_at": null
+    },
+    "detailed_stats": true,
+    "end_at": "2026-08-17T21:33:02Z",
+    "winner_type": "Team",
+    "tournament": {
+      "id": 21650,
+      "name": "Playoffs",
+      "type": "online/offline",
+      "country": "BR",
+      "slug": "valorant-vct-2021-north-america-stage-1-challengers-1-game-changers-brazil-final-stage-2026-playoffs",
+      "begin_at": "2026-08-10T20:00:00Z",
+      "detailed_stats": true,
+      "end_at": "2026-09-12T01:00:00Z",
+      "winner_id": null,
+      "winner_type": "Team",
+      "serie_id": 10856,
+      "modified_at": "2026-08-11T22:54:03Z",
+      "league_id": 4531,
+      "prizepool": "100,000 Brazilian Real",
+      "tier": "d",
+      "has_bracket": true,
+      "region": "SA",
+      "live_supported": false
+    },
+    "slug": "gato-pensante-2026-08-17",
+    "games": [
+      {
+        "complete": true,
+        "id": 51743,
+        "position": 1,
+        "status": "finished",
+        "length": 2511,
+        "finished": true,
+        "match_id": 1625727,
+        "winner": {
+          "id": 139092,
+          "type": "Team"
+        },
+        "begin_at": "2026-08-17T20:07:26Z",
+        "detailed_stats": true,
+        "end_at": "2026-08-17T20:49:17Z",
+        "forfeit": false,
+        "winner_type": "Team"
+      },
+      {
+        "complete": true,
+        "id": 51744,
+        "position": 2,
+        "status": "finished",
+        "length": 1888,
+        "finished": true,
+        "match_id": 1625727,
+        "winner": {
+          "id": 139092,
+          "type": "Team"
+        },
+        "begin_at": "2026-08-17T21:01:34Z",
+        "detailed_stats": true,
+        "end_at": "2026-08-17T21:33:02Z",
+        "forfeit": false,
+        "winner_type": "Team"
+      }
+    ]
+  },
+  {
+    "opponents": [
+      {
+        "type": "Team",
+        "opponent": {
+          "id": 139094,
+          "name": "Ushiras",
+          "location": "BR",
+          "slug": "ushiras",
+          "modified_at": "2026-08-11T06:14:05Z",
+          "acronym": "USHI",
+          "image_url": null,
+          "dark_mode_image_url": null
+        }
+      },
+      {
+        "type": "Team",
+        "opponent": {
+          "id": 139092,
+          "name": "7VEN STARS",
+          "location": "BR",
+          "slug": "7ven-stars",
+          "modified_at": "2026-08-10T12:45:43Z",
+          "acronym": "7VEN",
+          "image_url": "https://cdn-api.pandascore.co/images/team/image/139092/799px_7_ven_allmode.png",
+          "dark_mode_image_url": null
+        }
+      }
+    ],
+    "begin_at": "2026-08-11T06:02:04Z",
+    "modified_at": "2026-08-11T06:24:40Z",
+    "winner": {
+      "id": 139094,
+      "name": "Ushiras",
+      "location": "BR",
+      "slug": "ushiras",
+      "modified_at": "2026-08-11T06:14:05Z",
+      "acronym": "USHI",
+      "image_url": null,
+      "dark_mode_image_url": null
+    },
+    "match_type": "best_of",
+    "original_scheduled_at": "2026-08-10T23:00:00Z",
+    "forfeit": false,
+    "draw": false,
+    "videogame_version": {
+      "name": "13.01",
+      "current": false
+    },
+    "serie_id": 10856,
+    "serie": {
+      "id": 10856,
+      "name": "Game Changers Brazil Final Stage",
+      "year": 2026,
+      "slug": "valorant-vct-2021-north-america-stage-1-challengers-1-game-changers-brazil-final-stage-2026",
+      "begin_at": "2026-08-10T20:00:00Z",
+      "end_at": "2026-09-12T01:00:00Z",
+      "winner_id": null,
+      "winner_type": "Team",
+      "modified_at": "2026-08-08T09:46:13Z",
+      "league_id": 4531,
+      "season": null,
+      "full_name": "Game Changers Brazil Final Stage 2026"
+    },
+    "videogame": {
+      "id": 26,
+      "name": "Valorant",
+      "slug": "valorant"
+    },
+    "status": "finished",
+    "tournament_id": 21650,
+    "game_advantage": null,
+    "rescheduled": false,
+    "streams_list": [
+      {
+        "main": true,
+        "language": "pt",
+        "embed_url": "https://player.twitch.tv/?channel=valorant_br",
+        "official": true,
+        "raw_url": "https://www.twitch.tv/valorant_br"
+      }
+    ],
+    "league_id": 4531,
+    "league": {
+      "id": 4531,
+      "name": "VCT",
+      "url": null,
+      "slug": "valorant-vct-2021-north-america-stage-1-challengers-1",
+      "modified_at": "2023-02-13T19:07:55Z",
+      "image_url": "https://cdn-api.pandascore.co/images/league/image/4531/800px-vct_2023_logo_lightmode-png"
+    },
+    "scheduled_at": "2026-08-10T23:00:00Z",
+    "videogame_title": null,
+    "results": [
+      {
+        "team_id": 139094,
+        "score": 2
+      },
+      {
+        "team_id": 139092,
+        "score": 0
+      }
+    ],
+    "winner_id": 139094,
+    "id": 1625724,
+    "name": "Upper bracket quarterfinal 2: USHI vs 7VEN",
+    "number_of_games": 3,
+    "live": {
+      "supported": false,
+      "url": null,
+      "opens_at": null
+    },
+    "detailed_stats": true,
+    "end_at": "2026-08-11T06:02:12Z",
+    "winner_type": "Team",
+    "tournament": {
+      "id": 21650,
+      "name": "Playoffs",
+      "type": "online/offline",
+      "country": "BR",
+      "slug": "valorant-vct-2021-north-america-stage-1-challengers-1-game-changers-brazil-final-stage-2026-playoffs",
+      "begin_at": "2026-08-10T20:00:00Z",
+      "detailed_stats": true,
+      "end_at": "2026-09-12T01:00:00Z",
+      "winner_id": null,
+      "winner_type": "Team",
+      "serie_id": 10856,
+      "modified_at": "2026-08-11T22:54:03Z",
+      "league_id": 4531,
+      "prizepool": "100,000 Brazilian Real",
+      "tier": "d",
+      "has_bracket": true,
+      "region": "SA",
+      "live_supported": false
+    },
+    "slug": "ushiras-vs-7ven-stars-2026-08-11",
+    "games": [
+      {
+        "complete": true,
+        "id": 51734,
+        "position": 1,
+        "status": "finished",
+        "length": 3,
+        "finished": true,
+        "match_id": 1625724,
+        "winner": {
+          "id": 139094,
+          "type": "Team"
+        },
+        "begin_at": "2026-08-11T06:02:04Z",
+        "detailed_stats": true,
+        "end_at": "2026-08-11T06:02:07Z",
+        "forfeit": false,
+        "winner_type": "Team"
+      },
+      {
+        "complete": true,
+        "id": 51735,
+        "position": 2,
+        "status": "finished",
+        "length": 2,
+        "finished": true,
+        "match_id": 1625724,
+        "winner": {
+          "id": 139094,
+          "type": "Team"
+        },
+        "begin_at": "2026-08-11T06:02:10Z",
+        "detailed_stats": true,
+        "end_at": "2026-08-11T06:02:12Z",
+        "forfeit": false,
+        "winner_type": "Team"
+      }
+    ]
+  },
+  {
+    "opponents": [
+      {
+        "type": "Team",
+        "opponent": {
+          "id": 137327,
+          "name": "Paintress",
+          "location": "BR",
+          "slug": "paintress",
+          "modified_at": "2025-09-08T10:48:32Z",
+          "acronym": "PTR",
+          "image_url": "https://cdn-api.pandascore.co/images/team/image/137327/185px_paintress_allmode.png",
+          "dark_mode_image_url": "https://cdn-api.pandascore.co/dark_images/team/dark_image/137327/185px_paintress_allmode.png"
+        }
+      },
+      {
+        "type": "Team",
+        "opponent": {
+          "id": 137114,
+          "name": "Corinthians Esports GC",
+          "location": "",
+          "slug": "corinthians-esports-gc",
+          "modified_at": "2026-07-21T17:15:36Z",
+          "acronym": "SCCP",
+          "image_url": "https://cdn-api.pandascore.co/images/team/image/137114/140px_corinthians_allmode.png",
+          "dark_mode_image_url": null
+        }
+      }
+    ],
+    "begin_at": "2025-09-10T20:13:38Z",
+    "modified_at": "2025-09-10T23:06:43Z",
+    "winner": {
+      "id": 137114,
+      "name": "Corinthians Esports GC",
+      "location": "",
+      "slug": "corinthians-esports-gc",
+      "modified_at": "2026-07-21T17:15:36Z",
+      "acronym": "SCCP",
+      "image_url": "https://cdn-api.pandascore.co/images/team/image/137114/140px_corinthians_allmode.png",
+      "dark_mode_image_url": null
+    },
+    "match_type": "best_of",
+    "original_scheduled_at": "2025-09-23T20:00:00Z",
+    "forfeit": false,
+    "draw": false,
+    "videogame_version": {
+      "name": "10.09",
+      "current": false
+    },
+    "serie_id": 9648,
+    "serie": {
+      "id": 9648,
+      "name": "Game Changers Brazil Final Stage",
+      "year": 2025,
+      "slug": "valorant-vct-2021-north-america-stage-1-challengers-1-game-changers-brazil-final-stage-2025",
+      "begin_at": "2025-09-08T20:00:00Z",
+      "end_at": "2025-10-12T00:00:00Z",
+      "winner_id": 131527,
+      "winner_type": "Team",
+      "modified_at": "2025-10-12T06:43:13Z",
+      "league_id": 4531,
+      "season": null,
+      "full_name": "Game Changers Brazil Final Stage 2025"
+    },
+    "videogame": {
+      "id": 26,
+      "name": "Valorant",
+      "slug": "valorant"
+    },
+    "status": "finished",
+    "tournament_id": 17519,
+    "game_advantage": null,
+    "rescheduled": true,
+    "streams_list": [
+      {
+        "main": true,
+        "language": "pt",
+        "embed_url": "https://player.twitch.tv/?channel=tixinhadois",
+        "official": true,
+        "raw_url": "https://www.twitch.tv/tixinhadois"
+      }
+    ],
+    "league_id": 4531,
+    "league": {
+      "id": 4531,
+      "name": "VCT",
+      "url": null,
+      "slug": "valorant-vct-2021-north-america-stage-1-challengers-1",
+      "modified_at": "2023-02-13T19:07:55Z",
+      "image_url": "https://cdn-api.pandascore.co/images/league/image/4531/800px-vct_2023_logo_lightmode-png"
+    },
+    "scheduled_at": "2025-09-10T20:15:00Z",
+    "videogame_title": null,
+    "results": [
+      {
+        "team_id": 137327,
+        "score": 0
+      },
+      {
+        "team_id": 137114,
+        "score": 2
+      }
+    ],
+    "winner_id": 137114,
+    "id": 1234200,
+    "name": "Lower bracket round 1 match 1: PTR vs SCCP",
+    "number_of_games": 3,
+    "live": {
+      "supported": false,
+      "url": null,
+      "opens_at": null
+    },
+    "detailed_stats": true,
+    "end_at": "2025-09-10T22:02:16Z",
+    "winner_type": "Team",
+    "tournament": {
+      "id": 17519,
+      "name": "Playoffs",
+      "type": "online/offline",
+      "country": "BR",
+      "slug": "valorant-vct-2021-north-america-stage-1-challengers-1-game-changers-brazil-final-stage-2025-playoffs",
+      "begin_at": "2025-09-08T20:00:00Z",
+      "detailed_stats": true,
+      "end_at": "2025-10-12T02:00:00Z",
+      "winner_id": 131527,
+      "winner_type": "Team",
+      "serie_id": 9648,
+      "modified_at": "2025-10-12T06:43:13Z",
+      "league_id": 4531,
+      "prizepool": "100000 Brazilian Real",
+      "tier": "d",
+      "has_bracket": true,
+      "region": "SA",
+      "live_supported": false
+    },
+    "slug": "2025-09-23-92a3e81d-8a67-4eb7-8be5-c8a33ce0360b",
+    "games": [
+      {
+        "complete": true,
+        "id": 42339,
+        "position": 1,
+        "status": "finished",
+        "length": 3859,
+        "finished": true,
+        "match_id": 1234200,
+        "winner": {
+          "id": 137114,
+          "type": "Team"
+        },
+        "begin_at": "2025-09-10T20:13:38Z",
+        "detailed_stats": true,
+        "end_at": "2025-09-10T21:17:57Z",
+        "forfeit": false,
+        "winner_type": "Team"
+      },
+      {
+        "complete": true,
+        "id": 42340,
+        "position": 2,
+        "status": "finished",
+        "length": 2115,
+        "finished": true,
+        "match_id": 1234200,
+        "winner": {
+          "id": 137114,
+          "type": "Team"
+        },
+        "begin_at": "2025-09-10T21:27:01Z",
+        "detailed_stats": true,
+        "end_at": "2025-09-10T22:02:16Z",
+        "forfeit": false,
+        "winner_type": "Team"
+      }
+    ]
+  }
+]

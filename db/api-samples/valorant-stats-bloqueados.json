@@ -1,0 +1,25 @@
+{
+  "nota": "Respostas de erro dos endpoints de estatística no tier gratuito.",
+  "endpoints": [
+    {
+      "path": "/valorant/players/48506/stats",
+      "status": 403,
+      "error": "{\"error\":\"Access Denied\",\"message\":\"You are not authorized to access this page.\"}"
+    },
+    {
+      "path": "/valorant/matches/1641335/players/stats",
+      "status": 403,
+      "error": "{\"error\":\"Access Denied\",\"message\":\"You are not authorized to access this page.\"}"
+    },
+    {
+      "path": "/valorant/tournaments/21721/players/48506/stats",
+      "status": 403,
+      "error": "{\"error\":\"Access Denied\",\"message\":\"You are not authorized to access this page.\"}"
+    },
+    {
+      "path": "/valorant/teams/139092/stats",
+      "status": 403,
+      "error": "{\"error\":\"Access Denied\",\"message\":\"You are not authorized to access this page.\"}"
+    }
+  ]
+}

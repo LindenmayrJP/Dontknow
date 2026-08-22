@@ -1,0 +1,5703 @@
+[
+  {
+    "id": 21721,
+    "name": "Playoffs",
+    "type": "online/offline",
+    "matches": [
+      {
+        "id": 1641322,
+        "name": "Upper bracket quarterfinal 1: FLY.R vs MV.S",
+        "status": "not_started",
+        "live": {
+          "supported": false,
+          "url": null,
+          "opens_at": null
+        },
+        "begin_at": "2026-09-01T21:00:00Z",
+        "detailed_stats": true,
+        "end_at": null,
+        "forfeit": false,
+        "winner_id": null,
+        "winner_type": "Team",
+        "slug": "flyquest-red-vs-mvsk-secret-2026-09-01",
+        "draw": false,
+        "tournament_id": 21721,
+        "modified_at": "2026-08-18T14:47:23Z",
+        "match_type": "best_of",
+        "number_of_games": 3,
+        "scheduled_at": "2026-09-01T21:00:00Z",
+        "original_scheduled_at": "2026-09-01T21:00:00Z",
+        "game_advantage": null,
+        "low_latency_feed": false,
+        "streams_list": [
+          {
+            "main": true,
+            "language": "en",
+            "embed_url": "https://player.twitch.tv/?channel=valorant_americas",
+            "official": true,
+            "raw_url": "https://www.twitch.tv/valorant_americas"
+          }
+        ],
+        "rescheduled": false
+      },
+      {
+        "id": 1641323,
+        "name": "Upper bracket quarterfinal 2: SPI vs AXL",
+        "status": "not_started",
+        "live": {
+          "supported": false,
+          "url": null,
+          "opens_at": null
+        },
+        "begin_at": "2026-09-01T21:00:00Z",
+        "detailed_stats": true,
+        "end_at": null,
+        "forfeit": false,
+        "winner_id": null,
+        "winner_type": "Team",
+        "slug": "the-spiders-vs-axolotl-2026-09-01",
+        "draw": false,
+        "tournament_id": 21721,
+        "modified_at": "2026-08-18T14:47:23Z",
+        "match_type": "best_of",
+        "number_of_games": 3,
+        "scheduled_at": "2026-09-01T21:00:00Z",
+        "original_scheduled_at": "2026-09-01T21:00:00Z",
+        "game_advantage": null,
+        "low_latency_feed": false,
+        "streams_list": [
+          {
+            "main": true,
+            "language": "en",
+            "embed_url": "https://player.twitch.tv/?channel=valorant_americas",
+            "official": true,
+            "raw_url": "https://www.twitch.tv/valorant_americas"
+          }
+        ],
+        "rescheduled": false
+      },
+      {
+        "id": 1641324,
+        "name": "Upper bracket quarterfinal 3: SWIM vs C9.GC",
+        "status": "not_started",
+        "live": {
+          "supported": false,
+          "url": null,
+          "opens_at": null
+        },
+        "begin_at": "2026-09-01T23:30:00Z",
+        "detailed_stats": true,
+        "end_at": null,
+        "forfeit": false,
+        "winner_id": null,
+        "winner_type": "Team",
+        "slug": "swimtrek-blue-vs-cloud9-gc-2026-09-02",
+        "draw": false,
+        "tournament_id": 21721,
+        "modified_at": "2026-08-18T14:47:23Z",
+        "match_type": "best_of",
+        "number_of_games": 3,
+        "scheduled_at": "2026-09-01T23:30:00Z",
+        "original_scheduled_at": "2026-09-01T23:30:00Z",
+        "game_advantage": null,
+        "low_latency_feed": false,
+        "streams_list": [
+          {
+            "main": true,
+            "language": "en",
+            "embed_url": "https://player.twitch.tv/?channel=valorant_americas",
+            "official": true,
+            "raw_url": "https://www.twitch.tv/valorant_americas"
+          }
+        ],
+        "rescheduled": false
+      },
+      {
+        "id": 1641325,
+        "name": "Upper bracket quarterfinal 4: SRG vs HIM",
+        "status": "not_started",
+        "live": {
+          "supported": false,
+          "url": null,
+          "opens_at": null
+        },
+        "begin_at": "2026-09-01T23:30:00Z",
+        "detailed_stats": true,
+        "end_at": null,
+        "forfeit": false,
+        "winner_id": null,
+        "winner_type": "Team",
+        "slug": "shopify-rebellion-gold-vs-himmers-2026-09-02",
+        "draw": false,
+        "tournament_id": 21721,
+        "modified_at": "2026-08-18T14:47:23Z",
+        "match_type": "best_of",
+        "number_of_games": 3,
+        "scheduled_at": "2026-09-01T23:30:00Z",
+        "original_scheduled_at": "2026-09-01T23:30:00Z",
+        "game_advantage": null,
+        "low_latency_feed": false,
+        "streams_list": [
+          {
+            "main": true,
+            "language": "en",
+            "embed_url": "https://player.twitch.tv/?channel=valorant_americas",
+            "official": true,
+            "raw_url": "https://www.twitch.tv/valorant_americas"
+          }
+        ],
+        "rescheduled": false
+      },
+      {
+        "id": 1641326,
+        "name": "Upper bracket semifinal 1: TBD vs TBD",
+        "status": "not_started",
+        "live": {
+          "supported": false,
+          "url": null,
+          "opens_at": null
+        },
+        "begin_at": "2026-09-02T21:00:00Z",
+        "detailed_stats": true,
+        "end_at": null,
+        "forfeit": false,
+        "winner_id": null,
+        "winner_type": "Team",
+        "slug": "2026-09-02-cf960ce6-92d0-4086-8326-c826a2214f35",
+        "draw": false,
+        "tournament_id": 21721,
+        "modified_at": "2026-08-18T14:47:23Z",
+        "match_type": "best_of",
+        "number_of_games": 3,
+        "scheduled_at": "2026-09-02T21:00:00Z",
+        "original_scheduled_at": "2026-09-02T21:00:00Z",
+        "game_advantage": null,
+        "low_latency_feed": false,
+        "streams_list": [
+          {
+            "main": true,
+            "language": "en",
+            "embed_url": "https://player.twitch.tv/?channel=valorant_americas",
+            "official": true,
+            "raw_url": "https://www.twitch.tv/valorant_americas"
+          }
+        ],
+        "rescheduled": false
+      },
+      {
+        "id": 1641328,
+        "name": "Lower bracket round 1 match 1: TBD vs TBD",
+        "status": "not_started",
+        "live": {
+          "supported": false,
+          "url": null,
+          "opens_at": null
+        },
+        "begin_at": "2026-09-02T21:00:00Z",
+        "detailed_stats": true,
+        "end_at": null,
+        "forfeit": false,
+        "winner_id": null,
+        "winner_type": "Team",
+        "slug": "2026-09-02-5b8493dd-a9cb-4c07-92a6-efeef5ad5259",
+        "draw": false,
+        "tournament_id": 21721,
+        "modified_at": "2026-08-18T14:47:23Z",
+        "match_type": "best_of",
+        "number_of_games": 3,
+        "scheduled_at": "2026-09-02T21:00:00Z",
+        "original_scheduled_at": "2026-09-02T21:00:00Z",
+        "game_advantage": null,
+        "low_latency_feed": false,
+        "streams_list": [
+          {
+            "main": true,
+            "language": "en",
+            "embed_url": "https://player.twitch.tv/?channel=valorant_americas",
+            "official": true,
+            "raw_url": "https://www.twitch.tv/valorant_americas"
+          }
+        ],
+        "rescheduled": false
+      },
+      {
+        "id": 1641327,
+        "name": "Upper bracket semifinal 2: TBD vs TBD",
+        "status": "not_started",
+        "live": {
+          "supported": false,
+          "url": null,
+          "opens_at": null
+        },
+        "begin_at": "2026-09-02T23:30:00Z",
+        "detailed_stats": true,
+        "end_at": null,
+        "forfeit": false,
+        "winner_id": null,
+        "winner_type": "Team",
+        "slug": "2026-09-03-df6b2bb0-264a-43f0-b404-c592f86d308b",
+        "draw": false,
+        "tournament_id": 21721,
+        "modified_at": "2026-08-18T14:47:23Z",
+        "match_type": "best_of",
+        "number_of_games": 3,
+        "scheduled_at": "2026-09-02T23:30:00Z",
+        "original_scheduled_at": "2026-09-02T23:30:00Z",
+        "game_advantage": null,
+        "low_latency_feed": false,
+        "streams_list": [
+          {
+            "main": true,
+            "language": "en",
+            "embed_url": "https://player.twitch.tv/?channel=valorant_americas",
+            "official": true,
+            "raw_url": "https://www.twitch.tv/valorant_americas"
+          }
+        ],
+        "rescheduled": false
+      },
+      {
+        "id": 1641329,
+        "name": "Lower bracket round 1 match 2: TBD vs TBD",
+        "status": "not_started",
+        "live": {
+          "supported": false,
+          "url": null,
+          "opens_at": null
+        },
+        "begin_at": "2026-09-02T23:30:00Z",
+        "detailed_stats": true,
+        "end_at": null,
+        "forfeit": false,
+        "winner_id": null,
+        "winner_type": "Team",
+        "slug": "2026-09-03-6a36183a-4a4d-44bd-9d76-78af88da50c6",
+        "draw": false,
+        "tournament_id": 21721,
+        "modified_at": "2026-08-18T14:47:23Z",
+        "match_type": "best_of",
+        "number_of_games": 3,
+        "scheduled_at": "2026-09-02T23:30:00Z",
+        "original_scheduled_at": "2026-09-02T23:30:00Z",
+        "game_advantage": null,
+        "low_latency_feed": false,
+        "streams_list": [
+          {
+            "main": true,
+            "language": "en",
+            "embed_url": "https://player.twitch.tv/?channel=valorant_americas",
+            "official": true,
+            "raw_url": "https://www.twitch.tv/valorant_americas"
+          }
+        ],
+        "rescheduled": false
+      },
+      {
+        "id": 1641330,
+        "name": "Lower bracket quarterfinal 1: TBD vs TBD",
+        "status": "not_started",
+        "live": {
+          "supported": false,
+          "url": null,
+          "opens_at": null
+        },
+        "begin_at": "2026-09-03T21:00:00Z",
+        "detailed_stats": true,
+        "end_at": null,
+        "forfeit": false,
+        "winner_id": null,
+        "winner_type": "Team",
+        "slug": "2026-09-03-a1c0ed22-856b-4d3d-bd72-1d769d01cd19",
+        "draw": false,
+        "tournament_id": 21721,
+        "modified_at": "2026-08-18T14:47:23Z",
+        "match_type": "best_of",
+        "number_of_games": 3,
+        "scheduled_at": "2026-09-03T21:00:00Z",
+        "original_scheduled_at": "2026-09-03T21:00:00Z",
+        "game_advantage": null,
+        "low_latency_feed": false,
+        "streams_list": [
+          {
+            "main": true,
+            "language": "en",
+            "embed_url": "https://player.twitch.tv/?channel=valorant_americas",
+            "official": true,
+            "raw_url": "https://www.twitch.tv/valorant_americas"
+          }
+        ],
+        "rescheduled": false
+      },
+      {
+        "id": 1641331,
+        "name": "Lower bracket quarterfinal 2: TBD vs TBD",
+        "status": "not_started",
+        "live": {
+          "supported": false,
+          "url": null,
+          "opens_at": null
+        },
+        "begin_at": "2026-09-03T23:30:00Z",
+        "detailed_stats": true,
+        "end_at": null,
+        "forfeit": false,
+        "winner_id": null,
+        "winner_type": "Team",
+        "slug": "2026-09-04-72263c80-77b0-47b9-b416-c2e34c0d70b7",
+        "draw": false,
+        "tournament_id": 21721,
+        "modified_at": "2026-08-18T14:47:23Z",
+        "match_type": "best_of",
+        "number_of_games": 3,
+        "scheduled_at": "2026-09-03T23:30:00Z",
+        "original_scheduled_at": "2026-09-03T23:30:00Z",
+        "game_advantage": null,
+        "low_latency_feed": false,
+        "streams_list": [
+          {
+            "main": true,
+            "language": "en",
+            "embed_url": "https://player.twitch.tv/?channel=valorant_americas",
+            "official": true,
+            "raw_url": "https://www.twitch.tv/valorant_americas"
+          }
+        ],
+        "rescheduled": false
+      },
+      {
+        "id": 1641332,
+        "name": "Upper bracket final: TBD vs TBD",
+        "status": "not_started",
+        "live": {
+          "supported": false,
+          "url": null,
+          "opens_at": null
+        },
+        "begin_at": "2026-09-08T21:00:00Z",
+        "detailed_stats": true,
+        "end_at": null,
+        "forfeit": false,
+        "winner_id": null,
+        "winner_type": "Team",
+        "slug": "2026-09-08-52cabf48-8a7f-465a-bab8-62478b2ad2d0",
+        "draw": false,
+        "tournament_id": 21721,
+        "modified_at": "2026-08-18T14:47:23Z",
+        "match_type": "best_of",
+        "number_of_games": 3,
+        "scheduled_at": "2026-09-08T21:00:00Z",
+        "original_scheduled_at": "2026-09-08T21:00:00Z",
+        "game_advantage": null,
+        "low_latency_feed": false,
+        "streams_list": [
+          {
+            "main": true,
+            "language": "en",
+            "embed_url": "https://player.twitch.tv/?channel=valorant_americas",
+            "official": true,
+            "raw_url": "https://www.twitch.tv/valorant_americas"
+          }
+        ],
+        "rescheduled": false
+      },
+      {
+        "id": 1641333,
+        "name": "Lower bracket semifinal: TBD vs TBD",
+        "status": "not_started",
+        "live": {
+          "supported": false,
+          "url": null,
+          "opens_at": null
+        },
+        "begin_at": "2026-09-08T23:30:00Z",
+        "detailed_stats": true,
+        "end_at": null,
+        "forfeit": false,
+        "winner_id": null,
+        "winner_type": "Team",
+        "slug": "2026-09-09-8489f3ba-2b72-44e9-8036-a8bbf6589b32",
+        "draw": false,
+        "tournament_id": 21721,
+        "modified_at": "2026-08-18T14:47:23Z",
+        "match_type": "best_of",
+        "number_of_games": 3,
+        "scheduled_at": "2026-09-08T23:30:00Z",
+        "original_scheduled_at": "2026-09-08T23:30:00Z",
+        "game_advantage": null,
+        "low_latency_feed": false,
+        "streams_list": [
+          {
+            "main": true,
+            "language": "en",
+            "embed_url": "https://player.twitch.tv/?channel=valorant_americas",
+            "official": true,
+            "raw_url": "https://www.twitch.tv/valorant_americas"
+          }
+        ],
+        "rescheduled": false
+      },
+      {
+        "id": 1641334,
+        "name": "Lower bracket final: TBD vs TBD",
+        "status": "not_started",
+        "live": {
+          "supported": false,
+          "url": null,
+          "opens_at": null
+        },
+        "begin_at": "2026-09-09T21:00:00Z",
+        "detailed_stats": true,
+        "end_at": null,
+        "forfeit": false,
+        "winner_id": null,
+        "winner_type": "Team",
+        "slug": "2026-09-09-6de9a993-fd6b-490c-8599-9348f29cf75c",
+        "draw": false,
+        "tournament_id": 21721,
+        "modified_at": "2026-08-18T14:47:23Z",
+        "match_type": "best_of",
+        "number_of_games": 5,
+        "scheduled_at": "2026-09-09T21:00:00Z",
+        "original_scheduled_at": "2026-09-09T21:00:00Z",
+        "game_advantage": null,
+        "low_latency_feed": false,
+        "streams_list": [
+          {
+            "main": true,
+            "language": "en",
+            "embed_url": "https://player.twitch.tv/?channel=valorant_americas",
+            "official": true,
+            "raw_url": "https://www.twitch.tv/valorant_americas"
+          }
+        ],
+        "rescheduled": false
+      },
+      {
+        "id": 1641335,
+        "name": "Grand final: TBD vs TBD",
+        "status": "not_started",
+        "live": {
+          "supported": false,
+          "url": null,
+          "opens_at": null
+        },
+        "begin_at": "2026-09-17T21:00:00Z",
+        "detailed_stats": true,
+        "end_at": null,
+        "forfeit": false,
+        "winner_id": null,
+        "winner_type": "Team",
+        "slug": "2026-09-17",
+        "draw": false,
+        "tournament_id": 21721,
+        "modified_at": "2026-08-18T14:47:23Z",
+        "match_type": "best_of",
+        "number_of_games": 5,
+        "scheduled_at": "2026-09-17T21:00:00Z",
+        "original_scheduled_at": "2026-09-17T21:00:00Z",
+        "game_advantage": null,
+        "low_latency_feed": false,
+        "streams_list": [
+          {
+            "main": true,
+            "language": "en",
+            "embed_url": "https://player.twitch.tv/?channel=valorant_americas",
+            "official": true,
+            "raw_url": "https://www.twitch.tv/valorant_americas"
+          }
+        ],
+        "rescheduled": false
+      }
+    ],
+    "country": null,
+    "begin_at": "2026-09-01T21:00:00Z",
+    "detailed_stats": true,
+    "end_at": "2026-09-18T02:00:00Z",
+    "winner_id": null,
+    "winner_type": "Team",
+    "slug": "valorant-vct-2021-north-america-stage-1-challengers-1-game-changers-north-america-stage-2-2026-playoffs",
+    "teams": [
+      {
+        "id": 131274,
+        "name": "Shopify Rebellion Gold",
+        "location": "US",
+        "slug": "shopify-rebellion-gc",
+        "modified_at": "2026-08-22T09:51:25Z",
+        "acronym": "SRG",
+        "image_url": "https://cdn-api.pandascore.co/images/team/image/131274/406px_shopify_rebellion_gold_lightmode.png",
+        "dark_mode_image_url": null
+      },
+      {
+        "id": 133737,
+        "name": "FlyQuest RED",
+        "location": "US",
+        "slug": "flyquest-red-valorant",
+        "modified_at": "2026-08-18T14:42:22Z",
+        "acronym": "FLY.R",
+        "image_url": "https://cdn-api.pandascore.co/images/team/image/133737/600px_fly_quest_red_2023_allmode.png",
+        "dark_mode_image_url": null
+      },
+      {
+        "id": 138526,
+        "name": "SwimTrek Blue",
+        "location": "US",
+        "slug": "swimtrek-blue",
+        "modified_at": "2026-08-18T14:42:24Z",
+        "acronym": "SWIM",
+        "image_url": "https://cdn-api.pandascore.co/images/team/image/138526/swim_trek_blue_allmode.png",
+        "dark_mode_image_url": null
+      },
+      {
+        "id": 138952,
+        "name": "Cloud9 GC",
+        "location": "US",
+        "slug": "cloud9-gc",
+        "modified_at": "2026-08-18T14:42:25Z",
+        "acronym": "C9.GC",
+        "image_url": "https://cdn-api.pandascore.co/images/team/image/138952/600px_cloud9_2023_full_allmode.png",
+        "dark_mode_image_url": null
+      },
+      {
+        "id": 138953,
+        "name": "MVSK Secret",
+        "location": "",
+        "slug": "mvsk-secret",
+        "modified_at": "2026-08-18T14:42:23Z",
+        "acronym": "MV.S",
+        "image_url": "https://cdn-api.pandascore.co/images/team/image/138953/800px_mvsk_treasure_allmode.png",
+        "dark_mode_image_url": "https://cdn-api.pandascore.co/dark_images/team/dark_image/138953/800px_mvsk_treasure_allmode.png"
+      },
+      {
+        "id": 138954,
+        "name": "The Spiders",
+        "location": "",
+        "slug": "the-spiders",
+        "modified_at": "2026-08-18T14:42:23Z",
+        "acronym": "SPI",
+        "image_url": null,
+        "dark_mode_image_url": null
+      },
+      {
+        "id": 138955,
+        "name": "HIMMERS",
+        "location": "",
+        "slug": "himmers",
+        "modified_at": "2026-08-18T14:42:26Z",
+        "acronym": "HIM",
+        "image_url": null,
+        "dark_mode_image_url": null
+      },
+      {
+        "id": 138961,
+        "name": "Axolotl",
+        "location": "US",
+        "slug": "axolotl-16be14ae-3080-4110-a156-d344b8b391b4",
+        "modified_at": "2026-08-18T14:42:24Z",
+        "acronym": "AXL",
+        "image_url": null,
+        "dark_mode_image_url": null
+      }
+    ],
+    "videogame": {
+      "id": 26,
+      "name": "Valorant",
+      "slug": "valorant"
+    },
+    "serie_id": 10805,
+    "serie": {
+      "id": 10805,
+      "name": "Game Changers North America",
+      "year": 2026,
+      "begin_at": "2026-07-13T21:00:00Z",
+      "end_at": "2026-09-18T08:00:00Z",
+      "winner_id": null,
+      "winner_type": "Team",
+      "slug": "valorant-vct-2021-north-america-stage-1-challengers-1-game-changers-north-america-stage-2-2026",
+      "modified_at": "2026-07-18T10:37:42Z",
+      "league_id": 4531,
+      "season": "Stage 2",
+      "full_name": "Game Changers North America Stage 2 2026"
+    },
+    "modified_at": "2026-08-18T14:47:23Z",
+    "league_id": 4531,
+    "league": {
+      "id": 4531,
+      "name": "VCT",
+      "url": null,
+      "slug": "valorant-vct-2021-north-america-stage-1-challengers-1",
+      "modified_at": "2023-02-13T19:07:55Z",
+      "image_url": "https://cdn-api.pandascore.co/images/league/image/4531/800px-vct_2023_logo_lightmode-png"
+    },
+    "prizepool": "60000 United States Dollar",
+    "tier": "d",
+    "videogame_title": null,
+    "has_bracket": true,
+    "region": "NA",
+    "live_supported": false,
+    "expected_roster": [
+      {
+        "team": {
+          "id": 131274,
+          "name": "Shopify Rebellion Gold",
+          "location": "US",
+          "slug": "shopify-rebellion-gc",
+          "modified_at": "2026-08-22T09:51:25Z",
+          "acronym": "SRG",
+          "image_url": "https://cdn-api.pandascore.co/images/team/image/131274/406px_shopify_rebellion_gold_lightmode.png",
+          "dark_mode_image_url": null
+        },
+        "players": [
+          {
+            "active": true,
+            "id": 41335,
+            "name": "alexis",
+            "role": null,
+            "slug": "alexis",
+            "modified_at": "2026-08-18T14:42:25Z",
+            "age": 24,
+            "birthday": "2002-07-25",
+            "first_name": "Alexis",
+            "last_name": "Guarrasi",
+            "nationality": "US",
+            "image_url": "https://cdn-api.pandascore.co/images/player/image/41335/600px_alexis_at_the_vct_game_changers_championship_2022.png"
+          },
+          {
+            "active": true,
+            "id": 43201,
+            "name": "dodonut",
+            "role": null,
+            "slug": "dodonut",
+            "modified_at": "2026-08-18T14:42:25Z",
+            "age": 21,
+            "birthday": "2005-01-01",
+            "first_name": "Karnthida",
+            "last_name": "Chaisrakeo",
+            "nationality": "TH",
+            "image_url": null
+          },
+          {
+            "active": true,
+            "id": 45150,
+            "name": "Noia",
+            "role": null,
+            "slug": "noia-nicole-tierce",
+            "modified_at": "2026-08-18T14:42:25Z",
+            "age": 21,
+            "birthday": "2004-12-03",
+            "first_name": "Nicole",
+            "last_name": "Tierce",
+            "nationality": "DK",
+            "image_url": null
+          },
+          {
+            "active": true,
+            "id": 60052,
+            "name": "vanitas",
+            "role": null,
+            "slug": "ovk-vanitas",
+            "modified_at": "2026-08-18T14:42:26Z",
+            "age": null,
+            "birthday": null,
+            "first_name": null,
+            "last_name": null,
+            "nationality": "US",
+            "image_url": null
+          },
+          {
+            "active": true,
+            "id": 61331,
+            "name": "glowstick",
+            "role": null,
+            "slug": "glowstick",
+            "modified_at": "2026-08-18T14:42:26Z",
+            "age": null,
+            "birthday": null,
+            "first_name": null,
+            "last_name": null,
+            "nationality": "US",
+            "image_url": null
+          }
+        ]
+      },
+      {
+        "team": {
+          "id": 133737,
+          "name": "FlyQuest RED",
+          "location": "US",
+          "slug": "flyquest-red-valorant",
+          "modified_at": "2026-08-18T14:42:22Z",
+          "acronym": "FLY.R",
+          "image_url": "https://cdn-api.pandascore.co/images/team/image/133737/600px_fly_quest_red_2023_allmode.png",
+          "dark_mode_image_url": null
+        },
+        "players": [
+          {
+            "active": true,
+            "id": 23479,
+            "name": "Theia",
+            "role": null,
+            "slug": "theia",
+            "modified_at": "2026-08-18T14:42:22Z",
+            "age": 27,
+            "birthday": "1999-06-08",
+            "first_name": "Melisa",
+            "last_name": "Mundorff",
+            "nationality": "US",
+            "image_url": "https://cdn-api.pandascore.co/images/player/image/23479/theia.png"
+          },
+          {
+            "active": true,
+            "id": 41333,
+            "name": "Jazzyk1ns",
+            "role": null,
+            "slug": "jazzyk1ns",
+            "modified_at": "2026-08-18T14:42:21Z",
+            "age": 22,
+            "birthday": "2004-07-27",
+            "first_name": "Jasmine",
+            "last_name": "Manankil",
+            "nationality": "CA",
+            "image_url": "https://cdn-api.pandascore.co/images/player/image/41333/600px_jazzyk1ns_at_the_vct_game_changers_championship_2022.png"
+          },
+          {
+            "active": true,
+            "id": 48780,
+            "name": "edith",
+            "role": null,
+            "slug": "msf-edith",
+            "modified_at": "2026-08-18T14:42:21Z",
+            "age": 21,
+            "birthday": "2005-04-10",
+            "first_name": "Ethan",
+            "last_name": "Cutlip",
+            "nationality": "US",
+            "image_url": null
+          },
+          {
+            "active": true,
+            "id": 51778,
+            "name": "EVV",
+            "role": null,
+            "slug": "evv",
+            "modified_at": "2026-08-18T14:42:21Z",
+            "age": 21,
+            "birthday": "2005-06-27",
+            "first_name": null,
+            "last_name": null,
+            "nationality": "CA",
+            "image_url": null
+          },
+          {
+            "active": true,
+            "id": 53192,
+            "name": "melya",
+            "role": null,
+            "slug": "boys-melya",
+            "modified_at": "2026-08-18T14:42:22Z",
+            "age": 21,
+            "birthday": "2005-08-05",
+            "first_name": "Emily",
+            "last_name": "Khan",
+            "nationality": "PK",
+            "image_url": null
+          }
+        ]
+      },
+      {
+        "team": {
+          "id": 138526,
+          "name": "SwimTrek Blue",
+          "location": "US",
+          "slug": "swimtrek-blue",
+          "modified_at": "2026-08-18T14:42:24Z",
+          "acronym": "SWIM",
+          "image_url": "https://cdn-api.pandascore.co/images/team/image/138526/swim_trek_blue_allmode.png",
+          "dark_mode_image_url": null
+        },
+        "players": [
+          {
+            "active": true,
+            "id": 34483,
+            "name": "Bob",
+            "role": null,
+            "slug": "bob-bob-tran",
+            "modified_at": "2026-08-18T14:42:24Z",
+            "age": 25,
+            "birthday": "2000-12-29",
+            "first_name": "Bob",
+            "last_name": "Tran",
+            "nationality": "AU",
+            "image_url": "https://cdn-api.pandascore.co/images/player/image/34483/600px_bob_at_the_vct_game_changers_championship_2022.png"
+          },
+          {
+            "active": true,
+            "id": 56587,
+            "name": "k0rupt",
+            "role": null,
+            "slug": "k0rupt",
+            "modified_at": "2026-08-18T14:42:24Z",
+            "age": 22,
+            "birthday": "2003-08-28",
+            "first_name": "Wylie",
+            "last_name": "Watts",
+            "nationality": "US",
+            "image_url": null
+          },
+          {
+            "active": true,
+            "id": 61330,
+            "name": "CHAROD",
+            "role": null,
+            "slug": "charod",
+            "modified_at": "2026-08-18T14:42:24Z",
+            "age": null,
+            "birthday": null,
+            "first_name": null,
+            "last_name": null,
+            "nationality": "US",
+            "image_url": null
+          },
+          {
+            "active": true,
+            "id": 65874,
+            "name": "venture ",
+            "role": null,
+            "slug": "raid-esub-1",
+            "modified_at": "2026-08-18T14:42:24Z",
+            "age": null,
+            "birthday": null,
+            "first_name": null,
+            "last_name": null,
+            "nationality": "US",
+            "image_url": null
+          },
+          {
+            "active": true,
+            "id": 66961,
+            "name": "DARKLORDELI",
+            "role": null,
+            "slug": "swim-darklordeli",
+            "modified_at": "2026-08-18T14:42:24Z",
+            "age": null,
+            "birthday": null,
+            "first_name": null,
+            "last_name": null,
+            "nationality": "MX",
+            "image_url": null
+          }
+        ]
+      },
+      {
+        "team": {
+          "id": 138952,
+          "name": "Cloud9 GC",
+          "location": "US",
+          "slug": "cloud9-gc",
+          "modified_at": "2026-08-18T14:42:25Z",
+          "acronym": "C9.GC",
+          "image_url": "https://cdn-api.pandascore.co/images/team/image/138952/600px_cloud9_2023_full_allmode.png",
+          "dark_mode_image_url": null
+        },
+        "players": [
+          {
+            "active": true,
+            "id": 54823,
+            "name": "marceline",
+            "role": null,
+            "slug": "eqx-marceline",
+            "modified_at": "2026-08-18T14:42:24Z",
+            "age": null,
+            "birthday": null,
+            "first_name": "Jina",
+            "last_name": "Kim",
+            "nationality": "KR",
+            "image_url": null
+          },
+          {
+            "active": true,
+            "id": 56597,
+            "name": "Gia",
+            "role": null,
+            "slug": "gia-cc1111a4-c756-4fd8-a3f0-59bd2114a257",
+            "modified_at": "2026-08-18T14:42:24Z",
+            "age": null,
+            "birthday": null,
+            "first_name": null,
+            "last_name": null,
+            "nationality": "US",
+            "image_url": null
+          },
+          {
+            "active": true,
+            "id": 64243,
+            "name": "sarie",
+            "role": null,
+            "slug": "sarie",
+            "modified_at": "2026-08-18T14:42:25Z",
+            "age": null,
+            "birthday": null,
+            "first_name": null,
+            "last_name": null,
+            "nationality": "US",
+            "image_url": null
+          },
+          {
+            "active": true,
+            "id": 66943,
+            "name": "leelee",
+            "role": null,
+            "slug": "leelee",
+            "modified_at": "2026-08-18T14:42:25Z",
+            "age": null,
+            "birthday": null,
+            "first_name": null,
+            "last_name": null,
+            "nationality": "US",
+            "image_url": null
+          },
+          {
+            "active": true,
+            "id": 66944,
+            "name": "yunie",
+            "role": null,
+            "slug": "yunie",
+            "modified_at": "2026-08-18T14:42:25Z",
+            "age": null,
+            "birthday": null,
+            "first_name": null,
+            "last_name": null,
+            "nationality": "US",
+            "image_url": null
+          }
+        ]
+      },
+      {
+        "team": {
+          "id": 138953,
+          "name": "MVSK Secret",
+          "location": "",
+          "slug": "mvsk-secret",
+          "modified_at": "2026-08-18T14:42:23Z",
+          "acronym": "MV.S",
+          "image_url": "https://cdn-api.pandascore.co/images/team/image/138953/800px_mvsk_treasure_allmode.png",
+          "dark_mode_image_url": "https://cdn-api.pandascore.co/dark_images/team/dark_image/138953/800px_mvsk_treasure_allmode.png"
+        },
+        "players": [
+          {
+            "active": true,
+            "id": 59942,
+            "name": "Logic",
+            "role": null,
+            "slug": "logic-98e4bb18-eb3a-4a36-aed5-c3fa204faaef",
+            "modified_at": "2026-08-18T14:42:22Z",
+            "age": null,
+            "birthday": null,
+            "first_name": null,
+            "last_name": null,
+            "nationality": "US",
+            "image_url": null
+          },
+          {
+            "active": true,
+            "id": 59958,
+            "name": "Spooky",
+            "role": null,
+            "slug": "spooky-cbab11fe-0135-48bf-accc-4669feeed015",
+            "modified_at": "2026-08-18T14:42:23Z",
+            "age": null,
+            "birthday": null,
+            "first_name": null,
+            "last_name": null,
+            "nationality": "PR",
+            "image_url": null
+          },
+          {
+            "active": true,
+            "id": 61300,
+            "name": "sobersushi",
+            "role": null,
+            "slug": "sobersushi",
+            "modified_at": "2026-08-18T14:42:22Z",
+            "age": null,
+            "birthday": null,
+            "first_name": null,
+            "last_name": null,
+            "nationality": "US",
+            "image_url": null
+          },
+          {
+            "active": true,
+            "id": 66956,
+            "name": "carley",
+            "role": null,
+            "slug": "mvsk-carley",
+            "modified_at": "2026-08-18T14:42:22Z",
+            "age": null,
+            "birthday": null,
+            "first_name": null,
+            "last_name": null,
+            "nationality": "PH",
+            "image_url": null
+          },
+          {
+            "active": true,
+            "id": 66957,
+            "name": "fel",
+            "role": null,
+            "slug": "mvsk-fel",
+            "modified_at": "2026-08-18T14:42:22Z",
+            "age": null,
+            "birthday": null,
+            "first_name": null,
+            "last_name": null,
+            "nationality": "PH",
+            "image_url": null
+          }
+        ]
+      },
+      {
+        "team": {
+          "id": 138954,
+          "name": "The Spiders",
+          "location": "",
+          "slug": "the-spiders",
+          "modified_at": "2026-08-18T14:42:23Z",
+          "acronym": "SPI",
+          "image_url": null,
+          "dark_mode_image_url": null
+        },
+        "players": [
+          {
+            "active": true,
+            "id": 43191,
+            "name": "bunny bee",
+            "role": null,
+            "slug": "bunny-bee",
+            "modified_at": "2026-08-18T14:42:23Z",
+            "age": 22,
+            "birthday": "2004-05-06",
+            "first_name": null,
+            "last_name": null,
+            "nationality": "US",
+            "image_url": null
+          },
+          {
+            "active": true,
+            "id": 51533,
+            "name": "Scaryshark32",
+            "role": null,
+            "slug": "eg-scaryshark",
+            "modified_at": "2026-08-18T14:42:23Z",
+            "age": null,
+            "birthday": null,
+            "first_name": null,
+            "last_name": null,
+            "nationality": "US",
+            "image_url": null
+          },
+          {
+            "active": true,
+            "id": 54826,
+            "name": "calsushi",
+            "role": null,
+            "slug": "tdy-calsushi",
+            "modified_at": "2026-08-18T14:42:23Z",
+            "age": null,
+            "birthday": null,
+            "first_name": null,
+            "last_name": null,
+            "nationality": "US",
+            "image_url": null
+          },
+          {
+            "active": true,
+            "id": 63706,
+            "name": "fate",
+            "role": null,
+            "slug": "fate-6296f774-b66d-4d01-a1c6-a432aca202f9",
+            "modified_at": "2026-08-18T14:42:23Z",
+            "age": null,
+            "birthday": null,
+            "first_name": null,
+            "last_name": null,
+            "nationality": "GT",
+            "image_url": null
+          },
+          {
+            "active": true,
+            "id": 65587,
+            "name": "ruincrest",
+            "role": null,
+            "slug": "hyp-ruincrest",
+            "modified_at": "2026-08-18T14:42:23Z",
+            "age": null,
+            "birthday": null,
+            "first_name": null,
+            "last_name": null,
+            "nationality": "MX",
+            "image_url": null
+          }
+        ]
+      },
+      {
+        "team": {
+          "id": 138955,
+          "name": "HIMMERS",
+          "location": "",
+          "slug": "himmers",
+          "modified_at": "2026-08-18T14:42:26Z",
+          "acronym": "HIM",
+          "image_url": null,
+          "dark_mode_image_url": null
+        },
+        "players": [
+          {
+            "active": true,
+            "id": 45140,
+            "name": "Slandy",
+            "role": null,
+            "slug": "slandy",
+            "modified_at": "2026-08-18T14:42:26Z",
+            "age": 27,
+            "birthday": "1999-06-10",
+            "first_name": "Presley",
+            "last_name": "Anderson",
+            "nationality": "US",
+            "image_url": "https://cdn-api.pandascore.co/images/player/image/45140/600px_complexity_gaming_aniemal.png"
+          },
+          {
+            "active": true,
+            "id": 59944,
+            "name": "ennui",
+            "role": null,
+            "slug": "ennui",
+            "modified_at": "2026-08-18T14:42:26Z",
+            "age": null,
+            "birthday": null,
+            "first_name": null,
+            "last_name": null,
+            "nationality": "TR",
+            "image_url": null
+          },
+          {
+            "active": true,
+            "id": 60049,
+            "name": "colby",
+            "role": null,
+            "slug": "kiki-colby",
+            "modified_at": "2026-08-18T14:42:26Z",
+            "age": null,
+            "birthday": null,
+            "first_name": null,
+            "last_name": null,
+            "nationality": "US",
+            "image_url": null
+          },
+          {
+            "active": true,
+            "id": 65998,
+            "name": "yuhan",
+            "role": null,
+            "slug": "emp-yuhan",
+            "modified_at": "2026-08-18T14:42:26Z",
+            "age": null,
+            "birthday": null,
+            "first_name": null,
+            "last_name": null,
+            "nationality": "CN",
+            "image_url": null
+          },
+          {
+            "active": true,
+            "id": 66958,
+            "name": "cleiYo",
+            "role": null,
+            "slug": "her-cleiyo",
+            "modified_at": "2026-08-18T14:42:26Z",
+            "age": null,
+            "birthday": null,
+            "first_name": null,
+            "last_name": null,
+            "nationality": "CA",
+            "image_url": null
+          }
+        ]
+      },
+      {
+        "team": {
+          "id": 138961,
+          "name": "Axolotl",
+          "location": "US",
+          "slug": "axolotl-16be14ae-3080-4110-a156-d344b8b391b4",
+          "modified_at": "2026-08-18T14:42:24Z",
+          "acronym": "AXL",
+          "image_url": null,
+          "dark_mode_image_url": null
+        },
+        "players": [
+          {
+            "active": true,
+            "id": 43184,
+            "name": "Australis",
+            "role": null,
+            "slug": "australis",
+            "modified_at": "2026-08-18T14:42:24Z",
+            "age": null,
+            "birthday": null,
+            "first_name": null,
+            "last_name": null,
+            "nationality": "US",
+            "image_url": null
+          },
+          {
+            "active": true,
+            "id": 49815,
+            "name": "miyara",
+            "role": null,
+            "slug": "miyara",
+            "modified_at": "2026-08-18T14:42:23Z",
+            "age": 28,
+            "birthday": "1998-04-09",
+            "first_name": null,
+            "last_name": null,
+            "nationality": "US",
+            "image_url": null
+          },
+          {
+            "active": true,
+            "id": 50805,
+            "name": "StarBound",
+            "role": null,
+            "slug": "starbound",
+            "modified_at": "2026-08-18T14:42:23Z",
+            "age": 25,
+            "birthday": "2001-07-15",
+            "first_name": null,
+            "last_name": null,
+            "nationality": "CA",
+            "image_url": null
+          },
+          {
+            "active": true,
+            "id": 56591,
+            "name": "terror",
+            "role": null,
+            "slug": "terror-e0110ad0-dd02-432c-97a7-3cdf068cf22b",
+            "modified_at": "2026-08-18T14:42:23Z",
+            "age": null,
+            "birthday": null,
+            "first_name": null,
+            "last_name": null,
+            "nationality": "RU",
+            "image_url": null
+          },
+          {
+            "active": true,
+            "id": 65599,
+            "name": "SaintClaws",
+            "role": null,
+            "slug": "woof-saintclaws",
+            "modified_at": "2026-08-18T14:42:24Z",
+            "age": null,
+            "birthday": null,
+            "first_name": null,
+            "last_name": null,
+            "nationality": "VN",
+            "image_url": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 21605,
+    "name": "Playoffs",
+    "type": "online",
+    "matches": [
+      {
+        "id": 1616166,
+        "name": "Upper bracket round 1 match 1: TBD vs TBD",
+        "status": "not_started",
+        "live": {
+          "supported": false,
+          "url": null,
+          "opens_at": null
+        },
+        "begin_at": "2026-08-27T21:00:00Z",
+        "detailed_stats": true,
+        "end_at": null,
+        "forfeit": false,
+        "winner_id": null,
+        "winner_type": "Team",
+        "slug": "2026-08-27-999a7daa-3da3-416f-8a86-eb2bcbb2f4b4",
+        "draw": false,
+        "tournament_id": 21605,
+        "modified_at": "2026-08-01T19:06:04Z",
+        "match_type": "best_of",
+        "number_of_games": 3,
+        "scheduled_at": "2026-08-27T21:00:00Z",
+        "original_scheduled_at": "2026-08-27T21:00:00Z",
+        "game_advantage": null,
+        "low_latency_feed": false,
+        "streams_list": [
+          {
+            "main": true,
+            "language": "en",
+            "embed_url": "https://player.twitch.tv/?channel=valorant_americas",
+            "official": true,
+            "raw_url": "https://www.twitch.tv/valorant_americas"
+          }
+        ],
+        "rescheduled": false
+      },
+      {
+        "id": 1616167,
+        "name": "Upper bracket round 1 match 2: TBD vs TBD",
+        "status": "not_started",
+        "live": {
+          "supported": false,
+          "url": null,
+          "opens_at": null
+        },
+        "begin_at": "2026-08-28T00:00:00Z",
+        "detailed_stats": true,
+        "end_at": null,
+        "forfeit": false,
+        "winner_id": null,
+        "winner_type": "Team",
+        "slug": "2026-08-28-537ffec1-d5c8-42c9-ab64-cf962ab59a1a",
+        "draw": false,
+        "tournament_id": 21605,
+        "modified_at": "2026-08-01T19:06:04Z",
+        "match_type": "best_of",
+        "number_of_games": 3,
+        "scheduled_at": "2026-08-28T00:00:00Z",
+        "original_scheduled_at": "2026-08-28T00:00:00Z",
+        "game_advantage": null,
+        "low_latency_feed": false,
+        "streams_list": [
+          {
+            "main": true,
+            "language": "en",
+            "embed_url": "https://player.twitch.tv/?channel=valorant_americas",
+            "official": true,
+            "raw_url": "https://www.twitch.tv/valorant_americas"
+          }
+        ],
+        "rescheduled": false
+      },
+      {
+        "id": 1616168,
+        "name": "Upper bracket semifinal 1: TBD vs TBD",
+        "status": "not_started",
+        "live": {
+          "supported": false,
+          "url": null,
+          "opens_at": null
+        },
+        "begin_at": "2026-08-28T21:00:00Z",
+        "detailed_stats": true,
+        "end_at": null,
+        "forfeit": false,
+        "winner_id": null,
+        "winner_type": "Team",
+        "slug": "2026-08-28-36030b44-af0c-46a6-848f-dc9073a6f9ed",
+        "draw": false,
+        "tournament_id": 21605,
+        "modified_at": "2026-08-01T19:06:04Z",
+        "match_type": "best_of",
+        "number_of_games": 3,
+        "scheduled_at": "2026-08-28T21:00:00Z",
+        "original_scheduled_at": "2026-08-28T21:00:00Z",
+        "game_advantage": null,
+        "low_latency_feed": false,
+        "streams_list": [
+          {
+            "main": true,
+            "language": "en",
+            "embed_url": "https://player.twitch.tv/?channel=valorant_americas",
+            "official": true,
+            "raw_url": "https://www.twitch.tv/valorant_americas"
+          }
+        ],
+        "rescheduled": false
+      },
+      {
+        "id": 1616169,
+        "name": "Upper bracket semifinal 2: TBD vs TBD",
+        "status": "not_started",
+        "live": {
+          "supported": false,
+          "url": null,
+          "opens_at": null
+        },
+        "begin_at": "2026-08-29T00:00:00Z",
+        "detailed_stats": true,
+        "end_at": null,
+        "forfeit": false,
+        "winner_id": null,
+        "winner_type": "Team",
+        "slug": "2026-08-29-3d2481dd-f7f1-4814-898a-147e99d3e2b2",
+        "draw": false,
+        "tournament_id": 21605,
+        "modified_at": "2026-08-01T19:06:04Z",
+        "match_type": "best_of",
+        "number_of_games": 3,
+        "scheduled_at": "2026-08-29T00:00:00Z",
+        "original_scheduled_at": "2026-08-29T00:00:00Z",
+        "game_advantage": null,
+        "low_latency_feed": false,
+        "streams_list": [
+          {
+            "main": true,
+            "language": "en",
+            "embed_url": "https://player.twitch.tv/?channel=valorant_americas",
+            "official": true,
+            "raw_url": "https://www.twitch.tv/valorant_americas"
+          }
+        ],
+        "rescheduled": false
+      },
+      {
+        "id": 1616176,
+        "name": "Lower bracket round 1 match 1: TBD vs TBD",
+        "status": "not_started",
+        "live": {
+          "supported": false,
+          "url": null,
+          "opens_at": null
+        },
+        "begin_at": "2026-08-29T21:00:00Z",
+        "detailed_stats": true,
+        "end_at": null,
+        "forfeit": false,
+        "winner_id": null,
+        "winner_type": "Team",
+        "slug": "2026-08-29-0a82c5ad-6267-49b4-a7dd-7cdaa3d4be7a",
+        "draw": false,
+        "tournament_id": 21605,
+        "modified_at": "2026-08-01T19:06:04Z",
+        "match_type": "best_of",
+        "number_of_games": 3,
+        "scheduled_at": "2026-08-29T21:00:00Z",
+        "original_scheduled_at": "2026-08-29T21:00:00Z",
+        "game_advantage": null,
+        "low_latency_feed": false,
+        "streams_list": [
+          {
+            "main": true,
+            "language": "en",
+            "embed_url": "https://player.twitch.tv/?channel=valorant_americas",
+            "official": true,
+            "raw_url": "https://www.twitch.tv/valorant_americas"
+          }
+        ],
+        "rescheduled": false
+      },
+      {
+        "id": 1616177,
+        "name": "Lower bracket round 1 match 2: TBD vs TBD",
+        "status": "not_started",
+        "live": {
+          "supported": false,
+          "url": null,
+          "opens_at": null
+        },
+        "begin_at": "2026-08-30T00:00:00Z",
+        "detailed_stats": true,
+        "end_at": null,
+        "forfeit": false,
+        "winner_id": null,
+        "winner_type": "Team",
+        "slug": "2026-08-30-f79015fe-542f-4578-88b4-b38070f4476e",
+        "draw": false,
+        "tournament_id": 21605,
+        "modified_at": "2026-08-01T19:06:04Z",
+        "match_type": "best_of",
+        "number_of_games": 3,
+        "scheduled_at": "2026-08-30T00:00:00Z",
+        "original_scheduled_at": "2026-08-30T00:00:00Z",
+        "game_advantage": null,
+        "low_latency_feed": false,
+        "streams_list": [
+          {
+            "main": true,
+            "language": "en",
+            "embed_url": "https://player.twitch.tv/?channel=valorant_americas",
+            "official": true,
+            "raw_url": "https://www.twitch.tv/valorant_americas"
+          }
+        ],
+        "rescheduled": false
+      },
+      {
+        "id": 1616174,
+        "name": "Lower bracket quarterfinal 1: TBD vs TBD",
+        "status": "not_started",
+        "live": {
+          "supported": false,
+          "url": null,
+          "opens_at": null
+        },
+        "begin_at": "2026-08-30T21:00:00Z",
+        "detailed_stats": true,
+        "end_at": null,
+        "forfeit": false,
+        "winner_id": null,
+        "winner_type": "Team",
+        "slug": "2026-08-30-f28be263-d117-45d2-ad2d-4f48323030e1",
+        "draw": false,
+        "tournament_id": 21605,
+        "modified_at": "2026-08-01T19:06:04Z",
+        "match_type": "best_of",
+        "number_of_games": 3,
+        "scheduled_at": "2026-08-30T21:00:00Z",
+        "original_scheduled_at": "2026-08-30T21:00:00Z",
+        "game_advantage": null,
+        "low_latency_feed": false,
+        "streams_list": [
+          {
+            "main": true,
+            "language": "en",
+            "embed_url": "https://player.twitch.tv/?channel=valorant_americas",
+            "official": true,
+            "raw_url": "https://www.twitch.tv/valorant_americas"
+          }
+        ],
+        "rescheduled": false
+      },
+      {
+        "id": 1616175,
+        "name": "Lower bracket quarterfinal 2: TBD vs TBD",
+        "status": "not_started",
+        "live": {
+          "supported": false,
+          "url": null,
+          "opens_at": null
+        },
+        "begin_at": "2026-08-31T00:00:00Z",
+        "detailed_stats": true,
+        "end_at": null,
+        "forfeit": false,
+        "winner_id": null,
+        "winner_type": "Team",
+        "slug": "2026-08-31-2c092299-c526-449c-bddc-e0d125434430",
+        "draw": false,
+        "tournament_id": 21605,
+        "modified_at": "2026-08-01T19:06:04Z",
+        "match_type": "best_of",
+        "number_of_games": 3,
+        "scheduled_at": "2026-08-31T00:00:00Z",
+        "original_scheduled_at": "2026-08-31T00:00:00Z",
+        "game_advantage": null,
+        "low_latency_feed": false,
+        "streams_list": [
+          {
+            "main": true,
+            "language": "en",
+            "embed_url": "https://player.twitch.tv/?channel=valorant_americas",
+            "official": true,
+            "raw_url": "https://www.twitch.tv/valorant_americas"
+          }
+        ],
+        "rescheduled": false
+      },
+      {
+        "id": 1616170,
+        "name": "Upper bracket final: TBD vs TBD",
+        "status": "not_started",
+        "live": {
+          "supported": false,
+          "url": null,
+          "opens_at": null
+        },
+        "begin_at": "2026-09-04T17:00:00Z",
+        "detailed_stats": true,
+        "end_at": null,
+        "forfeit": false,
+        "winner_id": null,
+        "winner_type": "Team",
+        "slug": "2026-09-04",
+        "draw": false,
+        "tournament_id": 21605,
+        "modified_at": "2026-08-01T19:06:04Z",
+        "match_type": "best_of",
+        "number_of_games": 3,
+        "scheduled_at": "2026-09-04T17:00:00Z",
+        "original_scheduled_at": "2026-09-04T17:00:00Z",
+        "game_advantage": null,
+        "low_latency_feed": false,
+        "streams_list": [
+          {
+            "main": true,
+            "language": "en",
+            "embed_url": "https://player.twitch.tv/?channel=valorant_americas",
+            "official": true,
+            "raw_url": "https://www.twitch.tv/valorant_americas"
+          }
+        ],
+        "rescheduled": false
+      },
+      {
+        "id": 1616173,
+        "name": "Lower bracket semifinal: TBD vs TBD",
+        "status": "not_started",
+        "live": {
+          "supported": false,
+          "url": null,
+          "opens_at": null
+        },
+        "begin_at": "2026-09-04T20:00:00Z",
+        "detailed_stats": true,
+        "end_at": null,
+        "forfeit": false,
+        "winner_id": null,
+        "winner_type": "Team",
+        "slug": "2026-09-04-f267643b-7fc9-44f9-9fc5-92cfb9020849",
+        "draw": false,
+        "tournament_id": 21605,
+        "modified_at": "2026-08-01T19:06:04Z",
+        "match_type": "best_of",
+        "number_of_games": 3,
+        "scheduled_at": "2026-09-04T20:00:00Z",
+        "original_scheduled_at": "2026-09-04T20:00:00Z",
+        "game_advantage": null,
+        "low_latency_feed": false,
+        "streams_list": [
+          {
+            "main": true,
+            "language": "en",
+            "embed_url": "https://player.twitch.tv/?channel=valorant_americas",
+            "official": true,
+            "raw_url": "https://www.twitch.tv/valorant_americas"
+          }
+        ],
+        "rescheduled": false
+      },
+      {
+        "id": 1616172,
+        "name": "Lower bracket final: TBD vs TBD",
+        "status": "not_started",
+        "live": {
+          "supported": false,
+          "url": null,
+          "opens_at": null
+        },
+        "begin_at": "2026-09-05T17:00:00Z",
+        "detailed_stats": true,
+        "end_at": null,
+        "forfeit": false,
+        "winner_id": null,
+        "winner_type": "Team",
+        "slug": "2026-09-05-dc51ed12-805e-4d54-b07c-e3a0a2dfb28d",
+        "draw": false,
+        "tournament_id": 21605,
+        "modified_at": "2026-08-01T19:06:04Z",
+        "match_type": "best_of",
+        "number_of_games": 5,
+        "scheduled_at": "2026-09-05T17:00:00Z",
+        "original_scheduled_at": "2026-09-05T17:00:00Z",
+        "game_advantage": null,
+        "low_latency_feed": false,
+        "streams_list": [
+          {
+            "main": true,
+            "language": "en",
+            "embed_url": "https://player.twitch.tv/?channel=valorant_americas",
+            "official": true,
+            "raw_url": "https://www.twitch.tv/valorant_americas"
+          }
+        ],
+        "rescheduled": false
+      },
+      {
+        "id": 1616171,
+        "name": "Grand final: TBD vs TBD",
+        "status": "not_started",
+        "live": {
+          "supported": false,
+          "url": null,
+          "opens_at": null
+        },
+        "begin_at": "2026-09-06T17:00:00Z",
+        "detailed_stats": true,
+        "end_at": null,
+        "forfeit": false,
+        "winner_id": null,
+        "winner_type": "Team",
+        "slug": "2026-09-06-721608a1-f883-47d9-8267-ffd6ddec4b44",
+        "draw": false,
+        "tournament_id": 21605,
+        "modified_at": "2026-08-01T19:06:04Z",
+        "match_type": "best_of",
+        "number_of_games": 5,
+        "scheduled_at": "2026-09-06T17:00:00Z",
+        "original_scheduled_at": "2026-09-06T17:00:00Z",
+        "game_advantage": null,
+        "low_latency_feed": false,
+        "streams_list": [
+          {
+            "main": true,
+            "language": "en",
+            "embed_url": "https://player.twitch.tv/?channel=valorant_americas",
+            "official": true,
+            "raw_url": "https://www.twitch.tv/valorant_americas"
+          }
+        ],
+        "rescheduled": false
+      }
+    ],
+    "country": null,
+    "begin_at": "2026-08-27T18:00:00Z",
+    "detailed_stats": true,
+    "end_at": "2026-09-06T21:00:00Z",
+    "winner_id": null,
+    "winner_type": "Team",
+    "slug": "valorant-vct-2021-north-america-stage-1-challengers-1-americas-stage-2-2026-playoffs",
+    "teams": [],
+    "videogame": {
+      "id": 26,
+      "name": "Valorant",
+      "slug": "valorant"
+    },
+    "serie_id": 10746,
+    "serie": {
+      "id": 10746,
+      "name": "Americas Stage 2",
+      "year": 2026,
+      "begin_at": "2026-07-16T21:00:00Z",
+      "end_at": "2026-09-07T03:00:00Z",
+      "winner_id": null,
+      "winner_type": "Team",
+      "slug": "valorant-vct-2021-north-america-stage-1-challengers-1-americas-stage-2-2026",
+      "modified_at": "2026-06-28T12:16:14Z",
+      "league_id": 4531,
+      "season": null,
+      "full_name": "Americas Stage 2 2026"
+    },
+    "modified_at": "2026-08-01T18:56:33Z",
+    "league_id": 4531,
+    "league": {
+      "id": 4531,
+      "name": "VCT",
+      "url": null,
+      "slug": "valorant-vct-2021-north-america-stage-1-challengers-1",
+      "modified_at": "2023-02-13T19:07:55Z",
+      "image_url": "https://cdn-api.pandascore.co/images/league/image/4531/800px-vct_2023_logo_lightmode-png"
+    },
+    "prizepool": "250,000 United States Dollar",
+    "tier": "a",
+    "videogame_title": null,
+    "has_bracket": true,
+    "region": null,
+    "live_supported": false,
+    "expected_roster": []
+  },
+  {
+    "id": 21622,
+    "name": "Playoffs",
+    "type": "offline",
+    "matches": [
+      {
+        "id": 1619627,
+        "name": "Upper bracket quarterfinal 1: PR vs TBD",
+        "status": "not_started",
+        "live": {
+          "supported": false,
+          "url": null,
+          "opens_at": null
+        },
+        "begin_at": "2026-08-26T08:00:00Z",
+        "detailed_stats": true,
+        "end_at": null,
+        "forfeit": false,
+        "winner_id": null,
+        "winner_type": "Team",
+        "slug": "2026-08-26-88d3dc1e-bd0d-4e7d-a3bb-ef1ce228cd78",
+        "draw": false,
+        "tournament_id": 21622,
+        "modified_at": "2026-08-09T13:55:40Z",
+        "match_type": "best_of",
+        "number_of_games": 3,
+        "scheduled_at": "2026-08-26T08:00:00Z",
+        "original_scheduled_at": "2026-08-26T08:00:00Z",
+        "game_advantage": null,
+        "low_latency_feed": false,
+        "streams_list": [
+          {
+            "main": true,
+            "language": "en",
+            "embed_url": "https://player.twitch.tv/?channel=valorant_pacific",
+            "official": true,
+            "raw_url": "https://www.twitch.tv/valorant_pacific"
+          },
+          {
+            "main": false,
+            "language": "en",
+            "embed_url": null,
+            "official": false,
+            "raw_url": "https://www.youtube.com/@VCTPacific/live"
+          },
+          {
+            "main": false,
+            "language": "ja",
+            "embed_url": "https://player.twitch.tv/?channel=valorant_jpn",
+            "official": false,
+            "raw_url": "https://www.twitch.tv/valorant_jpn"
+          }
+        ],
+        "rescheduled": false
+      },
+      {
+        "id": 1619628,
+        "name": "Upper bracket quarterfinal 2: GE vs TBD",
+        "status": "not_started",
+        "live": {
+          "supported": false,
+          "url": null,
+          "opens_at": null
+        },
+        "begin_at": "2026-08-26T11:00:00Z",
+        "detailed_stats": true,
+        "end_at": null,
+        "forfeit": false,
+        "winner_id": null,
+        "winner_type": "Team",
+        "slug": "2026-08-26-5ad61207-9953-4367-b862-5c050c847f20",
+        "draw": false,
+        "tournament_id": 21622,
+        "modified_at": "2026-08-09T13:55:33Z",
+        "match_type": "best_of",
+        "number_of_games": 3,
+        "scheduled_at": "2026-08-26T11:00:00Z",
+        "original_scheduled_at": "2026-08-26T11:00:00Z",
+        "game_advantage": null,
+        "low_latency_feed": false,
+        "streams_list": [
+          {
+            "main": true,
+            "language": "en",
+            "embed_url": "https://player.twitch.tv/?channel=valorant_pacific",
+            "official": true,
+            "raw_url": "https://www.twitch.tv/valorant_pacific"
+          },
+          {
+            "main": false,
+            "language": "en",
+            "embed_url": null,
+            "official": false,
+            "raw_url": "https://www.youtube.com/@VCTPacific/live"
+          },
+          {
+            "main": false,
+            "language": "ja",
+            "embed_url": "https://player.twitch.tv/?channel=valorant_jpn",
+            "official": false,
+            "raw_url": "https://www.twitch.tv/valorant_jpn"
+          }
+        ],
+        "rescheduled": false
+      },
+      {
+        "id": 1619629,
+        "name": "Upper bracket semifinal 1: Gen.G vs TBD",
+        "status": "not_started",
+        "live": {
+          "supported": false,
+          "url": null,
+          "opens_at": null
+        },
+        "begin_at": "2026-08-27T08:00:00Z",
+        "detailed_stats": true,
+        "end_at": null,
+        "forfeit": false,
+        "winner_id": null,
+        "winner_type": "Team",
+        "slug": "gen-g-esports-2026-08-27",
+        "draw": false,
+        "tournament_id": 21622,
+        "modified_at": "2026-08-04T07:55:24Z",
+        "match_type": "best_of",
+        "number_of_games": 3,
+        "scheduled_at": "2026-08-27T08:00:00Z",
+        "original_scheduled_at": "2026-08-27T08:00:00Z",
+        "game_advantage": null,
+        "low_latency_feed": false,
+        "streams_list": [
+          {
+            "main": false,
+            "language": "ja",
+            "embed_url": "https://player.twitch.tv/?channel=valorant_jpn",
+            "official": false,
+            "raw_url": "https://www.twitch.tv/valorant_jpn"
+          },
+          {
+            "main": false,
+            "language": "en",
+            "embed_url": null,
+            "official": false,
+            "raw_url": "https://www.youtube.com/@VCTPacific/live"
+          },
+          {
+            "main": true,
+            "language": "en",
+            "embed_url": "https://player.twitch.tv/?channel=valorant_pacific",
+            "official": true,
+            "raw_url": "https://www.twitch.tv/valorant_pacific"
+          }
+        ],
+        "rescheduled": false
+      },
+      {
+        "id": 1619630,
+        "name": "Upper bracket semifinal 2: TBD vs VARREL",
+        "status": "not_started",
+        "live": {
+          "supported": false,
+          "url": null,
+          "opens_at": null
+        },
+        "begin_at": "2026-08-27T11:00:00Z",
+        "detailed_stats": true,
+        "end_at": null,
+        "forfeit": false,
+        "winner_id": null,
+        "winner_type": "Team",
+        "slug": "2026-08-27-646194cb-9095-48d7-8bf2-d6cb03542aad",
+        "draw": false,
+        "tournament_id": 21622,
+        "modified_at": "2026-08-09T13:55:27Z",
+        "match_type": "best_of",
+        "number_of_games": 3,
+        "scheduled_at": "2026-08-27T11:00:00Z",
+        "original_scheduled_at": "2026-08-27T11:00:00Z",
+        "game_advantage": null,
+        "low_latency_feed": false,
+        "streams_list": [
+          {
+            "main": true,
+            "language": "en",
+            "embed_url": "https://player.twitch.tv/?channel=valorant_pacific",
+            "official": true,
+            "raw_url": "https://www.twitch.tv/valorant_pacific"
+          },
+          {
+            "main": false,
+            "language": "en",
+            "embed_url": null,
+            "official": false,
+            "raw_url": "https://www.youtube.com/@VCTPacific/live"
+          },
+          {
+            "main": false,
+            "language": "ja",
+            "embed_url": "https://player.twitch.tv/?channel=valorant_jpn",
+            "official": false,
+            "raw_url": "https://www.twitch.tv/valorant_jpn"
+          }
+        ],
+        "rescheduled": false
+      },
+      {
+        "id": 1619631,
+        "name": "Lower bracket round 1 match 1: TBD vs TBD",
+        "status": "not_started",
+        "live": {
+          "supported": false,
+          "url": null,
+          "opens_at": null
+        },
+        "begin_at": "2026-08-28T08:00:00Z",
+        "detailed_stats": true,
+        "end_at": null,
+        "forfeit": false,
+        "winner_id": null,
+        "winner_type": "Team",
+        "slug": "2026-08-28-58e99ba4-acda-41a9-a4b2-473951e7766e",
+        "draw": false,
+        "tournament_id": 21622,
+        "modified_at": "2026-08-04T07:55:24Z",
+        "match_type": "best_of",
+        "number_of_games": 3,
+        "scheduled_at": "2026-08-28T08:00:00Z",
+        "original_scheduled_at": "2026-08-28T08:00:00Z",
+        "game_advantage": null,
+        "low_latency_feed": false,
+        "streams_list": [
+          {
+            "main": false,
+            "language": "ja",
+            "embed_url": "https://player.twitch.tv/?channel=valorant_jpn",
+            "official": false,
+            "raw_url": "https://www.twitch.tv/valorant_jpn"
+          },
+          {
+            "main": false,
+            "language": "en",
+            "embed_url": null,
+            "official": false,
+            "raw_url": "https://www.youtube.com/@VCTPacific/live"
+          },
+          {
+            "main": true,
+            "language": "en",
+            "embed_url": "https://player.twitch.tv/?channel=valorant_pacific",
+            "official": true,
+            "raw_url": "https://www.twitch.tv/valorant_pacific"
+          }
+        ],
+        "rescheduled": false
+      },
+      {
+        "id": 1619632,
+        "name": "Lower bracket round 1 match 2: TBD vs TBD",
+        "status": "not_started",
+        "live": {
+          "supported": false,
+          "url": null,
+          "opens_at": null
+        },
+        "begin_at": "2026-08-28T11:00:00Z",
+        "detailed_stats": true,
+        "end_at": null,
+        "forfeit": false,
+        "winner_id": null,
+        "winner_type": "Team",
+        "slug": "2026-08-28-6062bda0-6ee9-468d-b18e-ad89502cf330",
+        "draw": false,
+        "tournament_id": 21622,
+        "modified_at": "2026-08-04T07:55:24Z",
+        "match_type": "best_of",
+        "number_of_games": 3,
+        "scheduled_at": "2026-08-28T11:00:00Z",
+        "original_scheduled_at": "2026-08-28T11:00:00Z",
+        "game_advantage": null,
+        "low_latency_feed": false,
+        "streams_list": [
+          {
+            "main": false,
+            "language": "ja",
+            "embed_url": "https://player.twitch.tv/?channel=valorant_jpn",
+            "official": false,
+            "raw_url": "https://www.twitch.tv/valorant_jpn"
+          },
+          {
+            "main": false,
+            "language": "en",
+            "embed_url": null,
+            "official": false,
+            "raw_url": "https://www.youtube.com/@VCTPacific/live"
+          },
+          {
+            "main": true,
+            "language": "en",
+            "embed_url": "https://player.twitch.tv/?channel=valorant_pacific",
+            "official": true,
+            "raw_url": "https://www.twitch.tv/valorant_pacific"
+          }
+        ],
+        "rescheduled": false
+      },
+      {
+        "id": 1619633,
+        "name": "Lower bracket quarterfinal 1: TBD vs TBD",
+        "status": "not_started",
+        "live": {
+          "supported": false,
+          "url": null,
+          "opens_at": null
+        },
+        "begin_at": "2026-08-29T08:00:00Z",
+        "detailed_stats": true,
+        "end_at": null,
+        "forfeit": false,
+        "winner_id": null,
+        "winner_type": "Team",
+        "slug": "2026-08-29-2fa0dbe8-c036-46c2-8e0a-fee93cd41179",
+        "draw": false,
+        "tournament_id": 21622,
+        "modified_at": "2026-08-04T07:55:25Z",
+        "match_type": "best_of",
+        "number_of_games": 3,
+        "scheduled_at": "2026-08-29T08:00:00Z",
+        "original_scheduled_at": "2026-08-29T08:00:00Z",
+        "game_advantage": null,
+        "low_latency_feed": false,
+        "streams_list": [
+          {
+            "main": false,
+            "language": "ja",
+            "embed_url": "https://player.twitch.tv/?channel=valorant_jpn",
+            "official": false,
+            "raw_url": "https://www.twitch.tv/valorant_jpn"
+          },
+          {
+            "main": false,
+            "language": "en",
+            "embed_url": null,
+            "official": false,
+            "raw_url": "https://www.youtube.com/@VCTPacific/live"
+          },
+          {
+            "main": true,
+            "language": "en",
+            "embed_url": "https://player.twitch.tv/?channel=valorant_pacific",
+            "official": true,
+            "raw_url": "https://www.twitch.tv/valorant_pacific"
+          }
+        ],
+        "rescheduled": false
+      },
+      {
+        "id": 1619634,
+        "name": "Lower bracket quarterfinal 2: TBD vs TBD",
+        "status": "not_started",
+        "live": {
+          "supported": false,
+          "url": null,
+          "opens_at": null
+        },
+        "begin_at": "2026-08-29T11:00:00Z",
+        "detailed_stats": true,
+        "end_at": null,
+        "forfeit": false,
+        "winner_id": null,
+        "winner_type": "Team",
+        "slug": "2026-08-29-f293377b-e957-4677-a1c6-10eb8854cdcd",
+        "draw": false,
+        "tournament_id": 21622,
+        "modified_at": "2026-08-04T07:55:25Z",
+        "match_type": "best_of",
+        "number_of_games": 3,
+        "scheduled_at": "2026-08-29T11:00:00Z",
+        "original_scheduled_at": "2026-08-29T11:00:00Z",
+        "game_advantage": null,
+        "low_latency_feed": false,
+        "streams_list": [
+          {
+            "main": false,
+            "language": "ja",
+            "embed_url": "https://player.twitch.tv/?channel=valorant_jpn",
+            "official": false,
+            "raw_url": "https://www.twitch.tv/valorant_jpn"
+          },
+          {
+            "main": false,
+            "language": "en",
+            "embed_url": null,
+            "official": false,
+            "raw_url": "https://www.youtube.com/@VCTPacific/live"
+          },
+          {
+            "main": true,
+            "language": "en",
+            "embed_url": "https://player.twitch.tv/?channel=valorant_pacific",
+            "official": true,
+            "raw_url": "https://www.twitch.tv/valorant_pacific"
+          }
+        ],
+        "rescheduled": false
+      },
+      {
+        "id": 1640230,
+        "name": "Upper bracket final: TBD vs TBD",
+        "status": "not_started",
+        "live": {
+          "supported": false,
+          "url": null,
+          "opens_at": null
+        },
+        "begin_at": "2026-09-04T08:00:00Z",
+        "detailed_stats": true,
+        "end_at": null,
+        "forfeit": false,
+        "winner_id": null,
+        "winner_type": "Team",
+        "slug": "2026-09-04-690ce0ef-c2c5-45d8-9826-f5da5ef6b5f8",
+        "draw": false,
+        "tournament_id": 21622,
+        "modified_at": "2026-08-17T21:29:16Z",
+        "match_type": "best_of",
+        "number_of_games": 3,
+        "scheduled_at": "2026-09-04T08:00:00Z",
+        "original_scheduled_at": "2026-09-04T08:00:00Z",
+        "game_advantage": null,
+        "low_latency_feed": false,
+        "streams_list": [
+          {
+            "main": false,
+            "language": "ja",
+            "embed_url": "https://player.twitch.tv/?channel=valorant_jpn",
+            "official": false,
+            "raw_url": "https://www.twitch.tv/valorant_jpn"
+          },
+          {
+            "main": false,
+            "language": "en",
+            "embed_url": null,
+            "official": false,
+            "raw_url": "https://www.youtube.com/@VCTPacific/live"
+          },
+          {
+            "main": true,
+            "language": "en",
+            "embed_url": "https://player.twitch.tv/?channel=valorant_pacific",
+            "official": true,
+            "raw_url": "https://www.twitch.tv/valorant_pacific"
+          }
+        ],
+        "rescheduled": false
+      },
+      {
+        "id": 1640232,
+        "name": "Lower bracket semifinal: TBD vs TBD",
+        "status": "not_started",
+        "live": {
+          "supported": false,
+          "url": null,
+          "opens_at": null
+        },
+        "begin_at": "2026-09-04T11:00:00Z",
+        "detailed_stats": true,
+        "end_at": null,
+        "forfeit": false,
+        "winner_id": null,
+        "winner_type": "Team",
+        "slug": "2026-09-04-1d26ab27-3d8c-4bb1-bbb5-7f96f999ec02",
+        "draw": false,
+        "tournament_id": 21622,
+        "modified_at": "2026-08-17T21:29:16Z",
+        "match_type": "best_of",
+        "number_of_games": 3,
+        "scheduled_at": "2026-09-04T11:00:00Z",
+        "original_scheduled_at": "2026-09-04T11:00:00Z",
+        "game_advantage": null,
+        "low_latency_feed": false,
+        "streams_list": [
+          {
+            "main": false,
+            "language": "ja",
+            "embed_url": "https://player.twitch.tv/?channel=valorant_jpn",
+            "official": false,
+            "raw_url": "https://www.twitch.tv/valorant_jpn"
+          },
+          {
+            "main": false,
+            "language": "en",
+            "embed_url": null,
+            "official": false,
+            "raw_url": "https://www.youtube.com/@VCTPacific/live"
+          },
+          {
+            "main": true,
+            "language": "en",
+            "embed_url": "https://player.twitch.tv/?channel=valorant_pacific",
+            "official": true,
+            "raw_url": "https://www.twitch.tv/valorant_pacific"
+          }
+        ],
+        "rescheduled": false
+      },
+      {
+        "id": 1640233,
+        "name": "Lower bracket final: TBD vs TBD",
+        "status": "not_started",
+        "live": {
+          "supported": false,
+          "url": null,
+          "opens_at": null
+        },
+        "begin_at": "2026-09-05T08:00:00Z",
+        "detailed_stats": true,
+        "end_at": null,
+        "forfeit": false,
+        "winner_id": null,
+        "winner_type": "Team",
+        "slug": "2026-09-05-d7558e5e-08cf-4946-b563-93a1bd53b830",
+        "draw": false,
+        "tournament_id": 21622,
+        "modified_at": "2026-08-17T21:29:16Z",
+        "match_type": "best_of",
+        "number_of_games": 5,
+        "scheduled_at": "2026-09-05T08:00:00Z",
+        "original_scheduled_at": "2026-09-05T08:00:00Z",
+        "game_advantage": null,
+        "low_latency_feed": false,
+        "streams_list": [
+          {
+            "main": false,
+            "language": "ja",
+            "embed_url": "https://player.twitch.tv/?channel=valorant_jpn",
+            "official": false,
+            "raw_url": "https://www.twitch.tv/valorant_jpn"
+          },
+          {
+            "main": false,
+            "language": "en",
+            "embed_url": null,
+            "official": false,
+            "raw_url": "https://www.youtube.com/@VCTPacific/live"
+          },
+          {
+            "main": true,
+            "language": "en",
+            "embed_url": "https://player.twitch.tv/?channel=valorant_pacific",
+            "official": true,
+            "raw_url": "https://www.twitch.tv/valorant_pacific"
+          }
+        ],
+        "rescheduled": false
+      },
+      {
+        "id": 1640231,
+        "name": "Grand final: TBD vs TBD",
+        "status": "not_started",
+        "live": {
+          "supported": false,
+          "url": null,
+          "opens_at": null
+        },
+        "begin_at": "2026-09-06T08:00:00Z",
+        "detailed_stats": true,
+        "end_at": null,
+        "forfeit": false,
+        "winner_id": null,
+        "winner_type": "Team",
+        "slug": "2026-09-06-f1c8c87c-235f-40bd-842c-d88fb79abebf",
+        "draw": false,
+        "tournament_id": 21622,
+        "modified_at": "2026-08-17T21:29:16Z",
+        "match_type": "best_of",
+        "number_of_games": 5,
+        "scheduled_at": "2026-09-06T08:00:00Z",
+        "original_scheduled_at": "2026-09-06T08:00:00Z",
+        "game_advantage": null,
+        "low_latency_feed": false,
+        "streams_list": [
+          {
+            "main": false,
+            "language": "ja",
+            "embed_url": "https://player.twitch.tv/?channel=valorant_jpn",
+            "official": false,
+            "raw_url": "https://www.twitch.tv/valorant_jpn"
+          },
+          {
+            "main": false,
+            "language": "en",
+            "embed_url": null,
+            "official": false,
+            "raw_url": "https://www.youtube.com/@VCTPacific/live"
+          },
+          {
+            "main": true,
+            "language": "en",
+            "embed_url": "https://player.twitch.tv/?channel=valorant_pacific",
+            "official": true,
+            "raw_url": "https://www.twitch.tv/valorant_pacific"
+          }
+        ],
+        "rescheduled": false
+      }
+    ],
+    "country": "KR",
+    "begin_at": "2026-08-26T08:00:00Z",
+    "detailed_stats": true,
+    "end_at": "2026-09-06T21:00:00Z",
+    "winner_id": null,
+    "winner_type": "Team",
+    "slug": "valorant-vct-2021-north-america-stage-1-challengers-1-pacific-stage-2-2026-playoffs",
+    "teams": [
+      {
+        "id": 128473,
+        "name": "Gen.G Esports",
+        "location": "US",
+        "slug": "gen-g-esports-valorant",
+        "modified_at": "2026-08-04T07:36:04Z",
+        "acronym": "Gen.G",
+        "image_url": "https://cdn-api.pandascore.co/images/team/image/128473/699px_gen.g_esports_2026_allmode.png",
+        "dark_mode_image_url": null
+      },
+      {
+        "id": 128917,
+        "name": "Paper Rex",
+        "location": "SG",
+        "slug": "paper-rex-valorant",
+        "modified_at": "2026-08-09T13:55:12Z",
+        "acronym": "PR",
+        "image_url": "https://cdn-api.pandascore.co/images/team/image/128917/712px_paper_rex_lightmode.png",
+        "dark_mode_image_url": "https://cdn-api.pandascore.co/dark_images/team/dark_image/128917/712px_paper_rex_darkmode.png"
+      },
+      {
+        "id": 129660,
+        "name": "Global Esports",
+        "location": "IN",
+        "slug": "global-esports-valorant",
+        "modified_at": "2026-08-09T13:55:13Z",
+        "acronym": "GE",
+        "image_url": "https://cdn-api.pandascore.co/images/team/image/129660/global_esports_2020_allmode.png",
+        "dark_mode_image_url": null
+      },
+      {
+        "id": 134426,
+        "name": "VARREL",
+        "location": "JP",
+        "slug": "varrel-valorant",
+        "modified_at": "2026-08-09T13:55:13Z",
+        "acronym": null,
+        "image_url": "https://cdn-api.pandascore.co/images/team/image/134426/728px_varrel_lightmode.png",
+        "dark_mode_image_url": "https://cdn-api.pandascore.co/dark_images/team/dark_image/134426/728px_varrel_darkmode.png"
+      }
+    ],
+    "videogame": {
+      "id": 26,
+      "name": "Valorant",
+      "slug": "valorant"
+    },
+    "serie_id": 10745,
+    "serie": {
+      "id": 10745,
+      "name": "Pacific",
+      "year": 2026,
+      "begin_at": "2026-07-16T08:00:00Z",
+      "end_at": "2026-09-06T19:00:00Z",
+      "winner_id": null,
+      "winner_type": "Team",
+      "slug": "valorant-vct-2021-north-america-stage-1-challengers-1-pacific-stage-2-2026",
+      "modified_at": "2026-06-28T11:37:47Z",
+      "league_id": 4531,
+      "season": "Stage 2",
+      "full_name": "Pacific Stage 2 2026"
+    },
+    "modified_at": "2026-08-09T13:55:14Z",
+    "league_id": 4531,
+    "league": {
+      "id": 4531,
+      "name": "VCT",
+      "url": null,
+      "slug": "valorant-vct-2021-north-america-stage-1-challengers-1",
+      "modified_at": "2023-02-13T19:07:55Z",
+      "image_url": "https://cdn-api.pandascore.co/images/league/image/4531/800px-vct_2023_logo_lightmode-png"
+    },
+    "prizepool": "250000 United States Dollar",
+    "tier": "b",
+    "videogame_title": null,
+    "has_bracket": true,
+    "region": "ASIA",
+    "live_supported": false,
+    "expected_roster": [
+      {
+        "team": {
+          "id": 128473,
+          "name": "Gen.G Esports",
+          "location": "US",
+          "slug": "gen-g-esports-valorant",
+          "modified_at": "2026-08-04T07:36:04Z",
+          "acronym": "Gen.G",
+          "image_url": "https://cdn-api.pandascore.co/images/team/image/128473/699px_gen.g_esports_2026_allmode.png",
+          "dark_mode_image_url": null
+        },
+        "players": [
+          {
+            "active": true,
+            "id": 32469,
+            "name": "T3xture",
+            "role": null,
+            "slug": "t3xture",
+            "modified_at": "2026-08-04T07:36:04Z",
+            "age": 27,
+            "birthday": "1999-07-20",
+            "first_name": "Na-ra",
+            "last_name": "Kim",
+            "nationality": "KR",
+            "image_url": "https://cdn-api.pandascore.co/images/player/image/32469/ezgif_739d5b43c8ede7.png"
+          },
+          {
+            "active": true,
+            "id": 32473,
+            "name": "Efina",
+            "role": null,
+            "slug": "efina",
+            "modified_at": "2026-08-04T07:36:03Z",
+            "age": 25,
+            "birthday": "2001-05-27",
+            "first_name": "Kim",
+            "last_name": "Nak-yeon",
+            "nationality": "KR",
+            "image_url": "https://cdn-api.pandascore.co/images/player/image/32473/600px_efina_at_first_strike_korea.png"
+          },
+          {
+            "active": true,
+            "id": 47561,
+            "name": "Ash",
+            "role": null,
+            "slug": "ash-1210332c-1b61-46c5-b139-b492b6e700d9",
+            "modified_at": "2026-08-04T07:36:02Z",
+            "age": 21,
+            "birthday": "2004-10-15",
+            "first_name": "Hyun-cheol",
+            "last_name": "Ha",
+            "nationality": "KR",
+            "image_url": "https://cdn-api.pandascore.co/images/player/image/47561/600px_vcl23_s1_opgg_ash.png"
+          },
+          {
+            "active": true,
+            "id": 51570,
+            "name": "Karon",
+            "role": null,
+            "slug": "karon",
+            "modified_at": "2026-08-04T07:36:03Z",
+            "age": 23,
+            "birthday": "2002-10-21",
+            "first_name": "Won-tae",
+            "last_name": "Kim",
+            "nationality": "KR",
+            "image_url": "https://cdn-api.pandascore.co/images/player/image/51570/ezgif_775d677a1e830c.png"
+          },
+          {
+            "active": true,
+            "id": 56937,
+            "name": "Raxcal",
+            "role": null,
+            "slug": "raxcal",
+            "modified_at": "2026-08-04T07:36:03Z",
+            "age": 18,
+            "birthday": "2008-06-16",
+            "first_name": "Min-seok",
+            "last_name": "Kim",
+            "nationality": "KR",
+            "image_url": null
+          }
+        ]
+      },
+      {
+        "team": {
+          "id": 128917,
+          "name": "Paper Rex",
+          "location": "SG",
+          "slug": "paper-rex-valorant",
+          "modified_at": "2026-08-09T13:55:12Z",
+          "acronym": "PR",
+          "image_url": "https://cdn-api.pandascore.co/images/team/image/128917/712px_paper_rex_lightmode.png",
+          "dark_mode_image_url": "https://cdn-api.pandascore.co/dark_images/team/dark_image/128917/712px_paper_rex_darkmode.png"
+        },
+        "players": [
+          {
+            "active": true,
+            "id": 20576,
+            "name": "d4v41",
+            "role": null,
+            "slug": "d4v41",
+            "modified_at": "2026-08-09T13:55:10Z",
+            "age": 27,
+            "birthday": "1998-10-14",
+            "first_name": "Khalish",
+            "last_name": "Rusyaidee",
+            "nationality": "MY",
+            "image_url": "https://cdn-api.pandascore.co/images/player/image/20576/800px_paper_rex___d4v41.png"
+          },
+          {
+            "active": true,
+            "id": 24466,
+            "name": "f0rsakeN",
+            "role": null,
+            "slug": "f0rsaken",
+            "modified_at": "2026-08-09T13:55:11Z",
+            "age": 22,
+            "birthday": "2004-03-25",
+            "first_name": "Jason",
+            "last_name": "Susanto",
+            "nationality": "ID",
+            "image_url": "https://cdn-api.pandascore.co/images/player/image/24466/800px_paper_rex___f0rsake_n.png"
+          },
+          {
+            "active": true,
+            "id": 35982,
+            "name": "something",
+            "role": null,
+            "slug": "smth",
+            "modified_at": "2026-08-09T13:55:11Z",
+            "age": 24,
+            "birthday": "2002-02-11",
+            "first_name": "Ilya",
+            "last_name": "Petrov",
+            "nationality": "RU",
+            "image_url": null
+          },
+          {
+            "active": true,
+            "id": 37229,
+            "name": "Jinggg",
+            "role": null,
+            "slug": "jinggg",
+            "modified_at": "2026-08-09T13:55:11Z",
+            "age": 23,
+            "birthday": "2003-07-29",
+            "first_name": "Jing Jie",
+            "last_name": "Wang",
+            "nationality": "SG",
+            "image_url": "https://cdn-api.pandascore.co/images/player/image/37229/valorant_paper_rex_jinggg_1024x576_removebg_preview.png"
+          },
+          {
+            "active": true,
+            "id": 39220,
+            "name": "invy",
+            "role": null,
+            "slug": "invy",
+            "modified_at": "2026-08-09T13:55:11Z",
+            "age": 22,
+            "birthday": "2004-07-08",
+            "first_name": "Jiggs",
+            "last_name": "Adrian Reyes",
+            "nationality": "PH",
+            "image_url": "https://cdn-api.pandascore.co/images/player/image/39220/ezgif_7_babb0c3fa6.png"
+          }
+        ]
+      },
+      {
+        "team": {
+          "id": 129660,
+          "name": "Global Esports",
+          "location": "IN",
+          "slug": "global-esports-valorant",
+          "modified_at": "2026-08-09T13:55:13Z",
+          "acronym": "GE",
+          "image_url": "https://cdn-api.pandascore.co/images/team/image/129660/global_esports_2020_allmode.png",
+          "dark_mode_image_url": null
+        },
+        "players": [
+          {
+            "active": true,
+            "id": 34880,
+            "name": "Autumn",
+            "role": null,
+            "slug": "autumn-kale-dunne",
+            "modified_at": "2026-08-09T13:55:13Z",
+            "age": 24,
+            "birthday": "2001-11-09",
+            "first_name": "Kale",
+            "last_name": "Dunne",
+            "nationality": "AU",
+            "image_url": null
+          },
+          {
+            "active": true,
+            "id": 35820,
+            "name": "UdoTan",
+            "role": null,
+            "slug": "udotan",
+            "modified_at": "2026-08-09T13:55:13Z",
+            "age": 22,
+            "birthday": "2004-05-10",
+            "first_name": "Go ",
+            "last_name": "Kyung-won",
+            "nationality": "KR",
+            "image_url": "https://cdn-api.pandascore.co/images/player/image/35820/600px_vcl23_s2_gjs_udotan.png"
+          },
+          {
+            "active": true,
+            "id": 38966,
+            "name": "xavi8k",
+            "role": null,
+            "slug": "xavi8k",
+            "modified_at": "2026-08-09T13:55:13Z",
+            "age": 24,
+            "birthday": "2001-10-28",
+            "first_name": "Xavier Hebron",
+            "last_name": "JUAN",
+            "nationality": "PH",
+            "image_url": null
+          },
+          {
+            "active": true,
+            "id": 40331,
+            "name": "Kr1stal",
+            "role": null,
+            "slug": "kr1stal",
+            "modified_at": "2026-08-09T13:55:13Z",
+            "age": 23,
+            "birthday": "2003-04-03",
+            "first_name": "Savva ",
+            "last_name": "Fedorov",
+            "nationality": "RU",
+            "image_url": "https://cdn-api.pandascore.co/images/player/image/40331/ezgif_75473ac5b929d6.png"
+          },
+          {
+            "active": true,
+            "id": 46066,
+            "name": "PatMen",
+            "role": null,
+            "slug": "patmen",
+            "modified_at": "2026-08-09T13:55:13Z",
+            "age": 24,
+            "birthday": "2001-12-05",
+            "first_name": "Patrick",
+            "last_name": "Mendoza",
+            "nationality": "PH",
+            "image_url": null
+          }
+        ]
+      },
+      {
+        "team": {
+          "id": 134426,
+          "name": "VARREL",
+          "location": "JP",
+          "slug": "varrel-valorant",
+          "modified_at": "2026-08-09T13:55:13Z",
+          "acronym": null,
+          "image_url": "https://cdn-api.pandascore.co/images/team/image/134426/728px_varrel_lightmode.png",
+          "dark_mode_image_url": "https://cdn-api.pandascore.co/dark_images/team/dark_image/134426/728px_varrel_darkmode.png"
+        },
+        "players": [
+          {
+            "active": true,
+            "id": 32456,
+            "name": "C1nder",
+            "role": null,
+            "slug": "c1nder",
+            "modified_at": "2026-08-09T13:55:12Z",
+            "age": 27,
+            "birthday": "1999-04-16",
+            "first_name": "Go",
+            "last_name": "Jae-hyuk",
+            "nationality": "KR",
+            "image_url": "https://cdn-api.pandascore.co/images/player/image/32456/600px_slt_c1nde_r_vck25_s1.png"
+          },
+          {
+            "active": true,
+            "id": 40700,
+            "name": "Foxy9",
+            "role": null,
+            "slug": "foxy9",
+            "modified_at": "2026-08-09T13:55:12Z",
+            "age": 21,
+            "birthday": "2004-11-20",
+            "first_name": "Jung",
+            "last_name": "Jae-sung",
+            "nationality": "KR",
+            "image_url": "https://cdn-api.pandascore.co/images/player/image/40700/ezgif_7fa2981bb6c3ea.png"
+          },
+          {
+            "active": true,
+            "id": 52929,
+            "name": "oonzmlp",
+            "role": null,
+            "slug": "oonzmlp",
+            "modified_at": "2026-08-09T13:55:12Z",
+            "age": 19,
+            "birthday": "2006-10-08",
+            "first_name": "Shin",
+            "last_name": "Sang-beom",
+            "nationality": "KR",
+            "image_url": "https://cdn-api.pandascore.co/images/player/image/52929/600px_slt_oonzmlp_vck25_s1.png"
+          },
+          {
+            "active": true,
+            "id": 56918,
+            "name": "XuNa",
+            "role": null,
+            "slug": "xuna",
+            "modified_at": "2026-08-09T13:55:12Z",
+            "age": 18,
+            "birthday": "2007-10-29",
+            "first_name": "Tae-geon",
+            "last_name": "Kim ",
+            "nationality": "KR",
+            "image_url": "https://cdn-api.pandascore.co/images/player/image/56918/600px_slt_xu_na_vck25_s1.png"
+          },
+          {
+            "active": true,
+            "id": 56919,
+            "name": "zexy",
+            "role": null,
+            "slug": "zexy",
+            "modified_at": "2026-08-09T13:55:12Z",
+            "age": 20,
+            "birthday": "2006-06-15",
+            "first_name": "Jang",
+            "last_name": "Suk-hyun",
+            "nationality": "KR",
+            "image_url": "https://cdn-api.pandascore.co/images/player/image/56919/600px_slt_zexy_vck25_s1.png"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 21570,
+    "name": "Playoffs",
+    "type": "offline",
+    "matches": [
+      {
+        "id": 1608210,
+        "name": "Upper bracket quarterfinal 2: VIT vs EP",
+        "status": "finished",
+        "live": {
+          "supported": false,
+          "url": null,
+          "opens_at": null
+        },
+        "begin_at": "2026-08-20T15:07:39Z",
+        "detailed_stats": true,
+        "end_at": "2026-08-20T17:40:28Z",
+        "forfeit": false,
+        "winner_id": 130973,
+        "winner_type": "Team",
+        "slug": "2026-08-20-d192bc8d-068c-4dc3-bf99-59f191f469e0",
+        "draw": false,
+        "tournament_id": 21570,
+        "modified_at": "2026-08-20T18:00:47Z",
+        "match_type": "best_of",
+        "number_of_games": 3,
+        "scheduled_at": "2026-08-20T15:00:00Z",
+        "original_scheduled_at": "2026-08-20T18:00:00Z",
+        "game_advantage": null,
+        "low_latency_feed": false,
+        "streams_list": [
+          {
+            "main": false,
+            "language": "en",
+            "embed_url": "https://www.youtube.com/embed/2C7mKxPzWgY",
+            "official": false,
+            "raw_url": "https://www.youtube.com/watch?v=2C7mKxPzWgY"
+          },
+          {
+            "main": true,
+            "language": "en",
+            "embed_url": "https://player.twitch.tv/?channel=valorant_emea",
+            "official": true,
+            "raw_url": "https://www.twitch.tv/valorant_emea"
+          },
+          {
+            "main": false,
+            "language": "fr",
+            "embed_url": "https://player.twitch.tv/?channel=valorant_fr",
+            "official": false,
+            "raw_url": "https://www.twitch.tv/valorant_fr"
+          },
+          {
+            "main": false,
+            "language": "es",
+            "embed_url": "https://player.twitch.tv/?channel=valorant_es",
+            "official": false,
+            "raw_url": "https://www.twitch.tv/valorant_es"
+          }
+        ],
+        "rescheduled": true
+      },
+      {
+        "id": 1608209,
+        "name": "Upper bracket quarterfinal 1: TL vs FUT",
+        "status": "finished",
+        "live": {
+          "supported": false,
+          "url": null,
+          "opens_at": null
+        },
+        "begin_at": "2026-08-20T18:08:19Z",
+        "detailed_stats": true,
+        "end_at": "2026-08-20T19:59:20Z",
+        "forfeit": false,
+        "winner_id": 128578,
+        "winner_type": "Team",
+        "slug": "2026-08-20-b20646e3-1cc2-40fa-9a8e-923db53457c6",
+        "draw": false,
+        "tournament_id": 21570,
+        "modified_at": "2026-08-20T20:14:59Z",
+        "match_type": "best_of",
+        "number_of_games": 3,
+        "scheduled_at": "2026-08-20T18:00:00Z",
+        "original_scheduled_at": "2026-08-20T15:00:00Z",
+        "game_advantage": null,
+        "low_latency_feed": false,
+        "streams_list": [
+          {
+            "main": false,
+            "language": "en",
+            "embed_url": "https://www.youtube.com/embed/2C7mKxPzWgY",
+            "official": false,
+            "raw_url": "https://www.youtube.com/watch?v=2C7mKxPzWgY"
+          },
+          {
+            "main": true,
+            "language": "en",
+            "embed_url": "https://player.twitch.tv/?channel=valorant_emea",
+            "official": true,
+            "raw_url": "https://www.twitch.tv/valorant_emea"
+          },
+          {
+            "main": false,
+            "language": "fr",
+            "embed_url": "https://player.twitch.tv/?channel=valorant_fr",
+            "official": false,
+            "raw_url": "https://www.twitch.tv/valorant_fr"
+          },
+          {
+            "main": false,
+            "language": "es",
+            "embed_url": "https://player.twitch.tv/?channel=valorant_es",
+            "official": false,
+            "raw_url": "https://www.twitch.tv/valorant_es"
+          }
+        ],
+        "rescheduled": true
+      },
+      {
+        "id": 1608212,
+        "name": "Upper bracket semifinal 2: EP vs KC",
+        "status": "finished",
+        "live": {
+          "supported": false,
+          "url": null,
+          "opens_at": null
+        },
+        "begin_at": "2026-08-21T15:07:20Z",
+        "detailed_stats": true,
+        "end_at": "2026-08-21T17:52:53Z",
+        "forfeit": false,
+        "winner_id": 130922,
+        "winner_type": "Team",
+        "slug": "karmine-corp-2026-08-21",
+        "draw": false,
+        "tournament_id": 21570,
+        "modified_at": "2026-08-21T18:08:02Z",
+        "match_type": "best_of",
+        "number_of_games": 3,
+        "scheduled_at": "2026-08-21T15:00:00Z",
+        "original_scheduled_at": "2026-08-21T18:00:00Z",
+        "game_advantage": null,
+        "low_latency_feed": false,
+        "streams_list": [
+          {
+            "main": false,
+            "language": "en",
+            "embed_url": "https://www.youtube.com/embed/Uhf7b4fmheE",
+            "official": false,
+            "raw_url": "https://www.youtube.com/watch?v=Uhf7b4fmheE"
+          },
+          {
+            "main": true,
+            "language": "en",
+            "embed_url": "https://player.twitch.tv/?channel=valorant_emea",
+            "official": true,
+            "raw_url": "https://www.twitch.tv/valorant_emea"
+          },
+          {
+            "main": false,
+            "language": "fr",
+            "embed_url": "https://player.twitch.tv/?channel=valorant_fr",
+            "official": false,
+            "raw_url": "https://www.twitch.tv/valorant_fr"
+          },
+          {
+            "main": false,
+            "language": "es",
+            "embed_url": "https://player.twitch.tv/?channel=valorant_es",
+            "official": false,
+            "raw_url": "https://www.twitch.tv/valorant_es"
+          }
+        ],
+        "rescheduled": true
+      },
+      {
+        "id": 1608211,
+        "name": "Upper bracket semifinal 1: BBL vs FUT",
+        "status": "finished",
+        "live": {
+          "supported": false,
+          "url": null,
+          "opens_at": null
+        },
+        "begin_at": "2026-08-21T18:20:46Z",
+        "detailed_stats": true,
+        "end_at": "2026-08-21T20:48:20Z",
+        "forfeit": false,
+        "winner_id": 128578,
+        "winner_type": "Team",
+        "slug": "bbl-esports-2026-08-21",
+        "draw": false,
+        "tournament_id": 21570,
+        "modified_at": "2026-08-21T21:59:26Z",
+        "match_type": "best_of",
+        "number_of_games": 3,
+        "scheduled_at": "2026-08-21T18:30:00Z",
+        "original_scheduled_at": "2026-08-21T15:00:00Z",
+        "game_advantage": null,
+        "low_latency_feed": false,
+        "streams_list": [
+          {
+            "main": false,
+            "language": "en",
+            "embed_url": "https://www.youtube.com/embed/Uhf7b4fmheE",
+            "official": false,
+            "raw_url": "https://www.youtube.com/watch?v=Uhf7b4fmheE"
+          },
+          {
+            "main": true,
+            "language": "en",
+            "embed_url": "https://player.twitch.tv/?channel=valorant_emea",
+            "official": true,
+            "raw_url": "https://www.twitch.tv/valorant_emea"
+          },
+          {
+            "main": false,
+            "language": "fr",
+            "embed_url": "https://player.twitch.tv/?channel=valorant_fr",
+            "official": false,
+            "raw_url": "https://www.twitch.tv/valorant_fr"
+          },
+          {
+            "main": false,
+            "language": "es",
+            "embed_url": "https://player.twitch.tv/?channel=valorant_es",
+            "official": false,
+            "raw_url": "https://www.twitch.tv/valorant_es"
+          }
+        ],
+        "rescheduled": true
+      },
+      {
+        "id": 1608253,
+        "name": "Lower bracket round 1 match 1: TL vs SGE",
+        "status": "finished",
+        "live": {
+          "supported": false,
+          "url": null,
+          "opens_at": null
+        },
+        "begin_at": "2026-08-22T14:06:33Z",
+        "detailed_stats": true,
+        "end_at": "2026-08-22T16:08:51Z",
+        "forfeit": false,
+        "winner_id": 128541,
+        "winner_type": "Team",
+        "slug": "eintracht-frankfurt-2026-08-22",
+        "draw": false,
+        "tournament_id": 21570,
+        "modified_at": "2026-08-22T16:25:03Z",
+        "match_type": "best_of",
+        "number_of_games": 3,
+        "scheduled_at": "2026-08-22T14:00:00Z",
+        "original_scheduled_at": "2026-08-22T15:00:00Z",
+        "game_advantage": null,
+        "low_latency_feed": false,
+        "streams_list": [
+          {
+            "main": true,
+            "language": "en",
+            "embed_url": "https://player.twitch.tv/?channel=valorant_emea",
+            "official": true,
+            "raw_url": "https://www.twitch.tv/valorant_emea"
+          },
+          {
+            "main": false,
+            "language": "fr",
+            "embed_url": "https://player.twitch.tv/?channel=valorant_fr",
+            "official": false,
+            "raw_url": "https://www.twitch.tv/valorant_fr"
+          },
+          {
+            "main": false,
+            "language": "es",
+            "embed_url": "https://player.twitch.tv/?channel=valorant_es",
+            "official": false,
+            "raw_url": "https://www.twitch.tv/valorant_es"
+          }
+        ],
+        "rescheduled": true
+      },
+      {
+        "id": 1608254,
+        "name": "Lower bracket round 1 match 2: VIT vs FF",
+        "status": "finished",
+        "live": {
+          "supported": false,
+          "url": null,
+          "opens_at": null
+        },
+        "begin_at": "2026-08-22T16:36:28Z",
+        "detailed_stats": true,
+        "end_at": "2026-08-22T19:28:20Z",
+        "forfeit": false,
+        "winner_id": 129194,
+        "winner_type": "Team",
+        "slug": "fire-flux-esports-2026-08-22",
+        "draw": false,
+        "tournament_id": 21570,
+        "modified_at": "2026-08-22T20:02:22Z",
+        "match_type": "best_of",
+        "number_of_games": 3,
+        "scheduled_at": "2026-08-22T16:30:00Z",
+        "original_scheduled_at": "2026-08-22T18:00:00Z",
+        "game_advantage": null,
+        "low_latency_feed": false,
+        "streams_list": [
+          {
+            "main": true,
+            "language": "en",
+            "embed_url": "https://player.twitch.tv/?channel=valorant_emea",
+            "official": true,
+            "raw_url": "https://www.twitch.tv/valorant_emea"
+          },
+          {
+            "main": false,
+            "language": "fr",
+            "embed_url": "https://player.twitch.tv/?channel=valorant_fr",
+            "official": false,
+            "raw_url": "https://www.twitch.tv/valorant_fr"
+          },
+          {
+            "main": false,
+            "language": "es",
+            "embed_url": "https://player.twitch.tv/?channel=valorant_es",
+            "official": false,
+            "raw_url": "https://www.twitch.tv/valorant_es"
+          }
+        ],
+        "rescheduled": true
+      },
+      {
+        "id": 1608238,
+        "name": "Lower bracket quarterfinal 1: EP vs TL",
+        "status": "not_started",
+        "live": {
+          "supported": false,
+          "url": null,
+          "opens_at": null
+        },
+        "begin_at": "2026-08-23T14:00:00Z",
+        "detailed_stats": true,
+        "end_at": null,
+        "forfeit": false,
+        "winner_id": null,
+        "winner_type": "Team",
+        "slug": "enterprise-esports-2026-08-23",
+        "draw": false,
+        "tournament_id": 21570,
+        "modified_at": "2026-08-22T16:08:52Z",
+        "match_type": "best_of",
+        "number_of_games": 3,
+        "scheduled_at": "2026-08-23T14:00:00Z",
+        "original_scheduled_at": "2026-08-23T15:00:00Z",
+        "game_advantage": null,
+        "low_latency_feed": false,
+        "streams_list": [
+          {
+            "main": true,
+            "language": "en",
+            "embed_url": "https://player.twitch.tv/?channel=valorant_emea",
+            "official": true,
+            "raw_url": "https://www.twitch.tv/valorant_emea"
+          },
+          {
+            "main": false,
+            "language": "fr",
+            "embed_url": "https://player.twitch.tv/?channel=valorant_fr",
+            "official": false,
+            "raw_url": "https://www.twitch.tv/valorant_fr"
+          },
+          {
+            "main": false,
+            "language": "es",
+            "embed_url": "https://player.twitch.tv/?channel=valorant_es",
+            "official": false,
+            "raw_url": "https://www.twitch.tv/valorant_es"
+          }
+        ],
+        "rescheduled": true
+      },
+      {
+        "id": 1608239,
+        "name": "Lower bracket quarterfinal 2: BBL vs FF",
+        "status": "not_started",
+        "live": {
+          "supported": false,
+          "url": null,
+          "opens_at": null
+        },
+        "begin_at": "2026-08-23T17:00:00Z",
+        "detailed_stats": true,
+        "end_at": null,
+        "forfeit": false,
+        "winner_id": null,
+        "winner_type": "Team",
+        "slug": "bbl-esports-2026-08-23",
+        "draw": false,
+        "tournament_id": 21570,
+        "modified_at": "2026-08-22T19:28:21Z",
+        "match_type": "best_of",
+        "number_of_games": 3,
+        "scheduled_at": "2026-08-23T17:00:00Z",
+        "original_scheduled_at": "2026-08-23T18:00:00Z",
+        "game_advantage": null,
+        "low_latency_feed": false,
+        "streams_list": [
+          {
+            "main": true,
+            "language": "en",
+            "embed_url": "https://player.twitch.tv/?channel=valorant_emea",
+            "official": true,
+            "raw_url": "https://www.twitch.tv/valorant_emea"
+          },
+          {
+            "main": false,
+            "language": "fr",
+            "embed_url": "https://player.twitch.tv/?channel=valorant_fr",
+            "official": false,
+            "raw_url": "https://www.twitch.tv/valorant_fr"
+          },
+          {
+            "main": false,
+            "language": "es",
+            "embed_url": "https://player.twitch.tv/?channel=valorant_es",
+            "official": false,
+            "raw_url": "https://www.twitch.tv/valorant_es"
+          }
+        ],
+        "rescheduled": true
+      },
+      {
+        "id": 1608213,
+        "name": "Upper bracket final : FUT vs KC",
+        "status": "not_started",
+        "live": {
+          "supported": false,
+          "url": null,
+          "opens_at": null
+        },
+        "begin_at": "2026-08-28T14:00:00Z",
+        "detailed_stats": true,
+        "end_at": null,
+        "forfeit": false,
+        "winner_id": null,
+        "winner_type": "Team",
+        "slug": "karmine-corp-2026-08-28",
+        "draw": false,
+        "tournament_id": 21570,
+        "modified_at": "2026-08-22T03:32:13Z",
+        "match_type": "best_of",
+        "number_of_games": 3,
+        "scheduled_at": "2026-08-28T14:00:00Z",
+        "original_scheduled_at": "2026-08-28T15:00:00Z",
+        "game_advantage": null,
+        "low_latency_feed": false,
+        "streams_list": [
+          {
+            "main": true,
+            "language": "en",
+            "embed_url": "https://player.twitch.tv/?channel=valorant_emea",
+            "official": true,
+            "raw_url": "https://www.twitch.tv/valorant_emea"
+          },
+          {
+            "main": false,
+            "language": "fr",
+            "embed_url": "https://player.twitch.tv/?channel=valorant_fr",
+            "official": false,
+            "raw_url": "https://www.twitch.tv/valorant_fr"
+          },
+          {
+            "main": false,
+            "language": "es",
+            "embed_url": "https://player.twitch.tv/?channel=valorant_es",
+            "official": false,
+            "raw_url": "https://www.twitch.tv/valorant_es"
+          }
+        ],
+        "rescheduled": true
+      },
+      {
+        "id": 1608230,
+        "name": "Lower bracket semifinal: TBD vs TBD",
+        "status": "not_started",
+        "live": {
+          "supported": false,
+          "url": null,
+          "opens_at": null
+        },
+        "begin_at": "2026-08-28T17:00:00Z",
+        "detailed_stats": true,
+        "end_at": null,
+        "forfeit": false,
+        "winner_id": null,
+        "winner_type": "Team",
+        "slug": "2026-08-28-e3895750-598d-415f-adbb-1a338a33cffb",
+        "draw": false,
+        "tournament_id": 21570,
+        "modified_at": "2026-08-19T06:28:30Z",
+        "match_type": "best_of",
+        "number_of_games": 3,
+        "scheduled_at": "2026-08-28T17:00:00Z",
+        "original_scheduled_at": "2026-08-28T18:00:00Z",
+        "game_advantage": null,
+        "low_latency_feed": false,
+        "streams_list": [
+          {
+            "main": false,
+            "language": "es",
+            "embed_url": "https://player.twitch.tv/?channel=valorant_es",
+            "official": false,
+            "raw_url": "https://www.twitch.tv/valorant_es"
+          },
+          {
+            "main": false,
+            "language": "fr",
+            "embed_url": "https://player.twitch.tv/?channel=valorant_fr",
+            "official": false,
+            "raw_url": "https://www.twitch.tv/valorant_fr"
+          },
+          {
+            "main": true,
+            "language": "en",
+            "embed_url": "https://player.twitch.tv/?channel=valorant_emea",
+            "official": true,
+            "raw_url": "https://www.twitch.tv/valorant_emea"
+          }
+        ],
+        "rescheduled": true
+      },
+      {
+        "id": 1608229,
+        "name": "Lower bracket final: TBD vs TBD",
+        "status": "not_started",
+        "live": {
+          "supported": false,
+          "url": null,
+          "opens_at": null
+        },
+        "begin_at": "2026-08-29T15:00:00Z",
+        "detailed_stats": true,
+        "end_at": null,
+        "forfeit": false,
+        "winner_id": null,
+        "winner_type": "Team",
+        "slug": "2026-08-29-1fd3d0c2-b3c0-4ae0-863a-0ec75d993f27",
+        "draw": false,
+        "tournament_id": 21570,
+        "modified_at": "2026-08-19T06:28:50Z",
+        "match_type": "best_of",
+        "number_of_games": 5,
+        "scheduled_at": "2026-08-29T15:00:00Z",
+        "original_scheduled_at": "2026-08-29T16:00:00Z",
+        "game_advantage": null,
+        "low_latency_feed": false,
+        "streams_list": [
+          {
+            "main": false,
+            "language": "es",
+            "embed_url": "https://player.twitch.tv/?channel=valorant_es",
+            "official": false,
+            "raw_url": "https://www.twitch.tv/valorant_es"
+          },
+          {
+            "main": false,
+            "language": "fr",
+            "embed_url": "https://player.twitch.tv/?channel=valorant_fr",
+            "official": false,
+            "raw_url": "https://www.twitch.tv/valorant_fr"
+          },
+          {
+            "main": true,
+            "language": "en",
+            "embed_url": "https://player.twitch.tv/?channel=valorant_emea",
+            "official": true,
+            "raw_url": "https://www.twitch.tv/valorant_emea"
+          }
+        ],
+        "rescheduled": true
+      },
+      {
+        "id": 1608215,
+        "name": "Grand final: TBD vs TBD",
+        "status": "not_started",
+        "live": {
+          "supported": false,
+          "url": null,
+          "opens_at": null
+        },
+        "begin_at": "2026-08-30T15:00:00Z",
+        "detailed_stats": true,
+        "end_at": null,
+        "forfeit": false,
+        "winner_id": null,
+        "winner_type": "Team",
+        "slug": "2026-08-30-09d640cc-db6c-4520-aad3-1a712cc3672c",
+        "draw": false,
+        "tournament_id": 21570,
+        "modified_at": "2026-08-19T06:28:55Z",
+        "match_type": "best_of",
+        "number_of_games": 5,
+        "scheduled_at": "2026-08-30T15:00:00Z",
+        "original_scheduled_at": "2026-08-30T16:00:00Z",
+        "game_advantage": null,
+        "low_latency_feed": false,
+        "streams_list": [
+          {
+            "main": false,
+            "language": "es",
+            "embed_url": "https://player.twitch.tv/?channel=valorant_es",
+            "official": false,
+            "raw_url": "https://www.twitch.tv/valorant_es"
+          },
+          {
+            "main": false,
+            "language": "fr",
+            "embed_url": "https://player.twitch.tv/?channel=valorant_fr",
+            "official": false,
+            "raw_url": "https://www.twitch.tv/valorant_fr"
+          },
+          {
+            "main": true,
+            "language": "en",
+            "embed_url": "https://player.twitch.tv/?channel=valorant_emea",
+            "official": true,
+            "raw_url": "https://www.twitch.tv/valorant_emea"
+          }
+        ],
+        "rescheduled": true
+      }
+    ],
+    "country": null,
+    "begin_at": "2026-08-20T15:00:00Z",
+    "detailed_stats": true,
+    "end_at": "2026-08-30T21:00:00Z",
+    "winner_id": null,
+    "winner_type": "Team",
+    "slug": "valorant-vct-2021-north-america-stage-1-challengers-1-emea-stage-2-2026-playoffs",
+    "teams": [
+      {
+        "id": 128541,
+        "name": "Team Liquid",
+        "location": "NL",
+        "slug": "team-liquid-valorant",
+        "modified_at": "2026-08-05T18:18:41Z",
+        "acronym": "TL",
+        "image_url": "https://cdn-api.pandascore.co/images/team/image/128541/463px_team_liquid_2024_full_lightmode.png",
+        "dark_mode_image_url": "https://cdn-api.pandascore.co/dark_images/team/dark_image/128541/463px_team_liquid_2024_full_darkmode.png"
+      },
+      {
+        "id": 128577,
+        "name": "BBL Esports",
+        "location": "TR",
+        "slug": "bbl-esports",
+        "modified_at": "2026-08-05T18:18:43Z",
+        "acronym": "BBL",
+        "image_url": "https://cdn-api.pandascore.co/images/team/image/128577/600px_bbl_esports_2022_full_lightmode.png",
+        "dark_mode_image_url": "https://cdn-api.pandascore.co/dark_images/team/dark_image/128577/190px_bbl_esports_2022_darkmode.png"
+      },
+      {
+        "id": 128578,
+        "name": "FUT Esports",
+        "location": "TR",
+        "slug": "futbolist",
+        "modified_at": "2026-08-16T22:36:55Z",
+        "acronym": "FUT",
+        "image_url": "https://cdn-api.pandascore.co/images/team/image/128578/600px_futbolist_new_logo_2021_infobox.png",
+        "dark_mode_image_url": "https://cdn-api.pandascore.co/dark_images/team/dark_image/128578/600px_futbolist_2021_darkmode.png"
+      },
+      {
+        "id": 128796,
+        "name": "Team Vitality",
+        "location": "FR",
+        "slug": "team-vitality-valorant",
+        "modified_at": "2026-08-05T18:18:45Z",
+        "acronym": "VIT",
+        "image_url": "https://cdn-api.pandascore.co/images/team/image/128796/600px_team_vitality_2023_darkmode.png",
+        "dark_mode_image_url": "https://cdn-api.pandascore.co/dark_images/team/dark_image/128796/600px_team_vitality_2023_darkmode.png"
+      },
+      {
+        "id": 129194,
+        "name": "Fire Flux Esports",
+        "location": "TR",
+        "slug": "fire-flux-esports",
+        "modified_at": "2026-08-16T22:36:59Z",
+        "acronym": "FF",
+        "image_url": "https://cdn-api.pandascore.co/images/team/image/129194/60b41997755c0.png",
+        "dark_mode_image_url": null
+      },
+      {
+        "id": 130922,
+        "name": "Karmine Corp",
+        "location": "FR",
+        "slug": "karmine-corp-valorant",
+        "modified_at": "2026-08-05T18:18:47Z",
+        "acronym": "KC",
+        "image_url": "https://cdn-api.pandascore.co/images/team/image/130922/600px_karmine_corp_lightmode_full.png",
+        "dark_mode_image_url": "https://cdn-api.pandascore.co/dark_images/team/dark_image/130922/632px_karmine_corp_allmode.png"
+      },
+      {
+        "id": 130973,
+        "name": "Enterprise Esports",
+        "location": "CZ",
+        "slug": "enterprise-esports-valorant",
+        "modified_at": "2026-08-16T22:36:57Z",
+        "acronym": "EP",
+        "image_url": "https://cdn-api.pandascore.co/images/team/image/130973/600px_enterprise_esports_allmode.png",
+        "dark_mode_image_url": null
+      },
+      {
+        "id": 134406,
+        "name": "Eintracht Frankfurt",
+        "location": "DE",
+        "slug": "eintracht-frankfurt-valorant",
+        "modified_at": "2026-08-16T22:36:58Z",
+        "acronym": "SGE",
+        "image_url": "https://cdn-api.pandascore.co/images/team/image/134406/600px_eintracht_frankfurt_allmode.png",
+        "dark_mode_image_url": null
+      }
+    ],
+    "videogame": {
+      "id": 26,
+      "name": "Valorant",
+      "slug": "valorant"
+    },
+    "serie_id": 10775,
+    "serie": {
+      "id": 10775,
+      "name": "EMEA",
+      "year": 2026,
+      "begin_at": "2026-07-14T22:00:00Z",
+      "end_at": "2026-08-30T21:00:00Z",
+      "winner_id": null,
+      "winner_type": "Team",
+      "slug": "valorant-vct-2021-north-america-stage-1-challengers-1-emea-stage-2-2026",
+      "modified_at": "2026-08-18T11:34:14Z",
+      "league_id": 4531,
+      "season": "Stage 2",
+      "full_name": "EMEA Stage 2 2026"
+    },
+    "modified_at": "2026-08-18T11:34:14Z",
+    "league_id": 4531,
+    "league": {
+      "id": 4531,
+      "name": "VCT",
+      "url": null,
+      "slug": "valorant-vct-2021-north-america-stage-1-challengers-1",
+      "modified_at": "2023-02-13T19:07:55Z",
+      "image_url": "https://cdn-api.pandascore.co/images/league/image/4531/800px-vct_2023_logo_lightmode-png"
+    },
+    "prizepool": "250000 United States Dollar",
+    "tier": "a",
+    "videogame_title": null,
+    "has_bracket": true,
+    "region": "WEU",
+    "live_supported": false,
+    "expected_roster": [
+      {
+        "team": {
+          "id": 128541,
+          "name": "Team Liquid",
+          "location": "NL",
+          "slug": "team-liquid-valorant",
+          "modified_at": "2026-08-05T18:18:41Z",
+          "acronym": "TL",
+          "image_url": "https://cdn-api.pandascore.co/images/team/image/128541/463px_team_liquid_2024_full_lightmode.png",
+          "dark_mode_image_url": "https://cdn-api.pandascore.co/dark_images/team/dark_image/128541/463px_team_liquid_2024_full_darkmode.png"
+        },
+        "players": [
+          {
+            "active": true,
+            "id": 32845,
+            "name": "nAts",
+            "role": null,
+            "slug": "nats",
+            "modified_at": "2026-08-05T18:18:40Z",
+            "age": 24,
+            "birthday": "2002-07-01",
+            "first_name": "Ayaz",
+            "last_name": "Akhmetshin",
+            "nationality": "RU",
+            "image_url": null
+          },
+          {
+            "active": true,
+            "id": 32874,
+            "name": "purp0",
+            "role": null,
+            "slug": "purp0",
+            "modified_at": "2026-08-05T18:18:41Z",
+            "age": 23,
+            "birthday": "2003-02-03",
+            "first_name": "Seymon",
+            "last_name": "Borchev",
+            "nationality": "RU",
+            "image_url": "https://cdn-api.pandascore.co/images/player/image/32874/ezgif_3476705ba1d61f.png"
+          },
+          {
+            "active": true,
+            "id": 33980,
+            "name": "trexx",
+            "role": null,
+            "slug": "trexx",
+            "modified_at": "2026-08-05T18:18:41Z",
+            "age": 22,
+            "birthday": "2004-04-24",
+            "first_name": "Nikita",
+            "last_name": "Cherednichenko",
+            "nationality": "RU",
+            "image_url": null
+          },
+          {
+            "active": true,
+            "id": 40087,
+            "name": "kamo",
+            "role": null,
+            "slug": "kamo",
+            "modified_at": "2026-08-05T18:18:38Z",
+            "age": 21,
+            "birthday": "2005-04-11",
+            "first_name": "Kamil",
+            "last_name": "Frąckowiak",
+            "nationality": "PL",
+            "image_url": "https://cdn-api.pandascore.co/images/player/image/40087/ezgif_6_7b7d48a8a0.png"
+          },
+          {
+            "active": true,
+            "id": 40102,
+            "name": "Kicks",
+            "role": null,
+            "slug": "kicks",
+            "modified_at": "2026-08-05T18:18:40Z",
+            "age": 20,
+            "birthday": "2005-09-18",
+            "first_name": "Kimmie",
+            "last_name": "Laasner",
+            "nationality": "EE",
+            "image_url": null
+          }
+        ]
+      },
+      {
+        "team": {
+          "id": 128577,
+          "name": "BBL Esports",
+          "location": "TR",
+          "slug": "bbl-esports",
+          "modified_at": "2026-08-05T18:18:43Z",
+          "acronym": "BBL",
+          "image_url": "https://cdn-api.pandascore.co/images/team/image/128577/600px_bbl_esports_2022_full_lightmode.png",
+          "dark_mode_image_url": "https://cdn-api.pandascore.co/dark_images/team/dark_image/128577/190px_bbl_esports_2022_darkmode.png"
+        },
+        "players": [
+          {
+            "active": true,
+            "id": 40644,
+            "name": "Rose",
+            "role": null,
+            "slug": "ff-rose",
+            "modified_at": "2026-08-05T18:18:43Z",
+            "age": 22,
+            "birthday": "2004-01-09",
+            "first_name": "Eren",
+            "last_name": "Erzan",
+            "nationality": "TR",
+            "image_url": "https://cdn-api.pandascore.co/images/player/image/40644/fire_flux_esports_rose.png"
+          },
+          {
+            "active": true,
+            "id": 43726,
+            "name": "Crewen",
+            "role": null,
+            "slug": "crewen",
+            "modified_at": "2026-08-05T18:18:42Z",
+            "age": 21,
+            "birthday": "2004-11-17",
+            "first_name": "Eren ",
+            "last_name": "Sargın",
+            "nationality": "TR",
+            "image_url": null
+          },
+          {
+            "active": true,
+            "id": 43739,
+            "name": "Loita",
+            "role": null,
+            "slug": "loita",
+            "modified_at": "2026-08-05T18:18:43Z",
+            "age": 18,
+            "birthday": "2007-09-24",
+            "first_name": "Utku ",
+            "last_name": "Kart",
+            "nationality": "TR",
+            "image_url": null
+          },
+          {
+            "active": true,
+            "id": 51918,
+            "name": "lovers rock",
+            "role": null,
+            "slug": "lovers-rock",
+            "modified_at": "2026-08-05T18:18:43Z",
+            "age": 20,
+            "birthday": "2006-03-02",
+            "first_name": "Umut",
+            "last_name": "Pekdoğan",
+            "nationality": "TR",
+            "image_url": null
+          },
+          {
+            "active": true,
+            "id": 54066,
+            "name": "Lar0k",
+            "role": null,
+            "slug": "lar0k",
+            "modified_at": "2026-08-05T18:18:43Z",
+            "age": 18,
+            "birthday": "2007-11-06",
+            "first_name": "Yusuf ",
+            "last_name": "Kanber ",
+            "nationality": "TR",
+            "image_url": null
+          }
+        ]
+      },
+      {
+        "team": {
+          "id": 128578,
+          "name": "FUT Esports",
+          "location": "TR",
+          "slug": "futbolist",
+          "modified_at": "2026-08-16T22:36:55Z",
+          "acronym": "FUT",
+          "image_url": "https://cdn-api.pandascore.co/images/team/image/128578/600px_futbolist_new_logo_2021_infobox.png",
+          "dark_mode_image_url": "https://cdn-api.pandascore.co/dark_images/team/dark_image/128578/600px_futbolist_2021_darkmode.png"
+        },
+        "players": [
+          {
+            "active": true,
+            "id": 33257,
+            "name": "sociablee",
+            "role": null,
+            "slug": "sociablee",
+            "modified_at": "2026-08-16T22:36:55Z",
+            "age": 30,
+            "birthday": "1996-04-29",
+            "first_name": "Volkan",
+            "last_name": "Yönal",
+            "nationality": "TR",
+            "image_url": "https://cdn-api.pandascore.co/images/player/image/33257/600px_fire_flux_esports_sociabl_ee.png"
+          },
+          {
+            "active": true,
+            "id": 40643,
+            "name": "yetujey",
+            "role": null,
+            "slug": "ff-yetujey",
+            "modified_at": "2026-08-16T22:36:53Z",
+            "age": 20,
+            "birthday": "2005-11-08",
+            "first_name": "Eray",
+            "last_name": "Budak",
+            "nationality": "TR",
+            "image_url": "https://cdn-api.pandascore.co/images/player/image/40643/600px_fire_flux_esports_yetujey.png"
+          },
+          {
+            "active": true,
+            "id": 43782,
+            "name": "KROSTALY",
+            "role": null,
+            "slug": "krostaly",
+            "modified_at": "2026-08-16T22:36:55Z",
+            "age": 20,
+            "birthday": "2006-02-24",
+            "first_name": "Okan",
+            "last_name": "Alaçam",
+            "nationality": "TR",
+            "image_url": null
+          },
+          {
+            "active": true,
+            "id": 50032,
+            "name": "xeus",
+            "role": null,
+            "slug": "xeus",
+            "modified_at": "2026-08-16T22:36:55Z",
+            "age": 21,
+            "birthday": "2004-10-25",
+            "first_name": "Doğan",
+            "last_name": "Gözgen",
+            "nationality": "TR",
+            "image_url": null
+          },
+          {
+            "active": true,
+            "id": 58549,
+            "name": "s0pp",
+            "role": null,
+            "slug": "s0pp",
+            "modified_at": "2026-08-16T22:36:55Z",
+            "age": 18,
+            "birthday": "2008-03-24",
+            "first_name": "Efe",
+            "last_name": "Tur",
+            "nationality": "TR",
+            "image_url": null
+          }
+        ]
+      },
+      {
+        "team": {
+          "id": 128796,
+          "name": "Team Vitality",
+          "location": "FR",
+          "slug": "team-vitality-valorant",
+          "modified_at": "2026-08-05T18:18:45Z",
+          "acronym": "VIT",
+          "image_url": "https://cdn-api.pandascore.co/images/team/image/128796/600px_team_vitality_2023_darkmode.png",
+          "dark_mode_image_url": "https://cdn-api.pandascore.co/dark_images/team/dark_image/128796/600px_team_vitality_2023_darkmode.png"
+        },
+        "players": [
+          {
+            "active": true,
+            "id": 20481,
+            "name": "Jamppi",
+            "role": null,
+            "slug": "jamppi-54e58bb2-ead5-432f-a397-bb66b430e341",
+            "modified_at": "2026-08-05T18:18:44Z",
+            "age": 25,
+            "birthday": "2001-07-22",
+            "first_name": "Elias",
+            "last_name": "Olkkonen",
+            "nationality": "FI",
+            "image_url": "https://cdn-api.pandascore.co/images/player/image/20481/600px_jamppi_whw19.png"
+          },
+          {
+            "active": true,
+            "id": 32843,
+            "name": "Chronicle",
+            "role": null,
+            "slug": "chronicle",
+            "modified_at": "2026-08-05T18:18:43Z",
+            "age": 24,
+            "birthday": "2002-08-16",
+            "first_name": "Timofey",
+            "last_name": "Khromov",
+            "nationality": "RU",
+            "image_url": null
+          },
+          {
+            "active": true,
+            "id": 32853,
+            "name": "Derke",
+            "role": null,
+            "slug": "derkeps-a00da8b9-1c2b-44e6-a385-8c0064422d58",
+            "modified_at": "2026-08-05T18:18:44Z",
+            "age": 23,
+            "birthday": "2003-02-06",
+            "first_name": "Nikita",
+            "last_name": "Sirmitev",
+            "nationality": "FI",
+            "image_url": null
+          },
+          {
+            "active": true,
+            "id": 48676,
+            "name": "PROFEK",
+            "role": null,
+            "slug": "profek",
+            "modified_at": "2026-08-05T18:18:45Z",
+            "age": 22,
+            "birthday": "2004-07-25",
+            "first_name": "Dawid",
+            "last_name": "Święć",
+            "nationality": "PL",
+            "image_url": null
+          },
+          {
+            "active": true,
+            "id": 53614,
+            "name": "Sayonara",
+            "role": null,
+            "slug": "kpi-sayonara",
+            "modified_at": "2026-08-05T18:18:45Z",
+            "age": 18,
+            "birthday": "2008-03-04",
+            "first_name": "Ștefan ",
+            "last_name": "Mîtcu",
+            "nationality": "MD",
+            "image_url": null
+          }
+        ]
+      },
+      {
+        "team": {
+          "id": 129194,
+          "name": "Fire Flux Esports",
+          "location": "TR",
+          "slug": "fire-flux-esports",
+          "modified_at": "2026-08-16T22:36:59Z",
+          "acronym": "FF",
+          "image_url": "https://cdn-api.pandascore.co/images/team/image/129194/60b41997755c0.png",
+          "dark_mode_image_url": null
+        },
+        "players": [
+          {
+            "active": true,
+            "id": 32862,
+            "name": "DeadInk",
+            "role": null,
+            "slug": "deadink",
+            "modified_at": "2026-08-16T22:36:59Z",
+            "age": 25,
+            "birthday": "2001-02-04",
+            "first_name": "Utku Onur ",
+            "last_name": "Aydın",
+            "nationality": "TR",
+            "image_url": null
+          },
+          {
+            "active": true,
+            "id": 35559,
+            "name": "reazy",
+            "role": null,
+            "slug": "reazy",
+            "modified_at": "2026-08-16T22:36:58Z",
+            "age": 27,
+            "birthday": "1999-08-14",
+            "first_name": "Kaan",
+            "last_name": "Ürpek",
+            "nationality": "TR",
+            "image_url": "https://cdn-api.pandascore.co/images/player/image/35559/600px_bbl_reazy_2024.png"
+          },
+          {
+            "active": true,
+            "id": 54254,
+            "name": "BatuJnAX",
+            "role": null,
+            "slug": "batujnax",
+            "modified_at": "2026-08-16T22:36:59Z",
+            "age": 21,
+            "birthday": "2005-06-26",
+            "first_name": "Mehmet",
+            "last_name": "Batu Özaslan",
+            "nationality": "TR",
+            "image_url": null
+          },
+          {
+            "active": true,
+            "id": 61384,
+            "name": "hezacoil",
+            "role": null,
+            "slug": "s2g-hezacoil",
+            "modified_at": "2026-08-16T22:36:59Z",
+            "age": 19,
+            "birthday": "2007-05-22",
+            "first_name": "Berkay ",
+            "last_name": "Doğar",
+            "nationality": "TR",
+            "image_url": null
+          },
+          {
+            "active": true,
+            "id": 61858,
+            "name": "Kachoww",
+            "role": null,
+            "slug": "kachoww",
+            "modified_at": "2026-08-16T22:36:59Z",
+            "age": 17,
+            "birthday": "2009-03-12",
+            "first_name": "Samet ",
+            "last_name": "Arıcı",
+            "nationality": "TR",
+            "image_url": null
+          }
+        ]
+      },
+      {
+        "team": {
+          "id": 130922,
+          "name": "Karmine Corp",
+          "location": "FR",
+          "slug": "karmine-corp-valorant",
+          "modified_at": "2026-08-05T18:18:47Z",
+          "acronym": "KC",
+          "image_url": "https://cdn-api.pandascore.co/images/team/image/130922/600px_karmine_corp_lightmode_full.png",
+          "dark_mode_image_url": "https://cdn-api.pandascore.co/dark_images/team/dark_image/130922/632px_karmine_corp_allmode.png"
+        },
+        "players": [
+          {
+            "active": true,
+            "id": 33112,
+            "name": "SUYGETSU",
+            "role": null,
+            "slug": "suygetsu",
+            "modified_at": "2026-08-05T18:18:47Z",
+            "age": 24,
+            "birthday": "2002-07-16",
+            "first_name": "Dmitry",
+            "last_name": "Ilyushin",
+            "nationality": "RU",
+            "image_url": null
+          },
+          {
+            "active": true,
+            "id": 36020,
+            "name": "Avez",
+            "role": null,
+            "slug": "avez",
+            "modified_at": "2026-08-05T18:18:45Z",
+            "age": 21,
+            "birthday": "2004-10-05",
+            "first_name": "Hazem",
+            "last_name": "Khaled",
+            "nationality": "EG",
+            "image_url": "https://cdn-api.pandascore.co/images/player/image/36020/605f9846e03ee.png"
+          },
+          {
+            "active": true,
+            "id": 46621,
+            "name": "LewN",
+            "role": null,
+            "slug": "lewn",
+            "modified_at": "2026-08-05T18:18:46Z",
+            "age": 19,
+            "birthday": "2006-11-05",
+            "first_name": "Burak",
+            "last_name": "Alkan",
+            "nationality": "TR",
+            "image_url": null
+          },
+          {
+            "active": true,
+            "id": 48129,
+            "name": "N4RRATE",
+            "role": null,
+            "slug": "n4rrate",
+            "modified_at": "2026-08-05T18:18:47Z",
+            "age": 23,
+            "birthday": "2002-11-25",
+            "first_name": "Marshall",
+            "last_name": "Massey",
+            "nationality": "US",
+            "image_url": "https://cdn-api.pandascore.co/images/player/image/48129/900px_sen_n4_rrate_at_masters_torronto.png"
+          },
+          {
+            "active": true,
+            "id": 48955,
+            "name": "dos9",
+            "role": null,
+            "slug": "aex-dos9",
+            "modified_at": "2026-08-05T18:18:46Z",
+            "age": 22,
+            "birthday": "2004-06-03",
+            "first_name": "Zhumagali",
+            "last_name": "Dastan",
+            "nationality": "KZ",
+            "image_url": null
+          }
+        ]
+      },
+      {
+        "team": {
+          "id": 130973,
+          "name": "Enterprise Esports",
+          "location": "CZ",
+          "slug": "enterprise-esports-valorant",
+          "modified_at": "2026-08-16T22:36:57Z",
+          "acronym": "EP",
+          "image_url": "https://cdn-api.pandascore.co/images/team/image/130973/600px_enterprise_esports_allmode.png",
+          "dark_mode_image_url": null
+        },
+        "players": [
+          {
+            "active": true,
+            "id": 32694,
+            "name": "paTiTek",
+            "role": null,
+            "slug": "patitek-patryk-fabrowski",
+            "modified_at": "2026-08-16T22:36:55Z",
+            "age": 26,
+            "birthday": "1999-09-07",
+            "first_name": "Patryk",
+            "last_name": "Fabrowski",
+            "nationality": "PL",
+            "image_url": "https://cdn-api.pandascore.co/images/player/image/32694/ezgif_2_59edd0c1f4.png"
+          },
+          {
+            "active": true,
+            "id": 33986,
+            "name": "Magnum",
+            "role": null,
+            "slug": "magnum-63996b1f-8e04-48c6-8889-196424ac802b",
+            "modified_at": "2026-08-16T22:36:56Z",
+            "age": 25,
+            "birthday": "2001-08-09",
+            "first_name": "Martin",
+            "last_name": "Peňkov",
+            "nationality": "CZ",
+            "image_url": "https://cdn-api.pandascore.co/images/player/image/33986/ofs_fm4at_400x400.png"
+          },
+          {
+            "active": true,
+            "id": 36058,
+            "name": "iluri",
+            "role": null,
+            "slug": "iluri",
+            "modified_at": "2026-08-16T22:36:57Z",
+            "age": 29,
+            "birthday": "1997-02-14",
+            "first_name": "Ilari",
+            "last_name": "Puranen",
+            "nationality": "FI",
+            "image_url": null
+          },
+          {
+            "active": true,
+            "id": 36664,
+            "name": "Lime",
+            "role": null,
+            "slug": "lime",
+            "modified_at": "2026-08-16T22:36:56Z",
+            "age": 25,
+            "birthday": "2001-03-30",
+            "first_name": "Jacob",
+            "last_name": "Foster",
+            "nationality": "GB",
+            "image_url": null
+          },
+          {
+            "active": true,
+            "id": 64302,
+            "name": "kozzy",
+            "role": null,
+            "slug": "kozzy",
+            "modified_at": "2026-08-16T22:36:57Z",
+            "age": 16,
+            "birthday": "2010-02-22",
+            "first_name": "Denis-Stefan",
+            "last_name": "Aionitoaei",
+            "nationality": "RO",
+            "image_url": null
+          }
+        ]
+      },
+      {
+        "team": {
+          "id": 134406,
+          "name": "Eintracht Frankfurt",
+          "location": "DE",
+          "slug": "eintracht-frankfurt-valorant",
+          "modified_at": "2026-08-16T22:36:58Z",
+          "acronym": "SGE",
+          "image_url": "https://cdn-api.pandascore.co/images/team/image/134406/600px_eintracht_frankfurt_allmode.png",
+          "dark_mode_image_url": null
+        },
+        "players": [
+          {
+            "active": true,
+            "id": 33988,
+            "name": "musashi",
+            "role": null,
+            "slug": "musashi",
+            "modified_at": "2026-08-16T22:36:57Z",
+            "age": 25,
+            "birthday": "2001-04-02",
+            "first_name": "Alessio",
+            "last_name": "Xhaferi",
+            "nationality": "DE",
+            "image_url": null
+          },
+          {
+            "active": true,
+            "id": 35030,
+            "name": "MONSTEERR",
+            "role": null,
+            "slug": "monsteerr",
+            "modified_at": "2026-08-16T22:36:57Z",
+            "age": 22,
+            "birthday": "2004-06-27",
+            "first_name": "Ondřej",
+            "last_name": "Petrů",
+            "nationality": "CZ",
+            "image_url": null
+          },
+          {
+            "active": true,
+            "id": 36026,
+            "name": "Fizzy",
+            "role": null,
+            "slug": "fizzy-david-figueiredo",
+            "modified_at": "2026-08-16T22:36:58Z",
+            "age": 25,
+            "birthday": "2000-09-29",
+            "first_name": "David",
+            "last_name": "Figueiredo",
+            "nationality": "PT",
+            "image_url": null
+          },
+          {
+            "active": true,
+            "id": 43173,
+            "name": "azury",
+            "role": null,
+            "slug": "azury",
+            "modified_at": "2026-08-16T22:36:57Z",
+            "age": 22,
+            "birthday": "2004-07-23",
+            "first_name": "Luca ",
+            "last_name": "Sammer",
+            "nationality": "DE",
+            "image_url": "https://cdn-api.pandascore.co/images/player/image/43173/ezgif_1_536ab207e0.png"
+          },
+          {
+            "active": true,
+            "id": 62309,
+            "name": "Jamelinho213",
+            "role": null,
+            "slug": "jamelinho213",
+            "modified_at": "2026-08-16T22:36:58Z",
+            "age": 16,
+            "birthday": "2009-09-10",
+            "first_name": null,
+            "last_name": null,
+            "nationality": "FR",
+            "image_url": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 21565,
+    "name": "Playoffs",
+    "type": "offline",
+    "matches": [
+      {
+        "id": 1607790,
+        "name": "Upper bracket quarterfinal 1: NOVA vs JDG",
+        "status": "finished",
+        "live": {
+          "supported": false,
+          "url": null,
+          "opens_at": null
+        },
+        "begin_at": "2026-08-14T08:09:15Z",
+        "detailed_stats": false,
+        "end_at": "2026-08-14T09:55:15Z",
+        "forfeit": false,
+        "winner_id": 134454,
+        "winner_type": "Team",
+        "slug": "tyloo-2026-08-14",
+        "draw": false,
+        "tournament_id": 21565,
+        "modified_at": "2026-08-14T09:55:16Z",
+        "match_type": "best_of",
+        "number_of_games": 3,
+        "scheduled_at": "2026-08-14T08:10:00Z",
+        "original_scheduled_at": "2026-08-14T08:00:00Z",
+        "game_advantage": null,
+        "low_latency_feed": false,
+        "streams_list": [
+          {
+            "main": false,
+            "language": "zh",
+            "embed_url": "https://www.youtube.com/embed/Q0-PewKbauU",
+            "official": false,
+            "raw_url": "https://www.youtube.com/watch?v=Q0-PewKbauU"
+          },
+          {
+            "main": true,
+            "language": "zh",
+            "embed_url": "https://player.twitch.tv/?channel=valorantesports_cn",
+            "official": true,
+            "raw_url": "https://www.twitch.tv/valorantesports_cn"
+          }
+        ],
+        "rescheduled": true
+      },
+      {
+        "id": 1607791,
+        "name": "Upper bracket quarterfinal 2: TYLOO vs TEC",
+        "status": "finished",
+        "live": {
+          "supported": false,
+          "url": null,
+          "opens_at": null
+        },
+        "begin_at": "2026-08-14T10:29:11Z",
+        "detailed_stats": false,
+        "end_at": "2026-08-14T12:09:39Z",
+        "forfeit": false,
+        "winner_id": 133288,
+        "winner_type": "Team",
+        "slug": "nova-esports-2026-08-14",
+        "draw": false,
+        "tournament_id": 21565,
+        "modified_at": "2026-08-14T12:09:41Z",
+        "match_type": "best_of",
+        "number_of_games": 3,
+        "scheduled_at": "2026-08-14T10:30:00Z",
+        "original_scheduled_at": "2026-08-14T10:00:00Z",
+        "game_advantage": null,
+        "low_latency_feed": false,
+        "streams_list": [
+          {
+            "main": false,
+            "language": "zh",
+            "embed_url": "https://www.youtube.com/embed/Q0-PewKbauU",
+            "official": false,
+            "raw_url": "https://www.youtube.com/watch?v=Q0-PewKbauU"
+          },
+          {
+            "main": true,
+            "language": "zh",
+            "embed_url": "https://player.twitch.tv/?channel=valorantesports_cn",
+            "official": true,
+            "raw_url": "https://www.twitch.tv/valorantesports_cn"
+          }
+        ],
+        "rescheduled": true
+      },
+      {
+        "id": 1607792,
+        "name": "Upper bracket quarterfinal 3: BLG vs TE",
+        "status": "finished",
+        "live": {
+          "supported": false,
+          "url": null,
+          "opens_at": null
+        },
+        "begin_at": "2026-08-15T08:08:16Z",
+        "detailed_stats": false,
+        "end_at": "2026-08-15T11:09:47Z",
+        "forfeit": false,
+        "winner_id": 133379,
+        "winner_type": "Team",
+        "slug": "xlg-gaming-2026-08-15",
+        "draw": false,
+        "tournament_id": 21565,
+        "modified_at": "2026-08-15T11:09:48Z",
+        "match_type": "best_of",
+        "number_of_games": 3,
+        "scheduled_at": "2026-08-15T08:00:00Z",
+        "original_scheduled_at": "2026-08-15T08:00:00Z",
+        "game_advantage": null,
+        "low_latency_feed": false,
+        "streams_list": [
+          {
+            "main": false,
+            "language": "zh",
+            "embed_url": "https://www.youtube.com/embed/_dGO1M166Nw",
+            "official": false,
+            "raw_url": "https://www.youtube.com/watch?v=_dGO1M166Nw"
+          },
+          {
+            "main": true,
+            "language": "zh",
+            "embed_url": "https://player.twitch.tv/?channel=valorantesports_cn",
+            "official": true,
+            "raw_url": "https://www.twitch.tv/valorantesports_cn"
+          }
+        ],
+        "rescheduled": false
+      },
+      {
+        "id": 1607793,
+        "name": "Upper bracket quarterfinal 4: XLG vs AG",
+        "status": "finished",
+        "live": {
+          "supported": false,
+          "url": null,
+          "opens_at": null
+        },
+        "begin_at": "2026-08-15T11:46:37Z",
+        "detailed_stats": false,
+        "end_at": "2026-08-15T14:10:49Z",
+        "forfeit": false,
+        "winner_id": 135470,
+        "winner_type": "Team",
+        "slug": "bilibili-gaming-2026-08-15",
+        "draw": false,
+        "tournament_id": 21565,
+        "modified_at": "2026-08-15T14:10:51Z",
+        "match_type": "best_of",
+        "number_of_games": 3,
+        "scheduled_at": "2026-08-15T11:40:00Z",
+        "original_scheduled_at": "2026-08-15T10:00:00Z",
+        "game_advantage": null,
+        "low_latency_feed": false,
+        "streams_list": [
+          {
+            "main": false,
+            "language": "vi",
+            "embed_url": "https://www.youtube.com/embed/7bOF145kPss",
+            "official": false,
+            "raw_url": "https://www.youtube.com/watch?v=7bOF145kPss"
+          },
+          {
+            "main": false,
+            "language": "en",
+            "embed_url": "https://www.youtube.com/embed/ssKu9DXYFTY",
+            "official": false,
+            "raw_url": "https://www.youtube.com/watch?v=ssKu9DXYFTY"
+          },
+          {
+            "main": false,
+            "language": "zh",
+            "embed_url": "https://www.youtube.com/embed/_dGO1M166Nw",
+            "official": false,
+            "raw_url": "https://www.youtube.com/watch?v=_dGO1M166Nw"
+          },
+          {
+            "main": true,
+            "language": "zh",
+            "embed_url": "https://player.twitch.tv/?channel=valorantesports_cn",
+            "official": true,
+            "raw_url": "https://www.twitch.tv/valorantesports_cn"
+          }
+        ],
+        "rescheduled": true
+      },
+      {
+        "id": 1607802,
+        "name": "Lower bracket round 1 match 1: NOVA vs TEC",
+        "status": "finished",
+        "live": {
+          "supported": false,
+          "url": null,
+          "opens_at": null
+        },
+        "begin_at": "2026-08-16T08:04:48Z",
+        "detailed_stats": false,
+        "end_at": "2026-08-16T09:58:37Z",
+        "forfeit": false,
+        "winner_id": 133287,
+        "winner_type": "Team",
+        "slug": "nova-esports-2026-08-16",
+        "draw": false,
+        "tournament_id": 21565,
+        "modified_at": "2026-08-16T09:58:38Z",
+        "match_type": "best_of",
+        "number_of_games": 3,
+        "scheduled_at": "2026-08-16T08:00:00Z",
+        "original_scheduled_at": "2026-08-16T08:00:00Z",
+        "game_advantage": null,
+        "low_latency_feed": false,
+        "streams_list": [
+          {
+            "main": false,
+            "language": "zh",
+            "embed_url": "https://www.youtube.com/embed/SvNW8DnuPYQ",
+            "official": false,
+            "raw_url": "https://www.youtube.com/watch?v=SvNW8DnuPYQ"
+          },
+          {
+            "main": true,
+            "language": "zh",
+            "embed_url": "https://player.twitch.tv/?channel=valorantesports_cn",
+            "official": true,
+            "raw_url": "https://www.twitch.tv/valorantesports_cn"
+          }
+        ],
+        "rescheduled": false
+      },
+      {
+        "id": 1607803,
+        "name": "Lower bracket round 1 match 2: TE vs AG",
+        "status": "finished",
+        "live": {
+          "supported": false,
+          "url": null,
+          "opens_at": null
+        },
+        "begin_at": "2026-08-16T10:34:19Z",
+        "detailed_stats": false,
+        "end_at": "2026-08-16T13:58:12Z",
+        "forfeit": false,
+        "winner_id": 128974,
+        "winner_type": "Team",
+        "slug": "trace-esports-2026-08-16",
+        "draw": false,
+        "tournament_id": 21565,
+        "modified_at": "2026-08-16T13:58:14Z",
+        "match_type": "best_of",
+        "number_of_games": 3,
+        "scheduled_at": "2026-08-16T10:30:00Z",
+        "original_scheduled_at": "2026-08-16T10:00:00Z",
+        "game_advantage": null,
+        "low_latency_feed": false,
+        "streams_list": [
+          {
+            "main": false,
+            "language": "zh",
+            "embed_url": "https://www.youtube.com/embed/SvNW8DnuPYQ",
+            "official": false,
+            "raw_url": "https://www.youtube.com/watch?v=SvNW8DnuPYQ"
+          },
+          {
+            "main": true,
+            "language": "zh",
+            "embed_url": "https://player.twitch.tv/?channel=valorantesports_cn",
+            "official": true,
+            "raw_url": "https://www.twitch.tv/valorantesports_cn"
+          }
+        ],
+        "rescheduled": true
+      },
+      {
+        "id": 1607794,
+        "name": "Upper bracket semifinal 1: JDG vs TYLOO",
+        "status": "finished",
+        "live": {
+          "supported": false,
+          "url": null,
+          "opens_at": null
+        },
+        "begin_at": "2026-08-19T08:14:05Z",
+        "detailed_stats": false,
+        "end_at": "2026-08-19T11:10:44Z",
+        "forfeit": false,
+        "winner_id": 134454,
+        "winner_type": "Team",
+        "slug": "jd-gaming-2026-08-19",
+        "draw": false,
+        "tournament_id": 21565,
+        "modified_at": "2026-08-19T11:10:46Z",
+        "match_type": "best_of",
+        "number_of_games": 3,
+        "scheduled_at": "2026-08-19T08:10:00Z",
+        "original_scheduled_at": "2026-08-19T08:00:00Z",
+        "game_advantage": null,
+        "low_latency_feed": false,
+        "streams_list": [
+          {
+            "main": false,
+            "language": "zh",
+            "embed_url": "https://www.youtube.com/embed/58nfTGxmzek",
+            "official": false,
+            "raw_url": "https://www.youtube.com/watch?v=58nfTGxmzek"
+          },
+          {
+            "main": true,
+            "language": "zh",
+            "embed_url": "https://player.twitch.tv/?channel=valorantesports_cn",
+            "official": true,
+            "raw_url": "https://www.twitch.tv/valorantesports_cn"
+          }
+        ],
+        "rescheduled": true
+      },
+      {
+        "id": 1607795,
+        "name": "Upper bracket semifinal 2: BLG vs XLG",
+        "status": "finished",
+        "live": {
+          "supported": false,
+          "url": null,
+          "opens_at": null
+        },
+        "begin_at": "2026-08-19T11:51:30Z",
+        "detailed_stats": false,
+        "end_at": "2026-08-19T14:34:51Z",
+        "forfeit": false,
+        "winner_id": 133379,
+        "winner_type": "Team",
+        "slug": "bilibili-gaming-2026-08-19",
+        "draw": false,
+        "tournament_id": 21565,
+        "modified_at": "2026-08-19T14:34:53Z",
+        "match_type": "best_of",
+        "number_of_games": 3,
+        "scheduled_at": "2026-08-19T11:50:00Z",
+        "original_scheduled_at": "2026-08-19T10:00:00Z",
+        "game_advantage": null,
+        "low_latency_feed": false,
+        "streams_list": [
+          {
+            "main": false,
+            "language": "zh",
+            "embed_url": "https://www.youtube.com/embed/58nfTGxmzek",
+            "official": false,
+            "raw_url": "https://www.youtube.com/watch?v=58nfTGxmzek"
+          },
+          {
+            "main": true,
+            "language": "zh",
+            "embed_url": "https://player.twitch.tv/?channel=valorantesports_cn",
+            "official": true,
+            "raw_url": "https://www.twitch.tv/valorantesports_cn"
+          }
+        ],
+        "rescheduled": true
+      },
+      {
+        "id": 1607801,
+        "name": "Lower bracket quarterfinal 2: TYLOO vs AG",
+        "status": "finished",
+        "live": {
+          "supported": false,
+          "url": null,
+          "opens_at": null
+        },
+        "begin_at": "2026-08-20T08:08:43Z",
+        "detailed_stats": false,
+        "end_at": "2026-08-20T10:10:24Z",
+        "forfeit": false,
+        "winner_id": 133288,
+        "winner_type": "Team",
+        "slug": "all-gamers-2026-08-20",
+        "draw": false,
+        "tournament_id": 21565,
+        "modified_at": "2026-08-20T10:10:26Z",
+        "match_type": "best_of",
+        "number_of_games": 3,
+        "scheduled_at": "2026-08-20T08:00:00Z",
+        "original_scheduled_at": "2026-08-20T08:00:00Z",
+        "game_advantage": null,
+        "low_latency_feed": false,
+        "streams_list": [
+          {
+            "main": false,
+            "language": "zh",
+            "embed_url": "https://www.youtube.com/embed/eT8ILJ3npJU",
+            "official": false,
+            "raw_url": "https://www.youtube.com/watch?v=eT8ILJ3npJU"
+          },
+          {
+            "main": true,
+            "language": "zh",
+            "embed_url": "https://player.twitch.tv/?channel=valorantesports_cn",
+            "official": true,
+            "raw_url": "https://www.twitch.tv/valorantesports_cn"
+          }
+        ],
+        "rescheduled": false
+      },
+      {
+        "id": 1607800,
+        "name": "Lower bracket quarterfinal 1: XLG vs NOVA",
+        "status": "finished",
+        "live": {
+          "supported": false,
+          "url": null,
+          "opens_at": null
+        },
+        "begin_at": "2026-08-20T10:50:53Z",
+        "detailed_stats": false,
+        "end_at": "2026-08-20T13:08:22Z",
+        "forfeit": false,
+        "winner_id": 133287,
+        "winner_type": "Team",
+        "slug": "nova-esports-2026-08-20",
+        "draw": false,
+        "tournament_id": 21565,
+        "modified_at": "2026-08-20T13:08:23Z",
+        "match_type": "best_of",
+        "number_of_games": 3,
+        "scheduled_at": "2026-08-20T10:45:00Z",
+        "original_scheduled_at": "2026-08-20T10:00:00Z",
+        "game_advantage": null,
+        "low_latency_feed": false,
+        "streams_list": [
+          {
+            "main": false,
+            "language": "zh",
+            "embed_url": "https://www.youtube.com/embed/eT8ILJ3npJU",
+            "official": false,
+            "raw_url": "https://www.youtube.com/watch?v=eT8ILJ3npJU"
+          },
+          {
+            "main": true,
+            "language": "zh",
+            "embed_url": "https://player.twitch.tv/?channel=valorantesports_cn",
+            "official": true,
+            "raw_url": "https://www.twitch.tv/valorantesports_cn"
+          }
+        ],
+        "rescheduled": true
+      },
+      {
+        "id": 1607796,
+        "name": "Upper bracket final : JDG vs BLG",
+        "status": "finished",
+        "live": {
+          "supported": false,
+          "url": null,
+          "opens_at": null
+        },
+        "begin_at": "2026-08-21T08:08:12Z",
+        "detailed_stats": false,
+        "end_at": "2026-08-21T09:48:55Z",
+        "forfeit": false,
+        "winner_id": 134454,
+        "winner_type": "Team",
+        "slug": "jd-gaming-2026-08-21",
+        "draw": false,
+        "tournament_id": 21565,
+        "modified_at": "2026-08-21T09:48:57Z",
+        "match_type": "best_of",
+        "number_of_games": 3,
+        "scheduled_at": "2026-08-21T08:00:00Z",
+        "original_scheduled_at": "2026-08-21T08:00:00Z",
+        "game_advantage": null,
+        "low_latency_feed": false,
+        "streams_list": [
+          {
+            "main": false,
+            "language": "en",
+            "embed_url": "https://www.youtube.com/embed/5FzhYfbK53s",
+            "official": false,
+            "raw_url": "https://www.youtube.com/watch?v=5FzhYfbK53s"
+          },
+          {
+            "main": false,
+            "language": "zh",
+            "embed_url": "https://www.youtube.com/embed/vN4iOApetlE",
+            "official": false,
+            "raw_url": "https://www.youtube.com/watch?v=vN4iOApetlE"
+          },
+          {
+            "main": true,
+            "language": "zh",
+            "embed_url": "https://player.twitch.tv/?channel=valorantesports_cn",
+            "official": true,
+            "raw_url": "https://www.twitch.tv/valorantesports_cn"
+          }
+        ],
+        "rescheduled": false
+      },
+      {
+        "id": 1607799,
+        "name": "Lower bracket semifinal: TYLOO vs NOVA",
+        "status": "finished",
+        "live": {
+          "supported": false,
+          "url": null,
+          "opens_at": null
+        },
+        "begin_at": "2026-08-21T10:28:17Z",
+        "detailed_stats": false,
+        "end_at": "2026-08-21T12:22:05Z",
+        "forfeit": false,
+        "winner_id": 133288,
+        "winner_type": "Team",
+        "slug": "tyloo-2026-08-21",
+        "draw": false,
+        "tournament_id": 21565,
+        "modified_at": "2026-08-21T12:22:08Z",
+        "match_type": "best_of",
+        "number_of_games": 3,
+        "scheduled_at": "2026-08-21T10:25:00Z",
+        "original_scheduled_at": "2026-08-21T10:00:00Z",
+        "game_advantage": null,
+        "low_latency_feed": false,
+        "streams_list": [
+          {
+            "main": false,
+            "language": "en",
+            "embed_url": "https://www.youtube.com/embed/5FzhYfbK53s",
+            "official": false,
+            "raw_url": "https://www.youtube.com/watch?v=5FzhYfbK53s"
+          },
+          {
+            "main": false,
+            "language": "zh",
+            "embed_url": "https://www.youtube.com/embed/vN4iOApetlE",
+            "official": false,
+            "raw_url": "https://www.youtube.com/watch?v=vN4iOApetlE"
+          },
+          {
+            "main": true,
+            "language": "zh",
+            "embed_url": "https://player.twitch.tv/?channel=valorantesports_cn",
+            "official": true,
+            "raw_url": "https://www.twitch.tv/valorantesports_cn"
+          }
+        ],
+        "rescheduled": true
+      },
+      {
+        "id": 1607798,
+        "name": "Lower bracket final: BLG vs TYLOO",
+        "status": "finished",
+        "live": {
+          "supported": false,
+          "url": null,
+          "opens_at": null
+        },
+        "begin_at": "2026-08-22T08:09:08Z",
+        "detailed_stats": false,
+        "end_at": "2026-08-22T11:32:11Z",
+        "forfeit": false,
+        "winner_id": 133288,
+        "winner_type": "Team",
+        "slug": "bilibili-gaming-2026-08-22",
+        "draw": false,
+        "tournament_id": 21565,
+        "modified_at": "2026-08-22T11:32:14Z",
+        "match_type": "best_of",
+        "number_of_games": 5,
+        "scheduled_at": "2026-08-22T08:10:00Z",
+        "original_scheduled_at": "2026-08-22T08:00:00Z",
+        "game_advantage": null,
+        "low_latency_feed": false,
+        "streams_list": [
+          {
+            "main": false,
+            "language": "en",
+            "embed_url": "https://player.twitch.tv/?channel=projhrzn",
+            "official": false,
+            "raw_url": "https://www.twitch.tv/projhrzn"
+          },
+          {
+            "main": false,
+            "language": "zh",
+            "embed_url": "https://www.youtube.com/embed/l5vfspd_7DQ",
+            "official": false,
+            "raw_url": "https://www.youtube.com/watch?v=l5vfspd_7DQ"
+          },
+          {
+            "main": true,
+            "language": "zh",
+            "embed_url": "https://player.twitch.tv/?channel=valorantesports_cn",
+            "official": true,
+            "raw_url": "https://www.twitch.tv/valorantesports_cn"
+          }
+        ],
+        "rescheduled": true
+      },
+      {
+        "id": 1607797,
+        "name": "Grand final: JDG vs TYLOO",
+        "status": "not_started",
+        "live": {
+          "supported": false,
+          "url": null,
+          "opens_at": null
+        },
+        "begin_at": "2026-08-23T08:00:00Z",
+        "detailed_stats": false,
+        "end_at": null,
+        "forfeit": false,
+        "winner_id": null,
+        "winner_type": "Team",
+        "slug": "jd-gaming-2026-08-23",
+        "draw": false,
+        "tournament_id": 21565,
+        "modified_at": "2026-08-22T14:43:46Z",
+        "match_type": "best_of",
+        "number_of_games": 5,
+        "scheduled_at": "2026-08-23T08:00:00Z",
+        "original_scheduled_at": "2026-08-23T08:00:00Z",
+        "game_advantage": null,
+        "low_latency_feed": false,
+        "streams_list": [
+          {
+            "main": false,
+            "language": "zh",
+            "embed_url": null,
+            "official": false,
+            "raw_url": "https://www.youtube.com/@VALORANTEsportsCN/live"
+          },
+          {
+            "main": true,
+            "language": "zh",
+            "embed_url": "https://player.twitch.tv/?channel=valorantesports_cn",
+            "official": true,
+            "raw_url": "https://www.twitch.tv/valorantesports_cn"
+          }
+        ],
+        "rescheduled": false
+      }
+    ],
+    "country": "CN",
+    "begin_at": "2026-08-14T08:00:00Z",
+    "detailed_stats": false,
+    "end_at": "2026-08-23T13:00:00Z",
+    "winner_id": null,
+    "winner_type": "Team",
+    "slug": "valorant-vcl-china-stage-2-2026-playoffs",
+    "teams": [
+      {
+        "id": 128974,
+        "name": "All Gamers",
+        "location": "CN",
+        "slug": "all-gamers",
+        "modified_at": "2026-08-12T14:34:30Z",
+        "acronym": "AG",
+        "image_url": "https://cdn-api.pandascore.co/images/team/image/128974/all_gamers_full_allmode.png",
+        "dark_mode_image_url": null
+      },
+      {
+        "id": 133287,
+        "name": "Nova Esports",
+        "location": "CN",
+        "slug": "nova-esports-valorant",
+        "modified_at": "2026-07-27T08:09:48Z",
+        "acronym": "NOVA",
+        "image_url": "https://cdn-api.pandascore.co/images/team/image/133287/800px_nova_esports_2025_full_allmode.png",
+        "dark_mode_image_url": null
+      },
+      {
+        "id": 133288,
+        "name": "TYLOO",
+        "location": "CN",
+        "slug": "tyloo-valorant",
+        "modified_at": "2026-07-27T08:09:48Z",
+        "acronym": "TYLOO",
+        "image_url": "https://cdn-api.pandascore.co/images/team/image/133288/600px_ty_loo_2016_allmode.png",
+        "dark_mode_image_url": null
+      },
+      {
+        "id": 133379,
+        "name": "Bilibili Gaming",
+        "location": "CN",
+        "slug": "bilibili-gaming-valorant",
+        "modified_at": "2026-07-27T08:09:49Z",
+        "acronym": "BLG",
+        "image_url": "https://cdn-api.pandascore.co/images/team/image/133379/600px_bilibili_gaming_2021_full_allmode.png",
+        "dark_mode_image_url": null
+      },
+      {
+        "id": 133380,
+        "name": "Trace Esports",
+        "location": "CN",
+        "slug": "trace-esports-valorant",
+        "modified_at": "2026-08-12T14:34:29Z",
+        "acronym": "TE",
+        "image_url": "https://cdn-api.pandascore.co/images/team/image/133380/trace_esports_2023_allmode.png",
+        "dark_mode_image_url": null
+      },
+      {
+        "id": 133825,
+        "name": "TEC Esports",
+        "location": "CN",
+        "slug": "tec-esports",
+        "modified_at": "2026-08-12T14:34:28Z",
+        "acronym": "TEC",
+        "image_url": "https://cdn-api.pandascore.co/images/team/image/133825/190px_tec_esports_allmode.png",
+        "dark_mode_image_url": null
+      },
+      {
+        "id": 134454,
+        "name": "JD Gaming",
+        "location": "CN",
+        "slug": "jd-gaming-valorant",
+        "modified_at": "2026-08-12T14:34:27Z",
+        "acronym": "JDG",
+        "image_url": "https://cdn-api.pandascore.co/images/team/image/134454/600px_jd_gaming_2021_full_allmode.png",
+        "dark_mode_image_url": null
+      },
+      {
+        "id": 135470,
+        "name": "XLG Gaming",
+        "location": "CN",
+        "slug": "zy-gaming",
+        "modified_at": "2026-07-27T08:09:50Z",
+        "acronym": "XLG",
+        "image_url": "https://cdn-api.pandascore.co/images/team/image/135470/800px_xlg_china_2024_allmode.png",
+        "dark_mode_image_url": null
+      }
+    ],
+    "videogame": {
+      "id": 26,
+      "name": "Valorant",
+      "slug": "valorant"
+    },
+    "serie_id": 10747,
+    "serie": {
+      "id": 10747,
+      "name": "China Stage 2",
+      "year": 2026,
+      "begin_at": "2026-07-09T08:00:00Z",
+      "end_at": "2026-09-29T22:00:00Z",
+      "winner_id": null,
+      "winner_type": "Team",
+      "slug": "valorant-vcl-china-stage-2-2026",
+      "modified_at": "2026-06-29T07:14:20Z",
+      "league_id": 4531,
+      "season": null,
+      "full_name": "China Stage 2 2026"
+    },
+    "modified_at": "2026-08-12T14:34:30Z",
+    "league_id": 4531,
+    "league": {
+      "id": 4531,
+      "name": "VCT",
+      "url": null,
+      "slug": "valorant-vct-2021-north-america-stage-1-challengers-1",
+      "modified_at": "2023-02-13T19:07:55Z",
+      "image_url": "https://cdn-api.pandascore.co/images/league/image/4531/800px-vct_2023_logo_lightmode-png"
+    },
+    "prizepool": "25000 United States Dollar",
+    "tier": "b",
+    "videogame_title": null,
+    "has_bracket": true,
+    "region": "ASIA",
+    "live_supported": false,
+    "expected_roster": [
+      {
+        "team": {
+          "id": 128974,
+          "name": "All Gamers",
+          "location": "CN",
+          "slug": "all-gamers",
+          "modified_at": "2026-08-12T14:34:30Z",
+          "acronym": "AG",
+          "image_url": "https://cdn-api.pandascore.co/images/team/image/128974/all_gamers_full_allmode.png",
+          "dark_mode_image_url": null
+        },
+        "players": [
+          {
+            "active": true,
+            "id": 46231,
+            "name": "f4ngeer",
+            "role": null,
+            "slug": "f4ngeer",
+            "modified_at": "2026-08-12T14:34:29Z",
+            "age": 19,
+            "birthday": "2007-04-08",
+            "first_name": "Roman",
+            "last_name": "Smirnov",
+            "nationality": "RU",
+            "image_url": null
+          },
+          {
+            "active": true,
+            "id": 56752,
+            "name": "K1ra",
+            "role": null,
+            "slug": "k1ra-zhu-zhihao",
+            "modified_at": "2026-08-12T14:34:29Z",
+            "age": 22,
+            "birthday": "2004-05-28",
+            "first_name": "Zhu",
+            "last_name": "Zhihao",
+            "nationality": "CN",
+            "image_url": null
+          },
+          {
+            "active": true,
+            "id": 60807,
+            "name": "Shr1mp",
+            "role": null,
+            "slug": "shr1mp",
+            "modified_at": "2026-08-12T14:34:29Z",
+            "age": 23,
+            "birthday": "2003-03-21",
+            "first_name": "Yang ",
+            "last_name": "Yong ",
+            "nationality": "CN",
+            "image_url": null
+          },
+          {
+            "active": true,
+            "id": 62193,
+            "name": "iamgrq",
+            "role": null,
+            "slug": "iamgrq",
+            "modified_at": "2026-08-12T14:34:30Z",
+            "age": 21,
+            "birthday": "2004-09-20",
+            "first_name": "Gao",
+            "last_name": "Ruiqi",
+            "nationality": "CN",
+            "image_url": null
+          },
+          {
+            "active": true,
+            "id": 66067,
+            "name": "Bai",
+            "role": null,
+            "slug": "bai-6bdf5875-bef6-4202-93f2-112032011093",
+            "modified_at": "2026-08-12T14:34:30Z",
+            "age": null,
+            "birthday": null,
+            "first_name": "Zhang",
+            "last_name": "Zeyang",
+            "nationality": "CN",
+            "image_url": null
+          }
+        ]
+      },
+      {
+        "team": {
+          "id": 133287,
+          "name": "Nova Esports",
+          "location": "CN",
+          "slug": "nova-esports-valorant",
+          "modified_at": "2026-07-27T08:09:48Z",
+          "acronym": "NOVA",
+          "image_url": "https://cdn-api.pandascore.co/images/team/image/133287/800px_nova_esports_2025_full_allmode.png",
+          "dark_mode_image_url": null
+        },
+        "players": [
+          {
+            "active": true,
+            "id": 47994,
+            "name": "Ezeir",
+            "role": null,
+            "slug": "ezeir",
+            "modified_at": "2026-07-27T08:09:47Z",
+            "age": 23,
+            "birthday": "2002-12-18",
+            "first_name": "ZeJun",
+            "last_name": "Zhao",
+            "nationality": "CN",
+            "image_url": null
+          },
+          {
+            "active": true,
+            "id": 50971,
+            "name": "GuanG",
+            "role": null,
+            "slug": "guang-guang-honglin",
+            "modified_at": "2026-07-27T08:09:47Z",
+            "age": 22,
+            "birthday": "2004-05-20",
+            "first_name": "Guang",
+            "last_name": "Honglin",
+            "nationality": "CN",
+            "image_url": null
+          },
+          {
+            "active": true,
+            "id": 52736,
+            "name": "cb",
+            "role": null,
+            "slug": "cb-wang-qingchuan",
+            "modified_at": "2026-07-27T08:09:47Z",
+            "age": 22,
+            "birthday": "2003-10-04",
+            "first_name": "Wang ",
+            "last_name": "Qingchuan",
+            "nationality": "CN",
+            "image_url": null
+          },
+          {
+            "active": true,
+            "id": 53105,
+            "name": "Swagzor",
+            "role": null,
+            "slug": "opy-swagzor",
+            "modified_at": "2026-07-27T08:09:48Z",
+            "age": 18,
+            "birthday": "2008-02-15",
+            "first_name": "Mikhail",
+            "last_name": "Vanyushin",
+            "nationality": "RU",
+            "image_url": null
+          },
+          {
+            "active": true,
+            "id": 63755,
+            "name": "qiutiaN",
+            "role": null,
+            "slug": "qiutian-bijan-moeinzadeh",
+            "modified_at": "2026-07-27T08:09:47Z",
+            "age": 26,
+            "birthday": "1999-11-13",
+            "first_name": "Bijan",
+            "last_name": "Moeinzadeh",
+            "nationality": "TW",
+            "image_url": null
+          }
+        ]
+      },
+      {
+        "team": {
+          "id": 133288,
+          "name": "TYLOO",
+          "location": "CN",
+          "slug": "tyloo-valorant",
+          "modified_at": "2026-07-27T08:09:48Z",
+          "acronym": "TYLOO",
+          "image_url": "https://cdn-api.pandascore.co/images/team/image/133288/600px_ty_loo_2016_allmode.png",
+          "dark_mode_image_url": null
+        },
+        "players": [
+          {
+            "active": true,
+            "id": 24088,
+            "name": "SLOWLY",
+            "role": null,
+            "slug": "slowly",
+            "modified_at": "2026-07-27T08:09:48Z",
+            "age": 24,
+            "birthday": "2001-09-23",
+            "first_name": "Kelun",
+            "last_name": "Sun",
+            "nationality": "CN",
+            "image_url": "https://cdn-api.pandascore.co/images/player/image/24088/600px_slowly_at_pro_house_2021.png"
+          },
+          {
+            "active": true,
+            "id": 41760,
+            "name": "SiuFatBB",
+            "role": null,
+            "slug": "siufanbb",
+            "modified_at": "2026-07-27T08:09:48Z",
+            "age": 27,
+            "birthday": "1999-06-19",
+            "first_name": "Hei",
+            "last_name": "Ka Pong",
+            "nationality": "HK",
+            "image_url": "https://cdn-api.pandascore.co/images/player/image/41760/gfn_siu_fat_bb_2022.png"
+          },
+          {
+            "active": true,
+            "id": 49272,
+            "name": "Scales",
+            "role": null,
+            "slug": "scales",
+            "modified_at": "2026-07-27T08:09:48Z",
+            "age": 21,
+            "birthday": "2004-10-20",
+            "first_name": "Zhang ",
+            "last_name": "Zhen ",
+            "nationality": "CN",
+            "image_url": null
+          },
+          {
+            "active": true,
+            "id": 51840,
+            "name": "splash",
+            "role": null,
+            "slug": "splash-moses-christophe-jonathan",
+            "modified_at": "2026-07-27T08:09:48Z",
+            "age": 19,
+            "birthday": "2007-08-14",
+            "first_name": "Moses Christophe",
+            "last_name": "Jonathan",
+            "nationality": "ID",
+            "image_url": "https://cdn-api.pandascore.co/images/player/image/51840/6583cc067d94b.png"
+          },
+          {
+            "active": true,
+            "id": 63756,
+            "name": "Erv",
+            "role": null,
+            "slug": "erv",
+            "modified_at": "2026-07-27T08:09:48Z",
+            "age": 22,
+            "birthday": "2004-02-16",
+            "first_name": "Shen",
+            "last_name": "Zhiwei",
+            "nationality": "CN",
+            "image_url": null
+          }
+        ]
+      },
+      {
+        "team": {
+          "id": 133379,
+          "name": "Bilibili Gaming",
+          "location": "CN",
+          "slug": "bilibili-gaming-valorant",
+          "modified_at": "2026-07-27T08:09:49Z",
+          "acronym": "BLG",
+          "image_url": "https://cdn-api.pandascore.co/images/team/image/133379/600px_bilibili_gaming_2021_full_allmode.png",
+          "dark_mode_image_url": null
+        },
+        "players": [
+          {
+            "active": true,
+            "id": 34374,
+            "name": "whz",
+            "role": null,
+            "slug": "whz",
+            "modified_at": "2026-07-27T08:09:49Z",
+            "age": 23,
+            "birthday": "2003-07-28",
+            "first_name": "Wang",
+            "last_name": "Haozhe",
+            "nationality": "CN",
+            "image_url": "https://cdn-api.pandascore.co/images/player/image/34374/280px_whzy_at_valorant_masters_toronto_2025.png"
+          },
+          {
+            "active": true,
+            "id": 41734,
+            "name": "nephh",
+            "role": null,
+            "slug": "lze-nephh",
+            "modified_at": "2026-07-27T08:09:49Z",
+            "age": 23,
+            "birthday": "2003-03-21",
+            "first_name": "Marcus",
+            "last_name": "Tan",
+            "nationality": "SG",
+            "image_url": "https://cdn-api.pandascore.co/images/player/image/41734/p34476.png"
+          },
+          {
+            "active": true,
+            "id": 49642,
+            "name": "Knight",
+            "role": null,
+            "slug": "knight-liu-yuxiang",
+            "modified_at": "2026-07-27T08:09:49Z",
+            "age": 22,
+            "birthday": "2003-10-14",
+            "first_name": "Liu",
+            "last_name": "Yuxiang",
+            "nationality": "CN",
+            "image_url": "https://cdn-api.pandascore.co/images/player/image/49642/800px_knight_at_the_valorant_champions_2023.png"
+          },
+          {
+            "active": true,
+            "id": 57535,
+            "name": "rushia",
+            "role": null,
+            "slug": "rushia",
+            "modified_at": "2026-07-27T08:09:49Z",
+            "age": 19,
+            "birthday": "2006-09-09",
+            "first_name": "Xiaojie",
+            "last_name": "Wang",
+            "nationality": "CN",
+            "image_url": "https://cdn-api.pandascore.co/images/player/image/57535/280px_rushia_at_valorant_masters_toronto_2025.png"
+          },
+          {
+            "active": true,
+            "id": 66135,
+            "name": "FT",
+            "role": null,
+            "slug": "ft-18c2f90c-843c-4c9c-981a-d9b473f909e4",
+            "modified_at": "2026-07-27T08:09:49Z",
+            "age": null,
+            "birthday": null,
+            "first_name": "Yan",
+            "last_name": "Shuaibo",
+            "nationality": "CN",
+            "image_url": null
+          }
+        ]
+      },
+      {
+        "team": {
+          "id": 133380,
+          "name": "Trace Esports",
+          "location": "CN",
+          "slug": "trace-esports-valorant",
+          "modified_at": "2026-08-12T14:34:29Z",
+          "acronym": "TE",
+          "image_url": "https://cdn-api.pandascore.co/images/team/image/133380/trace_esports_2023_allmode.png",
+          "dark_mode_image_url": null
+        },
+        "players": [
+          {
+            "active": true,
+            "id": 34311,
+            "name": "LuoK1ng",
+            "role": null,
+            "slug": "luok1ng",
+            "modified_at": "2026-08-12T14:34:29Z",
+            "age": 24,
+            "birthday": "2002-03-28",
+            "first_name": "Zhang",
+            "last_name": "Zhanpeng",
+            "nationality": "CN",
+            "image_url": "https://cdn-api.pandascore.co/images/player/image/34311/300px_trace_luo_k1ng_at_valorant_champions_2024.png"
+          },
+          {
+            "active": true,
+            "id": 34386,
+            "name": "FengF",
+            "role": null,
+            "slug": "fengf",
+            "modified_at": "2026-08-12T14:34:29Z",
+            "age": 22,
+            "birthday": "2003-11-09",
+            "first_name": "Song",
+            "last_name": "Xuefeng",
+            "nationality": "CN",
+            "image_url": "https://cdn-api.pandascore.co/images/player/image/34386/651c5dc12f1fc.png"
+          },
+          {
+            "active": true,
+            "id": 41744,
+            "name": "deLb",
+            "role": null,
+            "slug": "delb",
+            "modified_at": "2026-08-12T14:34:28Z",
+            "age": 21,
+            "birthday": "2004-09-10",
+            "first_name": "Delbert",
+            "last_name": "Tanoto",
+            "nationality": "ID",
+            "image_url": "https://cdn-api.pandascore.co/images/player/image/41744/ezgif_7_8fe83d7f59.png"
+          },
+          {
+            "active": true,
+            "id": 50603,
+            "name": "Kai",
+            "role": null,
+            "slug": "kai-14ff786b-b4df-4343-b838-b1049b691340",
+            "modified_at": "2026-08-12T14:34:28Z",
+            "age": 22,
+            "birthday": "2003-10-01",
+            "first_name": "Zhi Nan",
+            "last_name": "Lu",
+            "nationality": "CN",
+            "image_url": "https://cdn-api.pandascore.co/images/player/image/50603/vct_2520_champions_25202023_2_f_kai_1690980525427.png"
+          },
+          {
+            "active": true,
+            "id": 58987,
+            "name": "Fkey",
+            "role": null,
+            "slug": "fkey",
+            "modified_at": "2026-08-12T14:34:29Z",
+            "age": null,
+            "birthday": null,
+            "first_name": null,
+            "last_name": null,
+            "nationality": "CN",
+            "image_url": null
+          }
+        ]
+      },
+      {
+        "team": {
+          "id": 133825,
+          "name": "TEC Esports",
+          "location": "CN",
+          "slug": "tec-esports",
+          "modified_at": "2026-08-12T14:34:28Z",
+          "acronym": "TEC",
+          "image_url": "https://cdn-api.pandascore.co/images/team/image/133825/190px_tec_esports_allmode.png",
+          "dark_mode_image_url": null
+        },
+        "players": [
+          {
+            "active": true,
+            "id": 44090,
+            "name": "Haodong",
+            "role": null,
+            "slug": "haodong",
+            "modified_at": "2026-08-12T14:34:27Z",
+            "age": 24,
+            "birthday": "2002-08-04",
+            "first_name": "Guo",
+            "last_name": "Haodong",
+            "nationality": "CN",
+            "image_url": null
+          },
+          {
+            "active": true,
+            "id": 49235,
+            "name": "Spitfires",
+            "role": null,
+            "slug": "spitfires",
+            "modified_at": "2026-08-12T14:34:27Z",
+            "age": 23,
+            "birthday": "2003-06-22",
+            "first_name": "Mingyang",
+            "last_name": "Xin",
+            "nationality": "CN",
+            "image_url": "https://cdn-api.pandascore.co/images/player/image/49235/382px_spitfires_cn_evo_2023.png"
+          },
+          {
+            "active": true,
+            "id": 56863,
+            "name": "dynamite",
+            "role": null,
+            "slug": "dynamite",
+            "modified_at": "2026-08-12T14:34:27Z",
+            "age": 21,
+            "birthday": "2005-06-25",
+            "first_name": "Zhao",
+            "last_name": "Zihao",
+            "nationality": "CN",
+            "image_url": null
+          },
+          {
+            "active": true,
+            "id": 60221,
+            "name": "CoCo",
+            "role": null,
+            "slug": "coco-ding-dajian",
+            "modified_at": "2026-08-12T14:34:27Z",
+            "age": 22,
+            "birthday": "2003-10-17",
+            "first_name": "Ding",
+            "last_name": "Dajian",
+            "nationality": "CN",
+            "image_url": null
+          },
+          {
+            "active": true,
+            "id": 60754,
+            "name": "lucas",
+            "role": null,
+            "slug": "lucas-lu-yunkun",
+            "modified_at": "2026-08-12T14:34:28Z",
+            "age": 19,
+            "birthday": "2006-09-15",
+            "first_name": "Lu",
+            "last_name": "Yunkun",
+            "nationality": "CN",
+            "image_url": null
+          }
+        ]
+      },
+      {
+        "team": {
+          "id": 134454,
+          "name": "JD Gaming",
+          "location": "CN",
+          "slug": "jd-gaming-valorant",
+          "modified_at": "2026-08-12T14:34:27Z",
+          "acronym": "JDG",
+          "image_url": "https://cdn-api.pandascore.co/images/team/image/134454/600px_jd_gaming_2021_full_allmode.png",
+          "dark_mode_image_url": null
+        },
+        "players": [
+          {
+            "active": true,
+            "id": 33493,
+            "name": "BerLIN",
+            "role": null,
+            "slug": "berlin",
+            "modified_at": "2026-08-12T14:34:26Z",
+            "age": 22,
+            "birthday": "2004-04-19",
+            "first_name": "Chang",
+            "last_name": "Polin",
+            "nationality": "TW",
+            "image_url": "https://cdn-api.pandascore.co/images/player/image/33493/300px_fpx_ber_lin_at_the_valorant_champions_2024.png"
+          },
+          {
+            "active": true,
+            "id": 34146,
+            "name": "Yuicaw",
+            "role": null,
+            "slug": "yuicaw",
+            "modified_at": "2026-08-12T14:34:26Z",
+            "age": 22,
+            "birthday": "2004-02-20",
+            "first_name": "Huang",
+            "last_name": "Yung-chieh",
+            "nationality": "TW",
+            "image_url": null
+          },
+          {
+            "active": true,
+            "id": 41770,
+            "name": "jkuro",
+            "role": null,
+            "slug": "jkuro",
+            "modified_at": "2026-08-12T14:34:27Z",
+            "age": 21,
+            "birthday": "2005-03-01",
+            "first_name": "Ho-chung",
+            "last_name": "Yeung",
+            "nationality": "HK",
+            "image_url": "https://cdn-api.pandascore.co/images/player/image/41770/ezgif_7_7bebd6884a.png"
+          },
+          {
+            "active": true,
+            "id": 60659,
+            "name": "zhe",
+            "role": null,
+            "slug": "zhe-niu-zhe",
+            "modified_at": "2026-08-12T14:34:25Z",
+            "age": 22,
+            "birthday": "2004-07-21",
+            "first_name": "Niu",
+            "last_name": "Zhe",
+            "nationality": "CN",
+            "image_url": null
+          },
+          {
+            "active": true,
+            "id": 66745,
+            "name": "crownfisher",
+            "role": null,
+            "slug": "crownfisher",
+            "modified_at": "2026-08-12T14:34:26Z",
+            "age": null,
+            "birthday": null,
+            "first_name": "Li",
+            "last_name": "Ao",
+            "nationality": "CN",
+            "image_url": null
+          }
+        ]
+      },
+      {
+        "team": {
+          "id": 135470,
+          "name": "XLG Gaming",
+          "location": "CN",
+          "slug": "zy-gaming",
+          "modified_at": "2026-07-27T08:09:50Z",
+          "acronym": "XLG",
+          "image_url": "https://cdn-api.pandascore.co/images/team/image/135470/800px_xlg_china_2024_allmode.png",
+          "dark_mode_image_url": null
+        },
+        "players": [
+          {
+            "active": true,
+            "id": 39980,
+            "name": "Rarga",
+            "role": null,
+            "slug": "rarga",
+            "modified_at": "2026-07-27T08:09:50Z",
+            "age": 24,
+            "birthday": "2001-11-20",
+            "first_name": "Arthur",
+            "last_name": "Churyumov",
+            "nationality": "RU",
+            "image_url": "https://cdn-api.pandascore.co/images/player/image/39980/280px_rarga_at_valorant_masters_toronto_2025.png"
+          },
+          {
+            "active": true,
+            "id": 40745,
+            "name": "NoMan",
+            "role": null,
+            "slug": "noman",
+            "modified_at": "2026-07-27T08:09:50Z",
+            "age": 21,
+            "birthday": "2004-09-13",
+            "first_name": "James",
+            "last_name": "Man",
+            "nationality": "HK",
+            "image_url": null
+          },
+          {
+            "active": true,
+            "id": 49240,
+            "name": "happywei",
+            "role": null,
+            "slug": "happywei",
+            "modified_at": "2026-07-27T08:09:50Z",
+            "age": 22,
+            "birthday": "2004-04-13",
+            "first_name": "Minwei",
+            "last_name": "Deng",
+            "nationality": "TW",
+            "image_url": "https://cdn-api.pandascore.co/images/player/image/49240/280px_happywei_at_valorant_masters_toronto_2025.png"
+          },
+          {
+            "active": true,
+            "id": 49643,
+            "name": "Lysoar",
+            "role": null,
+            "slug": "lysoar",
+            "modified_at": "2026-07-27T08:09:50Z",
+            "age": 21,
+            "birthday": "2005-02-22",
+            "first_name": "You Hao",
+            "last_name": "Liang",
+            "nationality": "CN",
+            "image_url": "https://cdn-api.pandascore.co/images/player/image/49643/600px_lysoar_at_the_valorant_champions_2023.png"
+          },
+          {
+            "active": true,
+            "id": 51190,
+            "name": "WsLeo",
+            "role": null,
+            "slug": "wsleo",
+            "modified_at": "2026-07-27T08:09:50Z",
+            "age": 25,
+            "birthday": "2001-03-18",
+            "first_name": "Huang",
+            "last_name": "Ping-Wei",
+            "nationality": "TW",
+            "image_url": null
+          }
+        ]
+      }
+    ]
+  }
+]

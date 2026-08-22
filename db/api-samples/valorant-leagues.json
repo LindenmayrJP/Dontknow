@@ -1,0 +1,166 @@
+[
+  {
+    "id": 5468,
+    "name": "CHALLENGERS SHOWDOWN",
+    "url": null,
+    "slug": "valorant-challengers-showdown",
+    "videogame": {
+      "id": 26,
+      "name": "Valorant",
+      "current_version": "13.04",
+      "slug": "valorant"
+    },
+    "modified_at": "2025-12-09T12:31:32Z",
+    "series": [
+      {
+        "id": 9957,
+        "name": "KOREA & JAPAN",
+        "year": 2025,
+        "begin_at": "2025-12-12T08:00:00Z",
+        "end_at": "2025-12-13T14:12:00Z",
+        "winner_id": null,
+        "winner_type": "Team",
+        "slug": "valorant-challengers-showdown-korea-japan-2025",
+        "modified_at": "2025-12-15T21:42:55Z",
+        "league_id": 5468,
+        "season": null,
+        "full_name": "KOREA & JAPAN 2025"
+      }
+    ],
+    "image_url": null
+  },
+  {
+    "id": 5465,
+    "name": "VALORANT Radiant International Invitational",
+    "url": null,
+    "slug": "valorant-valorant-radiant-international-invitational",
+    "videogame": {
+      "id": 26,
+      "name": "Valorant",
+      "current_version": "13.04",
+      "slug": "valorant"
+    },
+    "modified_at": "2025-12-04T08:56:30Z",
+    "series": [
+      {
+        "id": 9926,
+        "name": "",
+        "year": 2025,
+        "begin_at": "2025-12-18T06:00:00Z",
+        "end_at": "2025-12-21T15:00:00Z",
+        "winner_id": null,
+        "winner_type": "Team",
+        "slug": "valorant-valorant-radiant-international-invitational-2025",
+        "modified_at": "2025-12-04T09:02:01Z",
+        "league_id": 5465,
+        "season": null,
+        "full_name": "2025"
+      }
+    ],
+    "image_url": "https://cdn-api.pandascore.co/images/league/image/5465/900px-valorant_radiant_international_invitational_2025_lightmode-png"
+  },
+  {
+    "id": 5462,
+    "name": "Project Blender",
+    "url": null,
+    "slug": "valorant-project-blender",
+    "videogame": {
+      "id": 26,
+      "name": "Valorant",
+      "current_version": "13.04",
+      "slug": "valorant"
+    },
+    "modified_at": "2025-12-03T08:57:34Z",
+    "series": [
+      {
+        "id": 9923,
+        "name": "Phase 3",
+        "year": 2025,
+        "begin_at": "2025-12-03T16:00:00Z",
+        "end_at": "2025-12-14T18:24:00Z",
+        "winner_id": null,
+        "winner_type": "Team",
+        "slug": "valorant-project-blender-phase-3-2025",
+        "modified_at": "2025-12-15T08:15:29Z",
+        "league_id": 5462,
+        "season": null,
+        "full_name": "Phase 3 2025"
+      }
+    ],
+    "image_url": null
+  },
+  {
+    "id": 5460,
+    "name": "China Esports Festival Super Champions Cup",
+    "url": null,
+    "slug": "valorant-china-esports-festival-super-champions-cup",
+    "videogame": {
+      "id": 26,
+      "name": "Valorant",
+      "current_version": "13.04",
+      "slug": "valorant"
+    },
+    "modified_at": "2025-11-29T14:31:13Z",
+    "series": [
+      {
+        "id": 9916,
+        "name": "",
+        "year": 2025,
+        "begin_at": "2025-11-30T03:00:00Z",
+        "end_at": "2025-11-30T14:00:00Z",
+        "winner_id": null,
+        "winner_type": "Team",
+        "slug": "valorant-china-esports-festival-super-champions-cup-2025",
+        "modified_at": "2025-11-29T14:38:27Z",
+        "league_id": 5460,
+        "season": null,
+        "full_name": "2025"
+      }
+    ],
+    "image_url": null
+  },
+  {
+    "id": 5414,
+    "name": "Tixinha & Sacy Invitational By Bonoxs",
+    "url": null,
+    "slug": "valorant-tixinha-sacy-invitational-by-bonoxs",
+    "videogame": {
+      "id": 26,
+      "name": "Valorant",
+      "current_version": "13.04",
+      "slug": "valorant"
+    },
+    "modified_at": "2025-07-04T09:37:37Z",
+    "series": [
+      {
+        "id": 9465,
+        "name": "",
+        "year": 2025,
+        "begin_at": "2025-07-04T20:00:00Z",
+        "end_at": "2025-07-07T02:40:00Z",
+        "winner_id": 128990,
+        "winner_type": "Team",
+        "slug": "valorant-tixinha-sacy-invitational-by-bonoxs-2025",
+        "modified_at": "2025-07-07T18:05:32Z",
+        "league_id": 5414,
+        "season": null,
+        "full_name": "2025"
+      },
+      {
+        "id": 10015,
+        "name": "",
+        "year": 2025,
+        "begin_at": "2025-12-19T20:00:00Z",
+        "end_at": "2025-12-22T01:28:00Z",
+        "winner_id": null,
+        "winner_type": "Team",
+        "slug": "valorant-tixinha-sacy-invitational-by-bonoxs-2-2025",
+        "modified_at": "2025-12-23T10:03:53Z",
+        "league_id": 5414,
+        "season": "2",
+        "full_name": "Season 2 2025"
+      }
+    ],
+    "image_url": null
+  }
+]

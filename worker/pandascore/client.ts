@@ -51,6 +51,35 @@ export type PsTournament = {
   slug: string | null;
   begin_at: string | null;
   end_at: string | null;
+  has_bracket?: boolean | null;
+};
+
+/** Linha de classificação. A origem só dá rank/time/última partida. */
+export type PsStanding = {
+  rank: number;
+  team: PsTeam;
+  last_match: { id: number; status: string } | null;
+};
+
+/**
+ * Partida vinda de `/tournaments/{id}/brackets`: match completo mais
+ * `previous_matches`, que não existe no endpoint comum de partidas.
+ */
+export type PsBracketMatch = PsMatch & {
+  previous_matches?: { type: string; match_id: number }[] | null;
+};
+
+export type CatalogResource = "maps" | "agents" | "weapons" | "abilities";
+
+export type PsCatalogItem = {
+  id: number;
+  name: string;
+  slug?: string | null;
+  image_url?: string | null;
+  portrait_url?: string | null;
+  creds?: number | null;
+  ability_type?: string | null;
+  videogame_versions?: string[] | null;
 };
 
 /**
@@ -71,6 +100,13 @@ export class PandaScoreClient {
     this.limiter = new RateLimiter(maxPerHour, 60 * 60 * 1000, 250);
   }
 
+  private authHeaders() {
+    return {
+      Authorization: `Bearer ${this.apiKey}`,
+      Accept: "application/json",
+    };
+  }
+
   private async getPage<T>(
     path: string,
     params: Record<string, string | number>
@@ -82,10 +118,7 @@ export class PandaScoreClient {
 
     const data = await getJson<T[]>(url.toString(), {
       limiter: this.limiter,
-      headers: {
-        Authorization: `Bearer ${this.apiKey}`,
-        Accept: "application/json",
-      },
+      headers: this.authHeaders(),
     });
 
     return data ?? [];
@@ -153,5 +186,57 @@ export class PandaScoreClient {
       `/${GAME_PATH[game]}/matches/running`,
       maxPages
     );
+  }
+
+  /**
+   * Partidas de um torneio.
+   *
+   * A rota aninhada `/{game}/tournaments/{id}/matches` NÃO existe (404
+   * `Route not found`, confirmado na auditoria do Módulo 3.5). O caminho
+   * correto é filtrar na coleção de partidas.
+   */
+  listMatchesByTournament(game: Game, tournamentId: number, maxPages = 2) {
+    return this.getAll<PsMatch>(`/${GAME_PATH[game]}/matches`, maxPages, {
+      "filter[tournament_id]": tournamentId,
+    });
+  }
+
+  /**
+   * Classificação do torneio.
+   *
+   * Rota SEM prefixo de jogo — `/valorant/tournaments/{id}/standings` dá
+   * 404 `Route not found`. Devolve `null` quando o torneio não publica
+   * tabela (404 `Record not found`), que é estado normal e não erro.
+   */
+  getStandings(tournamentId: number) {
+    return getJson<PsStanding[]>(
+      `${this.baseUrl}/tournaments/${tournamentId}/standings`,
+      {
+        limiter: this.limiter,
+        headers: this.authHeaders(),
+        notFoundAsNull: true,
+      }
+    );
+  }
+
+  /**
+   * Chaveamento do torneio: lista de partidas, cada uma com
+   * `previous_matches` — campo que só existe aqui, nunca em
+   * `/{game}/matches`. Também sem prefixo de jogo.
+   */
+  getBrackets(tournamentId: number) {
+    return getJson<PsBracketMatch[]>(
+      `${this.baseUrl}/tournaments/${tournamentId}/brackets`,
+      {
+        limiter: this.limiter,
+        headers: this.authHeaders(),
+        notFoundAsNull: true,
+      }
+    );
+  }
+
+  /** Catálogo estático de Valorant (mapas, agentes, armas, habilidades). */
+  listCatalog<T>(recurso: CatalogResource, maxPages = 3) {
+    return this.getAll<T>(`/valorant/${recurso}`, maxPages);
   }
 }

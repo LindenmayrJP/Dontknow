@@ -1,0 +1,799 @@
+[
+  {
+    "scheduled_at": "2026-09-17T21:00:00Z",
+    "serie_id": 10805,
+    "league_id": 4531,
+    "number_of_games": 5,
+    "forfeit": false,
+    "match_type": "best_of",
+    "live": {
+      "supported": false,
+      "url": null,
+      "opens_at": null
+    },
+    "videogame_title": null,
+    "end_at": null,
+    "draw": false,
+    "results": [],
+    "game_advantage": null,
+    "streams_list": [
+      {
+        "main": true,
+        "language": "en",
+        "embed_url": "https://player.twitch.tv/?channel=valorant_americas",
+        "official": true,
+        "raw_url": "https://www.twitch.tv/valorant_americas"
+      }
+    ],
+    "videogame": {
+      "id": 26,
+      "name": "Valorant",
+      "slug": "valorant"
+    },
+    "winner": null,
+    "status": "not_started",
+    "begin_at": "2026-09-17T21:00:00Z",
+    "videogame_version": null,
+    "opponents": [],
+    "id": 1641335,
+    "name": "Grand final: TBD vs TBD",
+    "modified_at": "2026-08-18T14:47:23Z",
+    "serie": {
+      "id": 10805,
+      "name": "Game Changers North America",
+      "year": 2026,
+      "slug": "valorant-vct-2021-north-america-stage-1-challengers-1-game-changers-north-america-stage-2-2026",
+      "begin_at": "2026-07-13T21:00:00Z",
+      "end_at": "2026-09-18T08:00:00Z",
+      "winner_id": null,
+      "winner_type": "Team",
+      "modified_at": "2026-07-18T10:37:42Z",
+      "league_id": 4531,
+      "season": "Stage 2",
+      "full_name": "Game Changers North America Stage 2 2026"
+    },
+    "tournament_id": 21721,
+    "tournament": {
+      "id": 21721,
+      "name": "Playoffs",
+      "type": "online/offline",
+      "country": null,
+      "slug": "valorant-vct-2021-north-america-stage-1-challengers-1-game-changers-north-america-stage-2-2026-playoffs",
+      "begin_at": "2026-09-01T21:00:00Z",
+      "detailed_stats": true,
+      "end_at": "2026-09-18T02:00:00Z",
+      "winner_id": null,
+      "winner_type": "Team",
+      "serie_id": 10805,
+      "modified_at": "2026-08-18T14:47:23Z",
+      "league_id": 4531,
+      "prizepool": "60000 United States Dollar",
+      "tier": "d",
+      "has_bracket": true,
+      "region": "NA",
+      "live_supported": false
+    },
+    "winner_type": "Team",
+    "games": [
+      {
+        "complete": false,
+        "id": 51964,
+        "position": 1,
+        "status": "not_started",
+        "length": null,
+        "finished": false,
+        "winner": {
+          "id": null,
+          "type": "Team"
+        },
+        "match_id": 1641335,
+        "begin_at": null,
+        "detailed_stats": true,
+        "end_at": null,
+        "forfeit": false,
+        "winner_type": "Team"
+      },
+      {
+        "complete": false,
+        "id": 51965,
+        "position": 2,
+        "status": "not_started",
+        "length": null,
+        "finished": false,
+        "winner": {
+          "id": null,
+          "type": "Team"
+        },
+        "match_id": 1641335,
+        "begin_at": null,
+        "detailed_stats": true,
+        "end_at": null,
+        "forfeit": false,
+        "winner_type": "Team"
+      },
+      {
+        "complete": false,
+        "id": 51966,
+        "position": 3,
+        "status": "not_started",
+        "length": null,
+        "finished": false,
+        "winner": {
+          "id": null,
+          "type": "Team"
+        },
+        "match_id": 1641335,
+        "begin_at": null,
+        "detailed_stats": true,
+        "end_at": null,
+        "forfeit": false,
+        "winner_type": "Team"
+      },
+      {
+        "complete": false,
+        "id": 51967,
+        "position": 4,
+        "status": "not_started",
+        "length": null,
+        "finished": false,
+        "winner": {
+          "id": null,
+          "type": "Team"
+        },
+        "match_id": 1641335,
+        "begin_at": null,
+        "detailed_stats": true,
+        "end_at": null,
+        "forfeit": false,
+        "winner_type": "Team"
+      },
+      {
+        "complete": false,
+        "id": 51968,
+        "position": 5,
+        "status": "not_started",
+        "length": null,
+        "finished": false,
+        "winner": {
+          "id": null,
+          "type": "Team"
+        },
+        "match_id": 1641335,
+        "begin_at": null,
+        "detailed_stats": true,
+        "end_at": null,
+        "forfeit": false,
+        "winner_type": "Team"
+      }
+    ],
+    "slug": "2026-09-17",
+    "detailed_stats": true,
+    "winner_id": null,
+    "rescheduled": false,
+    "league": {
+      "id": 4531,
+      "name": "VCT",
+      "url": null,
+      "slug": "valorant-vct-2021-north-america-stage-1-challengers-1",
+      "modified_at": "2023-02-13T19:07:55Z",
+      "image_url": "https://cdn-api.pandascore.co/images/league/image/4531/800px-vct_2023_logo_lightmode-png"
+    },
+    "original_scheduled_at": "2026-09-17T21:00:00Z"
+  },
+  {
+    "scheduled_at": "2026-09-09T21:00:00Z",
+    "serie_id": 10805,
+    "league_id": 4531,
+    "number_of_games": 5,
+    "forfeit": false,
+    "match_type": "best_of",
+    "live": {
+      "supported": false,
+      "url": null,
+      "opens_at": null
+    },
+    "videogame_title": null,
+    "end_at": null,
+    "draw": false,
+    "results": [],
+    "game_advantage": null,
+    "streams_list": [
+      {
+        "main": true,
+        "language": "en",
+        "embed_url": "https://player.twitch.tv/?channel=valorant_americas",
+        "official": true,
+        "raw_url": "https://www.twitch.tv/valorant_americas"
+      }
+    ],
+    "videogame": {
+      "id": 26,
+      "name": "Valorant",
+      "slug": "valorant"
+    },
+    "winner": null,
+    "status": "not_started",
+    "begin_at": "2026-09-09T21:00:00Z",
+    "videogame_version": null,
+    "opponents": [],
+    "id": 1641334,
+    "name": "Lower bracket final: TBD vs TBD",
+    "modified_at": "2026-08-18T14:47:23Z",
+    "serie": {
+      "id": 10805,
+      "name": "Game Changers North America",
+      "year": 2026,
+      "slug": "valorant-vct-2021-north-america-stage-1-challengers-1-game-changers-north-america-stage-2-2026",
+      "begin_at": "2026-07-13T21:00:00Z",
+      "end_at": "2026-09-18T08:00:00Z",
+      "winner_id": null,
+      "winner_type": "Team",
+      "modified_at": "2026-07-18T10:37:42Z",
+      "league_id": 4531,
+      "season": "Stage 2",
+      "full_name": "Game Changers North America Stage 2 2026"
+    },
+    "tournament_id": 21721,
+    "tournament": {
+      "id": 21721,
+      "name": "Playoffs",
+      "type": "online/offline",
+      "country": null,
+      "slug": "valorant-vct-2021-north-america-stage-1-challengers-1-game-changers-north-america-stage-2-2026-playoffs",
+      "begin_at": "2026-09-01T21:00:00Z",
+      "detailed_stats": true,
+      "end_at": "2026-09-18T02:00:00Z",
+      "winner_id": null,
+      "winner_type": "Team",
+      "serie_id": 10805,
+      "modified_at": "2026-08-18T14:47:23Z",
+      "league_id": 4531,
+      "prizepool": "60000 United States Dollar",
+      "tier": "d",
+      "has_bracket": true,
+      "region": "NA",
+      "live_supported": false
+    },
+    "winner_type": "Team",
+    "games": [
+      {
+        "complete": false,
+        "id": 51959,
+        "position": 1,
+        "status": "not_started",
+        "length": null,
+        "finished": false,
+        "winner": {
+          "id": null,
+          "type": "Team"
+        },
+        "match_id": 1641334,
+        "begin_at": null,
+        "detailed_stats": true,
+        "end_at": null,
+        "forfeit": false,
+        "winner_type": "Team"
+      },
+      {
+        "complete": false,
+        "id": 51960,
+        "position": 2,
+        "status": "not_started",
+        "length": null,
+        "finished": false,
+        "winner": {
+          "id": null,
+          "type": "Team"
+        },
+        "match_id": 1641334,
+        "begin_at": null,
+        "detailed_stats": true,
+        "end_at": null,
+        "forfeit": false,
+        "winner_type": "Team"
+      },
+      {
+        "complete": false,
+        "id": 51961,
+        "position": 3,
+        "status": "not_started",
+        "length": null,
+        "finished": false,
+        "winner": {
+          "id": null,
+          "type": "Team"
+        },
+        "match_id": 1641334,
+        "begin_at": null,
+        "detailed_stats": true,
+        "end_at": null,
+        "forfeit": false,
+        "winner_type": "Team"
+      },
+      {
+        "complete": false,
+        "id": 51962,
+        "position": 4,
+        "status": "not_started",
+        "length": null,
+        "finished": false,
+        "winner": {
+          "id": null,
+          "type": "Team"
+        },
+        "match_id": 1641334,
+        "begin_at": null,
+        "detailed_stats": true,
+        "end_at": null,
+        "forfeit": false,
+        "winner_type": "Team"
+      },
+      {
+        "complete": false,
+        "id": 51963,
+        "position": 5,
+        "status": "not_started",
+        "length": null,
+        "finished": false,
+        "winner": {
+          "id": null,
+          "type": "Team"
+        },
+        "match_id": 1641334,
+        "begin_at": null,
+        "detailed_stats": true,
+        "end_at": null,
+        "forfeit": false,
+        "winner_type": "Team"
+      }
+    ],
+    "slug": "2026-09-09-6de9a993-fd6b-490c-8599-9348f29cf75c",
+    "detailed_stats": true,
+    "winner_id": null,
+    "rescheduled": false,
+    "league": {
+      "id": 4531,
+      "name": "VCT",
+      "url": null,
+      "slug": "valorant-vct-2021-north-america-stage-1-challengers-1",
+      "modified_at": "2023-02-13T19:07:55Z",
+      "image_url": "https://cdn-api.pandascore.co/images/league/image/4531/800px-vct_2023_logo_lightmode-png"
+    },
+    "original_scheduled_at": "2026-09-09T21:00:00Z"
+  },
+  {
+    "scheduled_at": "2026-09-08T23:30:00Z",
+    "serie_id": 10805,
+    "league_id": 4531,
+    "number_of_games": 3,
+    "forfeit": false,
+    "match_type": "best_of",
+    "live": {
+      "supported": false,
+      "url": null,
+      "opens_at": null
+    },
+    "videogame_title": null,
+    "end_at": null,
+    "draw": false,
+    "results": [],
+    "game_advantage": null,
+    "streams_list": [
+      {
+        "main": true,
+        "language": "en",
+        "embed_url": "https://player.twitch.tv/?channel=valorant_americas",
+        "official": true,
+        "raw_url": "https://www.twitch.tv/valorant_americas"
+      }
+    ],
+    "videogame": {
+      "id": 26,
+      "name": "Valorant",
+      "slug": "valorant"
+    },
+    "winner": null,
+    "status": "not_started",
+    "begin_at": "2026-09-08T23:30:00Z",
+    "videogame_version": null,
+    "opponents": [],
+    "id": 1641333,
+    "name": "Lower bracket semifinal: TBD vs TBD",
+    "modified_at": "2026-08-18T14:47:23Z",
+    "serie": {
+      "id": 10805,
+      "name": "Game Changers North America",
+      "year": 2026,
+      "slug": "valorant-vct-2021-north-america-stage-1-challengers-1-game-changers-north-america-stage-2-2026",
+      "begin_at": "2026-07-13T21:00:00Z",
+      "end_at": "2026-09-18T08:00:00Z",
+      "winner_id": null,
+      "winner_type": "Team",
+      "modified_at": "2026-07-18T10:37:42Z",
+      "league_id": 4531,
+      "season": "Stage 2",
+      "full_name": "Game Changers North America Stage 2 2026"
+    },
+    "tournament_id": 21721,
+    "tournament": {
+      "id": 21721,
+      "name": "Playoffs",
+      "type": "online/offline",
+      "country": null,
+      "slug": "valorant-vct-2021-north-america-stage-1-challengers-1-game-changers-north-america-stage-2-2026-playoffs",
+      "begin_at": "2026-09-01T21:00:00Z",
+      "detailed_stats": true,
+      "end_at": "2026-09-18T02:00:00Z",
+      "winner_id": null,
+      "winner_type": "Team",
+      "serie_id": 10805,
+      "modified_at": "2026-08-18T14:47:23Z",
+      "league_id": 4531,
+      "prizepool": "60000 United States Dollar",
+      "tier": "d",
+      "has_bracket": true,
+      "region": "NA",
+      "live_supported": false
+    },
+    "winner_type": "Team",
+    "games": [
+      {
+        "complete": false,
+        "id": 51956,
+        "position": 1,
+        "status": "not_started",
+        "length": null,
+        "finished": false,
+        "winner": {
+          "id": null,
+          "type": "Team"
+        },
+        "match_id": 1641333,
+        "begin_at": null,
+        "detailed_stats": true,
+        "end_at": null,
+        "forfeit": false,
+        "winner_type": "Team"
+      },
+      {
+        "complete": false,
+        "id": 51957,
+        "position": 2,
+        "status": "not_started",
+        "length": null,
+        "finished": false,
+        "winner": {
+          "id": null,
+          "type": "Team"
+        },
+        "match_id": 1641333,
+        "begin_at": null,
+        "detailed_stats": true,
+        "end_at": null,
+        "forfeit": false,
+        "winner_type": "Team"
+      },
+      {
+        "complete": false,
+        "id": 51958,
+        "position": 3,
+        "status": "not_started",
+        "length": null,
+        "finished": false,
+        "winner": {
+          "id": null,
+          "type": "Team"
+        },
+        "match_id": 1641333,
+        "begin_at": null,
+        "detailed_stats": true,
+        "end_at": null,
+        "forfeit": false,
+        "winner_type": "Team"
+      }
+    ],
+    "slug": "2026-09-09-8489f3ba-2b72-44e9-8036-a8bbf6589b32",
+    "detailed_stats": true,
+    "winner_id": null,
+    "rescheduled": false,
+    "league": {
+      "id": 4531,
+      "name": "VCT",
+      "url": null,
+      "slug": "valorant-vct-2021-north-america-stage-1-challengers-1",
+      "modified_at": "2023-02-13T19:07:55Z",
+      "image_url": "https://cdn-api.pandascore.co/images/league/image/4531/800px-vct_2023_logo_lightmode-png"
+    },
+    "original_scheduled_at": "2026-09-08T23:30:00Z"
+  },
+  {
+    "scheduled_at": "2026-09-08T21:00:00Z",
+    "serie_id": 10805,
+    "league_id": 4531,
+    "number_of_games": 3,
+    "forfeit": false,
+    "match_type": "best_of",
+    "live": {
+      "supported": false,
+      "url": null,
+      "opens_at": null
+    },
+    "videogame_title": null,
+    "end_at": null,
+    "draw": false,
+    "results": [],
+    "game_advantage": null,
+    "streams_list": [
+      {
+        "main": true,
+        "language": "en",
+        "embed_url": "https://player.twitch.tv/?channel=valorant_americas",
+        "official": true,
+        "raw_url": "https://www.twitch.tv/valorant_americas"
+      }
+    ],
+    "videogame": {
+      "id": 26,
+      "name": "Valorant",
+      "slug": "valorant"
+    },
+    "winner": null,
+    "status": "not_started",
+    "begin_at": "2026-09-08T21:00:00Z",
+    "videogame_version": null,
+    "opponents": [],
+    "id": 1641332,
+    "name": "Upper bracket final: TBD vs TBD",
+    "modified_at": "2026-08-18T14:47:23Z",
+    "serie": {
+      "id": 10805,
+      "name": "Game Changers North America",
+      "year": 2026,
+      "slug": "valorant-vct-2021-north-america-stage-1-challengers-1-game-changers-north-america-stage-2-2026",
+      "begin_at": "2026-07-13T21:00:00Z",
+      "end_at": "2026-09-18T08:00:00Z",
+      "winner_id": null,
+      "winner_type": "Team",
+      "modified_at": "2026-07-18T10:37:42Z",
+      "league_id": 4531,
+      "season": "Stage 2",
+      "full_name": "Game Changers North America Stage 2 2026"
+    },
+    "tournament_id": 21721,
+    "tournament": {
+      "id": 21721,
+      "name": "Playoffs",
+      "type": "online/offline",
+      "country": null,
+      "slug": "valorant-vct-2021-north-america-stage-1-challengers-1-game-changers-north-america-stage-2-2026-playoffs",
+      "begin_at": "2026-09-01T21:00:00Z",
+      "detailed_stats": true,
+      "end_at": "2026-09-18T02:00:00Z",
+      "winner_id": null,
+      "winner_type": "Team",
+      "serie_id": 10805,
+      "modified_at": "2026-08-18T14:47:23Z",
+      "league_id": 4531,
+      "prizepool": "60000 United States Dollar",
+      "tier": "d",
+      "has_bracket": true,
+      "region": "NA",
+      "live_supported": false
+    },
+    "winner_type": "Team",
+    "games": [
+      {
+        "complete": false,
+        "id": 51953,
+        "position": 1,
+        "status": "not_started",
+        "length": null,
+        "finished": false,
+        "winner": {
+          "id": null,
+          "type": "Team"
+        },
+        "match_id": 1641332,
+        "begin_at": null,
+        "detailed_stats": true,
+        "end_at": null,
+        "forfeit": false,
+        "winner_type": "Team"
+      },
+      {
+        "complete": false,
+        "id": 51954,
+        "position": 2,
+        "status": "not_started",
+        "length": null,
+        "finished": false,
+        "winner": {
+          "id": null,
+          "type": "Team"
+        },
+        "match_id": 1641332,
+        "begin_at": null,
+        "detailed_stats": true,
+        "end_at": null,
+        "forfeit": false,
+        "winner_type": "Team"
+      },
+      {
+        "complete": false,
+        "id": 51955,
+        "position": 3,
+        "status": "not_started",
+        "length": null,
+        "finished": false,
+        "winner": {
+          "id": null,
+          "type": "Team"
+        },
+        "match_id": 1641332,
+        "begin_at": null,
+        "detailed_stats": true,
+        "end_at": null,
+        "forfeit": false,
+        "winner_type": "Team"
+      }
+    ],
+    "slug": "2026-09-08-52cabf48-8a7f-465a-bab8-62478b2ad2d0",
+    "detailed_stats": true,
+    "winner_id": null,
+    "rescheduled": false,
+    "league": {
+      "id": 4531,
+      "name": "VCT",
+      "url": null,
+      "slug": "valorant-vct-2021-north-america-stage-1-challengers-1",
+      "modified_at": "2023-02-13T19:07:55Z",
+      "image_url": "https://cdn-api.pandascore.co/images/league/image/4531/800px-vct_2023_logo_lightmode-png"
+    },
+    "original_scheduled_at": "2026-09-08T21:00:00Z"
+  },
+  {
+    "scheduled_at": "2026-09-03T23:30:00Z",
+    "serie_id": 10805,
+    "league_id": 4531,
+    "number_of_games": 3,
+    "forfeit": false,
+    "match_type": "best_of",
+    "live": {
+      "supported": false,
+      "url": null,
+      "opens_at": null
+    },
+    "videogame_title": null,
+    "end_at": null,
+    "draw": false,
+    "results": [],
+    "game_advantage": null,
+    "streams_list": [
+      {
+        "main": true,
+        "language": "en",
+        "embed_url": "https://player.twitch.tv/?channel=valorant_americas",
+        "official": true,
+        "raw_url": "https://www.twitch.tv/valorant_americas"
+      }
+    ],
+    "videogame": {
+      "id": 26,
+      "name": "Valorant",
+      "slug": "valorant"
+    },
+    "winner": null,
+    "status": "not_started",
+    "begin_at": "2026-09-03T23:30:00Z",
+    "videogame_version": null,
+    "opponents": [],
+    "id": 1641331,
+    "name": "Lower bracket quarterfinal 2: TBD vs TBD",
+    "modified_at": "2026-08-18T14:47:23Z",
+    "serie": {
+      "id": 10805,
+      "name": "Game Changers North America",
+      "year": 2026,
+      "slug": "valorant-vct-2021-north-america-stage-1-challengers-1-game-changers-north-america-stage-2-2026",
+      "begin_at": "2026-07-13T21:00:00Z",
+      "end_at": "2026-09-18T08:00:00Z",
+      "winner_id": null,
+      "winner_type": "Team",
+      "modified_at": "2026-07-18T10:37:42Z",
+      "league_id": 4531,
+      "season": "Stage 2",
+      "full_name": "Game Changers North America Stage 2 2026"
+    },
+    "tournament_id": 21721,
+    "tournament": {
+      "id": 21721,
+      "name": "Playoffs",
+      "type": "online/offline",
+      "country": null,
+      "slug": "valorant-vct-2021-north-america-stage-1-challengers-1-game-changers-north-america-stage-2-2026-playoffs",
+      "begin_at": "2026-09-01T21:00:00Z",
+      "detailed_stats": true,
+      "end_at": "2026-09-18T02:00:00Z",
+      "winner_id": null,
+      "winner_type": "Team",
+      "serie_id": 10805,
+      "modified_at": "2026-08-18T14:47:23Z",
+      "league_id": 4531,
+      "prizepool": "60000 United States Dollar",
+      "tier": "d",
+      "has_bracket": true,
+      "region": "NA",
+      "live_supported": false
+    },
+    "winner_type": "Team",
+    "games": [
+      {
+        "complete": false,
+        "id": 51950,
+        "position": 1,
+        "status": "not_started",
+        "length": null,
+        "finished": false,
+        "winner": {
+          "id": null,
+          "type": "Team"
+        },
+        "match_id": 1641331,
+        "begin_at": null,
+        "detailed_stats": true,
+        "end_at": null,
+        "forfeit": false,
+        "winner_type": "Team"
+      },
+      {
+        "complete": false,
+        "id": 51951,
+        "position": 2,
+        "status": "not_started",
+        "length": null,
+        "finished": false,
+        "winner": {
+          "id": null,
+          "type": "Team"
+        },
+        "match_id": 1641331,
+        "begin_at": null,
+        "detailed_stats": true,
+        "end_at": null,
+        "forfeit": false,
+        "winner_type": "Team"
+      },
+      {
+        "complete": false,
+        "id": 51952,
+        "position": 3,
+        "status": "not_started",
+        "length": null,
+        "finished": false,
+        "winner": {
+          "id": null,
+          "type": "Team"
+        },
+        "match_id": 1641331,
+        "begin_at": null,
+        "detailed_stats": true,
+        "end_at": null,
+        "forfeit": false,
+        "winner_type": "Team"
+      }
+    ],
+    "slug": "2026-09-04-72263c80-77b0-47b9-b416-c2e34c0d70b7",
+    "detailed_stats": true,
+    "winner_id": null,
+    "rescheduled": false,
+    "league": {
+      "id": 4531,
+      "name": "VCT",
+      "url": null,
+      "slug": "valorant-vct-2021-north-america-stage-1-challengers-1",
+      "modified_at": "2023-02-13T19:07:55Z",
+      "image_url": "https://cdn-api.pandascore.co/images/league/image/4531/800px-vct_2023_logo_lightmode-png"
+    },
+    "original_scheduled_at": "2026-09-03T23:30:00Z"
+  }
+]

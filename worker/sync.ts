@@ -1,6 +1,7 @@
 import { getPool } from "../db/pool";
 import { Counters } from "./lib/counters";
 import { HttpError } from "./lib/http";
+import { syncTournamentStructure } from "./pandascore/brackets";
 import { syncPandaScore } from "./pandascore/sync";
 import { syncRiot } from "./riot/sync";
 
@@ -15,6 +16,7 @@ async function main() {
   const counters = new Counters();
   let pandascoreFailed = false;
   let riotError: string | null = null;
+  let estruturaError: string | null = null;
 
   console.log("=== sync iniciada ===");
 
@@ -23,6 +25,19 @@ async function main() {
   } catch (err) {
     pandascoreFailed = true;
     console.error("\n[pandascore] FALHOU:", err instanceof Error ? err.message : err);
+  }
+
+  // Depende dos torneios já estarem no banco, então vem depois — e falha
+  // isolada aqui não invalida a wiki, que é o dado principal.
+  if (!pandascoreFailed) {
+    try {
+      console.log("\n[brackets] chaveamento e classificação (Valorant)");
+      await syncTournamentStructure(counters);
+    } catch (err) {
+      estruturaError = err instanceof Error ? err.message : String(err);
+      console.error(`\n[brackets] FALHOU: ${estruturaError}`);
+      console.error("[brackets] seguindo — times, jogadores e partidas já foram gravados");
+    }
   }
 
   try {
@@ -50,8 +65,13 @@ async function main() {
     process.exit(1);
   }
 
-  if (riotError) {
-    console.warn("\nsync terminou OK, mas o cliente Riot falhou (ver acima)");
+  const parciais = [
+    riotError ? "cliente Riot" : null,
+    estruturaError ? "chaveamento/classificação" : null,
+  ].filter(Boolean);
+
+  if (parciais.length) {
+    console.warn(`\nsync terminou OK, mas falhou em: ${parciais.join(" e ")} (ver acima)`);
   } else {
     console.log("\nsync concluída");
   }

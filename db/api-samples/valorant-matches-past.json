@@ -1,0 +1,991 @@
+[
+  {
+    "scheduled_at": "2026-08-22T21:00:00Z",
+    "serie_id": 10746,
+    "league_id": 4531,
+    "number_of_games": 3,
+    "forfeit": false,
+    "match_type": "best_of",
+    "live": {
+      "supported": false,
+      "url": null,
+      "opens_at": null
+    },
+    "videogame_title": null,
+    "end_at": "2026-08-22T22:44:30Z",
+    "draw": false,
+    "results": [
+      {
+        "score": 0,
+        "team_id": 138619
+      },
+      {
+        "score": 2,
+        "team_id": 128538
+      }
+    ],
+    "game_advantage": null,
+    "streams_list": [
+      {
+        "main": true,
+        "language": "en",
+        "embed_url": "https://player.twitch.tv/?channel=valorant_americas",
+        "official": true,
+        "raw_url": "https://www.twitch.tv/valorant_americas"
+      }
+    ],
+    "videogame": {
+      "id": 26,
+      "name": "Valorant",
+      "slug": "valorant"
+    },
+    "winner": {
+      "id": 128538,
+      "name": "G2 Esports",
+      "location": "DE",
+      "slug": "g2-esports-valorant",
+      "modified_at": "2026-08-10T08:36:57Z",
+      "acronym": "G2",
+      "image_url": "https://cdn-api.pandascore.co/images/team/image/128538/900px_g2_esports_2019.png",
+      "dark_mode_image_url": "https://cdn-api.pandascore.co/dark_images/team/dark_image/128538/189px_g2_esports_2019_darkmode.png"
+    },
+    "status": "finished",
+    "begin_at": "2026-08-22T21:06:45Z",
+    "videogame_version": {
+      "name": "12.05",
+      "current": false
+    },
+    "opponents": [
+      {
+        "type": "Team",
+        "opponent": {
+          "id": 138619,
+          "name": "BESTIA",
+          "location": "",
+          "slug": "bestia-valorant",
+          "modified_at": "2026-08-19T22:08:24Z",
+          "acronym": "BST",
+          "image_url": "https://cdn-api.pandascore.co/images/team/image/138619/186px_bestia_lightmode.png",
+          "dark_mode_image_url": "https://cdn-api.pandascore.co/dark_images/team/dark_image/138619/124px_bestia_darkmode.png"
+        }
+      },
+      {
+        "type": "Team",
+        "opponent": {
+          "id": 128538,
+          "name": "G2 Esports",
+          "location": "DE",
+          "slug": "g2-esports-valorant",
+          "modified_at": "2026-08-10T08:36:57Z",
+          "acronym": "G2",
+          "image_url": "https://cdn-api.pandascore.co/images/team/image/128538/900px_g2_esports_2019.png",
+          "dark_mode_image_url": "https://cdn-api.pandascore.co/dark_images/team/dark_image/128538/189px_g2_esports_2019_darkmode.png"
+        }
+      }
+    ],
+    "id": 1616162,
+    "name": "Lower bracket round 2 match 1: BST vs G2",
+    "modified_at": "2026-08-22T22:54:54Z",
+    "serie": {
+      "id": 10746,
+      "name": "Americas Stage 2",
+      "year": 2026,
+      "slug": "valorant-vct-2021-north-america-stage-1-challengers-1-americas-stage-2-2026",
+      "begin_at": "2026-07-16T21:00:00Z",
+      "end_at": "2026-09-07T03:00:00Z",
+      "winner_id": null,
+      "winner_type": "Team",
+      "modified_at": "2026-06-28T12:16:14Z",
+      "league_id": 4531,
+      "season": null,
+      "full_name": "Americas Stage 2 2026"
+    },
+    "tournament_id": 21604,
+    "tournament": {
+      "id": 21604,
+      "name": "Play-In",
+      "type": "online",
+      "country": null,
+      "slug": "valorant-vct-2021-north-america-stage-1-challengers-1-americas-stage-2-2026-play-in",
+      "begin_at": "2026-08-13T08:00:00Z",
+      "detailed_stats": true,
+      "end_at": "2026-08-25T21:00:00Z",
+      "winner_id": null,
+      "winner_type": "Team",
+      "serie_id": 10746,
+      "modified_at": "2026-08-19T22:08:25Z",
+      "league_id": 4531,
+      "prizepool": null,
+      "tier": "a",
+      "has_bracket": true,
+      "region": "NA",
+      "live_supported": false
+    },
+    "winner_type": "Team",
+    "games": [
+      {
+        "complete": true,
+        "id": 51568,
+        "position": 1,
+        "status": "finished",
+        "length": 2901,
+        "finished": true,
+        "winner": {
+          "id": 128538,
+          "type": "Team"
+        },
+        "match_id": 1616162,
+        "begin_at": "2026-08-22T21:06:47Z",
+        "detailed_stats": true,
+        "end_at": "2026-08-22T21:55:08Z",
+        "forfeit": false,
+        "winner_type": "Team"
+      },
+      {
+        "complete": false,
+        "id": 51569,
+        "position": 2,
+        "status": "finished",
+        "length": 2203,
+        "finished": true,
+        "winner": {
+          "id": 128538,
+          "type": "Team"
+        },
+        "match_id": 1616162,
+        "begin_at": "2026-08-22T22:07:47Z",
+        "detailed_stats": true,
+        "end_at": "2026-08-22T22:44:30Z",
+        "forfeit": false,
+        "winner_type": "Team"
+      }
+    ],
+    "slug": "bestia-2026-08-22",
+    "detailed_stats": true,
+    "winner_id": 128538,
+    "rescheduled": false,
+    "league": {
+      "id": 4531,
+      "name": "VCT",
+      "url": null,
+      "slug": "valorant-vct-2021-north-america-stage-1-challengers-1",
+      "modified_at": "2023-02-13T19:07:55Z",
+      "image_url": "https://cdn-api.pandascore.co/images/league/image/4531/800px-vct_2023_logo_lightmode-png"
+    },
+    "original_scheduled_at": "2026-08-22T21:00:00Z"
+  },
+  {
+    "scheduled_at": "2026-08-22T16:30:00Z",
+    "serie_id": 10775,
+    "league_id": 4531,
+    "number_of_games": 3,
+    "forfeit": false,
+    "match_type": "best_of",
+    "live": {
+      "supported": false,
+      "url": null,
+      "opens_at": null
+    },
+    "videogame_title": null,
+    "end_at": "2026-08-22T19:28:20Z",
+    "draw": false,
+    "results": [
+      {
+        "score": 1,
+        "team_id": 128796
+      },
+      {
+        "score": 2,
+        "team_id": 129194
+      }
+    ],
+    "game_advantage": null,
+    "streams_list": [
+      {
+        "main": true,
+        "language": "en",
+        "embed_url": "https://player.twitch.tv/?channel=valorant_emea",
+        "official": true,
+        "raw_url": "https://www.twitch.tv/valorant_emea"
+      },
+      {
+        "main": false,
+        "language": "fr",
+        "embed_url": "https://player.twitch.tv/?channel=valorant_fr",
+        "official": false,
+        "raw_url": "https://www.twitch.tv/valorant_fr"
+      },
+      {
+        "main": false,
+        "language": "es",
+        "embed_url": "https://player.twitch.tv/?channel=valorant_es",
+        "official": false,
+        "raw_url": "https://www.twitch.tv/valorant_es"
+      }
+    ],
+    "videogame": {
+      "id": 26,
+      "name": "Valorant",
+      "slug": "valorant"
+    },
+    "winner": {
+      "id": 129194,
+      "name": "Fire Flux Esports",
+      "location": "TR",
+      "slug": "fire-flux-esports",
+      "modified_at": "2026-08-16T22:36:59Z",
+      "acronym": "FF",
+      "image_url": "https://cdn-api.pandascore.co/images/team/image/129194/60b41997755c0.png",
+      "dark_mode_image_url": null
+    },
+    "status": "finished",
+    "begin_at": "2026-08-22T16:36:28Z",
+    "videogame_version": {
+      "name": "12.05",
+      "current": false
+    },
+    "opponents": [
+      {
+        "type": "Team",
+        "opponent": {
+          "id": 128796,
+          "name": "Team Vitality",
+          "location": "FR",
+          "slug": "team-vitality-valorant",
+          "modified_at": "2026-08-05T18:18:45Z",
+          "acronym": "VIT",
+          "image_url": "https://cdn-api.pandascore.co/images/team/image/128796/600px_team_vitality_2023_darkmode.png",
+          "dark_mode_image_url": "https://cdn-api.pandascore.co/dark_images/team/dark_image/128796/600px_team_vitality_2023_darkmode.png"
+        }
+      },
+      {
+        "type": "Team",
+        "opponent": {
+          "id": 129194,
+          "name": "Fire Flux Esports",
+          "location": "TR",
+          "slug": "fire-flux-esports",
+          "modified_at": "2026-08-16T22:36:59Z",
+          "acronym": "FF",
+          "image_url": "https://cdn-api.pandascore.co/images/team/image/129194/60b41997755c0.png",
+          "dark_mode_image_url": null
+        }
+      }
+    ],
+    "id": 1608254,
+    "name": "Lower bracket round 1 match 2: VIT vs FF",
+    "modified_at": "2026-08-22T20:02:22Z",
+    "serie": {
+      "id": 10775,
+      "name": "EMEA",
+      "year": 2026,
+      "slug": "valorant-vct-2021-north-america-stage-1-challengers-1-emea-stage-2-2026",
+      "begin_at": "2026-07-14T22:00:00Z",
+      "end_at": "2026-08-30T21:00:00Z",
+      "winner_id": null,
+      "winner_type": "Team",
+      "modified_at": "2026-08-18T11:34:14Z",
+      "league_id": 4531,
+      "season": "Stage 2",
+      "full_name": "EMEA Stage 2 2026"
+    },
+    "tournament_id": 21570,
+    "tournament": {
+      "id": 21570,
+      "name": "Playoffs",
+      "type": "offline",
+      "country": null,
+      "slug": "valorant-vct-2021-north-america-stage-1-challengers-1-emea-stage-2-2026-playoffs",
+      "begin_at": "2026-08-20T15:00:00Z",
+      "detailed_stats": true,
+      "end_at": "2026-08-30T21:00:00Z",
+      "winner_id": null,
+      "winner_type": "Team",
+      "serie_id": 10775,
+      "modified_at": "2026-08-18T11:34:14Z",
+      "league_id": 4531,
+      "prizepool": "250000 United States Dollar",
+      "tier": "a",
+      "has_bracket": true,
+      "region": "WEU",
+      "live_supported": false
+    },
+    "winner_type": "Team",
+    "games": [
+      {
+        "complete": true,
+        "id": 51499,
+        "position": 1,
+        "status": "finished",
+        "length": 3200,
+        "finished": true,
+        "winner": {
+          "id": 128796,
+          "type": "Team"
+        },
+        "match_id": 1608254,
+        "begin_at": "2026-08-22T16:36:29Z",
+        "detailed_stats": true,
+        "end_at": "2026-08-22T17:29:50Z",
+        "forfeit": false,
+        "winner_type": "Team"
+      },
+      {
+        "complete": true,
+        "id": 51500,
+        "position": 2,
+        "status": "finished",
+        "length": 3065,
+        "finished": true,
+        "winner": {
+          "id": 129194,
+          "type": "Team"
+        },
+        "match_id": 1608254,
+        "begin_at": "2026-08-22T17:43:25Z",
+        "detailed_stats": true,
+        "end_at": "2026-08-22T18:34:30Z",
+        "forfeit": false,
+        "winner_type": "Team"
+      },
+      {
+        "complete": true,
+        "id": 51501,
+        "position": 3,
+        "status": "finished",
+        "length": 2421,
+        "finished": true,
+        "winner": {
+          "id": 129194,
+          "type": "Team"
+        },
+        "match_id": 1608254,
+        "begin_at": "2026-08-22T18:47:59Z",
+        "detailed_stats": true,
+        "end_at": "2026-08-22T19:28:21Z",
+        "forfeit": false,
+        "winner_type": "Team"
+      }
+    ],
+    "slug": "fire-flux-esports-2026-08-22",
+    "detailed_stats": true,
+    "winner_id": 129194,
+    "rescheduled": true,
+    "league": {
+      "id": 4531,
+      "name": "VCT",
+      "url": null,
+      "slug": "valorant-vct-2021-north-america-stage-1-challengers-1",
+      "modified_at": "2023-02-13T19:07:55Z",
+      "image_url": "https://cdn-api.pandascore.co/images/league/image/4531/800px-vct_2023_logo_lightmode-png"
+    },
+    "original_scheduled_at": "2026-08-22T18:00:00Z"
+  },
+  {
+    "scheduled_at": "2026-08-22T14:00:00Z",
+    "serie_id": 10775,
+    "league_id": 4531,
+    "number_of_games": 3,
+    "forfeit": false,
+    "match_type": "best_of",
+    "live": {
+      "supported": false,
+      "url": null,
+      "opens_at": null
+    },
+    "videogame_title": null,
+    "end_at": "2026-08-22T16:08:51Z",
+    "draw": false,
+    "results": [
+      {
+        "score": 2,
+        "team_id": 128541
+      },
+      {
+        "score": 1,
+        "team_id": 134406
+      }
+    ],
+    "game_advantage": null,
+    "streams_list": [
+      {
+        "main": true,
+        "language": "en",
+        "embed_url": "https://player.twitch.tv/?channel=valorant_emea",
+        "official": true,
+        "raw_url": "https://www.twitch.tv/valorant_emea"
+      },
+      {
+        "main": false,
+        "language": "fr",
+        "embed_url": "https://player.twitch.tv/?channel=valorant_fr",
+        "official": false,
+        "raw_url": "https://www.twitch.tv/valorant_fr"
+      },
+      {
+        "main": false,
+        "language": "es",
+        "embed_url": "https://player.twitch.tv/?channel=valorant_es",
+        "official": false,
+        "raw_url": "https://www.twitch.tv/valorant_es"
+      }
+    ],
+    "videogame": {
+      "id": 26,
+      "name": "Valorant",
+      "slug": "valorant"
+    },
+    "winner": {
+      "id": 128541,
+      "name": "Team Liquid",
+      "location": "NL",
+      "slug": "team-liquid-valorant",
+      "modified_at": "2026-08-05T18:18:41Z",
+      "acronym": "TL",
+      "image_url": "https://cdn-api.pandascore.co/images/team/image/128541/463px_team_liquid_2024_full_lightmode.png",
+      "dark_mode_image_url": "https://cdn-api.pandascore.co/dark_images/team/dark_image/128541/463px_team_liquid_2024_full_darkmode.png"
+    },
+    "status": "finished",
+    "begin_at": "2026-08-22T14:06:33Z",
+    "videogame_version": {
+      "name": "12.05",
+      "current": false
+    },
+    "opponents": [
+      {
+        "type": "Team",
+        "opponent": {
+          "id": 128541,
+          "name": "Team Liquid",
+          "location": "NL",
+          "slug": "team-liquid-valorant",
+          "modified_at": "2026-08-05T18:18:41Z",
+          "acronym": "TL",
+          "image_url": "https://cdn-api.pandascore.co/images/team/image/128541/463px_team_liquid_2024_full_lightmode.png",
+          "dark_mode_image_url": "https://cdn-api.pandascore.co/dark_images/team/dark_image/128541/463px_team_liquid_2024_full_darkmode.png"
+        }
+      },
+      {
+        "type": "Team",
+        "opponent": {
+          "id": 134406,
+          "name": "Eintracht Frankfurt",
+          "location": "DE",
+          "slug": "eintracht-frankfurt-valorant",
+          "modified_at": "2026-08-16T22:36:58Z",
+          "acronym": "SGE",
+          "image_url": "https://cdn-api.pandascore.co/images/team/image/134406/600px_eintracht_frankfurt_allmode.png",
+          "dark_mode_image_url": null
+        }
+      }
+    ],
+    "id": 1608253,
+    "name": "Lower bracket round 1 match 1: TL vs SGE",
+    "modified_at": "2026-08-22T16:25:03Z",
+    "serie": {
+      "id": 10775,
+      "name": "EMEA",
+      "year": 2026,
+      "slug": "valorant-vct-2021-north-america-stage-1-challengers-1-emea-stage-2-2026",
+      "begin_at": "2026-07-14T22:00:00Z",
+      "end_at": "2026-08-30T21:00:00Z",
+      "winner_id": null,
+      "winner_type": "Team",
+      "modified_at": "2026-08-18T11:34:14Z",
+      "league_id": 4531,
+      "season": "Stage 2",
+      "full_name": "EMEA Stage 2 2026"
+    },
+    "tournament_id": 21570,
+    "tournament": {
+      "id": 21570,
+      "name": "Playoffs",
+      "type": "offline",
+      "country": null,
+      "slug": "valorant-vct-2021-north-america-stage-1-challengers-1-emea-stage-2-2026-playoffs",
+      "begin_at": "2026-08-20T15:00:00Z",
+      "detailed_stats": true,
+      "end_at": "2026-08-30T21:00:00Z",
+      "winner_id": null,
+      "winner_type": "Team",
+      "serie_id": 10775,
+      "modified_at": "2026-08-18T11:34:14Z",
+      "league_id": 4531,
+      "prizepool": "250000 United States Dollar",
+      "tier": "a",
+      "has_bracket": true,
+      "region": "WEU",
+      "live_supported": false
+    },
+    "winner_type": "Team",
+    "games": [
+      {
+        "complete": true,
+        "id": 51496,
+        "position": 1,
+        "status": "finished",
+        "length": 2442,
+        "finished": true,
+        "winner": {
+          "id": 134406,
+          "type": "Team"
+        },
+        "match_id": 1608253,
+        "begin_at": "2026-08-22T14:06:35Z",
+        "detailed_stats": true,
+        "end_at": "2026-08-22T14:47:17Z",
+        "forfeit": false,
+        "winner_type": "Team"
+      },
+      {
+        "complete": true,
+        "id": 51497,
+        "position": 2,
+        "status": "finished",
+        "length": 1652,
+        "finished": true,
+        "winner": {
+          "id": 128541,
+          "type": "Team"
+        },
+        "match_id": 1608253,
+        "begin_at": "2026-08-22T14:59:29Z",
+        "detailed_stats": true,
+        "end_at": "2026-08-22T15:27:01Z",
+        "forfeit": false,
+        "winner_type": "Team"
+      },
+      {
+        "complete": true,
+        "id": 51498,
+        "position": 3,
+        "status": "finished",
+        "length": 1720,
+        "finished": true,
+        "winner": {
+          "id": 128541,
+          "type": "Team"
+        },
+        "match_id": 1608253,
+        "begin_at": "2026-08-22T15:40:11Z",
+        "detailed_stats": true,
+        "end_at": "2026-08-22T16:08:52Z",
+        "forfeit": false,
+        "winner_type": "Team"
+      }
+    ],
+    "slug": "eintracht-frankfurt-2026-08-22",
+    "detailed_stats": true,
+    "winner_id": 128541,
+    "rescheduled": true,
+    "league": {
+      "id": 4531,
+      "name": "VCT",
+      "url": null,
+      "slug": "valorant-vct-2021-north-america-stage-1-challengers-1",
+      "modified_at": "2023-02-13T19:07:55Z",
+      "image_url": "https://cdn-api.pandascore.co/images/league/image/4531/800px-vct_2023_logo_lightmode-png"
+    },
+    "original_scheduled_at": "2026-08-22T15:00:00Z"
+  },
+  {
+    "scheduled_at": "2026-08-22T10:15:00Z",
+    "serie_id": 10745,
+    "league_id": 4531,
+    "number_of_games": 3,
+    "forfeit": false,
+    "match_type": "best_of",
+    "live": {
+      "supported": false,
+      "url": null,
+      "opens_at": null
+    },
+    "videogame_title": null,
+    "end_at": "2026-08-22T11:32:21Z",
+    "draw": false,
+    "results": [
+      {
+        "score": 2,
+        "team_id": 131974
+      },
+      {
+        "score": 0,
+        "team_id": 129326
+      }
+    ],
+    "game_advantage": null,
+    "streams_list": [
+      {
+        "main": false,
+        "language": "id",
+        "embed_url": "https://player.twitch.tv/?channel=valorant_id",
+        "official": false,
+        "raw_url": "https://www.twitch.tv/valorant_id"
+      },
+      {
+        "main": false,
+        "language": "ja",
+        "embed_url": "https://player.twitch.tv/?channel=valorant_jpn",
+        "official": false,
+        "raw_url": "https://www.twitch.tv/valorant_jpn"
+      },
+      {
+        "main": true,
+        "language": "en",
+        "embed_url": "https://player.twitch.tv/?channel=valorant_pacific",
+        "official": true,
+        "raw_url": "https://www.twitch.tv/valorant_pacific"
+      },
+      {
+        "main": false,
+        "language": "en",
+        "embed_url": "https://www.youtube.com/embed/wm7PO4IXfHs",
+        "official": true,
+        "raw_url": "https://www.youtube.com/watch?v=wm7PO4IXfHs"
+      }
+    ],
+    "videogame": {
+      "id": 26,
+      "name": "Valorant",
+      "slug": "valorant"
+    },
+    "winner": {
+      "id": 131974,
+      "name": "DetonatioN FocusMe",
+      "location": "JP",
+      "slug": "detonation-gaming-valorant",
+      "modified_at": "2026-08-09T13:53:07Z",
+      "acronym": "DFM",
+      "image_url": "https://cdn-api.pandascore.co/images/team/image/131974/780px_detonatio_n_focus_me_2022_lightmode.png",
+      "dark_mode_image_url": "https://cdn-api.pandascore.co/dark_images/team/dark_image/131974/780px_detonatio_n_focus_me_2022_darkmode.png"
+    },
+    "status": "finished",
+    "begin_at": "2026-08-22T10:13:01Z",
+    "videogame_version": {
+      "name": "13.00",
+      "current": false
+    },
+    "opponents": [
+      {
+        "type": "Team",
+        "opponent": {
+          "id": 131974,
+          "name": "DetonatioN FocusMe",
+          "location": "JP",
+          "slug": "detonation-gaming-valorant",
+          "modified_at": "2026-08-09T13:53:07Z",
+          "acronym": "DFM",
+          "image_url": "https://cdn-api.pandascore.co/images/team/image/131974/780px_detonatio_n_focus_me_2022_lightmode.png",
+          "dark_mode_image_url": "https://cdn-api.pandascore.co/dark_images/team/dark_image/131974/780px_detonatio_n_focus_me_2022_darkmode.png"
+        }
+      },
+      {
+        "type": "Team",
+        "opponent": {
+          "id": 129326,
+          "name": "ZETA DIVISION",
+          "location": "JP",
+          "slug": "zeta-division",
+          "modified_at": "2026-08-09T13:53:06Z",
+          "acronym": "ZETA",
+          "image_url": "https://cdn-api.pandascore.co/images/team/image/129326/600px_zeta_division_lightmode.png",
+          "dark_mode_image_url": "https://cdn-api.pandascore.co/dark_images/team/dark_image/129326/190px_zeta_division_darkmode.png"
+        }
+      }
+    ],
+    "id": 1619624,
+    "name": "Lower bracket round 2 match 2: DFM vs ZETA",
+    "modified_at": "2026-08-22T11:35:12Z",
+    "serie": {
+      "id": 10745,
+      "name": "Pacific",
+      "year": 2026,
+      "slug": "valorant-vct-2021-north-america-stage-1-challengers-1-pacific-stage-2-2026",
+      "begin_at": "2026-07-16T08:00:00Z",
+      "end_at": "2026-09-06T19:00:00Z",
+      "winner_id": null,
+      "winner_type": "Team",
+      "modified_at": "2026-06-28T11:37:47Z",
+      "league_id": 4531,
+      "season": "Stage 2",
+      "full_name": "Pacific Stage 2 2026"
+    },
+    "tournament_id": 21621,
+    "tournament": {
+      "id": 21621,
+      "name": "Play-In",
+      "type": "offline",
+      "country": "KR",
+      "slug": "valorant-vct-2021-north-america-stage-1-challengers-1-pacific-stage-2-2026-play-in",
+      "begin_at": "2026-08-13T08:00:00Z",
+      "detailed_stats": true,
+      "end_at": "2026-08-23T17:00:00Z",
+      "winner_id": null,
+      "winner_type": "Team",
+      "serie_id": 10745,
+      "modified_at": "2026-08-13T08:59:59Z",
+      "league_id": 4531,
+      "prizepool": null,
+      "tier": "b",
+      "has_bracket": true,
+      "region": "ASIA",
+      "live_supported": false
+    },
+    "winner_type": "Team",
+    "games": [
+      {
+        "complete": true,
+        "id": 51686,
+        "position": 1,
+        "status": "finished",
+        "length": 2274,
+        "finished": true,
+        "winner": {
+          "id": 131974,
+          "type": "Team"
+        },
+        "match_id": 1619624,
+        "begin_at": "2026-08-22T10:13:01Z",
+        "detailed_stats": true,
+        "end_at": "2026-08-22T10:50:56Z",
+        "forfeit": false,
+        "winner_type": "Team"
+      },
+      {
+        "complete": true,
+        "id": 51687,
+        "position": 2,
+        "status": "finished",
+        "length": 1944,
+        "finished": true,
+        "winner": {
+          "id": 131974,
+          "type": "Team"
+        },
+        "match_id": 1619624,
+        "begin_at": "2026-08-22T10:59:57Z",
+        "detailed_stats": true,
+        "end_at": "2026-08-22T11:32:22Z",
+        "forfeit": false,
+        "winner_type": "Team"
+      }
+    ],
+    "slug": "detonation-focusme-2026-08-22",
+    "detailed_stats": true,
+    "winner_id": 131974,
+    "rescheduled": true,
+    "league": {
+      "id": 4531,
+      "name": "VCT",
+      "url": null,
+      "slug": "valorant-vct-2021-north-america-stage-1-challengers-1",
+      "modified_at": "2023-02-13T19:07:55Z",
+      "image_url": "https://cdn-api.pandascore.co/images/league/image/4531/800px-vct_2023_logo_lightmode-png"
+    },
+    "original_scheduled_at": "2026-08-22T11:00:00Z"
+  },
+  {
+    "scheduled_at": "2026-08-22T08:10:00Z",
+    "serie_id": 10747,
+    "league_id": 4531,
+    "number_of_games": 5,
+    "forfeit": false,
+    "match_type": "best_of",
+    "live": {
+      "supported": false,
+      "url": null,
+      "opens_at": null
+    },
+    "videogame_title": null,
+    "end_at": "2026-08-22T11:32:11Z",
+    "draw": false,
+    "results": [
+      {
+        "score": 0,
+        "team_id": 133379
+      },
+      {
+        "score": 3,
+        "team_id": 133288
+      }
+    ],
+    "game_advantage": null,
+    "streams_list": [
+      {
+        "main": false,
+        "language": "en",
+        "embed_url": "https://player.twitch.tv/?channel=projhrzn",
+        "official": false,
+        "raw_url": "https://www.twitch.tv/projhrzn"
+      },
+      {
+        "main": false,
+        "language": "zh",
+        "embed_url": "https://www.youtube.com/embed/l5vfspd_7DQ",
+        "official": false,
+        "raw_url": "https://www.youtube.com/watch?v=l5vfspd_7DQ"
+      },
+      {
+        "main": true,
+        "language": "zh",
+        "embed_url": "https://player.twitch.tv/?channel=valorantesports_cn",
+        "official": true,
+        "raw_url": "https://www.twitch.tv/valorantesports_cn"
+      }
+    ],
+    "videogame": {
+      "id": 26,
+      "name": "Valorant",
+      "slug": "valorant"
+    },
+    "winner": {
+      "id": 133288,
+      "name": "TYLOO",
+      "location": "CN",
+      "slug": "tyloo-valorant",
+      "modified_at": "2026-07-27T08:09:48Z",
+      "acronym": "TYLOO",
+      "image_url": "https://cdn-api.pandascore.co/images/team/image/133288/600px_ty_loo_2016_allmode.png",
+      "dark_mode_image_url": null
+    },
+    "status": "finished",
+    "begin_at": "2026-08-22T08:09:08Z",
+    "videogame_version": null,
+    "opponents": [
+      {
+        "type": "Team",
+        "opponent": {
+          "id": 133379,
+          "name": "Bilibili Gaming",
+          "location": "CN",
+          "slug": "bilibili-gaming-valorant",
+          "modified_at": "2026-07-27T08:09:49Z",
+          "acronym": "BLG",
+          "image_url": "https://cdn-api.pandascore.co/images/team/image/133379/600px_bilibili_gaming_2021_full_allmode.png",
+          "dark_mode_image_url": null
+        }
+      },
+      {
+        "type": "Team",
+        "opponent": {
+          "id": 133288,
+          "name": "TYLOO",
+          "location": "CN",
+          "slug": "tyloo-valorant",
+          "modified_at": "2026-07-27T08:09:48Z",
+          "acronym": "TYLOO",
+          "image_url": "https://cdn-api.pandascore.co/images/team/image/133288/600px_ty_loo_2016_allmode.png",
+          "dark_mode_image_url": null
+        }
+      }
+    ],
+    "id": 1607798,
+    "name": "Lower bracket final: BLG vs TYLOO",
+    "modified_at": "2026-08-22T11:32:14Z",
+    "serie": {
+      "id": 10747,
+      "name": "China Stage 2",
+      "year": 2026,
+      "slug": "valorant-vcl-china-stage-2-2026",
+      "begin_at": "2026-07-09T08:00:00Z",
+      "end_at": "2026-09-29T22:00:00Z",
+      "winner_id": null,
+      "winner_type": "Team",
+      "modified_at": "2026-06-29T07:14:20Z",
+      "league_id": 4531,
+      "season": null,
+      "full_name": "China Stage 2 2026"
+    },
+    "tournament_id": 21565,
+    "tournament": {
+      "id": 21565,
+      "name": "Playoffs",
+      "type": "offline",
+      "country": "CN",
+      "slug": "valorant-vcl-china-stage-2-2026-playoffs",
+      "begin_at": "2026-08-14T08:00:00Z",
+      "detailed_stats": false,
+      "end_at": "2026-08-23T13:00:00Z",
+      "winner_id": null,
+      "winner_type": "Team",
+      "serie_id": 10747,
+      "modified_at": "2026-08-12T14:34:30Z",
+      "league_id": 4531,
+      "prizepool": "25000 United States Dollar",
+      "tier": "b",
+      "has_bracket": true,
+      "region": "ASIA",
+      "live_supported": false
+    },
+    "winner_type": "Team",
+    "games": [
+      {
+        "complete": true,
+        "id": 51383,
+        "position": 1,
+        "status": "finished",
+        "length": 3695,
+        "finished": true,
+        "winner": {
+          "id": 133288,
+          "type": "Team"
+        },
+        "match_id": 1607798,
+        "begin_at": "2026-08-22T08:09:08Z",
+        "detailed_stats": false,
+        "end_at": "2026-08-22T09:10:44Z",
+        "forfeit": false,
+        "winner_type": "Team"
+      },
+      {
+        "complete": true,
+        "id": 51384,
+        "position": 2,
+        "status": "finished",
+        "length": 2610,
+        "finished": true,
+        "winner": {
+          "id": 133288,
+          "type": "Team"
+        },
+        "match_id": 1607798,
+        "begin_at": "2026-08-22T09:20:55Z",
+        "detailed_stats": false,
+        "end_at": "2026-08-22T10:04:26Z",
+        "forfeit": false,
+        "winner_type": "Team"
+      },
+      {
+        "complete": true,
+        "id": 51385,
+        "position": 3,
+        "status": "finished",
+        "length": 4528,
+        "finished": true,
+        "winner": {
+          "id": 133288,
+          "type": "Team"
+        },
+        "match_id": 1607798,
+        "begin_at": "2026-08-22T10:16:43Z",
+        "detailed_stats": false,
+        "end_at": "2026-08-22T11:32:12Z",
+        "forfeit": false,
+        "winner_type": "Team"
+      }
+    ],
+    "slug": "bilibili-gaming-2026-08-22",
+    "detailed_stats": false,
+    "winner_id": 133288,
+    "rescheduled": true,
+    "league": {
+      "id": 4531,
+      "name": "VCT",
+      "url": null,
+      "slug": "valorant-vct-2021-north-america-stage-1-challengers-1",
+      "modified_at": "2023-02-13T19:07:55Z",
+      "image_url": "https://cdn-api.pandascore.co/images/league/image/4531/800px-vct_2023_logo_lightmode-png"
+    },
+    "original_scheduled_at": "2026-08-22T08:00:00Z"
+  }
+]
