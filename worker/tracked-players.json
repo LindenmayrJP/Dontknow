@@ -1,0 +1,7 @@
+{
+  "_comment": "Jogadores rastreados pelo cliente Riot. Edite com os Riot IDs reais que você quer acompanhar. platform: na1, br1, euw1, kr, jp1, oc1, la1, la2, eun1, tr1, ru. O campo playerName é opcional e serve para ligar o status ao jogador já existente na tabela players.",
+  "players": [
+    { "riotId": "Hide on bush#KR1", "platform": "kr", "playerName": "Faker" },
+    { "riotId": "Gumayusi#KR1", "platform": "kr", "playerName": "Gumayusi" }
+  ]
+}
