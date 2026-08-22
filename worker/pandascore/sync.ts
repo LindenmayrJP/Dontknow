@@ -1,5 +1,5 @@
 import type { PoolClient } from "pg";
-import { pool } from "../../db/pool";
+import { getPool } from "../../db/pool";
 import { Counters } from "../lib/counters";
 import {
   PandaScoreClient,
@@ -365,7 +365,7 @@ export async function syncPandaScore(counters: Counters) {
 
   const maxPages = Number(process.env.PANDASCORE_MAX_PAGES ?? 3);
   const client = new PandaScoreClient(apiKey);
-  const db = await pool.connect();
+  const db = await getPool().connect();
 
   try {
     for (const game of GAMES) {

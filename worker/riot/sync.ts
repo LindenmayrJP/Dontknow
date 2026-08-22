@@ -1,6 +1,6 @@
 import { existsSync, readFileSync } from "node:fs";
 import { join } from "node:path";
-import { pool } from "../../db/pool";
+import { getPool } from "../../db/pool";
 import { Counters } from "../lib/counters";
 import { HttpError } from "../lib/http";
 import { RiotClient, type SpectatorGame } from "./client";
@@ -36,7 +36,7 @@ function loadTrackedPlayers(): TrackedPlayer[] {
 /** Liga o status ao jogador da wiki, quando `playerName` bate com players.name. */
 async function findPlayerId(name: string | undefined): Promise<number | null> {
   if (!name) return null;
-  const { rows } = await pool.query<{ id: number }>(
+  const { rows } = await getPool().query<{ id: number }>(
     "SELECT id FROM players WHERE name = $1 ORDER BY pandascore_id NULLS LAST LIMIT 1",
     [name]
   );
@@ -61,7 +61,7 @@ async function upsertStatus(
 ) {
   const me = row.game?.participants?.find((p) => p.puuid === row.puuid);
 
-  const { rows } = await pool.query<{ inserted: boolean }>(
+  const { rows } = await getPool().query<{ inserted: boolean }>(
     `INSERT INTO tracked_player_status
        (puuid, player_id, riot_id, game_name, tag_line, platform, summoner_id,
         summoner_level, profile_icon_id, in_game, current_game_id,

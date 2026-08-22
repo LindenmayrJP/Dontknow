@@ -1,11 +1,11 @@
 import { readdirSync, readFileSync } from "node:fs";
 import { join } from "node:path";
-import { pool } from "./pool";
+import { getPool } from "./pool";
 
 const MIGRATIONS_DIR = join(__dirname, "migrations");
 
 async function main() {
-  const client = await pool.connect();
+  const client = await getPool().connect();
   try {
     await client.query(`
       CREATE TABLE IF NOT EXISTS schema_migrations (
@@ -47,7 +47,7 @@ async function main() {
     console.log("migrations em dia");
   } finally {
     client.release();
-    await pool.end();
+    await getPool().end();
   }
 }
 

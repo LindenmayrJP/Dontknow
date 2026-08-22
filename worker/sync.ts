@@ -1,4 +1,4 @@
-import { pool } from "../db/pool";
+import { getPool } from "../db/pool";
 import { Counters } from "./lib/counters";
 import { HttpError } from "./lib/http";
 import { syncPandaScore } from "./pandascore/sync";
@@ -46,7 +46,7 @@ async function main() {
 
   if (pandascoreFailed) {
     console.error("\nsync terminou COM FALHA no PandaScore");
-    await pool.end();
+    await getPool().end();
     process.exit(1);
   }
 
@@ -56,11 +56,11 @@ async function main() {
     console.log("\nsync concluída");
   }
 
-  await pool.end();
+  await getPool().end();
 }
 
 main().catch(async (err) => {
   console.error("Falha inesperada na sync:", err);
-  await pool.end().catch(() => {});
+  await getPool().end().catch(() => {});
   process.exit(1);
 });

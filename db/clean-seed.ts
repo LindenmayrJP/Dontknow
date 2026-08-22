@@ -1,4 +1,4 @@
-import { pool } from "./pool";
+import { getPool } from "./pool";
 
 /**
  * Remove o que sobrou do seed do Módulo 1 depois que a ingestão real
@@ -13,7 +13,7 @@ import { pool } from "./pool";
  * Só apaga o que ainda está marcado como seed e nunca foi adotado.
  */
 async function main() {
-  const client = await pool.connect();
+  const client = await getPool().connect();
   try {
     await client.query("BEGIN");
 
@@ -45,7 +45,7 @@ async function main() {
     throw err;
   } finally {
     client.release();
-    await pool.end();
+    await getPool().end();
   }
 }
 

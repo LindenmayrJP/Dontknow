@@ -1,13 +1,13 @@
-import { pool } from "./pool";
+import { getPool } from "./pool";
 
 async function main() {
-  const client = await pool.connect();
+  const client = await getPool().connect();
   try {
     await client.query("SELECT 1");
     console.log("conectado");
   } finally {
     client.release();
-    await pool.end();
+    await getPool().end();
   }
 }
 

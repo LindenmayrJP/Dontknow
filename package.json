@@ -4,6 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "dev:all": "concurrently -n next,worker -c cyan,magenta \"next dev\" \"npm run dev:worker\"",
+    "dev:worker": "tsx watch --clear-screen=false worker/sync.ts",
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
@@ -26,6 +28,7 @@
     "@types/pg": "^8.11.0",
     "@types/react": "^19.0.0",
     "@types/react-dom": "^19.0.0",
+    "concurrently": "^10.0.5",
     "eslint": "^9.0.0",
     "eslint-config-next": "^15.0.0",
     "tsx": "^4.19.0",
