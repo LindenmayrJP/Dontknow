@@ -41,11 +41,18 @@ async function main() {
       );
       const organizationId = orgResult.rows[0].id;
 
+      // (organization_id, game) deixou de ser UNIQUE na migration 0003, então
+      // o seed procura antes de inserir para continuar idempotente.
       const teamResult = await client.query<{ id: number }>(
-        `INSERT INTO teams (organization_id, game, name)
-         VALUES ($1, $2, $3)
-         ON CONFLICT (organization_id, game) DO UPDATE SET name = EXCLUDED.name
-         RETURNING id`,
+        `WITH existente AS (
+           SELECT id FROM teams WHERE organization_id = $1 AND game = $2 LIMIT 1
+         ), nova AS (
+           INSERT INTO teams (organization_id, game, name)
+           SELECT $1, $2, $3
+            WHERE NOT EXISTS (SELECT 1 FROM existente)
+           RETURNING id
+         )
+         SELECT id FROM existente UNION ALL SELECT id FROM nova`,
         [organizationId, team.game, team.teamName]
       );
       const teamId = teamResult.rows[0].id;
