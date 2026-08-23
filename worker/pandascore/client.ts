@@ -16,6 +16,8 @@ export type PsTeam = {
   acronym: string | null;
   location: string | null;
   image_url: string | null;
+  /** Variante para fundo escuro; só existe quando a padrão é lightmode. */
+  dark_mode_image_url?: string | null;
   players?: PsPlayer[];
 };
 

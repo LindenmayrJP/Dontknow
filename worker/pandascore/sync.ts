@@ -103,15 +103,21 @@ export async function upsertTeams(
     pandascore_id: number;
     inserted: boolean;
   }>(
-    `INSERT INTO teams (organization_id, game, name, slug, acronym, image_url, pandascore_id)
-     SELECT v.org_id, $2, v.name, v.slug, v.acronym, v.image_url, v.ps_id
-       FROM unnest($1::int[], $3::text[], $4::text[], $5::text[], $6::text[], $7::int[])
-            AS v(org_id, name, slug, acronym, image_url, ps_id)
+    `INSERT INTO teams (organization_id, game, name, slug, acronym,
+                        image_url, dark_mode_image_url, pandascore_id)
+     SELECT v.org_id, $2, v.name, v.slug, v.acronym, v.image_url, v.dark_url, v.ps_id
+       FROM unnest($1::int[], $3::text[], $4::text[], $5::text[], $6::text[],
+                   $7::text[], $8::int[])
+            AS v(org_id, name, slug, acronym, image_url, dark_url, ps_id)
      ON CONFLICT (pandascore_id) DO UPDATE
        SET name = EXCLUDED.name,
            slug = EXCLUDED.slug,
            acronym = EXCLUDED.acronym,
+           -- COALESCE: o objeto de time vindo dentro de uma partida às
+           -- vezes chega sem imagem, e não pode apagar a já gravada.
            image_url = COALESCE(EXCLUDED.image_url, teams.image_url),
+           dark_mode_image_url = COALESCE(EXCLUDED.dark_mode_image_url,
+                                          teams.dark_mode_image_url),
            organization_id = EXCLUDED.organization_id
      RETURNING id, pandascore_id, (xmax = 0) AS inserted`,
     [
@@ -121,6 +127,7 @@ export async function upsertTeams(
       rows.map((t) => t.slug),
       rows.map((t) => t.acronym),
       rows.map((t) => t.image_url),
+      rows.map((t) => t.dark_mode_image_url ?? null),
       rows.map((t) => t.id),
     ]
   );

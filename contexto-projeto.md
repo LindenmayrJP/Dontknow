@@ -84,6 +84,7 @@ externas e (antes da chave pessoal) da expiração diária da chave da Riot.
 3.5. Auditoria de dados (PandaScore x banco, escopo Valorant)
 3.6. Correções de worker e catálogo estático
 3.7. Design system + padrão "em desenvolvimento"
+3.7.5. Logos e fotos (times e jogadores)
 3.8. Estrutura de navegação + home page
 3.9. Busca global
 3.10. Página de time (redesenhada)

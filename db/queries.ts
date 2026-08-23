@@ -215,6 +215,78 @@ export async function search(term: string): Promise<SearchResults> {
   return { teams: teams.rows, players: players.rows };
 }
 
+export type AmostraAvatar = {
+  id: number;
+  name: string;
+  acronym: string | null;
+  image_url: string | null;
+  dark_mode_image_url: string | null;
+};
+
+/**
+ * Amostras reais para o showcase do sistema de design: times e jogadores
+ * com e sem imagem, para conferir os dois estados do Avatar com dado de
+ * verdade em vez de exemplo inventado.
+ */
+export async function getAmostrasAvatar() {
+  const pool = getPool();
+
+  const times = await pool.query<AmostraAvatar>(
+    `(SELECT id, name, acronym, image_url, dark_mode_image_url
+        FROM teams WHERE dark_mode_image_url IS NOT NULL
+       ORDER BY id LIMIT 3)
+     UNION ALL
+     (SELECT id, name, acronym, image_url, dark_mode_image_url
+        FROM teams WHERE image_url IS NOT NULL AND dark_mode_image_url IS NULL
+       ORDER BY id LIMIT 2)`
+  );
+
+  const semImagem = await pool.query<AmostraAvatar>(
+    `SELECT id, name, acronym, image_url, dark_mode_image_url
+       FROM teams WHERE image_url IS NULL
+      ORDER BY id LIMIT 3`
+  );
+
+  // Caso limite: logo desenhado para fundo claro e sem variante dark na
+  // origem. É o único que precisa da faixa clara atrás.
+  const lightmode = await pool.query<AmostraAvatar>(
+    `SELECT id, name, acronym, image_url, dark_mode_image_url
+       FROM teams
+      WHERE image_url LIKE '%lightmode%' AND dark_mode_image_url IS NULL
+      ORDER BY id LIMIT 2`
+  );
+
+  const jogadoresComFoto = await pool.query<AmostraAvatar>(
+    `SELECT id, name, NULL AS acronym, image_url, NULL AS dark_mode_image_url
+       FROM players WHERE image_url IS NOT NULL ORDER BY id LIMIT 3`
+  );
+
+  const jogadoresSemFoto = await pool.query<AmostraAvatar>(
+    `SELECT id, name, NULL AS acronym, image_url, NULL AS dark_mode_image_url
+       FROM players WHERE image_url IS NULL ORDER BY id LIMIT 3`
+  );
+
+  const cobertura = await pool.query<{
+    times: number; times_com: number; times_dark: number;
+    jogadores: number; jogadores_com: number;
+  }>(
+    `SELECT (SELECT count(*) FROM teams)::int AS times,
+            (SELECT count(image_url) FROM teams)::int AS times_com,
+            (SELECT count(dark_mode_image_url) FROM teams)::int AS times_dark,
+            (SELECT count(*) FROM players)::int AS jogadores,
+            (SELECT count(image_url) FROM players)::int AS jogadores_com`
+  );
+
+  return {
+    timesComLogo: times.rows,
+    timesSemLogo: semImagem.rows,
+    timesLightmode: lightmode.rows,
+    jogadoresComFoto: jogadoresComFoto.rows,
+    jogadoresSemFoto: jogadoresSemFoto.rows,
+    cobertura: cobertura.rows[0],
+  };
+}
+
 /** Contagens para a home. */
 export async function getStats() {
   const { rows } = await getPool().query<{

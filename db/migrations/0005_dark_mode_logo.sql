@@ -1,0 +1,13 @@
+-- `teams.image_url` e `players.image_url` já existem desde a 0002 e já são
+-- gravadas pelo worker. O que falta é a variante para fundo escuro.
+--
+-- A `image_url` padrão do PandaScore vem em três sabores, visíveis no
+-- próprio nome do arquivo: `_allmode` (serve nos dois temas), `_lightmode`
+-- (feito para fundo claro) e alguns sem sufixo. Numa amostra de 100 times
+-- de Valorant: 44 allmode, 21 lightmode, 2 outros.
+--
+-- Os `_lightmode` são o problema: logo escuro sobre nosso fundo escuro
+-- fica ilegível. Para esses a API oferece `dark_mode_image_url` (34% dos
+-- times da amostra). O frontend deve preferir a versão dark quando ela
+-- existir e cair na padrão quando não.
+ALTER TABLE teams ADD COLUMN dark_mode_image_url TEXT;

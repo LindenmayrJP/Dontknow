@@ -1,182 +1,543 @@
 /*
- * Sem @import de fontes ou imagens remotas de propósito: a página não pode
- * fazer nenhuma requisição externa no carregamento (decisão do projeto).
+ * Fundação visual — tokens e componentes base.
+ *
+ * Sem @import de fonte ou imagem remota: a página não faz requisição
+ * externa no carregamento (decisão do projeto). As fontes vêm por
+ * `next/font/google`, que baixa no build e serve do nosso próprio
+ * domínio — nada sai para fora em runtime.
  */
+
 :root {
-  --bg: #0d0f14;
-  --surface: #151922;
-  --surface-2: #1d222d;
+  /* ---- Superfícies (do mais profundo ao mais elevado) ---- */
+  --bg: #0b0d12;
+  --surface: #12151d;
+  --surface-2: #1a1f2b;
+  --surface-3: #232936;
+
   --border: #262c3a;
-  --text: #e6e9ef;
-  --muted: #8b94a7;
+  --border-strong: #39415380;
+
+  /* ---- Texto: três níveis de hierarquia ---- */
+  --text: #e8ebf2;
+  --text-2: #9aa3b7;
+  --text-3: #6b7488;
+
+  /* ---- Destaque: pontual, nunca decorativo ---- */
   --accent: #4d7cfe;
+  --accent-hover: #6a92ff;
+  --accent-soft: #4d7cfe1f;
+
+  /* ---- Estado ---- */
+  --success: #2bc17f;
+  --success-soft: #2bc17f1f;
+  --danger: #f4556a;
+  --danger-soft: #f4556a1f;
+  --warning: #e8a33d;
+  --warning-soft: #e8a33d1f;
+
+  /* ---- Marca dos jogos (só em tag rotulada, nunca sozinha) ---- */
   --lol: #c8963e;
-  --valorant: #e2445c;
-  --live: #24c07a;
+  --valorant: #ff4655;
+
+  /* ---- Espaçamento: escala de 4px ---- */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
+
+  /* ---- Raio ---- */
+  --radius-sm: 6px;
+  --radius: 10px;
+  --radius-lg: 14px;
+  --radius-full: 999px;
+
+  /* ---- Tipografia ---- */
+  /* --font-sans e --font-stat são injetadas pelo next/font no layout. */
+  --text-xs: 11px;
+  --text-sm: 13px;
+  --text-base: 14px;
+  --text-lg: 16px;
+  --text-xl: 20px;
+  --text-2xl: 28px;
+  --text-3xl: 38px;
+
+  --shadow: 0 1px 2px #00000040, 0 4px 16px #00000026;
 }
 
 * { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
 
 body {
   margin: 0;
   background: var(--bg);
   color: var(--text);
-  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto,
-    Helvetica, Arial, sans-serif;
-  line-height: 1.5;
+  font-family: var(--font-sans), ui-sans-serif, system-ui, -apple-system,
+    "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: var(--text-base);
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
 }
 
 a { color: inherit; text-decoration: none; }
 a:hover { color: var(--accent); }
 
-.wrap { max-width: 1040px; margin: 0 auto; padding: 0 20px; }
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: var(--radius-sm);
+}
 
-/* Cabeçalho */
+/* ------------------------------------------------------------------ *
+ * Tipografia
+ *
+ * `.num` aplica a fonte condensada com alinhamento tabular — todo
+ * número que entra em coluna, placar ou estatística deve usá-la, senão
+ * os dígitos dançam entre as linhas.
+ * ------------------------------------------------------------------ */
+.num {
+  font-family: var(--font-stat), ui-monospace, "SF Mono", monospace;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.01em;
+}
+
+h1, h2, h3 { margin: 0; letter-spacing: -0.02em; line-height: 1.25; }
+h1 { font-size: var(--text-2xl); }
+h2 {
+  font-size: var(--text-sm);
+  color: var(--text-2);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 600;
+  margin: var(--space-6) 0 var(--space-3);
+}
+h3 { font-size: var(--text-lg); }
+
+.muted { color: var(--text-2); }
+.dim { color: var(--text-3); }
+.small { font-size: var(--text-sm); }
+.xs { font-size: var(--text-xs); }
+
+code {
+  font-family: var(--font-stat), ui-monospace, monospace;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 1px 5px;
+  font-size: 0.92em;
+}
+
+/* ------------------------------------------------------------------ *
+ * Layout
+ * ------------------------------------------------------------------ */
+.wrap {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 var(--space-4);
+}
+
+main { padding: var(--space-6) 0 var(--space-8); }
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+.row-between { justify-content: space-between; }
+.wrapped { flex-wrap: wrap; }
+
+.stack { display: flex; flex-direction: column; gap: var(--space-2); }
+.stack-4 { gap: var(--space-4); }
+
+.grid {
+  display: grid;
+  gap: var(--space-3);
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+}
+.grid-2 { grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
+/* Duas colunas de verdade: o minmax maior impede uma terceira caber. */
+.grid-pares { grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); }
+.grid-stats { grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); }
+
+/* ------------------------------------------------------------------ *
+ * Cabeçalho
+ * ------------------------------------------------------------------ */
 .site-header {
   border-bottom: 1px solid var(--border);
-  background: var(--surface);
+  background: color-mix(in srgb, var(--surface) 88%, transparent);
+  backdrop-filter: blur(8px);
   position: sticky;
   top: 0;
-  z-index: 10;
+  z-index: 20;
 }
 .site-header .wrap {
   display: flex;
   align-items: center;
-  gap: 20px;
-  padding-top: 14px;
-  padding-bottom: 14px;
+  gap: var(--space-4);
+  padding-top: var(--space-3);
+  padding-bottom: var(--space-3);
   flex-wrap: wrap;
 }
-.logo { font-weight: 700; font-size: 18px; letter-spacing: -0.02em; }
+.logo { font-weight: 700; font-size: var(--text-lg); letter-spacing: -0.03em; }
 .logo span { color: var(--accent); }
 
-/* Busca */
-.searchbox { display: flex; gap: 8px; flex: 1; min-width: 220px; }
+.searchbox { display: flex; gap: var(--space-2); flex: 1; min-width: 200px; }
 .searchbox input {
   flex: 1;
   background: var(--bg);
   border: 1px solid var(--border);
   color: var(--text);
-  border-radius: 8px;
-  padding: 9px 12px;
-  font-size: 14px;
+  border-radius: var(--radius-sm);
+  padding: 8px var(--space-3);
+  font-size: var(--text-base);
   font-family: inherit;
 }
+.searchbox input::placeholder { color: var(--text-3); }
 .searchbox input:focus { outline: none; border-color: var(--accent); }
 .searchbox button {
   background: var(--accent);
   border: 0;
   color: #fff;
-  border-radius: 8px;
-  padding: 9px 16px;
-  font-size: 14px;
+  border-radius: var(--radius-sm);
+  padding: 8px var(--space-4);
+  font-size: var(--text-base);
   font-weight: 600;
   cursor: pointer;
   font-family: inherit;
 }
+.searchbox button:hover { background: var(--accent-hover); }
 
-main { padding: 32px 0 64px; }
-
-h1 { font-size: 28px; margin: 0 0 4px; letter-spacing: -0.02em; }
-h2 { font-size: 16px; margin: 32px 0 12px; color: var(--muted);
-     text-transform: uppercase; letter-spacing: 0.06em; font-weight: 600; }
-
-.muted { color: var(--muted); }
-.small { font-size: 13px; }
-
-/* Cartões e listas */
-.grid { display: grid; gap: 10px; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); }
-
+/* ------------------------------------------------------------------ *
+ * Card
+ * ------------------------------------------------------------------ */
 .card {
   background: var(--surface);
   border: 1px solid var(--border);
-  border-radius: 10px;
-  padding: 14px;
+  border-radius: var(--radius);
+  padding: var(--space-4);
   display: block;
 }
-.card:hover { border-color: var(--accent); color: inherit; }
+.card-hover:hover { border-color: var(--border-strong); background: var(--surface-2); }
+a.card:hover { border-color: var(--accent); color: inherit; }
+.card-flush { padding: 0; overflow: hidden; }
 
-.row { display: flex; align-items: center; gap: 12px; }
+.card-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+  padding: var(--space-3) var(--space-4);
+  border-bottom: 1px solid var(--border);
+}
+.card-title { font-size: var(--text-sm); font-weight: 600; letter-spacing: -0.01em; }
 
-/* Escudo do time: iniciais, não imagem remota */
-.badge {
-  width: 38px; height: 38px; flex: 0 0 38px;
-  border-radius: 8px;
-  display: grid; place-items: center;
-  font-weight: 700; font-size: 13px;
+/* ------------------------------------------------------------------ *
+ * Avatar — iniciais como fallback, sem imagem remota
+ * ------------------------------------------------------------------ */
+.avatar {
+  position: relative;
+  flex: 0 0 auto;
+  border-radius: var(--radius-sm);
+  display: grid;
+  place-items: center;
+  font-weight: 700;
   color: #fff;
+  line-height: 1;
+  overflow: hidden;
+  user-select: none;
 }
+/* Fica por cima das iniciais; se o arquivo falhar, elas reaparecem. */
+.avatar-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  /* Logo com fundo transparente sobre a cor do avatar ficaria sujo — a
+     faixa neutra dá um plano de fundo previsível. */
+  background: #11141c;
+  padding: 2px;
+}
+/* Marca desenhada para fundo claro: inverter a faixa é o que a mantém
+   visível. Afeta os poucos times sem variante dark na origem. */
+.avatar-img-claro { background: #e8ebf2; }
+.avatar-round { border-radius: var(--radius-full); }
+.avatar-sm { width: 26px; height: 26px; font-size: 10px; }
+.avatar-md { width: 38px; height: 38px; font-size: 12px; }
+.avatar-lg { width: 56px; height: 56px; font-size: 16px; }
 
+/* ------------------------------------------------------------------ *
+ * Tag / badge
+ * ------------------------------------------------------------------ */
 .tag {
-  display: inline-block;
-  font-size: 11px; font-weight: 600;
-  padding: 2px 8px; border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: var(--text-xs);
+  font-weight: 600;
+  padding: 2px var(--space-2);
+  border-radius: var(--radius-full);
   border: 1px solid var(--border);
-  color: var(--muted);
-  text-transform: uppercase; letter-spacing: 0.04em;
+  color: var(--text-2);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  white-space: nowrap;
 }
-.tag.lol { color: var(--lol); border-color: color-mix(in srgb, var(--lol) 40%, transparent); }
-.tag.valorant { color: var(--valorant); border-color: color-mix(in srgb, var(--valorant) 40%, transparent); }
-.tag.live { color: var(--live); border-color: color-mix(in srgb, var(--live) 45%, transparent); }
+.tag-accent  { color: var(--accent);  border-color: color-mix(in srgb, var(--accent) 45%, transparent);  background: var(--accent-soft); }
+.tag-success { color: var(--success); border-color: color-mix(in srgb, var(--success) 45%, transparent); background: var(--success-soft); }
+.tag-danger  { color: var(--danger);  border-color: color-mix(in srgb, var(--danger) 45%, transparent);  background: var(--danger-soft); }
+.tag-warning { color: var(--warning); border-color: color-mix(in srgb, var(--warning) 45%, transparent); background: var(--warning-soft); }
+.tag-lol      { color: var(--lol);      border-color: color-mix(in srgb, var(--lol) 45%, transparent); }
+.tag-valorant { color: var(--valorant); border-color: color-mix(in srgb, var(--valorant) 45%, transparent); }
 
-/* Tabela de partidas */
-.matches { display: flex; flex-direction: column; gap: 6px; }
+/* Bolinha pulsante do estado ao vivo. */
+.dot {
+  width: 6px; height: 6px;
+  border-radius: var(--radius-full);
+  background: currentColor;
+}
+.tag-live .dot { animation: pulse 1.8s ease-in-out infinite; }
+@keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.35; } }
+@media (prefers-reduced-motion: reduce) {
+  .tag-live .dot { animation: none; }
+}
+
+/* ------------------------------------------------------------------ *
+ * Stat — número em destaque com rótulo
+ * ------------------------------------------------------------------ */
+.stat {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: var(--space-3) var(--space-4);
+}
+.stat-value {
+  font-family: var(--font-stat), ui-monospace, monospace;
+  font-variant-numeric: tabular-nums;
+  font-size: var(--text-2xl);
+  font-weight: 600;
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+}
+.stat-label {
+  font-size: var(--text-xs);
+  color: var(--text-2);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-top: 2px;
+}
+.stat-hint { font-size: var(--text-xs); color: var(--text-3); margin-top: var(--space-1); }
+.up { color: var(--success); }
+.down { color: var(--danger); }
+
+/* ------------------------------------------------------------------ *
+ * Tabela de dado
+ *
+ * O wrapper com overflow-x é obrigatório: tabela densa não pode fazer
+ * a página inteira rolar na horizontal no celular.
+ * ------------------------------------------------------------------ */
+.table-scroll { overflow-x: auto; }
+
+table.plain {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: var(--text-base);
+}
+table.plain th {
+  text-align: left;
+  font-weight: 600;
+  color: var(--text-2);
+  font-size: var(--text-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: var(--space-2) var(--space-3);
+  border-bottom: 1px solid var(--border);
+  white-space: nowrap;
+}
+table.plain td {
+  padding: 10px var(--space-3);
+  border-bottom: 1px solid var(--border);
+  vertical-align: middle;
+  /* Prefere rolar a tabela a quebrar o nome em duas linhas — coluna
+     estreita com texto quebrado é mais difícil de ler do que rolagem. */
+  white-space: nowrap;
+}
+/* Exceção para célula com texto corrido (descrição, observação). */
+table.plain td.wrap-cell { white-space: normal; min-width: 220px; }
+table.plain tbody tr:last-child td { border-bottom: 0; }
+table.plain tbody tr:hover { background: var(--surface-2); }
+table.plain .col-num { text-align: right; }
+table.plain th.col-num { text-align: right; }
+
+/* ------------------------------------------------------------------ *
+ * Partidas
+ * ------------------------------------------------------------------ */
+.matches { display: flex; flex-direction: column; gap: var(--space-2); }
 .match {
   display: grid;
-  grid-template-columns: 92px 1fr auto;
-  gap: 12px;
+  grid-template-columns: 104px 1fr auto;
+  gap: var(--space-3);
   align-items: center;
   background: var(--surface);
   border: 1px solid var(--border);
-  border-radius: 8px;
-  padding: 10px 14px;
-  font-size: 14px;
+  border-radius: var(--radius-sm);
+  padding: 10px var(--space-4);
+  font-size: var(--text-base);
 }
-.match .when { color: var(--muted); font-size: 12px; font-variant-numeric: tabular-nums; }
-.match .teams { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
-.match .score { font-weight: 700; font-variant-numeric: tabular-nums; }
-.win { color: var(--live); }
-.loss { color: var(--muted); }
+.match:hover { border-color: var(--border-strong); }
+.match .when {
+  color: var(--text-2);
+  font-size: var(--text-xs);
+  font-family: var(--font-stat), monospace;
+  font-variant-numeric: tabular-nums;
+}
+.match .teams { display: flex; align-items: center; gap: var(--space-2); flex-wrap: wrap; }
+.match .score {
+  font-family: var(--font-stat), monospace;
+  font-variant-numeric: tabular-nums;
+  font-weight: 700;
+  font-size: var(--text-lg);
+}
+.win { color: var(--success); }
+.loss { color: var(--text-3); }
 
-/* Aviso de qualidade do dado */
+/* ------------------------------------------------------------------ *
+ * Avisos e vazios
+ * ------------------------------------------------------------------ */
 .notice {
   background: var(--surface-2);
   border: 1px solid var(--border);
   border-left: 3px solid var(--accent);
-  border-radius: 6px;
-  padding: 10px 14px;
-  font-size: 13px;
-  color: var(--muted);
-  margin: 0 0 12px;
+  border-radius: var(--radius-sm);
+  padding: var(--space-3) var(--space-4);
+  font-size: var(--text-sm);
+  color: var(--text-2);
+  margin: 0 0 var(--space-3);
 }
 
 .status-live {
-  background: color-mix(in srgb, var(--live) 12%, var(--surface));
-  border: 1px solid color-mix(in srgb, var(--live) 40%, transparent);
-  border-radius: 10px;
-  padding: 14px;
+  background: linear-gradient(180deg, var(--success-soft), transparent);
+  border: 1px solid color-mix(in srgb, var(--success) 35%, transparent);
+  border-radius: var(--radius);
+  padding: var(--space-4);
 }
-
-.crumb { font-size: 13px; color: var(--muted); margin-bottom: 14px; }
 
 .empty {
-  border: 1px dashed var(--border);
-  border-radius: 10px;
-  padding: 28px;
+  border: 1px dashed var(--border-strong);
+  border-radius: var(--radius);
+  padding: var(--space-6) var(--space-4);
   text-align: center;
-  color: var(--muted);
+  color: var(--text-2);
+  font-size: var(--text-sm);
 }
 
-table.plain { width: 100%; border-collapse: collapse; font-size: 14px; }
-table.plain th {
-  text-align: left; font-weight: 600; color: var(--muted);
-  font-size: 12px; text-transform: uppercase; letter-spacing: 0.05em;
-  padding: 6px 10px; border-bottom: 1px solid var(--border);
+.crumb {
+  font-size: var(--text-sm);
+  color: var(--text-2);
+  margin-bottom: var(--space-3);
 }
-table.plain td { padding: 9px 10px; border-bottom: 1px solid var(--border); }
-table.plain tr:last-child td { border-bottom: 0; }
+
+/* ------------------------------------------------------------------ *
+ * "Em desenvolvimento"
+ *
+ * Não é estado de erro nem vazio acidental: é uma promessa explícita.
+ * A faixa lateral e o rótulo mudam de cor conforme o MOTIVO, porque
+ * "ainda não construímos" e "a fonte não tem esse dado" são coisas
+ * diferentes e o usuário merece saber qual é.
+ * ------------------------------------------------------------------ */
+.roadmap {
+  --roadmap-cor: var(--text-3);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--roadmap-cor);
+  border-radius: var(--radius-sm);
+  padding: var(--space-3) var(--space-4);
+  display: flex;
+  gap: var(--space-3);
+  align-items: flex-start;
+}
+.roadmap-planejado   { --roadmap-cor: var(--accent); }
+.roadmap-bloqueado   { --roadmap-cor: var(--warning); }
+.roadmap-indisponivel{ --roadmap-cor: var(--text-3); }
+
+.roadmap-icone {
+  flex: 0 0 auto;
+  width: 22px; height: 22px;
+  border-radius: var(--radius-sm);
+  display: grid; place-items: center;
+  background: color-mix(in srgb, var(--roadmap-cor) 16%, transparent);
+  color: var(--roadmap-cor);
+  margin-top: 1px;
+}
+.roadmap-titulo {
+  font-size: var(--text-sm);
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  flex-wrap: wrap;
+}
+.roadmap-selo {
+  font-size: var(--text-xs);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--roadmap-cor);
+  border: 1px solid color-mix(in srgb, var(--roadmap-cor) 40%, transparent);
+  border-radius: var(--radius-full);
+  padding: 1px var(--space-2);
+}
+.roadmap-detalhe {
+  font-size: var(--text-sm);
+  color: var(--text-2);
+  margin-top: var(--space-1);
+}
+
+/* Versão compacta, para um campo isolado dentro de uma ficha. */
+.roadmap-inline {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: var(--text-sm);
+  color: var(--text-3);
+  font-style: italic;
+}
+.roadmap-inline .roadmap-selo { font-style: normal; }
+
+/* ------------------------------------------------------------------ *
+ * Showcase (só a página /design-system usa)
+ * ------------------------------------------------------------------ */
+.swatch {
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  font-size: var(--text-xs);
+}
+.swatch-cor { height: 52px; }
+.swatch-nome { padding: 6px var(--space-2); background: var(--surface); }
+.swatch-valor { color: var(--text-3); font-family: var(--font-stat), monospace; }
+
+.spec-linha {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: 5px 0;
+  border-bottom: 1px solid var(--border);
+}
+.spec-barra {
+  background: var(--accent);
+  height: 22px;
+  border-radius: 3px;
+  min-width: 2px;
+}
 
 @media (max-width: 620px) {
+  :root { --text-2xl: 24px; --text-3xl: 30px; }
   .match { grid-template-columns: 1fr auto; }
   .match .when { grid-column: 1 / -1; }
+  .site-header .wrap { gap: var(--space-2); }
+  .searchbox { order: 3; width: 100%; flex-basis: 100%; }
 }

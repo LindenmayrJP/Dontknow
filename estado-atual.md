@@ -26,6 +26,10 @@ Atualize este arquivo ao final de cada módulo.
   salva as respostas cruas em `db/api-samples/`.
 - **Módulo 3.6** — Chaveamento, classificação e catálogo estático (ver
   seção própria abaixo).
+- **Módulo 3.7** — Fundação visual: tokens de tema escuro, tipografia,
+  componentes base em `app/ui/` e showcase em `/design-system`.
+- **Módulo 3.7.5** — Logos e fotos: `Avatar` aceita imagem real, com
+  fallback de iniciais preservado (ver seção própria abaixo).
 - **Banco migrado para Neon** (Postgres gerenciado, região
   `us-east-2`/Ohio). `Iniciar.bat` sobe o site local automaticamente
   (checa Node/`.env`, instala dependências, roda migrations, abre
@@ -66,7 +70,87 @@ Estado do banco após a sync: 206 arestas de chaveamento (173 com partida
 resolvida, 33 de partidas ainda "TBD"), 100 linhas de classificação,
 179 registros de catálogo.
 
+## O que o Módulo 3.7 entregou
+
+Sistema de design em `app/ui/`, importável por `@/app/ui` ou `../ui`.
+Showcase completo em **`/design-system`**.
+
+- **Tokens** em `app/globals.css`: superfícies (4 níveis), texto (3
+  níveis de hierarquia), destaque, estado (sucesso/aviso/erro), cores de
+  jogo, escala de espaçamento de 4px, raios e tamanhos de fonte.
+- **Tipografia**: Inter (texto) + Barlow Semi Condensed (números), via
+  `next/font/google` — baixadas no build e servidas do próprio domínio,
+  então a regra de zero requisição externa continua valendo. A classe
+  `.num` aplica alinhamento tabular, obrigatório em coluna de número.
+- **Componentes**: `Card`, `Stat`, `Secao`, `DataTable` (colunas
+  tipadas, com `numerica` para alinhar à direita), `Tag`/`TagJogo`/
+  `TagStatus`, `Avatar` (iniciais, nunca imagem remota).
+- **`EmDesenvolvimento`** — ver "Decisões técnicas".
+- `app/components.tsx` (Módulo 3) foi religado às primitivas: `Badge` e
+  `GameTag` viraram apelidos de `Avatar` e `TagJogo`, para não existirem
+  dois sistemas visuais em paralelo.
+
+Verificado em browser real: as duas fontes aplicadas, **zero requisição
+externa**, sem overflow horizontal em 1280px nem em 375px, sem erro de
+console, e todos os pares de cor passam no contraste WCAG (o menor é
+3,89:1 no metadado terciário, acima do mínimo de 3).
+
+## O que o Módulo 3.7.5 entregou
+
+**As colunas `image_url` em `teams` e `players` já existiam desde a
+migration 0002, e o worker já as gravava** — o módulo partia da premissa
+de que não. O que faltava era a variante para fundo escuro e o uso no
+frontend.
+
+- Migration `0005_dark_mode_logo.sql`: `teams.dark_mode_image_url`.
+- Worker passou a gravar esse campo; `logoDeTime()` prefere a versão
+  dark e cai na padrão.
+- `Avatar` aceita `imagemUrl`. As iniciais são desenhadas **atrás** da
+  imagem, então um arquivo que suma no CDN revela o fallback sozinho,
+  sem JavaScript e sem virar client component.
+- `/design-system` mostra os quatro estados com dado real do banco:
+  time com logo, time sem logo, jogador com foto, jogador sem foto —
+  mais o caso limite do logo `_lightmode`.
+
+**Cobertura medida no banco atual** (não é 100%):
+
+| Recorte | Com imagem |
+| --- | --- |
+| times | 715/804 (88,9%) |
+| times — LoL | 414/427 (97,0%) |
+| times — Valorant | 301/377 (79,8%) |
+| times com `dark_mode_image_url` | 261/804 (32,5%) |
+| jogadores | 406/1968 (20,6%) |
+
+O fallback de iniciais é o caminho principal para jogador, não exceção.
+
 ## Decisões técnicas importantes
+
+- **Imagens do CDN passam pelo otimizador do Next, não pelo navegador.**
+  `next/image` com `remotePatterns` faz o servidor buscar em
+  `cdn-api.pandascore.co`, redimensionar e servir de `/_next/image`, no
+  nosso domínio. Isso mantém a propriedade de o frontend não depender de
+  serviço externo em runtime, e evita baixar PNG de 800px para desenhar
+  avatar de 38px. Verificado em browser: 12 avatares carregados, **zero
+  requisição externa**.
+- **Logo `_lightmode` recebe faixa clara atrás.** A `image_url` padrão
+  vem em três sabores identificáveis pelo nome do arquivo: `_allmode`,
+  `_lightmode` e sem sufixo. Os `_lightmode` são marca escura para fundo
+  claro e sumiriam no nosso tema; quando a fonte não oferece variante
+  dark (21 times), a faixa atrás do logo é invertida. Heurística por
+  nome de arquivo — frágil por natureza, mas é a única pista existente.
+
+- **"Em desenvolvimento" tem três motivos, não um.** Prometer "em breve"
+  para um dado que a fonte nunca vai ter (coach) seria mentira. O
+  componente distingue `planejado` (o dado existe, falta a tela),
+  `bloqueado` (depende de plano pago ou chave) e `indisponivel` (a fonte
+  não tem). Cada um com cor e selo próprios. O catálogo `LACUNAS` em
+  `app/ui/em-desenvolvimento.tsx` centraliza os textos — páginas futuras
+  usam `<EmDesenvolvimento lacuna="coach" />` em vez de reescrever a
+  explicação, o que mantém a wiki inteira consistente.
+- **Estado vazio ≠ lacuna.** "A consulta rodou e não há registro" usa
+  `.empty`; "isso ainda não existe no produto" usa `EmDesenvolvimento`.
+  São reações diferentes para quem lê.
 
 - **Upsert em lote, não linha a linha.** O Módulo 2 original fazia um
   upsert por linha (~14.000 queries sequenciais). Contra o Neon (161ms
@@ -117,7 +201,18 @@ resolvida, 33 de partidas ainda "TBD"), 100 linhas de classificação,
   exigiria fonte externa ou mapeamento manual — decisão em aberto.
   "Astral Form" vem com `ability_type` nulo da própria API.
 - **Nada de frontend consome ainda** chaveamento, classificação nem
-  catálogo — as tabelas estão populadas, mas não há tela usando.
+  catálogo — as tabelas estão populadas, mas não há tela usando. As
+  lacunas `chaveamento`, `classificacao` e `catalogo` já existem no
+  catálogo `LACUNAS` para sinalizar isso na interface.
+- **As páginas do Módulo 3 ainda não usam as primitivas novas.** Elas
+  herdaram o tema (tokens e classes CSS) e continuam funcionando, mas
+  seguem montadas com markup próprio em vez de `Card`/`DataTable`, e
+  **ainda não exibem logo nem foto** — `TeamSummary`/`PlayerSummary` não
+  selecionam `image_url`. Como essas telas serão refeitas nos módulos
+  3.8–3.11, passar a imagem agora seria trabalho descartado.
+- **`next/image` exige rede no build e no servidor.** O otimizador busca
+  do CDN sob demanda; se `cdn-api.pandascore.co` cair, os avatares caem
+  no fallback de iniciais, sem quebrar a página.
 - **`npm run sync` passou de ~18s para ~62s** com chaveamento e
   classificação: são 2 chamadas de API sequenciais por torneio, contra
   15 torneios. Reduzir `PANDASCORE_BRACKET_TOURNAMENTS` encurta.

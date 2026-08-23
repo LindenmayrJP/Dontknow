@@ -275,6 +275,45 @@ desenvolvimento", com o tema escuro aplicado.
 
 ---
 
+## Módulo 3.7.5 — Logos e fotos (times e jogadores)
+
+```
+Leia contexto-projeto.md e estado-atual.md na raiz do projeto antes de
+começar. O Módulo 3.7 (design system) já está pronto, incluindo o
+componente Avatar com fallback de iniciais.
+
+A API do PandaScore fornece `image_url` para times e para jogadores
+(logo do time, foto/avatar do jogador). Isso ainda não está sendo
+capturado pelo worker — confirme isso primeiro antes de assumir.
+
+1. Verifique nos arquivos JSON salvos em `db/api-samples/` (gerados no
+   Módulo 3.5) se `image_url` aparece nas respostas de times e de
+   jogadores. Se os samples não cobrirem isso, faça uma checagem pontual
+   contra a API real.
+2. Adicione a(s) coluna(s) `image_url` em `teams` e `players`, via nova
+   migration, se ainda não existirem.
+3. Atualize o worker (`pandascore/sync.ts`) pra gravar esse campo no
+   upsert de times e jogadores.
+4. Rode a sync e confirme quantos times/jogadores no banco atual
+   ficaram com `image_url` preenchido (cobertura pode ser parcial —
+   documente o percentual, não assuma 100%).
+5. Atualize o componente `Avatar` (Módulo 3.7) pra aceitar uma prop de
+   URL de imagem: quando presente, mostra a imagem; quando ausente,
+   mantém o fallback de iniciais que já existe. Não é um componente
+   novo, é uma extensão do que já existe.
+6. Atualize a página de showcase (`/design-system`) pra mostrar o
+   Avatar nos dois estados lado a lado: com imagem real (usando um
+   time/jogador de verdade do banco) e com fallback de iniciais (usando
+   um registro sem `image_url`).
+
+Critério de pronto: rodo a sync e os times/jogadores que têm
+`image_url` na origem passam a ter esse campo salvo no banco. O
+`/design-system` mostra o Avatar com logo real de time e com fallback
+de iniciais, lado a lado.
+```
+
+---
+
 ## Módulo 3.8 — Estrutura de navegação + home page
 
 ```
@@ -337,7 +376,10 @@ Leia contexto-projeto.md e estado-atual.md na raiz do projeto antes de
 começar. Use os componentes do Módulo 3.7.
 
 Redesenhe/construa a página de time com o design system:
-- Cabeçalho: nome, organização, jogo, imagem/avatar (com fallback)
+- Cabeçalho: nome, organização, jogo, logo real (`image_url`, capturado
+  no Módulo 3.7.5) com fallback de iniciais quando ausente — use o
+  componente Avatar já preparado pra isso, não crie lógica de imagem
+  nova
 - Roster atual: lista completa de jogadores (lembrar: PandaScore mistura
   titular/reserva, ver estado-atual.md — não tente inferir titularidade,
   liste todos)
@@ -361,7 +403,10 @@ Leia contexto-projeto.md e estado-atual.md na raiz do projeto antes de
 começar. Use os componentes do Módulo 3.7.
 
 Redesenhe/construa a página de jogador com o design system:
-- Cabeçalho: nome, time atual, jogo, avatar (com fallback)
+- Cabeçalho: nome, time atual, jogo, foto real (`image_url`, capturado
+  no Módulo 3.7.5) com fallback de iniciais quando ausente — use o
+  componente Avatar já preparado pra isso, não crie lógica de imagem
+  nova
 - Histórico de times, se houver mais de um vínculo
 - Idade: mostrar quando o dado existir no banco (birthday/age não estão
   sendo capturados por decisão do projeto — ver contexto-projeto.md —

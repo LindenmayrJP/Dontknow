@@ -1,35 +1,19 @@
 import Link from "next/link";
 import type { Game, MatchRow, PlayerSummary, TeamSummary } from "@/db/queries";
+import { Avatar, Tag, TagJogo } from "./ui";
 
-/** Cor estável derivada do nome — evita depender de logo remoto. */
-function colorFor(name: string) {
-  let hash = 0;
-  for (let i = 0; i < name.length; i++) hash = (hash * 31 + name.charCodeAt(i)) | 0;
-  return `hsl(${Math.abs(hash) % 360} 45% 38%)`;
-}
+/**
+ * Componentes de conteúdo do Módulo 3.
+ *
+ * As primitivas visuais (avatar, tag) vivem em `app/ui` — aqui ficam só
+ * as composições ligadas ao dado da wiki. `Badge` e `GameTag` seguem
+ * exportados como apelidos para não quebrar as páginas que já os usam.
+ */
+export const Badge = ({ name, acronym }: { name: string; acronym?: string | null }) => (
+  <Avatar nome={name} sigla={acronym} />
+);
 
-function initials(name: string, acronym?: string | null) {
-  if (acronym) return acronym.slice(0, 3).toUpperCase();
-  return name
-    .split(/\s+/)
-    .filter(Boolean)
-    .slice(0, 2)
-    .map((w) => w[0])
-    .join("")
-    .toUpperCase();
-}
-
-export function Badge({ name, acronym }: { name: string; acronym?: string | null }) {
-  return (
-    <div className="badge" style={{ background: colorFor(name) }}>
-      {initials(name, acronym)}
-    </div>
-  );
-}
-
-export function GameTag({ game }: { game: Game }) {
-  return <span className={`tag ${game}`}>{game === "lol" ? "LoL" : "Valorant"}</span>;
-}
+export const GameTag = ({ game }: { game: Game }) => <TagJogo jogo={game} />;
 
 export function TeamCard({ team }: { team: TeamSummary }) {
   return (
@@ -92,7 +76,7 @@ export function MatchList({ matches, teamId }: { matches: MatchRow[]; teamId?: n
           <div className="match" key={m.id}>
             <div className="when">
               {formatDate(m.scheduled_at)}
-              {m.status === "live" && <> · <span className="tag live">ao vivo</span></>}
+              {m.status === "live" && <> · <Tag tom="success" ponto>ao vivo</Tag></>}
             </div>
             <div className="teams">
               <Link href={`/times/${m.team_a_id}`}>{m.team_a_name}</Link>
