@@ -11,6 +11,7 @@ import {
   TagJogo,
   TagStatus,
   type Coluna,
+  EstadoVazio,
 } from "../ui";
 import { logoDeTime } from "../ui/avatar";
 
@@ -456,7 +457,9 @@ export default async function DesignSystem() {
             <div className="xs muted" style={{ marginBottom: "var(--space-2)" }}>
               Estado vazio — a consulta rodou, não há registro
             </div>
-            <div className="empty">Nenhuma partida registrada para este time.</div>
+            <EstadoVazio titulo="Nenhuma partida registrada">
+              Este time não tem partida no banco ainda.
+            </EstadoVazio>
           </div>
           <div>
             <div className="xs muted" style={{ marginBottom: "var(--space-2)" }}>

@@ -541,3 +541,258 @@ table.plain th.col-num { text-align: right; }
   .site-header .wrap { gap: var(--space-2); }
   .searchbox { order: 3; width: 100%; flex-basis: 100%; }
 }
+
+/* ------------------------------------------------------------------ *
+ * Navegação principal (Módulo 3.8)
+ * ------------------------------------------------------------------ */
+.nav-principal {
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+  flex-wrap: wrap;
+}
+.nav-link {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: 6px var(--space-3);
+  border-radius: var(--radius-sm);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--text-2);
+  white-space: nowrap;
+}
+.nav-link:hover { color: var(--text); background: var(--surface-2); }
+/* A seção ativa não se distingue só pela cor: ganha fundo próprio, para
+   continuar legível em monocromático e para quem não percebe o matiz. */
+.nav-link-ativo,
+.nav-link-ativo:hover {
+  color: var(--text);
+  background: var(--accent-soft);
+  box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--accent) 35%, transparent);
+}
+.nav-selo {
+  font-size: 9px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-3);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-full);
+  padding: 1px 5px;
+  line-height: 1.4;
+}
+
+/* No celular a busca desce para a própria linha; sem isto ela dividiria
+   os ~330px restantes com quatro itens de navegação. */
+@media (max-width: 720px) {
+  .site-header .wrap { gap: var(--space-2); }
+  .nav-principal { order: 3; width: 100%; }
+  .searchbox { order: 2; }
+}
+
+/* ------------------------------------------------------------------ *
+ * Rodapé
+ * ------------------------------------------------------------------ */
+.site-footer {
+  border-top: 1px solid var(--border);
+  padding: var(--space-5) 0;
+  margin-top: var(--space-7);
+}
+.site-footer .wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+  flex-wrap: wrap;
+}
+
+/* ------------------------------------------------------------------ *
+ * Home
+ * ------------------------------------------------------------------ */
+.hero {
+  padding: var(--space-6) 0 var(--space-5);
+  border-bottom: 1px solid var(--border);
+  margin-bottom: var(--space-5);
+}
+.hero h1 { font-size: var(--text-3xl); margin: 0 0 var(--space-2); }
+.hero p { margin: 0; max-width: 62ch; }
+
+/* Cabeçalho de seção com link "ver todos" alinhado à direita. */
+.ver-todos { font-size: var(--text-sm); font-weight: 600; white-space: nowrap; }
+
+/* Linha de partida com escudo dos times — variante da `.match` usada nas
+   listagens da home. O grid extra dá coluna fixa ao placar. */
+.match-lado {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  min-width: 0;
+}
+.match-lado .nome {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.match-duelo {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: var(--space-3);
+  min-width: 0;
+}
+/* O time da direita espelha o da esquerda: escudo para fora, nome para
+   dentro, placar sempre no meio. */
+.match-duelo .match-lado:last-child { flex-direction: row-reverse; text-align: right; }
+
+.torneio-meta {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  flex-wrap: wrap;
+  font-size: var(--text-xs);
+  color: var(--text-3);
+}
+.barra-progresso {
+  height: 4px;
+  border-radius: var(--radius-full);
+  background: var(--surface-3);
+  overflow: hidden;
+  margin-top: var(--space-3);
+}
+.barra-progresso span {
+  display: block;
+  height: 100%;
+  background: var(--accent);
+  border-radius: var(--radius-full);
+}
+
+/* ------------------------------------------------------------------ *
+ * Busca incremental (Módulo 3.9)
+ * ------------------------------------------------------------------ */
+.busca-rapida {
+  position: relative;
+  flex: 1;
+  min-width: 200px;
+  display: flex;
+}
+.busca-rapida .searchbox { flex: 1; }
+
+.painel-busca {
+  position: absolute;
+  top: calc(100% + var(--space-2));
+  left: 0;
+  right: 0;
+  z-index: 40;
+  background: var(--surface);
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius);
+  box-shadow: 0 12px 32px rgb(0 0 0 / 0.45);
+  padding: var(--space-2);
+  max-height: min(70vh, 460px);
+  overflow-y: auto;
+}
+
+.painel-grupo {
+  font-size: var(--text-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-3);
+  padding: var(--space-2) var(--space-2) var(--space-1);
+}
+
+.painel-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: 0;
+  border-radius: var(--radius-sm);
+  padding: var(--space-2);
+  cursor: pointer;
+  color: inherit;
+  font: inherit;
+}
+/* Teclado e mouse compartilham o mesmo destaque: a seta e o cursor não
+   podem acender coisas diferentes ao mesmo tempo. */
+.painel-item.ativo { background: var(--surface-2); }
+
+.painel-texto { display: flex; flex-direction: column; min-width: 0; flex: 1; gap: 1px; }
+.painel-nome {
+  font-weight: 600;
+  font-size: var(--text-sm);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.painel-meta {
+  font-size: var(--text-xs);
+  color: var(--text-3);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+/* Homônimos: a linha de apoio deixa de ser decoração e vira o que
+   separa uma entidade da outra, então ganha contraste de texto normal. */
+.painel-meta-chave { color: var(--text-2); font-weight: 600; }
+
+.painel-nota {
+  padding: var(--space-4) var(--space-3);
+  font-size: var(--text-sm);
+  color: var(--text-2);
+  text-align: center;
+}
+
+.painel-rodape {
+  display: block;
+  width: 100%;
+  margin-top: var(--space-2);
+  padding: var(--space-2);
+  border: 0;
+  border-top: 1px solid var(--border);
+  border-radius: 0 0 var(--radius-sm) var(--radius-sm);
+  background: none;
+  color: var(--accent);
+  font: inherit;
+  font-size: var(--text-sm);
+  font-weight: 600;
+  cursor: pointer;
+  text-align: center;
+}
+.painel-rodape:hover { background: var(--surface-2); }
+
+@media (max-width: 720px) {
+  .busca-rapida { order: 2; }
+}
+
+/* ------------------------------------------------------------------ *
+ * Estado vazio, versão bloco (Módulo 3.9)
+ * ------------------------------------------------------------------ */
+.empty-bloco {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-2);
+}
+.empty-icone { color: var(--text-3); margin-bottom: var(--space-1); }
+.empty-titulo { font-size: var(--text-lg); font-weight: 600; color: var(--text); }
+.empty-detalhe { max-width: 52ch; }
+.empty-acao {
+  display: flex;
+  gap: var(--space-2);
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: var(--space-2);
+}
+
+/* Linha de resultado da busca: mesma anatomia do painel, em tamanho de
+   página. Reaproveita o card para não inventar um terceiro visual. */
+.resultado {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+.resultado .painel-texto { gap: 2px; }
+.resultado .painel-nome { font-size: var(--text-base); }
