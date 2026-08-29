@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import {
-  GAME_LABEL,
   getPlayer,
   getPlayerMemberships,
   getTrackedStatus,
@@ -135,7 +134,6 @@ export default async function PlayerPage({
             {atual ? (
               <>
                 <TagJogo jogo={atual.game} />
-                <span className="small muted">{GAME_LABEL[atual.game]}</span>
                 <span className="small dim">·</span>
                 <Link href={`/times/${atual.team_id}`} className="small">
                   {atual.team_name}

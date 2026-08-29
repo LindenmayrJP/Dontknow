@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import {
-  GAME_LABEL,
   getArestasChave,
   getClassificacao,
   getTorneio,
@@ -126,7 +125,6 @@ export default async function TorneioPage({
         <h1 style={{ margin: 0 }}>{torneio.name}</h1>
         <div className="row wrapped" style={{ gap: "var(--space-2)", marginTop: 8 }}>
           <TagJogo jogo={torneio.game} />
-          <span className="small muted">{GAME_LABEL[torneio.game]}</span>
           {torneio.league_name && (
             <span className="small dim">· {torneio.league_name}</span>
           )}

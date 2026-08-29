@@ -39,9 +39,38 @@ export function Tag({
   );
 }
 
-/** Atalho para o jogo, que aparece em quase toda listagem. */
+const JOGO = {
+  lol: { rotulo: "League of Legends", arquivo: "/jogos/lol.svg" },
+  valorant: { rotulo: "Valorant", arquivo: "/jogos/valorant.svg" },
+} as const;
+
+/**
+ * Atalho para o jogo, que aparece em quase toda listagem.
+ *
+ * Mostra a marca do jogo em vez do nome escrito. O nome continua no
+ * `aria-label` e no `title`: sem ele a tag violaria a regra acima —
+ * a cor de marca do Valorant e a de erro são o mesmo vermelho, e sem
+ * texto sobraria só a forma para distinguir. Leitor de tela e mouse
+ * parado continuam recebendo a palavra.
+ *
+ * O SVG entra como máscara CSS, não como `<img>`: assim a marca herda
+ * a cor da tag (`currentColor` não se aplica a SVG carregado por
+ * `<img>`). Arquivos em `public/jogos/`, servidos do nosso domínio —
+ * nenhuma requisição externa.
+ */
 export function TagJogo({ jogo }: { jogo: "lol" | "valorant" }) {
-  return <Tag tom={jogo}>{jogo === "lol" ? "LoL" : "Valorant"}</Tag>;
+  const { rotulo, arquivo } = JOGO[jogo];
+  return (
+    <Tag tom={jogo}>
+      <span
+        className={`logo-jogo logo-jogo-${jogo}`}
+        style={{ maskImage: `url(${arquivo})`, WebkitMaskImage: `url(${arquivo})` }}
+        role="img"
+        aria-label={rotulo}
+        title={rotulo}
+      />
+    </Tag>
+  );
 }
 
 /** Estado de partida ou torneio, com a cor certa para cada um. */

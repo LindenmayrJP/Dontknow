@@ -945,3 +945,32 @@ td a.resultado:hover { color: var(--accent); }
   height: 1px;
   background: var(--border);
 }
+
+/* ------------------------------------------------------------------ *
+ * Marca do jogo dentro da tag
+ *
+ * Máscara em vez de <img>: a forma vem do arquivo e a cor vem da tag,
+ * então a marca acompanha o tom de cada jogo sem uma cópia por cor.
+ * ------------------------------------------------------------------ */
+.logo-jogo {
+  display: inline-block;
+  background: currentColor;
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  -webkit-mask-size: contain;
+  vertical-align: -1px;
+}
+/* Alturas diferentes de propósito. O Valorant tem símbolo compacto
+   (1,21:1) e funciona como ícone. O LoL só existe como wordmark de duas
+   linhas — não há versão compacta da marca na fonte — e na altura do
+   símbolo cada linha ficaria com ~4px, ilegível. Por isso ele é
+   desenhado maior e mais largo, como o wordmark que é. */
+.logo-jogo-valorant { width: 14px; height: 12px; }
+.logo-jogo-lol { width: 37px; height: 14px; }
+
+/* A tag some se a máscara não carregar: sem texto dentro, ela ficaria
+   um vazio colorido. O contorno garante que ainda se veja algo. */
+.tag .logo-jogo { flex: 0 0 auto; }

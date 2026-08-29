@@ -394,6 +394,35 @@ já causou o arquivo parecer "revertido" no meio de uma sessão.
     o primeiro componente cuja correção é geométrica, e só a topologia
     foi verificada, não o desenho.
 
+- **Marca do jogo na `TagJogo`** (ajuste pedido após o 3.12). A tag
+  mostra a marca do jogo em vez do nome escrito.
+  - **A fonte não tem logo de jogo** — o objeto `videogame` do PandaScore
+    traz só `id`, `name`, `current_version` e `slug`. Os arquivos vieram
+    do Wikimedia Commons e ficam em `public/jogos/`, servidos do nosso
+    domínio: nenhuma requisição externa, como manda a arquitetura.
+  - O arquivo do Valorant no Commons é o lockup (marca + wordmark). Só a
+    marca foi extraída: os 10 paths se separam limpo por coordenada Y
+    (2 do símbolo, em y<430; 8 das letras, em y>538).
+  - Entram como **máscara CSS**, não `<img>`: `currentColor` não se
+    aplica a SVG carregado por `<img>`, e com máscara a marca herda a cor
+    da tag de cada jogo.
+  - **O nome continua no `aria-label` e no `title`.** Sem isso a mudança
+    violaria a regra do 3.7 (`tag.tsx`): a cor de marca do Valorant e a
+    de erro são o mesmo vermelho, e sem texto sobraria só a forma.
+  - Alturas diferentes de propósito: o Valorant tem símbolo compacto
+    (1,21:1) e vira ícone de 12px; **o LoL só existe como wordmark de
+    duas linhas** (2,6:1) — não há versão compacta na fonte — e a 11px
+    cada linha ficaria com ~4px, então ele é desenhado maior (37×14).
+  - O nome do jogo escrito ao lado da tag saiu das fichas de time,
+    jogador e campeonato: com a marca ali, era repetição.
+  - Verificado: os dois SVGs foram **rasterizados e conferidos
+    visualmente** (o "V" do Valorant sem o wordmark; o wordmark de LoL
+    íntegro) — foi preciso escrever um rasterizador com Pillow, porque o
+    projeto não tem ferramenta de imagem. Os arquivos respondem 200 em
+    `/jogos/*.svg`, 10 rotas em 200, `tsc` e `eslint` limpos. **O
+    resultado dentro da tag, em tamanho real, segue sem conferência em
+    browser.**
+
 ## Módulos em andamento / próximos
 
 - **Módulo 3.13** — Páginas de catálogo do jogo (mapas, agentes, armas,

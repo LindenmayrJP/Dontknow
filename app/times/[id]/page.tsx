@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import {
-  GAME_LABEL,
   getCampanhaTime,
   getTeam,
   getTeamMatches,
@@ -136,7 +135,6 @@ export default async function TeamPage({
           <h1 style={{ margin: 0 }}>{time.name}</h1>
           <div className="row wrapped" style={{ gap: "var(--space-2)", marginTop: 6 }}>
             <TagJogo jogo={time.game} />
-            <span className="small muted">{GAME_LABEL[time.game]}</span>
             {time.acronym && (
               <span className="small dim">· {time.acronym}</span>
             )}
