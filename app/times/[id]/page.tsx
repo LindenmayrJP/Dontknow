@@ -2,13 +2,45 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import {
   GAME_LABEL,
+  getCampanhaTime,
   getTeam,
   getTeamMatches,
   getTeamRoster,
 } from "@/db/queries";
-import { Badge, GameTag, MatchList } from "../../components";
+import { ListaPartidas } from "../../components";
+import {
+  Avatar,
+  Card,
+  type Coluna,
+  DataTable,
+  EmDesenvolvimento,
+  EstadoVazio,
+  LacunaInline,
+  logoDeTime,
+  Secao,
+  Stat,
+  TagJogo,
+} from "../../ui";
 
 export const dynamic = "force-dynamic";
+
+type LinhaRoster = Awaited<ReturnType<typeof getTeamRoster>>[number];
+
+const dataCurta = new Intl.DateTimeFormat("pt-BR", {
+  day: "2-digit",
+  month: "2-digit",
+  year: "numeric",
+});
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ id: string }>;
+}) {
+  const { id } = await params;
+  const time = await getTeam(Number(id));
+  return { title: time ? `${time.name} · Esports Hub` : "Time · Esports Hub" };
+}
 
 export default async function TeamPage({
   params,
@@ -19,85 +51,179 @@ export default async function TeamPage({
   const teamId = Number(id);
   if (!Number.isInteger(teamId)) notFound();
 
-  const team = await getTeam(teamId);
-  if (!team) notFound();
+  const time = await getTeam(teamId);
+  if (!time) notFound();
 
-  const [roster, matches] = await Promise.all([
+  const [roster, partidas, campanha] = await Promise.all([
     getTeamRoster(teamId),
     getTeamMatches(teamId),
+    getCampanhaTime(teamId),
   ]);
 
-  const finished = matches.filter((m) => m.status === "finished");
-  const upcoming = matches
+  const encerradas = partidas.filter((m) => m.status === "finished");
+  const futuras = partidas
     .filter((m) => m.status !== "finished")
-    .sort((a, b) => (a.scheduled_at?.valueOf() ?? 0) - (b.scheduled_at?.valueOf() ?? 0));
+    .sort(
+      (a, b) =>
+        (a.scheduled_at?.valueOf() ?? 0) - (b.scheduled_at?.valueOf() ?? 0)
+    );
+
+  // Só faz sentido falar em aproveitamento se houver partida decidida.
+  const aproveitamento =
+    campanha.vitorias + campanha.derrotas > 0
+      ? Math.round(
+          (campanha.vitorias / (campanha.vitorias + campanha.derrotas)) * 100
+        )
+      : null;
+
+  const colunas: Coluna<LinhaRoster>[] = [
+    {
+      cabecalho: "Jogador",
+      celula: (p) => (
+        <Link href={`/jogadores/${p.id}`} className="resultado">
+          <Avatar
+            nome={p.name}
+            imagemUrl={p.image_url}
+            tamanho="sm"
+            redondo
+          />
+          <span style={{ fontWeight: 600 }}>{p.name}</span>
+        </Link>
+      ),
+    },
+    {
+      cabecalho: "Função",
+      // Em Valorant a origem nunca preenche `role`, e a lacuna explica
+      // por quê. Em LoL o campo existe, então lá um vazio é só um vazio
+      // — mostrar o texto de Valorant ali confundiria.
+      celula: (p) =>
+        p.role ??
+        (time.game === "valorant" ? (
+          <LacunaInline lacuna="funcao-valorant" rotulo="não estruturada" />
+        ) : (
+          <span className="dim">—</span>
+        )),
+    },
+    {
+      cabecalho: "País",
+      celula: (p) => p.nationality ?? <span className="dim">—</span>,
+    },
+    {
+      cabecalho: "No elenco desde",
+      celula: (p) => (
+        <span className="muted small">
+          {dataCurta.format(new Date(p.joined_at))}
+        </span>
+      ),
+    },
+  ];
 
   return (
     <>
       <div className="crumb">
-        <Link href="/">Times</Link> / {team.name}
+        <Link href="/times">Times</Link> / {time.name}
       </div>
 
-      <div className="row" style={{ gap: 16, marginBottom: 8 }}>
-        <Badge name={team.name} acronym={team.acronym} />
-        <div>
-          <h1>{team.name}</h1>
-          <div className="small muted">
-            <GameTag game={team.game} /> {GAME_LABEL[team.game]}
-            {team.org_name !== team.name && <> · organização: {team.org_name}</>}
-            {team.region && <> · {team.region}</>}
+      {/* ---------------- Identificação ---------------- */}
+      <div className="ficha-topo">
+        <Avatar
+          nome={time.name}
+          sigla={time.acronym}
+          imagemUrl={logoDeTime(time)}
+          tamanho="lg"
+        />
+        <div style={{ minWidth: 0 }}>
+          <h1 style={{ margin: 0 }}>{time.name}</h1>
+          <div className="row wrapped" style={{ gap: "var(--space-2)", marginTop: 6 }}>
+            <TagJogo jogo={time.game} />
+            <span className="small muted">{GAME_LABEL[time.game]}</span>
+            {time.acronym && (
+              <span className="small dim">· {time.acronym}</span>
+            )}
+            {time.org_name !== time.name && (
+              <span className="small dim">· {time.org_name}</span>
+            )}
+            {time.region && <span className="small dim">· {time.region}</span>}
           </div>
         </div>
       </div>
 
-      <h2>Elenco atual ({roster.length})</h2>
-      <p className="notice">
-        O PandaScore não distingue titular de reserva no tier gratuito, então
-        a lista abaixo é o elenco completo registrado — pode incluir reservas,
-        substitutos e jogadores inativos. A informação de titularidade não
-        está disponível.
-      </p>
+      {/* ---------------- Campanha ----------------
+          Derivada de winner_team_id, que a origem preenche em 100% das
+          partidas encerradas. É contagem, não estatística de jogo. */}
+      <Secao titulo="Campanha">
+        <div className="grid grid-stats">
+          <Stat valor={campanha.partidas} rotulo="Partidas" />
+          <Stat
+            valor={campanha.vitorias}
+            rotulo="Vitórias"
+            tom={campanha.vitorias > 0 ? "up" : undefined}
+          />
+          <Stat
+            valor={campanha.derrotas}
+            rotulo="Derrotas"
+            tom={campanha.derrotas > 0 ? "down" : undefined}
+          />
+          <Stat
+            valor={aproveitamento === null ? "—" : `${aproveitamento}%`}
+            rotulo="Aproveitamento"
+            dica={aproveitamento === null ? "sem partida decidida" : undefined}
+          />
+          <Stat valor={campanha.torneios} rotulo="Campeonatos" />
+        </div>
+        <p className="xs dim" style={{ marginTop: "var(--space-3)" }}>
+          Contado sobre as partidas que estão no banco, não sobre a carreira
+          inteira do time — a sincronização cobre um recorte recente da
+          fonte.
+        </p>
+      </Secao>
 
-      {roster.length === 0 ? (
-        <div className="empty">Nenhum jogador vinculado a este time no banco.</div>
-      ) : (
-        <table className="plain">
-          <thead>
-            <tr>
-              <th>Jogador</th>
-              <th>Função</th>
-              <th>País</th>
-              <th>No elenco desde</th>
-            </tr>
-          </thead>
-          <tbody>
-            {roster.map((p) => (
-              <tr key={p.id}>
-                <td>
-                  <Link href={`/jogadores/${p.id}`} style={{ fontWeight: 600 }}>
-                    {p.name}
-                  </Link>
-                </td>
-                <td className="muted">{p.role ?? "—"}</td>
-                <td className="muted">{p.nationality ?? "—"}</td>
-                <td className="muted small">
-                  {new Intl.DateTimeFormat("pt-BR").format(new Date(p.joined_at))}
-                </td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
+      {/* ---------------- Elenco ---------------- */}
+      <Secao titulo={`Elenco (${roster.length})`}>
+        {roster.length === 0 ? (
+          <EstadoVazio titulo="Nenhum jogador vinculado a este time">
+            A fonte não traz elenco para este time. Acontece com boa parte
+            dos times registrados — é estado real da origem, não falha de
+            ingestão.
+          </EstadoVazio>
+        ) : (
+          <>
+            <p className="notice">
+              Elenco completo como a fonte registra. O PandaScore não
+              distingue titular de reserva no tier gratuito, então a lista
+              pode misturar os dois — não inferimos titularidade.
+            </p>
+            <Card flush>
+              <DataTable colunas={colunas} linhas={roster} chave={(p) => p.id} />
+            </Card>
+          </>
+        )}
+      </Secao>
+
+      {/* ---------------- Partidas ---------------- */}
+      {futuras.length > 0 && (
+        <Secao titulo={`Próximas partidas (${futuras.length})`}>
+          <ListaPartidas partidas={futuras} vazio="" />
+        </Secao>
       )}
 
-      {upcoming.length > 0 && (
-        <>
-          <h2>Próximas partidas</h2>
-          <MatchList matches={upcoming} teamId={teamId} />
-        </>
-      )}
+      <Secao titulo="Últimos resultados">
+        <ListaPartidas
+          partidas={encerradas.slice(0, 15)}
+          vazio="Nenhuma partida encerrada deste time no banco."
+        />
+      </Secao>
 
-      <h2>Últimos resultados</h2>
-      <MatchList matches={finished.slice(0, 15)} teamId={teamId} />
+      {/* ---------------- Roadmap ----------------
+          Seção mantida de propósito: some-la faria parecer que o produto
+          nunca pensou nesses dados. Cada uma diz por que falta. */}
+      <Secao titulo="Ainda não disponível">
+        <div className="stack stack-4">
+          <EmDesenvolvimento lacuna="coach" />
+          <EmDesenvolvimento lacuna="stats-jogador" />
+          <EmDesenvolvimento lacuna="titular-reserva" />
+        </div>
+      </Secao>
     </>
   );
 }

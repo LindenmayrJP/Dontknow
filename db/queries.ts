@@ -96,9 +96,9 @@ export async function getTeam(id: number) {
 
 export async function getTeamRoster(teamId: number) {
   const { rows } = await getPool().query<
-    PlayerSummary & { joined_at: Date }
+    PlayerSummary & { joined_at: Date; image_url: string | null }
   >(
-    `SELECT p.id, p.name, p.role, p.nationality, m.joined_at,
+    `SELECT p.id, p.name, p.role, p.nationality, p.image_url, m.joined_at,
             t.id AS team_id, t.name AS team_name, t.game
        FROM team_memberships m
        JOIN players p ON p.id = m.player_id
@@ -110,12 +110,19 @@ export async function getTeamRoster(teamId: number) {
   return rows;
 }
 
+/**
+ * Partidas do time no mesmo formato da home, para que a página reuse
+ * `LinhaPartida` em vez de ter uma lista de partidas só dela.
+ */
 export async function getTeamMatches(teamId: number) {
-  const { rows } = await getPool().query<MatchRow>(
+  const { rows } = await getPool().query<PartidaResumo>(
     `SELECT m.id, m.scheduled_at, m.status, m.team_a_id, m.team_b_id,
             a.name AS team_a_name, b.name AS team_b_name,
+            a.acronym AS team_a_acronym, b.acronym AS team_b_acronym,
+            a.image_url AS team_a_image, a.dark_mode_image_url AS team_a_dark_image,
+            b.image_url AS team_b_image, b.dark_mode_image_url AS team_b_dark_image,
             m.team_a_score, m.team_b_score, m.winner_team_id,
-            t.name AS tournament_name
+            t.name AS tournament_name, t.id AS tournament_id, t.game
        FROM matches m
        JOIN teams a ON a.id = m.team_a_id
        JOIN teams b ON b.id = m.team_b_id
@@ -126,6 +133,41 @@ export async function getTeamMatches(teamId: number) {
     [teamId]
   );
   return rows;
+}
+
+export type CampanhaTime = {
+  partidas: number;
+  encerradas: number;
+  vitorias: number;
+  derrotas: number;
+  agendadas: number;
+  torneios: number;
+};
+
+/**
+ * Campanha do time somada sobre **todas** as partidas dele, não só as 40
+ * que a lista carrega.
+ *
+ * Vitória e derrota são derivadas de `winner_team_id`, que a origem
+ * preenche em 100% das partidas encerradas de Valorant — não é
+ * estimativa nossa. Não confundir com as estatísticas de partida
+ * (K/D/A), essas sim bloqueadas por plano pago.
+ */
+export async function getCampanhaTime(teamId: number) {
+  const { rows } = await getPool().query<CampanhaTime>(
+    `SELECT count(*)::int AS partidas,
+            count(*) FILTER (WHERE m.status = 'finished')::int AS encerradas,
+            count(*) FILTER (WHERE m.winner_team_id = $1)::int AS vitorias,
+            count(*) FILTER (WHERE m.status = 'finished'
+                               AND m.winner_team_id IS NOT NULL
+                               AND m.winner_team_id <> $1)::int AS derrotas,
+            count(*) FILTER (WHERE m.status = 'scheduled')::int AS agendadas,
+            count(DISTINCT m.tournament_id)::int AS torneios
+       FROM matches m
+      WHERE m.team_a_id = $1 OR m.team_b_id = $1`,
+    [teamId]
+  );
+  return rows[0];
 }
 
 export async function getPlayer(id: number) {

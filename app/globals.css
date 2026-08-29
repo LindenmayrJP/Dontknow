@@ -796,3 +796,22 @@ table.plain th.col-num { text-align: right; }
 }
 .resultado .painel-texto { gap: 2px; }
 .resultado .painel-nome { font-size: var(--text-base); }
+
+/* ------------------------------------------------------------------ *
+ * Ficha de entidade — topo das páginas de time e jogador (Módulo 3.10)
+ * ------------------------------------------------------------------ */
+.ficha-topo {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  padding-bottom: var(--space-5);
+  border-bottom: 1px solid var(--border);
+  margin-bottom: var(--space-2);
+}
+.ficha-topo h1 { font-size: var(--text-2xl); }
+
+/* Célula de jogador na tabela de elenco: o link ocupa a linha inteira
+   para virar alvo de clique confortável, sem virar bloco. */
+td .resultado { gap: var(--space-2); }
+td a.resultado { color: inherit; }
+td a.resultado:hover { color: var(--accent); }

@@ -118,7 +118,7 @@ já causou o arquivo parecer "revertido" no meio de uma sessão.
     falta só a tela), "Bloqueado" (âmbar, ex: stats — existe na API mas
     exige plano pago), "Sem dado na fonte" (cinza, ex: coach — nunca vai
     existir). Catálogo `LACUNAS` centraliza o texto de cada uma das 10
-    lacunas conhecidas. Existe também versão de uma linha pra célula de
+    lacunas conhecidas (11 desde o Módulo 3.10). Existe também versão de uma linha pra célula de
     tabela. Estado vazio (busca sem resultado) é um componente separado
     do de lacuna (dado não implementado) — são UX diferentes.
   - `Badge` e `GameTag` religados como apelidos de `Avatar` e `TagJogo`
@@ -271,11 +271,50 @@ já causou o arquivo parecer "revertido" no meio de uma sessão.
     string). Comentário dentro de SQL em template literal não pode ter
     crase.
 
+- **Módulo 3.10** — Página de time, redesenhada com o design system.
+  - Substituiu o markup do Módulo 3 (`Badge`, `<table class="plain">`
+    solta, `MatchList`) por `Avatar` com logo real, `Card`, `Secao`,
+    `Stat`, `DataTable`, `EstadoVazio` e `EmDesenvolvimento`.
+  - **Achado que definiu o desenho**: no banco atual, elenco e partidas
+    quase não coexistem. Dos 377 times de Valorant — 30 têm elenco **e**
+    partidas, 174 só elenco, 84 só partidas, 89 nenhum dos dois. Ou
+    seja, a página vazia em alguma seção é o caso comum, não a exceção,
+    e cada seção degrada sozinha. FURIA Esports, o exemplo do critério,
+    tem 7 partidas e **elenco 0**.
+  - **Seção "Campanha"** (nova, `getCampanhaTime`): partidas, vitórias,
+    derrotas, aproveitamento e nº de campeonatos. Derivada de
+    `winner_team_id`, que a origem preenche em **308/308** partidas
+    encerradas de Valorant — é contagem, não estimativa nossa, e não se
+    confunde com as estatísticas de partida (K/D/A), essas sim
+    bloqueadas por plano. Somada sobre todas as partidas do time, não
+    sobre as 40 que a lista carrega. Texto embaixo deixa claro que o
+    recorte é o do banco, não a carreira do time.
+  - `getTeamRoster` passou a trazer `image_url` (foto do jogador — só
+    56 de 879 em elencos ativos de Valorant, então o fallback de
+    iniciais domina). `getTeamMatches` passou a devolver `PartidaResumo`,
+    o mesmo formato da home, para a página reusar `LinhaPartida` em vez
+    de manter lista própria.
+  - **Nova lacuna `funcao-valorant`** (11ª do catálogo): `role` vem
+    vazio em 100% dos jogadores de Valorant. Aparece inline na coluna
+    "Função" **só quando o time é de Valorant** — em LoL o campo existe,
+    e mostrar lá o texto de Valorant confundiria.
+  - `MatchList` e `formatDate` removidos: viraram código morto quando
+    `ListaPartidas` assumiu. Tirados para ninguém reintroduzir o markup
+    antigo por engano.
+  - Verificado nos quatro formatos de time: **1043** Gentle Mates GC
+    (elenco 5 + 13 partidas: 9V/3D/75%, layout completo), **1275** FURIA
+    Esports (elenco 0 + 7 partidas: 3V/4D/43%, elenco cai no
+    `EstadoVazio`), **942** Aogiri (0 e 0: tudo zerado, aproveitamento
+    "—" com dica "sem partida decidida"), **708** FURIA de LoL (a página
+    não assume jogo). `/times/abc` e `/times/99999` devolvem 404.
+    `tsc` e `eslint` limpos, 13 rotas em 200. **Segue sem conferência
+    visual em browser** — ainda não há headless no projeto.
+
 ## Módulos em andamento / próximos
 
-- **Módulo 3.10 em diante** — páginas de time e jogador redesenhadas,
-  página de campeonato, catálogo do jogo. Ver `prompts-modulos.md` pra
-  prompts completos.
+- **Módulo 3.11 em diante** — página de jogador redesenhada, página de
+  campeonato, catálogo do jogo. Ver `prompts-modulos.md` pra prompts
+  completos.
 - **Módulo 4** — Live tracker. Reposicionado pro final da sequência de
   frontend (era o próximo depois do worker; agora vem depois de toda a
   base de site estar pronta).

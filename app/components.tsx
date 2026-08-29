@@ -1,7 +1,6 @@
 import Link from "next/link";
 import type {
   Game,
-  MatchRow,
   PartidaResumo,
   PlayerSummary,
   TeamSummary,
@@ -64,53 +63,8 @@ export function PlayerCard({ player }: { player: PlayerSummary }) {
   );
 }
 
-function formatDate(d: Date | null) {
-  if (!d) return "a definir";
-  return new Intl.DateTimeFormat("pt-BR", {
-    day: "2-digit", month: "2-digit", year: "2-digit",
-    hour: "2-digit", minute: "2-digit",
-  }).format(new Date(d));
-}
-
-export function MatchList({ matches, teamId }: { matches: MatchRow[]; teamId?: number }) {
-  if (matches.length === 0) {
-    return <div className="empty">Nenhuma partida no banco ainda.</div>;
-  }
-
-  return (
-    <div className="matches">
-      {matches.map((m) => {
-        const finished = m.status === "finished";
-        const won = teamId != null && m.winner_team_id === teamId;
-        const lost = teamId != null && finished && m.winner_team_id != null && !won;
-
-        return (
-          <div className="match" key={m.id}>
-            <div className="when">
-              {formatDate(m.scheduled_at)}
-              {m.status === "live" && <> · <Tag tom="success" ponto>ao vivo</Tag></>}
-            </div>
-            <div className="teams">
-              <Link href={`/times/${m.team_a_id}`}>{m.team_a_name}</Link>
-              <span className="muted">vs</span>
-              <Link href={`/times/${m.team_b_id}`}>{m.team_b_name}</Link>
-              <span className="small muted">· {m.tournament_name}</span>
-            </div>
-            <div className={`score ${won ? "win" : lost ? "loss" : ""}`}>
-              {finished && m.team_a_score != null
-                ? `${m.team_a_score} – ${m.team_b_score}`
-                : <span className="muted small">agendada</span>}
-            </div>
-          </div>
-        );
-      })}
-    </div>
-  );
-}
-
-
 /* ------------------------------------------------------------------ *
- * Composições da home (Módulo 3.8)
+ * Composições de partida e torneio (Módulos 3.8 e 3.10)
  * ------------------------------------------------------------------ */
 
 /** Data curta; a hora só aparece quando ainda importa (partida futura). */

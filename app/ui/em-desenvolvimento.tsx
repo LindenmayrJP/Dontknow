@@ -86,6 +86,12 @@ export const LACUNAS = {
     detalhe:
       "A fonte de dados não expõe coach: não há campo no time, nem entrada de comissão técnica no elenco.",
   },
+  "funcao-valorant": {
+    titulo: "Função do jogador",
+    motivo: "indisponivel",
+    detalhe:
+      "A fonte não estrutura posição em Valorant — o campo vem vazio em 100% dos jogadores. Em LoL ele existe (top, mid, adc), então isto é limite do jogo na origem, não do nosso schema.",
+  },
   "titular-reserva": {
     titulo: "Titulares e reservas",
     motivo: "indisponivel",
