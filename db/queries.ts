@@ -177,24 +177,33 @@ export async function getPlayer(id: number) {
     role: string | null;
     nationality: string | null;
     riot_id: string | null;
+    image_url: string | null;
   }>(
-    `SELECT id, name, role, nationality, riot_id FROM players WHERE id = $1`,
+    `SELECT id, name, role, nationality, riot_id, image_url
+       FROM players WHERE id = $1`,
     [id]
   );
   return rows[0] ?? null;
 }
 
+export type VinculoJogador = {
+  team_id: number;
+  team_name: string;
+  team_acronym: string | null;
+  game: Game;
+  org_name: string;
+  image_url: string | null;
+  dark_mode_image_url: string | null;
+  joined_at: Date;
+  left_at: Date | null;
+};
+
 /** Vínculos do jogador, ativo primeiro — é o histórico de transferências. */
 export async function getPlayerMemberships(playerId: number) {
-  const { rows } = await getPool().query<{
-    team_id: number;
-    team_name: string;
-    game: Game;
-    org_name: string;
-    joined_at: Date;
-    left_at: Date | null;
-  }>(
-    `SELECT t.id AS team_id, t.name AS team_name, t.game, o.name AS org_name,
+  const { rows } = await getPool().query<VinculoJogador>(
+    `SELECT t.id AS team_id, t.name AS team_name, t.acronym AS team_acronym,
+            t.game, o.name AS org_name,
+            t.image_url, t.dark_mode_image_url,
             m.joined_at, m.left_at
        FROM team_memberships m
        JOIN teams t ON t.id = m.team_id

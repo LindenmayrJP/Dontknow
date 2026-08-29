@@ -1,8 +1,6 @@
 import Link from "next/link";
 import type {
-  Game,
   PartidaResumo,
-  PlayerSummary,
   TeamSummary,
   TorneioResumo,
 } from "@/db/queries";
@@ -13,15 +11,12 @@ import { logoDeTime } from "./ui/avatar";
  * Componentes de conteúdo do Módulo 3.
  *
  * As primitivas visuais (avatar, tag) vivem em `app/ui` — aqui ficam só
- * as composições ligadas ao dado da wiki. `Badge` e `GameTag` seguem
- * exportados como apelidos para não quebrar as páginas que já os usam.
+ * as composições ligadas ao dado da wiki.
+ *
+ * Os apelidos `Badge`/`GameTag` do Módulo 3 foram removidos no 3.11:
+ * existiam só enquanto as telas antigas não usavam `Avatar`/`TagJogo`
+ * direto, e manter dois nomes para a mesma coisa convida a divergir.
  */
-export const Badge = ({ name, acronym }: { name: string; acronym?: string | null }) => (
-  <Avatar nome={name} sigla={acronym} />
-);
-
-export const GameTag = ({ game }: { game: Game }) => <TagJogo jogo={game} />;
-
 export function TeamCard({ team }: { team: TeamSummary }) {
   return (
     <Link className="card" href={`/times/${team.id}`}>
@@ -36,7 +31,7 @@ export function TeamCard({ team }: { team: TeamSummary }) {
             {team.name}
           </div>
           <div className="small muted">
-            <GameTag game={team.game} />{" "}
+            <TagJogo jogo={team.game} />{" "}
             {team.region ? `${team.region} · ` : ""}
             {team.roster_size} no elenco
           </div>
@@ -45,27 +40,6 @@ export function TeamCard({ team }: { team: TeamSummary }) {
     </Link>
   );
 }
-
-export function PlayerCard({ player }: { player: PlayerSummary }) {
-  return (
-    <Link className="card" href={`/jogadores/${player.id}`}>
-      <div className="row">
-        <Badge name={player.name} />
-        <div style={{ minWidth: 0 }}>
-          <div style={{ fontWeight: 600 }}>{player.name}</div>
-          <div className="small muted">
-            {player.role ? `${player.role} · ` : ""}
-            {player.team_name ?? "sem time"}
-          </div>
-        </div>
-      </div>
-    </Link>
-  );
-}
-
-/* ------------------------------------------------------------------ *
- * Composições de partida e torneio (Módulos 3.8 e 3.10)
- * ------------------------------------------------------------------ */
 
 /** Data curta; a hora só aparece quando ainda importa (partida futura). */
 function quando(d: Date | null, comHora: boolean) {
@@ -195,7 +169,7 @@ export function CardTorneio({ torneio }: { torneio: TorneioResumo }) {
         <div style={{ minWidth: 0 }}>
           <div style={{ fontWeight: 600, marginBottom: 2 }}>{torneio.name}</div>
           <div className="torneio-meta">
-            <GameTag game={torneio.game} />
+            <TagJogo jogo={torneio.game} />
             {torneio.league_name && <span>{torneio.league_name}</span>}
             <span>·</span>
             <span>

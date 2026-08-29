@@ -121,9 +121,9 @@ já causou o arquivo parecer "revertido" no meio de uma sessão.
     lacunas conhecidas (11 desde o Módulo 3.10). Existe também versão de uma linha pra célula de
     tabela. Estado vazio (busca sem resultado) é um componente separado
     do de lacuna (dado não implementado) — são UX diferentes.
-  - `Badge` e `GameTag` religados como apelidos de `Avatar` e `TagJogo`
-    pra evitar dois sistemas em paralelo enquanto o Módulo 3 antigo
-    (que usa esses nomes) não é migrado.
+  - `Badge` e `GameTag` foram religados como apelidos de `Avatar` e
+    `TagJogo` enquanto as telas do Módulo 3 não eram migradas.
+    **Removidos no Módulo 3.11**, quando a migração terminou.
   - Verificado com browser headless: fontes aplicadas, fundo
     `rgb(11,13,18)`, zero requisição externa, sem overflow horizontal em
     1280px/375px, sem erro de console, contraste WCAG ok (pior caso
@@ -310,11 +310,51 @@ já causou o arquivo parecer "revertido" no meio de uma sessão.
     `tsc` e `eslint` limpos, 13 rotas em 200. **Segue sem conferência
     visual em browser** — ainda não há headless no projeto.
 
+- **Módulo 3.11** — Página de jogador, redesenhada com o design system.
+  - Reaproveita a estrutura da página de time (3.10): mesmo `crumb`,
+    mesmo `ficha-topo`, `Secao`/`Card`/`DataTable`/`EstadoVazio`, e o
+    bloco "Ainda não disponível" no fim.
+  - **Foto tratada como exceção, não como regra.** A cobertura é de
+    20,6% no geral e apenas **56 de 879** (6,4%) nos elencos ativos de
+    Valorant. O layout usa avatar redondo de tamanho fixo ao lado do
+    nome — nunca uma imagem grande que deixaria buraco quando faltar.
+    Verificado com foto real (chega otimizada por `/_next/image`,
+    2,8 KB) e sem foto (iniciais).
+  - `getPlayer` passou a trazer `image_url`; `getPlayerMemberships`
+    ganhou sigla e escudo do time (tipo `VinculoJogador`), então a ficha
+    e o histórico usam `Avatar` com logo real.
+  - **"Passagens anteriores" só aparece quando existe.** No banco de
+    hoje **1977 jogadores têm um único vínculo e só 7 têm dois** — um
+    "histórico vazio" para quem sempre teve um time seria ruído, não
+    informação. 45 jogadores têm algum vínculo encerrado.
+  - **"Em partida agora" é omitida quando o jogador não é rastreado** —
+    não é funcionalidade faltando, é seção que não se aplica. Na
+    prática ela não aparece para ninguém hoje: `tracked_player_status`
+    tem **0 linhas** (depende de `RIOT_API_KEY`, ainda vazia). Confirmado
+    ausente nos 5 jogadores testados.
+  - Roadmap com os três motivos distintos visíveis: idade e tempo de
+    carreira como "Em breve", estatísticas como "Bloqueado". Idade **não
+    é buscada** no banco — a decisão do projeto é não capturar
+    `birthday`/`age` por enquanto.
+  - **Fim dos apelidos do Módulo 3.** Com todas as telas migradas,
+    `Badge`, `GameTag` e `PlayerCard` ficaram sem uso e foram removidos;
+    quem usava passou a chamar `Avatar`/`TagJogo` direto. Era o que a
+    nota do 3.7 previa — os apelidos existiam só até a migração
+    terminar. Não há mais dois nomes para a mesma coisa.
+  - Verificado em cinco formatos de jogador: **173** Tomnam (foto + 1
+    passagem anterior), **175** Vico7 (sem foto + passagem), **2184**
+    tuyz (foto, Valorant), **2179** erin (sem foto, o caso comum — cai
+    nas iniciais), **6** Sh4kur (sem time ativo: header diz "Sem time
+    ativo", `EstadoVazio` no lugar do card, passagens listadas).
+    `/jogadores/abc` e `/jogadores/99999` devolvem 404. `tsc` e
+    `eslint` limpos, 9 rotas em 200. **Segue sem conferência visual em
+    browser.**
+
 ## Módulos em andamento / próximos
 
-- **Módulo 3.11 em diante** — página de jogador redesenhada, página de
-  campeonato, catálogo do jogo. Ver `prompts-modulos.md` pra prompts
-  completos.
+- **Módulo 3.12 em diante** — página de campeonato (calendário,
+  standings, chaveamento) e catálogo do jogo. Ver `prompts-modulos.md`
+  pra prompts completos.
 - **Módulo 4** — Live tracker. Reposicionado pro final da sequência de
   frontend (era o próximo depois do worker; agora vem depois de toda a
   base de site estar pronta).
