@@ -164,7 +164,7 @@ export function CardTorneio({ torneio }: { torneio: TorneioResumo }) {
       : 0;
 
   return (
-    <div className="card">
+    <Link className="card card-hover" href={`/campeonatos/${torneio.id}`}>
       <div className="row row-between" style={{ alignItems: "flex-start", gap: "var(--space-3)" }}>
         <div style={{ minWidth: 0 }}>
           <div style={{ fontWeight: 600, marginBottom: 2 }}>{torneio.name}</div>
@@ -198,6 +198,6 @@ export function CardTorneio({ torneio }: { torneio: TorneioResumo }) {
           </div>
         </>
       )}
-    </div>
+    </Link>
   );
 }

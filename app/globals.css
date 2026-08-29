@@ -815,3 +815,133 @@ table.plain th.col-num { text-align: right; }
 td .resultado { gap: var(--space-2); }
 td a.resultado { color: inherit; }
 td a.resultado:hover { color: var(--accent); }
+
+/* ------------------------------------------------------------------ *
+ * Chaveamento (Módulo 3.12)
+ * ------------------------------------------------------------------ */
+.chave-bloco-titulo {
+  font-size: var(--text-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-2);
+  font-weight: 600;
+  margin-bottom: var(--space-2);
+}
+
+/* A chave rola sozinha na horizontal. Encolher os cards para caber em
+   1100px deixaria nome de time ilegível, e deixar a página inteira rolar
+   de lado quebraria todo o resto do layout. */
+.chave-scroll {
+  overflow-x: auto;
+  padding-bottom: var(--space-2);
+}
+.chave-colunas {
+  display: flex;
+  gap: var(--space-4);
+  align-items: flex-start;
+  min-width: min-content;
+}
+.chave-coluna {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  /* Largura fixa: colunas de larguras diferentes fariam a árvore
+     parecer torta mesmo com a topologia certa. */
+  width: 210px;
+  flex: 0 0 auto;
+}
+.chave-coluna-titulo {
+  font-size: var(--text-xs);
+  color: var(--text-3);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.chave-no {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: var(--space-2);
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+/* Nó indefinido é tratado como estado legítimo, não como falha: borda
+   tracejada diz "ainda não decidido" sem parecer erro. */
+.chave-no-tbd {
+  border-style: dashed;
+  background: transparent;
+}
+
+.chave-topo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-2);
+  margin-bottom: var(--space-1);
+}
+.chave-rotulo {
+  font-size: var(--text-xs);
+  color: var(--text-3);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.chave-md {
+  font-size: 10px;
+  font-weight: 700;
+  color: var(--text-3);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-full);
+  padding: 0 5px;
+}
+
+.chave-lado {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: 3px 2px;
+  border-radius: 3px;
+  font-size: var(--text-sm);
+}
+.chave-nome {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.chave-placar {
+  font-family: var(--font-stat), monospace;
+  font-variant-numeric: tabular-nums;
+  font-weight: 700;
+  color: var(--text-2);
+}
+/* Vencedor em negrito e perdedor apagado: a diferença não depende só de
+   cor, então continua legível em monocromático. */
+.chave-lado.venceu { background: var(--surface-2); font-weight: 700; }
+.chave-lado.venceu .chave-placar { color: var(--success); }
+.chave-lado.perdeu { color: var(--text-3); }
+.chave-lado.perdeu .chave-placar { color: var(--text-3); }
+.chave-lado-tbd { color: var(--text-3); font-style: italic; }
+
+/* ------------------------------------------------------------------ *
+ * Calendário do torneio
+ * ------------------------------------------------------------------ */
+.dia-titulo {
+  font-size: var(--text-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-2);
+  font-weight: 600;
+  margin: var(--space-4) 0 var(--space-2);
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+.dia-titulo::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: var(--border);
+}

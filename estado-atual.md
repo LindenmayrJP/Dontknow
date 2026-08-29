@@ -350,11 +350,55 @@ já causou o arquivo parecer "revertido" no meio de uma sessão.
     `eslint` limpos, 9 rotas em 200. **Segue sem conferência visual em
     browser.**
 
+- **Módulo 3.12** — Página de campeonato (resumo, chaveamento,
+  classificação, calendário).
+  - Mesma estrutura de time/jogador: `crumb`, `ficha-topo`, `Secao`,
+    `Card`, `DataTable`, `Stat`, `EstadoVazio`.
+  - **Chaveamento visual reconstruído** em `app/ui/chave.tsx`. A origem
+    não entrega árvore: entrega pares "esta partida recebe o vencedor
+    (ou o perdedor) daquela". `montarChave()` deriva o resto e é **função
+    pura de propósito** — dá pra conferir a topologia sem renderizar
+    página, e foi assim que ela foi validada.
+    - Rodada = maior caminho até uma partida de entrada, com guarda
+      contra ciclo (uma recursão infinita derrubaria a página).
+    - Lado da chave é derivado, não lido do nome da partida: sem entrada
+      = superior; recebe algum `loser` = inferior; só vencedores = herda
+      o lado de quem alimenta; **vindo dos dois lados = grande final**.
+      Isso importa porque nó indefinido não tem nome pra ler.
+  - **Nós "TBD" aparecem na árvore**, com borda tracejada, e dizem de
+    onde os participantes virão ("Perdedor de Upper bracket final",
+    "Vencedor de Lower bracket semifinal"). Omiti-los esconderia
+    justamente as partidas que ainda importam num torneio em andamento.
+  - **Ausência de classificação e de chave usa `EstadoVazio`, nunca o
+    componente "em desenvolvimento"** — é dado que genuinamente não
+    existe para aquele torneio (chave direta não publica tabela; fase de
+    grupos não tem árvore), não funcionalidade que falta. Verificado:
+    zero ocorrências de `roadmap` nessas páginas.
+  - Formato do torneio sai de `number_of_games` das partidas (MD3) — a
+    fonte não tem campo de formato. Contagem de times corrigida para
+    distintos nos dois lados; somar as duas contagens duplicaria quem
+    jogou como A numa partida e B noutra.
+  - `CardTorneio` virou link, então home e `/campeonatos` levam à página.
+  - Novas queries: `getTorneio`, `getTorneioPartidas` (com
+    `pandascore_id` e nome da rodada), `getClassificacao`,
+    `getArestasChave`.
+  - Verificado em três formatos de torneio: **1042** VCT Pacific
+    Playoffs (10 partidas + 2 nós TBD; topologia conferida nó a nó —
+    3 colunas na superior, 4 na inferior, 1 final; classificação com
+    empate no 5º lugar), **230** GC North America Playoffs (chave com
+    **4 definidos e 10 a definir**, e **sem** classificação), **239** GC
+    EMEA Group Stage (sem chave, 45 partidas em 12 dias).
+    `/campeonatos/abc` e `/campeonatos/99999` devolvem 404. `tsc` e
+    `eslint` limpos, 10 rotas em 200. **Segue sem conferência visual em
+    browser** — e aqui pesa mais que nos módulos anteriores: a árvore é
+    o primeiro componente cuja correção é geométrica, e só a topologia
+    foi verificada, não o desenho.
+
 ## Módulos em andamento / próximos
 
-- **Módulo 3.12 em diante** — página de campeonato (calendário,
-  standings, chaveamento) e catálogo do jogo. Ver `prompts-modulos.md`
-  pra prompts completos.
+- **Módulo 3.13** — Páginas de catálogo do jogo (mapas, agentes, armas,
+  habilidades). O dado já está no banco desde o 3.6, falta a tela.
+  Ver `prompts-modulos.md`.
 - **Módulo 4** — Live tracker. Reposicionado pro final da sequência de
   frontend (era o próximo depois do worker; agora vem depois de toda a
   base de site estar pronta).

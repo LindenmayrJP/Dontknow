@@ -557,3 +557,133 @@ export async function listJogadores(games: Game[], limit = 60) {
   );
   return rows;
 }
+
+/* ------------------------------------------------------------------ *
+ * Torneio (Módulo 3.12)
+ * ------------------------------------------------------------------ */
+
+export type TorneioDetalhe = {
+  id: number;
+  name: string;
+  game: Game;
+  league_name: string | null;
+  serie_name: string | null;
+  start_date: Date | null;
+  end_date: Date | null;
+  has_bracket: boolean | null;
+  partidas: number;
+  encerradas: number;
+  times: number;
+  /** Distintos `number_of_games` das partidas — é o formato (ex: [3] = MD3). */
+  formatos: number[];
+};
+
+export async function getTorneio(id: number) {
+  const { rows } = await getPool().query<TorneioDetalhe>(
+    `SELECT t.id, t.name, t.game, t.league_name, t.serie_name,
+            t.start_date, t.end_date, t.has_bracket,
+            count(m.id)::int AS partidas,
+            count(m.id) FILTER (WHERE m.status = 'finished')::int AS encerradas,
+            -- Distintos nos dois lados: somar as duas contagens contaria
+            -- duas vezes o time que jogou como A numa partida e B noutra.
+            (SELECT count(DISTINCT x.time_id)::int
+               FROM (SELECT team_a_id AS time_id FROM matches WHERE tournament_id = t.id
+                     UNION SELECT team_b_id FROM matches WHERE tournament_id = t.id) x
+            ) AS times,
+            -- A fonte não tem campo de formato; number_of_games é o que
+            -- mais perto chega (3 = melhor de 3).
+            coalesce(
+              array_agg(DISTINCT m.number_of_games)
+                FILTER (WHERE m.number_of_games IS NOT NULL),
+              '{}'
+            ) AS formatos
+       FROM tournaments t
+       LEFT JOIN matches m ON m.tournament_id = t.id
+      WHERE t.id = $1
+      GROUP BY t.id`,
+    [id]
+  );
+  return rows[0] ?? null;
+}
+
+/** Partida do torneio: o formato da home mais o id externo e o rótulo da chave. */
+export type PartidaTorneio = PartidaResumo & {
+  pandascore_id: number | null;
+  nome: string | null;
+  number_of_games: number | null;
+};
+
+export async function getTorneioPartidas(tournamentId: number) {
+  const { rows } = await getPool().query<PartidaTorneio>(
+    `SELECT m.id, m.pandascore_id, m.name AS nome, m.number_of_games,
+            m.scheduled_at, m.status, m.team_a_id, m.team_b_id,
+            a.name AS team_a_name, b.name AS team_b_name,
+            a.acronym AS team_a_acronym, b.acronym AS team_b_acronym,
+            a.image_url AS team_a_image, a.dark_mode_image_url AS team_a_dark_image,
+            b.image_url AS team_b_image, b.dark_mode_image_url AS team_b_dark_image,
+            m.team_a_score, m.team_b_score, m.winner_team_id,
+            t.name AS tournament_name, t.id AS tournament_id, t.game
+       FROM matches m
+       JOIN teams a ON a.id = m.team_a_id
+       JOIN teams b ON b.id = m.team_b_id
+       JOIN tournaments t ON t.id = m.tournament_id
+      WHERE m.tournament_id = $1
+      ORDER BY m.scheduled_at NULLS LAST, m.id`,
+    [tournamentId]
+  );
+  return rows;
+}
+
+export type LinhaClassificacao = {
+  rank: number;
+  team_id: number;
+  team_name: string;
+  team_acronym: string | null;
+  image_url: string | null;
+  dark_mode_image_url: string | null;
+};
+
+/**
+ * Classificação do torneio. Vazio é estado normal, não erro: formato de
+ * chave direta não publica tabela, e a origem responde 404 nesses casos
+ * (ver Módulo 3.6). Empates de posição existem — dois times podem
+ * dividir o 5º lugar.
+ */
+export async function getClassificacao(tournamentId: number) {
+  const { rows } = await getPool().query<LinhaClassificacao>(
+    `SELECT s.rank, t.id AS team_id, t.name AS team_name,
+            t.acronym AS team_acronym, t.image_url, t.dark_mode_image_url
+       FROM tournament_standings s
+       JOIN teams t ON t.id = s.team_id
+      WHERE s.tournament_id = $1
+      ORDER BY s.rank, t.name`,
+    [tournamentId]
+  );
+  return rows;
+}
+
+export type ArestaChave = {
+  destino: number;
+  origem: number;
+  edge_type: "winner" | "loser";
+};
+
+/**
+ * Arestas do chaveamento, em id externo.
+ *
+ * Chavear por `pandascore_id` e não por FK é deliberado (ver migration
+ * 0004): as partidas mais importantes de uma chave em andamento — final,
+ * final da inferior — ainda são "TBD vs TBD" e não existem em `matches`.
+ * Quem monta a árvore precisa aceitar nó sem partida correspondente.
+ */
+export async function getArestasChave(tournamentId: number) {
+  const { rows } = await getPool().query<ArestaChave>(
+    `SELECT match_pandascore_id AS destino,
+            previous_match_pandascore_id AS origem,
+            edge_type
+       FROM match_bracket_edges
+      WHERE tournament_id = $1`,
+    [tournamentId]
+  );
+  return rows;
+}

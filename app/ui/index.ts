@@ -13,3 +13,10 @@ export { Tag, TagJogo, TagStatus, type TomTag } from "./tag";
 export { NavPrincipal, SECOES, type ItemNav } from "./nav";
 export { BuscaRapida } from "./busca-rapida";
 export { EstadoVazio } from "./estado-vazio";
+export {
+  ArvoreChave,
+  montarChave,
+  type Chave,
+  type NoChave,
+  type LadoChave,
+} from "./chave";
